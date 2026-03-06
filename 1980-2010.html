@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1980-2010: Technology & Globalization Era | The Evolution of Cars</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore the technology era 1980-2010. From computers in cars to hybrid revolution, discover how electronics, safety, and globalization transformed the automobile.">
+    <meta name="keywords" content="technology era cars, 1980s cars, 1990s cars, 2000s cars, electronic cars, hybrid cars, Japanese dominance, SUV boom">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="1980-2010: Technology & Globalization Era">
+    <meta property="og:description" content="Computers, safety, and the hybrid revolution">
+    <meta property="og:image" content="images/eras/1980-tech-era.jpg">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <img src="images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle active">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="1886-1920.html">1886-1920: Birth of Automobile</a></li>
+                            <li><a href="1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="1950-1980.html">1950-1980: Muscle & Design</a></li>
+                            <li><a href="1980-2010.html" class="active">1980-2010: Technology Era</a></li>
+                            <li><a href="2010-present.html">2010-Present: Electric Future</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Era Hero -->
+    <header class="era-hero" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('images/eras/1980-tech-era.jpg');">
+        <div class="container">
+            <div class="era-hero-content">
+                <span class="era-years">1980 - 2010</span>
+                <h1>Technology & <span class="highlight">Globalization</span></h1>
+                <p class="era-tagline">The digital revolution comes to the automobile</p>
+                
+                <div class="era-quick-facts">
+                    <div class="fact">
+                        <i class="fas fa-calendar"></i>
+                        <span>30 Years</span>
+                    </div>
+                    <div class="fact">
+                        <i class="fas fa-microchip"></i>
+                        <span>Electronic Era</span>
+                    </div>
+                    <div class="fact">
+                        <i class="fas fa-leaf"></i>
+                        <span>Hybrid Born</span>
+                    </div>
+                    <div class="fact">
+                        <i class="fas fa-globe"></i>
+                        <span>Globalization</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Era Navigation -->
+    <div class="era-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#overview" class="active">Overview</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#japanese">Japanese Dominance</a></li>
+                <li><a href="#electronics">Electronics</a></li>
+                <li><a href="#safety">Safety Revolution</a></li>
+                <li><a href="#hybrid">Hybrid Dawn</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Overview Section -->
+    <section id="overview" class="era-overview section-padding">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-content reveal-left">
+                    <h2>The <span class="highlight">Digital</span> Revolution</h2>
+                    
+                    <p class="lead">The period from 1980 to 2010 witnessed the most profound technological transformation in automotive history. Computers, electronics, and globalization fundamentally changed how cars were designed, built, and driven.</p>
+                    
+                    <p>The 1980s began with the industry struggling after the oil crises. Japanese manufacturers like Toyota, Honda, and Nissan rose to prominence with efficient, reliable, and well-built cars. Their success forced American and European makers to improve quality and efficiency. The term "Kaizen" (continuous improvement) entered the automotive lexicon.</p>
+                    
+                    <p>Electronics transformed every aspect of the car. Engine management systems optimized performance and emissions. Fuel injection replaced carburetors. Digital dashboards appeared, followed by onboard diagnostics, ABS, traction control, and eventually navigation systems.</p>
+                    
+                    <p>The 1990s brought the SUV boom. The Ford Explorer, Jeep Grand Cherokee, and other SUVs became family vehicles, replacing station wagons. Minivans also dominated suburban driveways. Meanwhile, sports cars like the Mazda MX-5 Miata revived the affordable roadster segment.</p>
+                    
+                    <p>The new millennium brought the hybrid revolution. Toyota Prius, launched in Japan in 1997 and globally in 2000, proved that hybrids could be practical and popular. By 2010, nearly every manufacturer offered hybrid models, and electric vehicles were poised for their comeback.</p>
+                    
+                    <div class="era-stats">
+                        <div class="stat">
+                            <span class="stat-number">1997</span>
+                            <span class="stat-label">First Prius</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">40%</span>
+                            <span class="stat-label">Japanese Market Share</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">ECUs per Car</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="overview-image reveal-right">
+                    <img src="images/eras/1980-tech-collage.jpg" alt="1980s-2000s technology cars" loading="lazy">
+                    <p class="image-caption">The evolution of automotive technology 1980-2010</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="era-timeline section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Historical Timeline</span>
+                <h2>Key Events <span class="highlight">1980-2010</span></h2>
+            </div>
+            
+            <div class="timeline-vertical">
+                <div class="timeline-item">
+                    <div class="timeline-year">1980</div>
+                    <div class="timeline-content">
+                        <h3>Audi Quattro</h3>
+                        <p style="color: #000">Audi introduces the Quattro, bringing turbocharging and all-wheel drive to rally and road cars. It dominates World Rally Championship and revolutionizes performance.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1981</div>
+                    <div class="timeline-content">
+                        <h3>First Onboard Computer</h3>
+                        <p style="color: #000">Cadillac offers the first onboard computer (Trip Computer) in the Seville, displaying fuel economy, range, and trip information.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1983</div>
+                    <div class="timeline-content">
+                        <h3>Chrysler Minivan</h3>
+                        <p style="color: #000">Chrysler introduces the Dodge Caravan/Plymouth Voyager, creating the minivan segment and revolutionizing family transportation.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1985</div>
+                    <div class="timeline-content">
+                        <h3>BMW M3</h3>
+                        <p style="color: #000">The first BMW M3 debuts, becoming the most successful touring car racer and establishing the "ultimate driving machine" reputation.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1986</div>
+                    <div class="timeline-content">
+                        <h3>Ford Taurus</h3>
+                        <p style="color: #000">Ford introduces the Taurus with revolutionary aerodynamic styling, saving the company and influencing design for decades.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1989</div>
+                    <div class="timeline-content">
+                        <h3>Lexus LS 400</h3>
+                        <p style="color: #000">Toyota launches Lexus with the LS 400, shocking the luxury world with Mercedes-beating refinement at a much lower price.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1989</div>
+                    <div class="timeline-content">
+                        <h3>Mazda MX-5 Miata</h3>
+                        <p style="color: #000">Mazda revives the affordable roadster with the MX-5 Miata, becoming the best-selling sports car of all time.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1990</div>
+                    <div class="timeline-content">
+                        <h3>GPS Navigation</h3>
+                        <p style="color: #000">Mazda Eunos Cosmo offers the first factory GPS navigation system, though early systems were expensive and limited.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1997</div>
+                    <div class="timeline-content">
+                        <h3>Toyota Prius</h3>
+                        <p style="color: #000">Toyota launches the first mass-produced hybrid car, the Prius, initially in Japan. It would become the hybrid icon.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1997</div>
+                    <div class="timeline-content">
+                        <h3>McLaren F1</h3>
+                        <p style="color: #000">McLaren F1 sets production car speed record at 240 mph, remaining the fastest naturally aspirated production car for decades.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1998</div>
+                    <div class="timeline-content">
+                        <h3>Mercedes S-Class</h3>
+                        <p style="color: #000">The W220 S-Class introduces DISTRONIC adaptive cruise control, setting new standards for automotive technology.</p>
+                    </div>
+                </div>
+            
+<div class="timeline-item">
+    <div class="timeline-year">2000</div>
+    <div class="timeline-content" style="margin-left: 20px;">
+        <h3 sclass="highlight">Prius Goes Global</h3>
+        <p style="color: #000">Second-generation Prius launched globally, becoming a status symbol for environmentally conscious consumers.</p>
+    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2003</div>
+                    <div class="timeline-content">
+                        <h3>Tesla Founded</h3>
+                        <p style="color: #000">Martin Eberhard and Marc Tarpenning found Tesla Motors, aiming to prove electric cars could be desirable and high-performance.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2008</div>
+                    <div class="timeline-content">
+                        <h3>Tesla Roadster</h3>
+                        <p style="color: #000">Tesla delivers the first Roadster, the first highway-capable electric vehicle using lithium-ion batteries.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2010</div>
+                    <div class="timeline-content">
+                        <h3>Nissan Leaf</h3>
+                        <p style="color: #000">Nissan launches the Leaf, the first mass-produced pure electric vehicle for the global market.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Japanese Dominance -->
+    <section id="japanese" class="japanese-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Rising Sun</span>
+                <h2>Japanese <span class="highlight">Dominance</span></h2>
+                <p class="section-subtitle">How Japan conquered the global auto industry</p>
+            </div>
+            
+            <div class="japanese-grid">
+                <div class="japanese-content">
+                    <p>By 1980, Japanese manufacturers had perfected the art of building reliable, efficient, and well-equipped cars at competitive prices. Their "lean manufacturing" systems, developed by Toyota, produced higher quality with less waste than traditional methods.</p>
+                    
+                    <p>Honda's CVCC engine met US emissions standards without catalytic converters. Toyota's production system became a global benchmark. Nissan, Mazda, and Subaru developed passionate followings with unique technologies like rotary engines and symmetrical AWD.</p>
+                    
+                    <p>In the 1990s, Japanese luxury brands Lexus, Infiniti, and Acura challenged European dominance. The Lexus LS 400 shocked Mercedes and BMW with its refinement. Japanese sports cars - Supra, NSX, RX-7, 300ZX, GT-R - competed with the best from Europe at lower prices.</p>
+                    
+                    <p>By 2010, Japanese brands held over 40% of the US market and had factories worldwide, fundamentally changing the global automotive landscape.</p>
+                </div>
+                
+                <div class="japanese-icons">
+                    <div class="icon-grid">
+                        <div class="icon-item">
+                            <img src="images/brands/japanese/toyota-logo.png" alt="Toyota">
+                            <p>#1 Globally</p>
+                        </div>
+                        <div class="icon-item">
+                            <img src="images/brands/japanese/honda-logo.png" alt="Honda">
+                            <p>Engine King</p>
+                        </div>
+                        <div class="icon-item">
+                            <img src="images/brands/japanese/nissan-logo.png" alt="Nissan">
+                            <p>GT-R Legend</p>
+                        </div>
+                        <div class="icon-item">
+                            <img src="images/brands/japanese/mazda-logo.png" alt="Mazda">
+                            <p>Rotary Soul</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="japanese-models">
+                <h3>Japanese Icons of the Era</h3>
+                <div class="models-grid-small">
+                    <div class="model-icon">
+                        <img src="images/eras/toyota-supra.jpg" alt="Toyota Supra">
+                        <p>Supra</p>
+                    </div>
+                    <div class="model-icon">
+                        <img src="images/eras/honda-nsx.jpg" alt="Honda NSX">
+                        <p>NSX</p>
+                    </div>
+                    <div class="model-icon">
+                        <img src="images/eras/nissan-gtr.jpg" alt="Nissan GT-R">
+                        <p>GT-R</p>
+                    </div>
+                    <div class="model-icon">
+                        <img src="images/eras/mazda-rx7.jpg" alt="Mazda RX-7">
+                        <p>RX-7</p>
+                    </div>
+                    <div class="model-icon">
+                        <img src="images/eras/mitsubishi-evo.jpg" alt="Mitsubishi Evo">
+                        <p>Evo</p>
+                    </div>
+                    <div class="model-icon">
+                        <img src="images/eras/subaru-wrx.jpg" alt="Subaru WRX">
+                        <p>WRX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Electronics Revolution -->
+    <section id="electronics" class="electronics-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Digital Revolution</span>
+                <h2>Electronics <span class="highlight">Transform</span> the Car</h2>
+            </div>
+            
+            <div class="electronics-grid">
+                <div class="electronics-card">
+                    <i class="fas fa-microchip"></i>
+                    <h3>Engine Management</h3>
+                    <p>Electronic fuel injection (EFI) replaces carburetors, improving power, efficiency, and emissions. ECU controls ignition, fueling, and timing.</p>
+                </div>
+                
+                <div class="electronics-card">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <h3>Digital Dashboards</h3>
+                    <p>Digital instrument clusters appear in the 1980s, followed by head-up displays, onboard computers, and customizable displays.</p>
+                </div>
+                
+                <div class="electronics-card">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Navigation Systems</h3>
+                    <p>GPS navigation moves from expensive option to common feature, with real-time traffic, points of interest, and voice guidance.</p>
+                </div>
+                
+                <div class="electronics-card">
+                    <i class="fas fa-bluetooth"></i>
+                    <h3>Connectivity</h3>
+                    <p>Bluetooth, USB, and smartphone integration transform cars into connected devices. iPod integration arrives in 2004.</p>
+                </div>
+                
+                <div class="electronics-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Driver Assistance</h3>
+                    <p>Parking sensors, rear cameras, blind spot monitoring, and lane departure warning appear in luxury cars by 2010.</p>
+                </div>
+                
+                <div class="electronics-card">
+                    <i class="fas fa-code"></i>
+                    <h3>CAN Bus</h3>
+                    <p>Controller Area Network (CAN) allows components to communicate, reducing wiring and enabling complex systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety Revolution -->
+    <section id="safety" class="safety-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Saving Lives</span>
+                <h2>The <span class="highlight">Safety</span> Revolution</h2>
+                <p class="section-subtitle">How cars became dramatically safer</p>
+            </div>
+            
+            <div class="safety-showcase">
+                <div class="safety-image">
+                    <img src="images/safety/crash-test.jpg" alt="Crash test evolution">
+                </div>
+                
+                <div class="safety-content">
+                    <div class="safety-timeline">
+                        <div class="safety-item">
+                            <div class="safety-year">1985</div>
+                            <div class="safety-desc">Airbags become available in some luxury cars</div>
+                        </div>
+                        <div class="safety-item">
+                            <div class="safety-year">1988</div>
+                            <div class="safety-desc">ABS (Anti-lock Brakes) spread to mainstream cars</div>
+                        </div>
+                        <div class="safety-item">
+                            <div class="safety-year">1995</div>
+                            <div class="safety-desc">Dual front airbags become mandatory in the US</div>
+                        </div>
+                        <div class="safety-item">
+                            <div class="safety-year">1998</div>
+                            <div class="safety-desc">Side airbags introduced</div>
+                        </div>
+                        <div class="safety-item">
+                            <div class="safety-year">2000</div>
+                            <div class="safety-desc">ESC (Electronic Stability Control) appears</div>
+                        </div>
+                        <div class="safety-item">
+                            <div class="safety-year">2010</div>
+                            <div class="safety-desc">ESC mandatory, crash test standards highest ever</div>
+                        </div>
+                    </div>
+                    
+                    <p class="safety-stat">Fatality rate per 100 million vehicle miles: <strong>3.35 in 1980 → 1.10 in 2010</strong></p>
+                </div>
+            </div>
+            
+            <div class="safety-features">
+                <div class="feature-badge">Airbags</div>
+                <div class="feature-badge">ABS</div>
+                <div class="feature-badge">ESC</div>
+                <div class="feature-badge">Traction Control</div>
+                <div class="feature-badge">Crash Zones</div>
+                <div class="feature-badge">High-strength Steel</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hybrid Dawn -->
+    <section id="hybrid" class="hybrid-section section-padding bg-light">
+        <div class="container">
+            <div class="hybrid-grid">
+                <div class="hybrid-content">
+                    <h2>The <span class="highlight">Hybrid</span> Dawn</h2>
+                    
+                    <p>While electric cars had existed since the dawn of the automobile, they were largely forgotten by 1980. That changed with growing environmental concerns and advancing battery technology.</p>
+                    
+                    <p>The Toyota Prius, launched in 1997, proved that hybrids could be practical, reliable, and even desirable. Its combination of gasoline engine and electric motor dramatically improved fuel economy in city driving. By 2010, Toyota had sold over 2 million Priuses worldwide.</p>
+                    
+                    <p>Honda followed with Insight, then Civic Hybrid. American manufacturers joined with Ford Escape Hybrid, and luxury brands offered hybrid versions of SUVs and sedans. The hybrid paved the way for the electric revolution to come.</p>
+                    
+                    <div class="hybrid-stats">
+                        <div class="stat">
+                            <span class="stat-number">2M+</span>
+                            <span class="stat-label">Prius Sold by 2010</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Hybrid Models</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50</span>
+                            <span class="stat-label">MPG Achieved</span>
+                        </div>
+                    </div>
+                    
+                    <a href="2010-present.html" class="btn btn-primary">
+                        Continue to Electric Future <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="hybrid-image">
+                    <img src="images/eras/toyota-prius-first.jpg" alt="First generation Toyota Prius">
+                    <p class="image-caption">1997 Toyota Prius - The first mass-produced hybrid</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="brands.html">Brands</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Other Eras</h4>
+                    <ul>
+                        <li><a href="1886-1920.html">1886-1920: Birth</a></li>
+                        <li><a href="1920-1950.html">1920-1950: Golden Age</a></li>
+                        <li><a href="1950-1980.html">1950-1980: Muscle</a></li>
+                        <li><a href="2010-present.html">2010-Present: Electric</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                    <p><i class="fas fa-calendar"></i> Submission: 25/12/2025</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

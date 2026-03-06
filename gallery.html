@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive Photo Gallery | Classic to Modern Cars</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore our stunning automotive photo gallery featuring classic cars, muscle cars, luxury vehicles, supercars, and electric vehicles from 1886 to present.">
+    <meta name="keywords" content="car gallery, automotive photography, classic car photos, muscle car images, supercar pictures, electric vehicle gallery">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Automotive Photo Gallery - The Evolution of Cars">
+    <meta property="og:description" content="Stunning gallery of automotive history through images">
+    <meta property="og:image" content="images/gallery/gallery-header.jpg">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation (same as index) -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <img src="images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="1886-1920.html">1886-1920: Birth of Automobile</a></li>
+                            <li><a href="1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="1950-1980.html">1950-1980: Muscle & Design</a></li>
+                            <li><a href="1980-2010.html">1980-2010: Technology Era</a></li>
+                            <li><a href="2010-present.html">2010-Present: Electric Future</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <header class="gallery-header">
+        <div class="container">
+            <h1>Automotive <span class="highlight">Photo Gallery</span></h1>
+            <p>A stunning visual journey through 140 years of automotive history. Explore classic elegance, muscle power, modern luxury, and future innovation.</p>
+        </div>
+    </header>
+
+    <!-- Gallery Filters -->
+    <section class="gallery-filters">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <button class="filter-btn active" data-filter="all">All Photos</button>
+                    <button class="filter-btn" data-filter="classic">Classic Cars</button>
+                    <button class="filter-btn" data-filter="muscle">Muscle Cars</button>
+                    <button class="filter-btn" data-filter="luxury">Luxury</button>
+                    <button class="filter-btn" data-filter="supercar">Supercars</button>
+                    <button class="filter-btn" data-filter="electric">Electric</button>
+                    <button class="filter-btn" data-filter="concept">Concept Cars</button>
+                </div>
+                
+                <div class="filter-sort">
+                    <select class="filter-select" id="sortSelect">
+                        <option value="latest">Latest First</option>
+                        <option value="oldest">Oldest First</option>
+                        <option value="az">A-Z</option>
+                        <option value="za">Z-A</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-main">
+        <div class="container">
+            <div class="gallery-grid-container" id="galleryGrid">
+                <!-- Classic Cars -->
+                <div class="gallery-item" data-category="classic" data-year="1920" data-name="Rolls-Royce Silver Ghost">
+                    <img src="images/gallery/classic-cars/classic-1.jpg" alt="1920 Rolls-Royce Silver Ghost" loading="lazy">
+                    <span class="gallery-item-category">Classic</span>
+                    <div class="gallery-item-info">
+                        <h3>1920 Rolls-Royce Silver Ghost</h3>
+                        <p>The "best car in the world" - 1920s luxury masterpiece</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="classic" data-year="1930" data-name="Bugatti Type 57">
+                    <img src="images/gallery/classic-cars/classic-2.jpg" alt="1930 Bugatti Type 57" loading="lazy">
+                    <span class="gallery-item-category">Classic</span>
+                    <div class="gallery-item-info">
+                        <h3>1930 Bugatti Type 57</h3>
+                        <p>Art Deco masterpiece from the golden age</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item large" data-category="classic" data-year="1937" data-name="Mercedes-Benz 540K">
+                    <img src="images/gallery/classic-cars/classic-3.jpg" alt="1937 Mercedes-Benz 540K" loading="lazy">
+                    <span class="gallery-item-category">Classic</span>
+                    <div class="gallery-item-info">
+                        <h3>1937 Mercedes-Benz 540K</h3>
+                        <p>Pre-war elegance and engineering excellence</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="classic" data-year="1948" data-name="Jaguar XK120">
+                    <img src="images/gallery/classic-cars/classic-4.jpg" alt="1948 Jaguar XK120" loading="lazy">
+                    <span class="gallery-item-category">Classic</span>
+                    <div class="gallery-item-info">
+                        <h3>1948 Jaguar XK120</h3>
+                        <p>The fastest production car of its time</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="classic" data-year="1955" data-name="Mercedes-Benz 300SL">
+                    <img src="images/gallery/classic-cars/classic-5.jpg" alt="1955 Mercedes-Benz 300SL Gullwing" loading="lazy">
+                    <span class="gallery-item-category">Classic</span>
+                    <div class="gallery-item-info">
+                        <h3>1955 Mercedes-Benz 300SL</h3>
+                        <p>The iconic Gullwing with fuel injection</p>
+                    </div>
+                </div>
+
+                <!-- Muscle Cars -->
+                <div class="gallery-item wide" data-category="muscle" data-year="1964" data-name="Ford Mustang">
+                    <img src="images/gallery/muscle-cars/muscle-1.jpg" alt="1964 Ford Mustang" loading="lazy">
+                    <span class="gallery-item-category">Muscle</span>
+                    <div class="gallery-item-info">
+                        <h3>1964½ Ford Mustang</h3>
+                        <p>The original pony car that started it all</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="muscle" data-year="1969" data-name="Dodge Charger">
+                    <img src="images/gallery/muscle-cars/muscle-2.jpg" alt="1969 Dodge Charger" loading="lazy">
+                    <span class="gallery-item-category">Muscle</span>
+                    <div class="gallery-item-info">
+                        <h3>1969 Dodge Charger</h3>
+                        <p>The General Lee - Iconic muscle car</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="muscle" data-year="1970" data-name="Plymouth Hemi Cuda">
+                    <img src="images/gallery/muscle-cars/muscle-3.jpg" alt="1970 Plymouth Hemi Cuda" loading="lazy">
+                    <span class="gallery-item-category">Muscle</span>
+                    <div class="gallery-item-info">
+                        <h3>1970 Plymouth Hemi Cuda</h3>
+                        <p>The ultimate muscle car icon</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="muscle" data-year="1970" data-name="Chevrolet Chevelle SS">
+                    <img src="images/gallery/muscle-cars/muscle-4.jpg" alt="1970 Chevrolet Chevelle SS" loading="lazy">
+                    <span class="gallery-item-category">Muscle</span>
+                    <div class="gallery-item-info">
+                        <h3>1970 Chevrolet Chevelle SS</h3>
+                        <p>454 cubic inches of pure power</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="muscle" data-year="1971" data-name="Pontiac GTO">
+                    <img src="images/gallery/muscle-cars/muscle-5.jpg" alt="1971 Pontiac GTO Judge" loading="lazy">
+                    <span class="gallery-item-category">Muscle</span>
+                    <div class="gallery-item-info">
+                        <h3>1971 Pontiac GTO Judge</h3>
+                        <p>The legend that defined muscle cars</p>
+                    </div>
+                </div>
+
+                <!-- Supercars -->
+                <div class="gallery-item tall" data-category="supercar" data-year="1966" data-name="Lamborghini Miura">
+                    <img src="images/gallery/supercars/super-1.jpg" alt="1966 Lamborghini Miura" loading="lazy">
+                    <span class="gallery-item-category">Supercar</span>
+                    <div class="gallery-item-info">
+                        <h3>1966 Lamborghini Miura</h3>
+                        <p>The world's first supercar</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="supercar" data-year="1984" data-name="Ferrari Testarossa">
+                    <img src="images/gallery/supercars/super-2.jpg" alt="1984 Ferrari Testarossa" loading="lazy">
+                    <span class="gallery-item-category">Supercar</span>
+                    <div class="gallery-item-info">
+                        <h3>1984 Ferrari Testarossa</h3>
+                        <p>The iconic 80s wedge design</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="supercar" data-year="1992" data-name="McLaren F1">
+                    <img src="images/gallery/supercars/super-3.jpg" alt="1992 McLaren F1" loading="lazy">
+                    <span class="gallery-item-category">Supercar</span>
+                    <div class="gallery-item-info">
+                        <h3>1992 McLaren F1</h3>
+                        <p>The ultimate analog supercar</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item large" data-category="supercar" data-year="2005" data-name="Bugatti Veyron">
+                    <img src="images/gallery/supercars/super-4.jpg" alt="2005 Bugatti Veyron" loading="lazy">
+                    <span class="gallery-item-category">Supercar</span>
+                    <div class="gallery-item-info">
+                        <h3>2005 Bugatti Veyron</h3>
+                        <p>The first 1000hp production car</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="supercar" data-year="2013" data-name="Porsche 918 Spyder">
+                    <img src="images/gallery/supercars/super-5.jpg" alt="2013 Porsche 918 Spyder" loading="lazy">
+                    <span class="gallery-item-category">Supercar</span>
+                    <div class="gallery-item-info">
+                        <h3>2013 Porsche 918 Spyder</h3>
+                        <p>Hybrid hypercar masterpiece</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="supercar" data-year="2020" data-name="Ferrari SF90 Stradale">
+                    <img src="images/gallery/supercars/super-6.jpg" alt="2020 Ferrari SF90 Stradale" loading="lazy">
+                    <span class="gallery-item-category">Supercar</span>
+                    <div class="gallery-item-info">
+                        <h3>2020 Ferrari SF90 Stradale</h3>
+                        <p>1000hp hybrid Ferrari</p>
+                    </div>
+                </div>
+
+                <!-- Luxury Cars -->
+                <div class="gallery-item" data-category="luxury" data-year="1959" data-name="Cadillac Eldorado">
+                    <img src="images/gallery/luxury-cars/luxury-1.jpg" alt="1959 Cadillac Eldorado" loading="lazy">
+                    <span class="gallery-item-category">Luxury</span>
+                    <div class="gallery-item-info">
+                        <h3>1959 Cadillac Eldorado</h3>
+                        <p>The height of American luxury with iconic fins</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item wide" data-category="luxury" data-year="1961" data-name="Lincoln Continental">
+                    <img src="images/gallery/luxury-cars/luxury-2.jpg" alt="1961 Lincoln Continental" loading="lazy">
+                    <span class="gallery-item-category">Luxury</span>
+                    <div class="gallery-item-info">
+                        <h3>1961 Lincoln Continental</h3>
+                        <p>Presidential elegance and suicide doors</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="luxury" data-year="1980" data-name="Rolls-Royce Silver Spirit">
+                    <img src="images/gallery/luxury-cars/luxury-3.jpg" alt="1980 Rolls-Royce Silver Spirit" loading="lazy">
+                    <span class="gallery-item-category">Luxury</span>
+                    <div class="gallery-item-info">
+                        <h3>1980 Rolls-Royce Silver Spirit</h3>
+                        <p>British opulence at its finest</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="luxury" data-year="2003" data-name="Maybach 62">
+                    <img src="images/gallery/luxury-cars/luxury-4.jpg" alt="2003 Maybach 62" loading="lazy">
+                    <span class="gallery-item-category">Luxury</span>
+                    <div class="gallery-item-info">
+                        <h3>2003 Maybach 62</h3>
+                        <p>Ultra-luxury German excellence</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="luxury" data-year="2020" data-name="Bentley Flying Spur">
+                    <img src="images/gallery/luxury-cars/luxury-5.jpg" alt="2020 Bentley Flying Spur" loading="lazy">
+                    <span class="gallery-item-category">Luxury</span>
+                    <div class="gallery-item-info">
+                        <h3>2020 Bentley Flying Spur</h3>
+                        <p>Modern British luxury and performance</p>
+                    </div>
+                </div>
+
+                <!-- Electric Cars -->
+                <div class="gallery-item tall" data-category="electric" data-year="1900" data-name="Lohner-Porsche Mixte">
+                    <img src="images/gallery/electric-cars/electric-1.jpg" alt="1900 Lohner-Porsche Mixte" loading="lazy">
+                    <span class="gallery-item-category">Electric</span>
+                    <div class="gallery-item-info">
+                        <h3>1900 Lohner-Porsche Mixte</h3>
+                        <p>The first hybrid car - Ferdinand Porsche's design</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="electric" data-year="1996" data-name="GM EV1">
+                    <img src="images/gallery/electric-cars/electric-2.jpg" alt="1996 GM EV1" loading="lazy">
+                    <span class="gallery-item-category">Electric</span>
+                    <div class="gallery-item-info">
+                        <h3>1996 GM EV1</h3>
+                        <p>The first modern mass-produced EV</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="electric" data-year="2008" data-name="Tesla Roadster">
+                    <img src="images/gallery/electric-cars/electric-3.jpg" alt="2008 Tesla Roadster" loading="lazy">
+                    <span class="gallery-item-category">Electric</span>
+                    <div class="gallery-item-info">
+                        <h3>2008 Tesla Roadster</h3>
+                        <p>The car that started the electric revolution</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item large" data-category="electric" data-year="2012" data-name="Tesla Model S">
+                    <img src="images/gallery/electric-cars/electric-4.jpg" alt="2012 Tesla Model S" loading="lazy">
+                    <span class="gallery-item-category">Electric</span>
+                    <div class="gallery-item-info">
+                        <h3>2012 Tesla Model S</h3>
+                        <p>Redefined what an electric car could be</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="electric" data-year="2020" data-name="Porsche Taycan">
+                    <img src="images/gallery/electric-cars/electric-5.jpg" alt="2020 Porsche Taycan" loading="lazy">
+                    <span class="gallery-item-category">Electric</span>
+                    <div class="gallery-item-info">
+                        <h3>2020 Porsche Taycan</h3>
+                        <p>Electric performance with Porsche soul</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="electric" data-year="2023" data-name="Rimac Nevera">
+                    <img src="images/gallery/electric-cars/electric-6.jpg" alt="2023 Rimac Nevera" loading="lazy">
+                    <span class="gallery-item-category">Electric</span>
+                    <div class="gallery-item-info">
+                        <h3>2023 Rimac Nevera</h3>
+                        <p>1914hp electric hypercar</p>
+                    </div>
+                </div>
+
+                <!-- Concept Cars -->
+                <div class="gallery-item" data-category="concept" data-year="1951" data-name="Buick LeSabre">
+                    <img src="images/gallery/concept-cars/concept-1.jpg" alt="1951 Buick LeSabre Concept" loading="lazy">
+                    <span class="gallery-item-category">Concept</span>
+                    <div class="gallery-item-info">
+                        <h3>1951 Buick LeSabre</h3>
+                        <p>The jet-age concept that inspired a generation</p>
+                    </div>
+                </div>
+<div class="gallery-item wide" data-category="concept" data-year="1954" data-name="GM Firebird">
+    <img src="images/gallery/concept-cars/concept-2.jpg" alt="1954 GM Firebird Concept" loading="lazy">
+    <span class="gallery-item-category">Concept</span>
+    <div class="gallery-item-info">
+        <h3>1954 GM Firebird I</h3>
+        <p>Gas turbine-powered dream car</p>
+    </div>
+</div>
+
+                <div class="gallery-item" data-category="concept" data-year="1970" data-name="Lancia Stratos HF">
+                    <img src="images/gallery/concept-cars/concept-3.jpg" alt="1970 Lancia Stratos HF Concept" loading="lazy">
+                    <span class="gallery-item-category">Concept</span>
+                    <div class="gallery-item-info">
+                        <h3>1970 Lancia Stratos HF</h3>
+                        <p>The wedge that became a rally legend</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="concept" data-year="2015" data-name="BMW Vision Next 100">
+                    <img src="images/gallery/concept-cars/concept-4.jpg" alt="2015 BMW Vision Next 100" loading="lazy">
+                    <span class="gallery-item-category">Concept</span>
+                    <div class="gallery-item-info">
+                        <h3>2015 BMW Vision Next 100</h3>
+                        <p>The future of mobility</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="concept" data-year="2019" data-name="Mercedes-Benz Vision AVTR">
+                    <img src="images/gallery/concept-cars/concept-5.jpg" alt="2019 Mercedes-Benz Vision AVTR" loading="lazy">
+                    <span class="gallery-item-category">Concept</span>
+                    <div class="gallery-item-info">
+                        <h3>2019 Mercedes-Benz Vision AVTR</h3>
+                        <p>Inspired by Avatar - sustainable future</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Stats -->
+            <div class="gallery-stats">
+                <div class="gallery-stat">
+                    <i class="fas fa-car"></i>
+                    <span class="stat-number" data-count="250">0</span>
+                    <span class="stat-label">Total Photos</span>
+                </div>
+                <div class="gallery-stat">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span class="stat-number" data-count="140">0</span>
+                    <span class="stat-label">Years Covered</span>
+                </div>
+                <div class="gallery-stat">
+                    <i class="fas fa-tags"></i>
+                    <span class="stat-number" data-count="6">0</span>
+                    <span class="stat-label">Categories</span>
+                </div>
+                <div class="gallery-stat">
+                    <i class="fas fa-camera"></i>
+                    <span class="stat-number" data-count="50">0</span>
+                    <span class="stat-label">Photographers</span>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button class="load-more-btn" id="loadMoreBtn">
+                    <i class="fas fa-plus-circle"></i> Load More Photos
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Collections -->
+    <section class="featured-gallery">
+        <div class="container">
+            <div class="featured-title">
+                <h2>Curated <span class="highlight">Collections</span></h2>
+                <p>Specially selected galleries showcasing the best of each era</p>
+            </div>
+            
+            <div class="featured-grid">
+                <div class="featured-item" data-collection="pre-war">
+                    <img src="images/gallery/collections/pre-war.jpg" alt="Pre-War Classics" loading="lazy">
+                    <span>Pre-War Classics (1900-1940)</span>
+                </div>
+                <div class="featured-item" data-collection="post-war">
+                    <img src="images/gallery/collections/post-war.jpg" alt="Post-War Boom" loading="lazy">
+                    <span>Post-War Boom (1945-1960)</span>
+                </div>
+                <div class="featured-item" data-collection="muscle-era">
+                    <img src="images/gallery/collections/muscle-era.jpg" alt="Muscle Car Era" loading="lazy">
+                    <span>Muscle Car Era (1960-1975)</span>
+                </div>
+                <div class="featured-item" data-collection="supercar-golden">
+                    <img src="images/gallery/collections/supercar-golden.jpg" alt="Supercar Golden Age" loading="lazy">
+                    <span>Supercar Golden Age (1980-2000)</span>
+                </div>
+                <div class="featured-item" data-collection="modern">
+                    <img src="images/gallery/collections/modern.jpg" alt="Modern Icons" loading="lazy">
+                    <span>Modern Icons (2000-2020)</span>
+                </div>
+                <div class="featured-item" data-collection="future">
+                    <img src="images/gallery/collections/future.jpg" alt="Future Concepts" loading="lazy">
+                    <span>Future Concepts (2020+)</span>
+                </div>
+                <div class="featured-item" data-collection="ferrari">
+                    <img src="images/gallery/collections/ferrari.jpg" alt="Ferrari Through Ages" loading="lazy">
+                    <span>Ferrari Through Ages</span>
+                </div>
+                <div class="featured-item" data-collection="porsche">
+                    <img src="images/gallery/collections/porsche.jpg" alt="Porsche 911 Evolution" loading="lazy">
+                    <span>Porsche 911 Evolution</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="gallery-categories">
+        <div class="container">
+            <div class="categories-grid">
+                <a href="#" class="category-card" data-category="classic">
+                    <i class="fas fa-car-side"></i>
+                    <h3>Classic Cars</h3>
+                    <span>45 Photos</span>
+                </a>
+                <a href="#" class="category-card" data-category="muscle">
+                    <i class="fas fa-horse"></i>
+                    <h3>Muscle Cars</h3>
+                    <span>38 Photos</span>
+                </a>
+                <a href="#" class="category-card" data-category="luxury">
+                    <i class="fas fa-crown"></i>
+                    <h3>Luxury</h3>
+                    <span>42 Photos</span>
+                </a>
+                <a href="#" class="category-card" data-category="supercar">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Supercars</h3>
+                    <span>51 Photos</span>
+                </a>
+                <a href="#" class="category-card" data-category="electric">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Electric</h3>
+                    <span>29 Photos</span>
+                </a>
+                <a href="#" class="category-card" data-category="concept">
+                    <i class="fas fa-draw-polygon"></i>
+                    <h3>Concept Cars</h3>
+                    <span>22 Photos</span>
+                </a>
+                <a href="#" class="category-card" data-category="racing">
+                    <i class="fas fa-flag-checkered"></i>
+                    <h3>Racing</h3>
+                    <span>33 Photos</span>
+                </a>
+                <a href="#" class="category-card" data-category="vintage">
+                    <i class="fas fa-clock"></i>
+                    <h3>Vintage</h3>
+                    <span>27 Photos</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+        <button class="lightbox-nav prev" id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-nav next" id="lightboxNext"><i class="fas fa-chevron-right"></i></button>
+        
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImage">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+            <div class="lightbox-counter" id="lightboxCounter"></div>
+        </div>
+    </div>
+
+    <!-- Footer (same as index) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="brands.html">Brands</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Gallery Categories</h4>
+                    <ul>
+                        <li><a href="#" data-filter="classic">Classic Cars</a></li>
+                        <li><a href="#" data-filter="muscle">Muscle Cars</a></li>
+                        <li><a href="#" data-filter="luxury">Luxury</a></li>
+                        <li><a href="#" data-filter="supercar">Supercars</a></li>
+                        <li><a href="#" data-filter="electric">Electric</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                    <p><i class="fas fa-calendar"></i> Submission: 25/12/2025</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+    
+    <script>
+        // Simple gallery filter for demo
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            const loadMoreBtn = document.getElementById('loadMoreBtn');
+            
+            // Filter functionality
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Update active button
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const filter = this.dataset.filter;
+                    
+                    galleryItems.forEach(item => {
+                        if (filter === 'all' || item.dataset.category === filter) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Load more functionality (demo)
+            if (loadMoreBtn) {
+                loadMoreBtn.addEventListener('click', function() {
+                    alert('This is a demo. In the full version, more images would load dynamically.');
+                });
+            }
+            
+            // Simple lightbox simulation
+            galleryItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    const img = this.querySelector('img').src;
+                    const title = this.querySelector('h3')?.textContent || 'Automotive Photography';
+                    alert(`Lightbox would open: ${title}\nImage: ${img}`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

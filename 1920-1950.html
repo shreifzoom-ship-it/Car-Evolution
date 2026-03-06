@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1920-1950: Golden Age of Automobiles | The Evolution of Cars</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore the Golden Age of automobiles 1920-1950. From Art Deco luxury to post-war innovation, discover how cars became stylish, powerful, and accessible.">
+    <meta name="keywords" content="golden age cars, classic cars 1920s, Art Deco automobiles, pre-war cars, post-war cars, vintage luxury cars">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="1920-1950: Golden Age of Automobiles">
+    <meta property="og:description" content="The era of style, luxury, and innovation">
+    <meta property="og:image" content="images/eras/1920-golden-age.jpg">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <img src="images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle active">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="1886-1920.html">1886-1920: Birth of Automobile</a></li>
+                            <li><a href="1920-1950.html" class="active">1920-1950: Golden Age</a></li>
+                            <li><a href="1950-1980.html">1950-1980: Muscle & Design</a></li>
+                            <li><a href="1980-2010.html">1980-2010: Technology Era</a></li>
+                            <li><a href="2010-present.html">2010-Present: Electric Future</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Era Hero -->
+    <header class="era-hero" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('images/eras/1920-golden-age.jpg');">
+        <div class="container">
+            <div class="era-hero-content">
+                <span class="era-years">1920 - 1950</span>
+                <h1>The <span class="highlight">Golden Age</span></h1>
+                <p class="era-tagline">Style, luxury, and innovation between the wars</p>
+                
+                <div class="era-quick-facts">
+                    <div class="fact">
+                        <i class="fas fa-calendar"></i>
+                        <span>30 Years</span>
+                    </div>
+                    <div class="fact">
+                        <i class="fas fa-palette"></i>
+                        <span>Art Deco Design</span>
+                    </div>
+                    <div class="fact">
+                        <i class="fas fa-crown"></i>
+                        <span>Luxury Era</span>
+                    </div>
+                    <div class="fact">
+                        <i class="fas fa-industry"></i>
+                        <span>Mass Production</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Era Navigation -->
+    <div class="era-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#overview" class="active">Overview</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#design">Design Evolution</a></li>
+                <li><a href="#luxury">Luxury Icons</a></li>
+                <li><a href="#innovation">Innovations</a></li>
+                <li><a href="#postwar">Post-War Boom</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Overview Section -->
+    <section id="overview" class="era-overview section-padding">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-content reveal-left">
+                    <h2>The <span class="highlight">Roaring Twenties</span> to Post-War</h2>
+                    
+                    <p class="lead">The period from 1920 to 1950 witnessed the automobile's transformation from basic transportation to an expression of art, luxury, and cultural identity. This golden age saw the rise of iconic brands, breathtaking designs, and innovations that would define cars for decades.</p>
+                    
+                    <p>The 1920s, known as the "Roaring Twenties," brought unprecedented prosperity and style to automobiles. Art Deco influenced everything from grilles to dashboards. Luxury marques like Rolls-Royce, Bugatti, and Duesenberg created masterpieces on wheels. Meanwhile, Ford's Model T continued to dominate the affordable market, though it would eventually be replaced by the more modern Model A in 1927.</p>
+                    
+                    <p>The Great Depression of the 1930s forced consolidation and innovation. Streamlining became the new design language, with cars inspired by aerodynamics. Chrysler's Airflow, though a commercial failure, pioneered monocoque construction and aerodynamic principles. European manufacturers like Mercedes-Benz and Auto Union dominated Grand Prix racing with revolutionary designs.</p>
+                    
+                    <p>World War II halted civilian production as factories converted to military manufacturing. The war accelerated technological development, including improved engines, materials, and manufacturing techniques. When peace returned in 1945, a pent-up demand exploded, leading to the post-war boom that would define the 1950s.</p>
+                    
+                    <div class="era-stats">
+                        <div class="stat">
+                            <span class="stat-number">26M</span>
+                            <span class="stat-label">US Cars by 1950</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">mph Achieved</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1945</span>
+                            <span class="stat-label">Post-War Reset</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="overview-image reveal-right">
+                    <img src="images/eras/1920-duesenberg.jpg" alt="Duesenberg Model J" loading="lazy">
+                    <p class="image-caption">1930 Duesenberg Model J - The ultimate American luxury car</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="era-timeline section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Historical Timeline</span>
+                <h2>Key Events <span class="highlight">1920-1950</span></h2>
+            </div>
+            
+            <div class="timeline-vertical">
+                <div class="timeline-item">
+                    <div class="timeline-year">1922</div>
+                    <div class="timeline-content">
+                        <h3>Lancia Lambda</h3>
+                        <p style="color: #000">Lancia introduces the Lambda, the first car with monocoque construction (unibody) and independent front suspension, revolutionizing chassis design.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1924</div>
+                    <div class="timeline-content">
+                        <h3>Bugatti Type 35</h3>
+                        <p style="color: #000">The Bugatti Type 35 is introduced, becoming the most successful racing car of all time with over 2,000 victories in its career.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1927</div>
+                    <div class="timeline-content">
+                        <h3>Ford Model A</h3>
+                        <p style="color: #000">After 15 years and 15 million units, the Model T is replaced by the more modern Model A with standard driver controls and choice of colors.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1929</div>
+                    <div class="timeline-content">
+                        <h3>Duesenberg Model J</h3>
+                        <p style="color: #000">The Duesenberg Model J debuts with a 265 hp straight-8 engine, making it one of the most powerful and luxurious cars of its era.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1934</div>
+                    <div class="timeline-content">
+                        <h3>Chrysler Airflow</h3>
+                        <p style="color: #000">Chrysler introduces the Airflow, the first mass-produced streamlined car. Though a commercial failure, it pioneers aerodynamic design and monocoque construction.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1934</div>
+                    <div class="timeline-content">
+                        <h3>Citroën Traction Avant</h3>
+                        <p style="color: #000">Citroën launches the Traction Avant, the world's first mass-produced front-wheel drive car with monocoque construction.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1938</div>
+                    <div class="timeline-content">
+                        <h3>Volkswagen Beetle</h3>
+                        <p style="color: #000">Ferdinand Porsche designs the Volkswagen Beetle (Type 1) under Hitler's "people's car" project. Production begins but is interrupted by war.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1939-1945</div>
+                    <div class="timeline-content">
+                        <h3>World War II</h3>
+                        <p style="color: #000">Civilian car production halts as factories convert to military production. The war accelerates advances in engines, materials, and manufacturing.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1945</div>
+                    <div class="timeline-content">
+                        <h3>Post-War Resumption</h3>
+                        <p style="color: #000">Car production resumes with pre-war designs. Enormous pent-up demand leads to a seller's market as Europe and America rebuild.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1948</div>
+                    <div class="timeline-content">
+                        <h3>Jaguar XK120</h3>
+                        <p style="color: #000">Jaguar unveils the XK120, the world's fastest production car at 120 mph, stunning the automotive world with its beauty and performance.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1948</div>
+                    <div class="timeline-content">
+                        <h3>Ferrari Founded</h3>
+                        <p style="color: #000">Enzo Ferrari builds the first Ferrari-badged car, the 125 S, launching one of the most legendary brands in automotive history.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1949</div>
+                    <div class="timeline-content">
+                        <h3>Ford F-Series</h3>
+                        <p style="color: #000">Ford introduces the F-Series pickup truck, which would become the best-selling vehicle in America for decades to come.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Evolution -->
+    <section id="design" class="design-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Design Language</span>
+                <h2>From <span class="highlight">Boxes</span> to <span class="highlight">Streamlines</span></h2>
+                <p class="section-subtitle">The evolution of automotive styling 1920-1950</p>
+            </div>
+            
+            <div class="design-showcase">
+                <div class="design-era">
+                    <div class="design-year">1920s</div>
+                    <div class="design-content">
+                        <img src="images/design/1920-box.jpg" alt="1920s boxy design">
+                        <h3>The Box Era</h3>
+                        <p>Early 1920s cars were upright, boxy, and functional - essentially motorized carriages. Separate fenders, headlights, and running boards were the norm.</p>
+                    </div>
+                </div>
+                
+                <div class="design-era">
+                    <div class="design-year">1930s</div>
+                    <div class="design-content">
+                        <img src="images/design/1930-streamline.jpg" alt="1930s streamlining">
+                        <h3>Streamline Moderne</h3>
+                        <p>Aerodynamics influenced design with rounded shapes, integrated fenders, and sloping grilles. Art Deco details added elegance.</p>
+                    </div>
+                </div>
+                
+                <div class="design-era">
+                    <div class="design-year">1940s</div>
+                    <div class="design-content">
+                        <img src="images/design/1940-ponton.jpg" alt="1940s ponton design">
+                        <h3>Ponton Styling</h3>
+                        <p>Post-war cars began integrating fenders into the body, creating the "ponton" style that would dominate the 1950s.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="design-features">
+                <h3>Key Design Elements</h3>
+                <div class="features-grid">
+                    <div class="feature">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4>Integrated Headlights</h4>
+                        <p>Headlights moved from separate pods to integrated into fenders</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-wind"></i>
+                        <h4>Streamlining</h4>
+                        <p>Rounded shapes, curved windshields, and aerodynamic grilles</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-paint-brush"></i>
+                        <h4>Art Deco Details</h4>
+                        <p>Geometric patterns, chrome accents, and elegant curves</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-car"></i>
+                        <h4>Enclosed Bodies</h4>
+                        <p>Closed cabins replaced open tourers as standard</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Luxury Icons -->
+    <section id="luxury" class="luxury-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Ultimate Luxury</span>
+                <h2>The <span class="highlight">Masterpieces</span></h2>
+                <p class="section-subtitle">Hand-crafted excellence from the golden age</p>
+            </div>
+            
+            <div class="luxury-grid">
+                <div class="luxury-card">
+                    <img src="images/luxury/rolls-royce-phantom.jpg" alt="Rolls-Royce Phantom I">
+                    <div class="luxury-info">
+                        <h3>Rolls-Royce Phantom I</h3>
+                        <p class="luxury-years">1925-1931</p>
+                        <p>"The Best Car in the World" - Silent, smooth, and exquisitely crafted. Chassis were sent to independent coachbuilders for custom bodies.</p>
+                    </div>
+                </div>
+                
+                <div class="luxury-card">
+                    <img src="images/luxury/bugatti-type-41.jpg" alt="Bugatti Type 41 Royale">
+                    <div class="luxury-info">
+                        <h3>Bugatti Type 41 Royale</h3>
+                        <p class="luxury-years">1927-1933</p>
+                        <p>One of the largest and most luxurious cars ever built. Only 6 produced, with a 12.7-liter straight-8 engine. Priced at $30,000 in 1930.</p>
+                    </div>
+                </div>
+                
+                <div class="luxury-card">
+                    <img src="images/luxury/duesenberg-model-j.jpg" alt="Duesenberg Model J">
+                    <div class="luxury-info">
+                        <h3>Duesenberg Model J</h3>
+                        <p class="luxury-years">1928-1937</p>
+                        <p>American luxury at its peak. The 265 hp straight-8 could reach 116 mph, making it one of the fastest cars of its era.</p>
+                    </div>
+                </div>
+                
+                <div class="luxury-card">
+                    <img src="images/luxury/hispano-suiza-h6.jpg" alt="Hispano-Suiza H6">
+                    <div class="luxury-info">
+                        <h3>Hispano-Suiza H6</h3>
+                        <p class="luxury-years">1919-1933</p>
+                        <p>Spanish-French luxury with aircraft-inspired engineering. Features included servo-assisted brakes - a revolutionary safety feature.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="luxury-quote">
+                <i class="fas fa-quote-left"></i>
+                <blockquote>"The Duesenberg is the only car that could race today and win the Indianapolis 500. Then drive to the country club and be the most elegant car in the parking lot."</blockquote>
+                <cite>- Automotive historian</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technological Innovations -->
+    <section id="innovation" class="innovation-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Technological Leap</span>
+                <h2>Innovations That <span class="highlight">Changed Everything</span></h2>
+            </div>
+            
+            <div class="innovation-grid">
+                <div class="innovation-card">
+                    <div class="innovation-year">1922</div>
+                    <i class="fas fa-car"></i>
+                    <h3>Monocoque Construction</h3>
+                    <p>Lancia Lambda introduces unibody construction, eliminating the separate chassis and improving rigidity and weight.</p>
+                </div>
+                
+                <div class="innovation-card">
+                    <div class="innovation-year">1924</div>
+                    <i class="fas fa-oil-can"></i>
+                    <h3>Hydraulic Brakes</h3>
+                    <p>Duesenberg pioneers hydraulic brakes, providing more powerful and balanced stopping power than mechanical systems.</p>
+                </div>
+                
+                <div class="innovation-card">
+                    <div class="innovation-year">1934</div>
+                    <i class="fas fa-wind"></i>
+                    <h3>Aerodynamic Design</h3>
+                    <p>Chrysler Airflow introduces wind tunnel-tested streamlining, though ahead of its time commercially.</p>
+                </div>
+                
+                <div class="innovation-card">
+                    <div class="innovation-year">1934</div>
+                    <i class="fas fa-car-side"></i>
+                    <h3>Front-Wheel Drive</h3>
+                    <p>Citroën Traction Avant brings front-wheel drive to mass production, improving traction and interior space.</p>
+                </div>
+                
+                <div class="innovation-card">
+                    <div class="innovation-year">1939</div>
+                    <i class="fas fa-cog"></i>
+                    <h3>Automatic Transmission</h3>
+                    <p>Oldsmobile offers the first automatic transmission (Hydra-Matic), making driving easier for millions.</p>
+                </div>
+                
+                <div class="innovation-card">
+                    <div class="innovation-year">1940</div>
+                    <i class="fas fa-snowflake"></i>
+                    <h3>Air Conditioning</h3>
+                    <p>Packard offers the first factory-installed air conditioning, though it was rare and expensive.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Post-War Boom -->
+    <section id="postwar" class="postwar-section section-padding bg-light">
+        <div class="container">
+            <div class="postwar-grid">
+                <div class="postwar-content">
+                    <h2>The <span class="highlight">Post-War</span> Explosion</h2>
+                    
+                    <p>When World War II ended in 1945, pent-up demand for cars exploded. Americans and Europeans who had gone years without new vehicles rushed to dealerships. Manufacturers, who had spent years building tanks and aircraft, quickly converted back to car production.</p>
+                    
+                    <p>Initially, most post-war cars were slightly updated pre-war designs. But by the late 1940s, entirely new models appeared that would define the 1950s. The Jaguar XK120 stunned the world with its 120 mph capability. The Volkswagen Beetle began its long ascent to becoming the best-selling car of all time. Ferrari established itself as the ultimate sports car manufacturer.</p>
+                    
+                    <p>The suburbs were growing, and families needed cars. This led to the development of station wagons and the first hardtop convertibles. By 1950, America had 26 million registered vehicles, and the automotive age was in full swing.</p>
+                    
+                    <div class="postwar-stats">
+                        <div class="stat">
+                            <span class="stat-number">8M</span>
+                            <span class="stat-label">1949 US Production</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50%</span>
+                            <span class="stat-label">Households with Cars</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">26M</span>
+                            <span class="stat-label">Total US Vehicles</span>
+                        </div>
+                    </div>
+                    
+                    <a href="1950-1980.html" class="btn btn-primary">
+                        Continue to Muscle Car Era <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="postwar-image">
+                    <img src="images/eras/postwar-boom.jpg" alt="Post-war car boom" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iconic Models Gallery -->
+    <section class="iconic-gallery section-padding">
+        <div class="container">
+            <h3>Iconic Models of the Golden Age</h3>
+            <div class="mini-gallery">
+                <img src="images/eras/1920-bugatti-type35.jpg" alt="Bugatti Type 35">
+                <img src="images/eras/1930-cord-812.jpg" alt="Cord 812">
+                <img src="images/eras/1934-citroen-traction.jpg" alt="Citroën Traction Avant">
+                <img src="images/eras/1938-beetle.jpg" alt="Volkswagen Beetle">
+                <img src="images/eras/1948-jaguar-xk120.jpg" alt="Jaguar XK120">
+                <img src="images/eras/1949-ford-f-series.jpg" alt="Ford F-Series">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="brands.html">Brands</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Other Eras</h4>
+                    <ul>
+                        <li><a href="1886-1920.html">1886-1920: Birth</a></li>
+                        <li><a href="1950-1980.html">1950-1980: Muscle</a></li>
+                        <li><a href="1980-2010.html">1980-2010: Technology</a></li>
+                        <li><a href="2010-present.html">2010-Present: Electric</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                    <p><i class="fas fa-calendar"></i> Submission: 25/12/2025</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

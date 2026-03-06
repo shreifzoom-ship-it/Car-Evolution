@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2010-Present: Electric & Autonomous Future | The Evolution of Cars</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore the electric and autonomous era 2010-2026. From Tesla's revolution to self-driving cars, discover how technology is reshaping the automotive future.">
+    <meta name="keywords" content="electric cars, autonomous vehicles, Tesla, self-driving cars, EV revolution, future of cars, sustainable mobility">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="2010-Present: Electric & Autonomous Future">
+    <meta property="og:description" content="The revolution that's changing everything">
+    <meta property="og:image" content="images/eras/2010-electric-future.jpg">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <img src="images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle active">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="1886-1920.html">1886-1920: Birth of Automobile</a></li>
+                            <li><a href="1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="1950-1980.html">1950-1980: Muscle & Design</a></li>
+                            <li><a href="1980-2010.html">1980-2010: Technology Era</a></li>
+                            <li><a href="2010-present.html" class="active">2010-Present: Electric Future</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Era Hero -->
+    <header class="era-hero" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('images/eras/2010-electric-future.jpg');">
+        <div class="container">
+            <div class="era-hero-content">
+                <span class="era-years">2010 - 2026</span>
+                <h1>The <span class="highlight">Electric & Autonomous</span> Future</h1>
+                <p class="era-tagline">The biggest revolution since the Model T</p>
+                
+                <div class="era-quick-facts">
+                    <div class="fact">
+                        <i class="fas fa-bolt"></i>
+                        <span>EV Revolution</span>
+                    </div>
+                    <div class="fact">
+                        <i class="fas fa-robot"></i>
+                        <span>Self-Driving</span>
+                    </div>
+                    <div class="fact">
+                        <i class="fas fa-leaf"></i>
+                        <span>Sustainable</span>
+                    </div>
+                    <div class="fact">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <span>OTA Updates</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Era Navigation -->
+    <div class="era-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#overview" class="active">Overview</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#tesla">Tesla Effect</a></li>
+                <li><a href="#ev-revolution">EV Revolution</a></li>
+                <li><a href="#autonomous">Autonomous</a></li>
+                <li><a href="#future">Future</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Overview Section -->
+    <section id="overview" class="era-overview section-padding">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-content reveal-left">
+                    <h2>The <span class="highlight">Greatest</span> Revolution</h2>
+                    
+                    <p class="lead">The period from 2010 to today represents the most profound transformation in automotive history since the invention of the car itself. Electric propulsion, autonomous driving, and connectivity are fundamentally reimagining what a car is and can be.</p>
+                    
+                    <p>In 2008, Tesla delivered the first Roadster, proving that electric cars could be fast, desirable, and practical. But it was the 2012 Model S that truly changed everything. With its 300-mile range, stunning performance, and giant touchscreen, it showed the world that EVs were not compromises but improvements.</p>
+                    
+                    <p>Traditional manufacturers scrambled to respond. Nissan had already launched the Leaf in 2010, the first mass-market EV. BMW introduced the i3, Chevrolet the Bolt, and by 2020, virtually every manufacturer had committed to electrification. Countries announced bans on new internal combustion engine sales: Norway by 2025, UK by 2030, EU by 2035.</p>
+                    
+                    <p>Simultaneously, autonomous driving technology advanced at breathtaking pace. Tesla's Autopilot, GM's Super Cruise, and dozens of startups pushed toward self-driving cars. Waymo launched fully driverless taxi services in multiple cities. By 2026, Level 3 autonomy (conditional self-driving) is widely available, and Level 4 is in testing.</p>
+                    
+                    <p>The car has become a "smartphone on wheels," with over-the-air updates adding features long after purchase. Connectivity, AI, and sustainability define the new automotive age.</p>
+                    
+                    <div class="era-stats">
+                        <div class="stat">
+                            <span class="stat-number">10M+</span>
+                            <span class="stat-label">EVs Sold (2022)</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2035</span>
+                            <span class="stat-label">EU ICE Ban</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">Level 3</span>
+                            <span class="stat-label">Autonomous</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="overview-image reveal-right">
+                    <img src="images/eras/tesla-model-s-first.jpg" alt="Tesla Model S 2012" loading="lazy">
+                    <p class="image-caption">2012 Tesla Model S - The car that changed everything</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="era-timeline section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Recent History</span>
+                <h2>Key Events <span class="highlight">2010-2026</span></h2>
+            </div>
+            
+            <div class="timeline-vertical">
+                <div class="timeline-item">
+                    <div class="timeline-year">2010</div>
+                    <div class="timeline-content">
+                        <h3>Nissan Leaf Launched</h3>
+                        <p style="color: #000">The first mass-market electric vehicle from a major manufacturer. Over 500,000 sold by 2020, proving EV demand exists.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2012</div>
+                    <div class="timeline-content">
+                        <h3>Tesla Model S</h3>
+                        <p style="color: #000">Tesla launches the Model S with 265-mile range, 0-60 in 4.2 seconds, and the iconic 17-inch touchscreen. Wins Motor Trend Car of the Year.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2014</div>
+                    <div class="timeline-content">
+                        <h3>Autopilot Introduced</h3>
+                        <p style="color: #000">Tesla introduces Autopilot, bringing semi-autonomous driving to consumers. The beginning of the autonomy revolution.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2015</div>
+                    <div class="timeline-content">
+                        <h3>Dieselgate Scandal</h3>
+                        <p style="color: #000">Volkswagen admits to cheating on diesel emissions tests, accelerating the shift away from diesel and toward electrification.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2016</div>
+                    <div class="timeline-content">
+                        <h3>Chevrolet Bolt EV</h3>
+                        <p style="color: #000">Chevrolet launches the Bolt EV with 238-mile range at under $30,000 after incentives, the first affordable long-range EV.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2017</div>
+                    <div class="timeline-content">
+                        <h3>Tesla Model 3</h3>
+                        <p style="color: #000">Tesla launches the Model 3, bringing EVs to the mass market. Over 500,000 reservations demonstrate overwhelming demand.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2018</div>
+                    <div class="timeline-content">
+                        <h3>Waymo One Launches</h3>
+                        <p style="color: #000">Waymo launches the first commercial self-driving taxi service in Phoenix, Arizona - a historic milestone.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2019</div>
+                    <div class="timeline-content">
+                        <h3>Porsche Taycan</h3>
+                        <p style="color: #000">Porsche enters the EV market with the Taycan, proving that electric cars can have true sports car performance and handling.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2020</div>
+                    <div class="timeline-content">
+                        <h3>EV Sales Explode</h3>
+                        <p style="color: #000">Global EV sales reach 3 million despite pandemic. Tesla becomes most valuable automaker, surpassing Toyota.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2021</div>
+                    <div class="timeline-content">
+                        <h3>Ford F-150 Lightning</h3>
+                        <p style="color: #000">Ford reveals electric F-150, proving that even America's best-selling vehicle can go electric. Reservations exceed expectations.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2022</div>
+                    <div class="timeline-content">
+                        <h3>10 Million EVs Sold</h3>
+                        <p style="color: #000">Global EV sales surpass 10 million for the first time. EV market share reaches 14% globally, much higher in leading markets.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2023</div>
+                    <div class="timeline-content">
+                        <h3>Level 3 Approved</h3>
+                        <p style="color: #000">Mercedes-Benz becomes first manufacturer to receive international approval for Level 3 autonomous driving (conditionally self-driving).</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2024</div>
+                    <div class="timeline-content">
+                        <h3>Solid-State Batteries</h3>
+                        <p style="color: #000">First production vehicles with solid-state batteries announced, offering 500+ mile range and 10-minute charging.</p>
+                    </div> 
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2025</div>
+                    <div class="timeline-content">
+                        <h3>Norway 100% Electric</h3>
+                        <p style="color: #000">Norway becomes first country where 100% of new car sales are electric, achieving goal set 10 years earlier.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2026</div>
+                    <div class="timeline-content">
+                        <h3>Today</h3>
+                        <p style="color: #000">EVs represent over 25% of global new car sales. Autonomous driving is common. The transformation continues.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tesla Effect -->
+    <section id="tesla" class="tesla-section section-padding">
+        <div class="container">
+            <div class="tesla-grid">
+                <div class="tesla-content">
+                    <h2>The <span class="highlight">Tesla</span> Effect</h2>
+                    
+                    <p>No company has shaped the modern automotive landscape more than Tesla. Founded in 2003 by Martin Eberhard and Marc Tarpenning (Elon Musk joined as major investor and chairman in 2004), Tesla set out to prove that electric cars could be better than gasoline cars.</p>
+                    
+                    <p>The 2008 Roadster, based on the Lotus Elise chassis, showed EVs could be fast and fun. But the 2012 Model S was the real revolution - a ground-up electric luxury sedan with stunning design, incredible performance, and over-the-air updates that improved the car over time.</p>
+                    
+                    <p>Tesla's influence extends far beyond its own sales. It forced every major manufacturer to take EVs seriously. It built a global Supercharger network that solved range anxiety. It made autonomy and connectivity standard expectations. By 2020, Tesla became the world's most valuable automaker - a company that had never made a profit from selling cars until 2020.</p>
+                    
+                    <div class="tesla-models">
+                        <span class="model-tag">Roadster</span>
+                        <span class="model-tag">Model S</span>
+                        <span class="model-tag">Model X</span>
+                        <span class="model-tag">Model 3</span>
+                        <span class="model-tag">Model Y</span>
+                        <span class="model-tag">Cybertruck</span>
+                        <span class="model-tag">Semi</span>
+                        <span class="model-tag">Roadster 2.0</span>
+                    </div>
+                </div>
+                
+                <div class="tesla-image">
+                    <img src="images/tesla/tesla-models-collage.jpg" alt="Tesla lineup" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EV Revolution -->
+    <section id="ev-revolution" class="ev-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Electric Everywhere</span>
+                <h2>The <span class="highlight">EV Revolution</span></h2>
+                <p class="section-subtitle">Every manufacturer's electric future</p>
+            </div>
+            
+            <div class="ev-showcase">
+                <div class="ev-card">
+                    <img src="images/ev/volkswagen-id3.jpg" alt="Volkswagen ID.3">
+                    <h3>Volkswagen ID.3</h3>
+                    <p>The Beetle for the electric age</p>
+                </div>
+                
+                <div class="ev-card">
+                    <img src="images/ev/ford-mach-e.jpg" alt="Ford Mustang Mach-E">
+                    <h3>Ford Mustang Mach-E</h3>
+                    <p>Electric pony car</p>
+                </div>
+                
+                <div class="ev-card">
+                    <img src="images/ev/hyundai-ioniq5.jpg" alt="Hyundai Ioniq 5">
+                    <h3>Hyundai Ioniq 5</h3>
+                    <p>Retro-future design</p>
+                </div>
+                
+                <div class="ev-card">
+                    <img src="images/ev/porsche-taycan.jpg" alt="Porsche Taycan">
+                    <h3>Porsche Taycan</h3>
+                    <p>Electric sports car</p>
+                </div>
+                
+                <div class="ev-card">
+                    <img src="images/ev/mercedes-eqs.jpg" alt="Mercedes EQS">
+                    <h3>Mercedes EQS</h3>
+                    <p>Electric S-Class</p>
+                </div>
+                
+                <div class="ev-card">
+                    <img src="images/ev/bmw-i4.jpg" alt="BMW i4">
+                    <h3>BMW i4</h3>
+                    <p>Electric Gran Coupe</p>
+                </div>
+            </div>
+            
+            <div class="ev-stats-grid">
+                <div class="ev-stat-card">
+                    <i class="fas fa-battery-full"></i>
+                    <span class="stat-number">500+</span>
+                    <span>Miles Range</span>
+                </div>
+                <div class="ev-stat-card">
+                    <i class="fas fa-bolt"></i>
+                    <span class="stat-number">350kW</span>
+                    <span>Charging Speed</span>
+                </div>
+                <div class="ev-stat-card">
+                    <i class="fas fa-clock"></i>
+                    <span class="stat-number">10min</span>
+                    <span>0-80% Charge</span>
+                </div>
+                <div class="ev-stat-card">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span class="stat-number">1.9s</span>
+                    <span>0-60 mph</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Autonomous Revolution -->
+    <section id="autonomous" class="autonomous-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Self-Driving</span>
+                <h2>The <span class="highlight">Autonomous</span> Revolution</h2>
+                <p class="section-subtitle">From driver assistance to full autonomy</p>
+            </div>
+            
+            <div class="autonomy-levels">
+                <div class="level-card">
+                    <h4>Level 0</h4>
+                    <p>No Automation</p>
+                </div>
+                <div class="level-card">
+                    <h4>Level 1</h4>
+                    <p>Driver Assistance</p>
+                </div>
+                <div class="level-card">
+                    <h4>Level 2</h4>
+                    <p>Partial Automation</p>
+                </div>
+                <div class="level-card active">
+                    <h4>Level 3</h4>
+                    <p>Conditional Automation</p>
+                    <span class="level-status">Current</span>
+                </div>
+                <div class="level-card">
+                    <h4>Level 4</h4>
+                    <p>High Automation</p>
+                </div>
+                <div class="level-card">
+                    <h4>Level 5</h4>
+                    <p>Full Automation</p>
+                </div>
+            </div>
+            
+            <div class="autonomy-explanation">
+                <p><strong>Level 3 (Current):</strong> The car can drive itself under specific conditions (highway, good weather), but driver must be ready to take over. Mercedes-Benz Drive Pilot and Honda Sensing Elite are production examples.</p>
+                <p><strong>Level 4 (Testing):</strong> Fully self-driving in defined areas. Waymo and Cruise operate Level 4 robotaxis in several cities without safety drivers.</p>
+                <p><strong>Level 5 (Future):</strong> Complete autonomy anywhere, anytime. No steering wheel or pedals needed.</p>
+            </div>
+            
+            <div class="autonomy-players">
+                <h3>Key Players in Autonomy</h3>
+                <div class="players-grid">
+                    <span class="player">Waymo</span>
+                    <span class="player">Cruise</span>
+                    <span class="player">Tesla</span>
+                    <span class="player">Mobileye</span>
+                    <span class="player">Aurora</span>
+                    <span class="player">Argo AI</span>
+                    <span class="player">Zoox</span>
+                    <span class="player">NVIDIA</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Section -->
+    <section id="future" class="future-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Tomorrow</span>
+                <h2>The <span class="highlight">Future</span> of Mobility</h2>
+                <p class="section-subtitle">What's next for the automobile</p>
+            </div>
+            
+            <div class="future-grid">
+                <div class="future-card">
+                    <i class="fas fa-battery-full"></i>
+                    <h3>Solid-State Batteries</h3>
+                    <p>Higher energy density, faster charging, no fire risk. Expected to double range while halving weight by 2030.</p>
+                </div>
+                
+                <div class="future-card">
+                    <i class="fas fa-wireless"></i>
+                    <h3>Wireless Charging</h3>
+                    <p>Charge while parked or even while driving on specially equipped roads. No plugs needed.</p>
+                </div>
+                
+                <div class="future-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>Full Autonomy</h3>
+                    <p>Level 4 and eventually Level 5 autonomy will transform cars into mobile living spaces.</p>
+                </div>
+                
+                <div class="future-card">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <h3>Software-Defined</h3>
+                    <p>Cars will continuously improve through updates, with features purchased on demand.</p>
+                </div>
+                
+                <div class="future-card">
+                    <i class="fas fa-recycle"></i>
+                    <h3>Sustainable Materials</h3>
+                    <p>Vegan interiors, recycled materials, and fully recyclable vehicles becoming standard.</p>
+                </div>
+                
+                <div class="future-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Flying Cars</h3>
+                    <p>eVTOL vehicles are in testing. First flying cars expected by 2030.</p>
+                </div>
+            </div>
+            
+            <div class="future-quote">
+                <i class="fas fa-quote-left"></i>
+                <blockquote>"The internal combustion engine will go the way of the horse. It's not a question of if, but when."</blockquote>
+                <cite>- Elon Musk</cite>
+            </div>
+            
+            <div class="journey-end">
+                <h3>The Journey Continues...</h3>
+                <p>From Karl Benz's three-wheeled Motorwagen in 1886 to today's electric, autonomous vehicles - the automobile has transformed our world in ways its inventors could never have imagined. And the journey isn't over. The next 140 years will bring changes we can't yet envision.</p>
+                <a href="index.html" class="btn btn-primary">
+                    <i class="fas fa-home"></i> Return to Home
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day. Knowledge Management Project | MGMT3501.</p>
+                    <p class="knowledge-statement">Student: Sharif Muntasir Abdelwahab | ID: 242924833 | Date: 25/12/2025</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="brands.html">Brands</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>All Eras</h4>
+                    <ul>
+                        <li><a href="1886-1920.html">1886-1920: Birth</a></li>
+                        <li><a href="1920-1950.html">1920-1950: Golden Age</a></li>
+                        <li><a href="1950-1980.html">1950-1980: Muscle</a></li>
+                        <li><a href="1980-2010.html">1980-2010: Technology</a></li>
+                        <li><a href="2010-present.html">2010-Present: Electric</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Project Info</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                    <p><i class="fas fa-calendar"></i> Submission: 25/12/2025</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Knowledge Management Project | Signature: Sharif Muntasir Abdelwahab | Date: 25/12/2025</p>
+                <p class="declaration">I declare that all material in this assignment/project is my own work except where there is clear acknowledgement or reference to the work of others.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,1658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Car Brands Directory | 70+ Manufacturers from 15 Countries</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore the complete directory of 70+ automotive brands from 15 countries. Discover history, iconic models, and technical innovations of every major manufacturer.">
+    <meta name="keywords" content="car brands, automobile manufacturers, Toyota, Honda, BMW, Mercedes, Ferrari, automotive companies">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Complete Car Brands Directory - The Evolution of Cars">
+    <meta property="og:description" content="70+ automotive brands from 15 countries">
+    <meta property="og:image" content="images/brands/brands-header.jpg">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/brands.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation (same as index) -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <img src="images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="1886-1920.html">1886-1920: Birth of Automobile</a></li>
+                            <li><a href="1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="1950-1980.html">1950-1980: Muscle & Design</a></li>
+                            <li><a href="1980-2010.html">1980-2010: Technology Era</a></li>
+                            <li><a href="2010-present.html">2010-Present: Electric Future</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="brands.html" class="active">Brands</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <header class="brands-header">
+        <div class="container">
+            <h1>Complete <span class="highlight">Car Brands</span> Directory</h1>
+            <p>Explore the complete history of 70+ automotive brands from 15 countries. From pioneering classics to modern innovators, discover the stories behind the world's greatest manufacturers.</p>
+            
+            <!-- Quick Stats -->
+            <div class="brands-stats">
+                <div class="stat-card">
+                    <i class="fas fa-car"></i>
+                    <span class="stat-number">70+</span>
+                    <span class="stat-label">Brands</span>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-globe"></i>
+                    <span class="stat-number">15</span>
+                    <span class="stat-label">Countries</span>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span class="stat-number">1886</span>
+                    <span class="stat-label">First Founded</span>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-trophy"></i>
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Iconic Models</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Filter Section -->
+    <section class="brands-filter-section">
+        <div class="container">
+            <div class="filter-wrapper">
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">All Brands</button>
+                    <button class="filter-tab" data-filter="japanese">Japanese</button>
+                    <button class="filter-tab" data-filter="german">German</button>
+                    <button class="filter-tab" data-filter="american">American</button>
+                    <button class="filter-tab" data-filter="italian">Italian</button>
+                    <button class="filter-tab" data-filter="british">British</button>
+                    <button class="filter-tab" data-filter="french">French</button>
+                    <button class="filter-tab" data-filter="korean">Korean</button>
+                    <button class="filter-tab" data-filter="swedish">Swedish</button>
+                    <button class="filter-tab" data-filter="chinese">Chinese</button>
+                    <button class="filter-tab" data-filter="spanish">Spanish</button>
+                    <button class="filter-tab" data-filter="czech">Czech</button>
+                </div>
+                
+                <div class="filter-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="brandSearch" placeholder="Search brands (e.g., Toyota, BMW, Ferrari...)">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Japanese Brands -->
+    <section class="brands-section" id="japanese-brands">
+        <div class="container">
+            <h2 class="region-title"><i class="fas fa-flag"></i> Japanese Manufacturers</h2>
+            <div class="brands-grid">
+                <!-- Toyota -->
+                <div class="brand-card" data-country="japan">
+                    <div class="brand-logo">
+                        <img src="images/brands/japanese/toyota-logo.png" alt="Toyota Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Toyota</h3>
+                        <span class="founded">Founded: 1937</span>
+                        <p class="brand-desc">World's largest automaker, pioneer of hybrid technology with Prius. Known for reliability, innovation, and the Toyota Production System.</p>
+                        <div class="iconic-models">
+                            <span>Corolla</span>
+                            <span>Camry</span>
+                            <span>Land Cruiser</span>
+                            <span>Supra</span>
+                            <span>Prius</span>
+                        </div>
+                        <a href="brands/toyota.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Honda -->
+                <div class="brand-card" data-country="japan">
+                    <div class="brand-logo">
+                        <img src="images/brands/japanese/honda-logo.png" alt="Honda Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Honda</h3>
+                        <span class="founded">Founded: 1948</span>
+                        <p class="brand-desc">Engineering excellence, known for VTEC technology, motorcycles, and the legendary NSX supercar. World's largest engine manufacturer.</p>
+                        <div class="iconic-models">
+                            <span>Civic</span>
+                            <span>Accord</span>
+                            <span>NSX</span>
+                            <span>S2000</span>
+                            <span>CR-V</span>
+                        </div>
+                        <a href="brands/honda.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Nissan -->
+                <div class="brand-card" data-country="japan">
+                    <div class="brand-logo">
+                        <img src="images/brands/japanese/nissan-logo.png" alt="Nissan Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Nissan</h3>
+                        <span class="founded">Founded: 1933</span>
+                        <p class="brand-desc">Makers of the iconic GT-R, pioneers of electric vehicles with Leaf. Strong motorsport heritage and innovative design.</p>
+                        <div class="iconic-models">
+                            <span>GT-R</span>
+                            <span>Fairlady Z</span>
+                            <span>Skyline</span>
+                            <span>Patrol</span>
+                            <span>Leaf</span>
+                        </div>
+                        <a href="brands/nissan.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Mazda -->
+                <div class="brand-card" data-country="japan">
+                    <div class="brand-logo">
+                        <img src="images/brands/japanese/mazda-logo.png" alt="Mazda Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Mazda</h3>
+                        <span class="founded">Founded: 1920</span>
+                        <p class="brand-desc">Famous for rotary engines and the MX-5 Miata, the best-selling sports car of all time. Kodo design language.</p>
+                        <div class="iconic-models">
+                            <span>MX-5 Miata</span>
+                            <span>RX-7</span>
+                            <span>RX-8</span>
+                            <span>Mazda3</span>
+                            <span>CX-5</span>
+                        </div>
+                        <a href="brands/mazda.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Subaru -->
+                <div class="brand-card" data-country="japan">
+                    <div class="brand-logo">
+                        <img src="images/brands/japanese/subaru-logo.png" alt="Subaru Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Subaru</h3>
+                        <span class="founded">Founded: 1953</span>
+                        <p class="brand-desc">Symmetrical AWD and boxer engines. Rally legend with Impreza WRX and off-road capability.</p>
+                        <div class="iconic-models">
+                            <span>Impreza WRX</span>
+                            <span>Forester</span>
+                            <span>Outback</span>
+                            <span>BRZ</span>
+                            <span>Legacy</span>
+                        </div>
+                        <a href="brands/subaru.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Mitsubishi -->
+                <div class="brand-card" data-country="japan">
+                    <div class="brand-logo">
+                        <img src="images/brands/japanese/mitsubishi-logo.png" alt="Mitsubishi Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Mitsubishi</h3>
+                        <span class="founded">Founded: 1970</span>
+                        <p class="brand-desc">Rally champions with Lancer Evolution, Pajero off-road heritage, and innovative SUVs.</p>
+                        <div class="iconic-models">
+                            <span>Lancer Evo</span>
+                            <span>Pajero</span>
+                            <span>3000GT</span>
+                            <span>Outlander</span>
+                            <span>Starion</span>
+                        </div>
+                        <a href="brands/mitsubishi.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Suzuki -->
+                <div class="brand-card" data-country="japan">
+                    <div class="brand-logo">
+                        <img src="images/brands/japanese/suzuki-logo.png" alt="Suzuki Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Suzuki</h3>
+                        <span class="founded">Founded: 1909</span>
+                        <p class="brand-desc">Kei car specialists, off-road legends with Jimny, and motorcycle manufacturing.</p>
+                        <div class="iconic-models">
+                            <span>Jimny</span>
+                            <span>Swift</span>
+                            <span>Vitara</span>
+                            <span>Samurai</span>
+                            <span>Alto</span>
+                        </div>
+                        <a href="brands/suzuki.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Lexus -->
+                <div class="brand-card" data-country="japan">
+                    <div class="brand-logo">
+                        <img src="images/brands/japanese/lexus-logo.png" alt="Lexus Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Lexus</h3>
+                        <span class="founded">Founded: 1989</span>
+                        <p class="brand-desc">Toyota's luxury division, known for refinement, hybrid technology, and the LFA supercar.</p>
+                        <div class="iconic-models">
+                            <span>LS 400</span>
+                            <span>LFA</span>
+                            <span>RX</span>
+                            <span>LC 500</span>
+                            <span>LX</span>
+                        </div>
+                        <a href="brands/lexus.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Acura -->
+                <div class="brand-card" data-country="japan">
+                    <div class="brand-logo">
+                        <img src="images/brands/japanese/acura-logo.png" alt="Acura Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Acura</h3>
+                        <span class="founded">Founded: 1986</span>
+                        <p class="brand-desc">Honda's luxury brand, first Japanese luxury marque. Known for NSX and SH-AWD technology.</p>
+                        <div class="iconic-models">
+                            <span>NSX</span>
+                            <span>Integra</span>
+                            <span>Legend</span>
+                            <span>MDX</span>
+                            <span>TLX</span>
+                        </div>
+                        <a href="brands/acura.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Infiniti -->
+                <div class="brand-card" data-country="japan">
+                    <div class="brand-logo">
+                        <img src="images/brands/japanese/infiniti-logo.png" alt="Infiniti Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Infiniti</h3>
+                        <span class="founded">Founded: 1989</span>
+                        <p class="brand-desc">Nissan's luxury division, known for design, V6 performance, and Q50 sports sedan.</p>
+                        <div class="iconic-models">
+                            <span>Q45</span>
+                            <span>G35</span>
+                            <span>FX</span>
+                            <span>Q50</span>
+                            <span>QX80</span>
+                        </div>
+                        <a href="brands/infiniti.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Daihatsu -->
+                <div class="brand-card" data-country="japan">
+                    <div class="brand-logo">
+                        <img src="images/brands/japanese/daihatsu-logo.png" alt="Daihatsu Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Daihatsu</h3>
+                        <span class="founded">Founded: 1907</span>
+                        <p class="brand-desc">Kei car and compact vehicle specialist, now subsidiary of Toyota.</p>
+                        <div class="iconic-models">
+                            <span>Mira</span>
+                            <span>Move</span>
+                            <span>Tanto</span>
+                            <span>Rocky</span>
+                            <span>Hijet</span>
+                        </div>
+                        <a href="brands/daihatsu.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Isuzu -->
+                <div class="brand-card" data-country="japan">
+                    <div class="brand-logo">
+                        <img src="images/brands/japanese/isuzu-logo.png" alt="Isuzu Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Isuzu</h3>
+                        <span class="founded">Founded: 1916</span>
+                        <p class="brand-desc">Diesel engine and commercial vehicle specialist, known for trucks and SUVs.</p>
+                        <div class="iconic-models">
+                            <span>Trooper</span>
+                            <span>D-Max</span>
+                            <span>Rodeo</span>
+                            <span>VehiCROSS</span>
+                            <span>MU-X</span>
+                        </div>
+                        <a href="brands/isuzu.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- German Brands -->
+    <section class="brands-section" id="german-brands">
+        <div class="container">
+            <h2 class="region-title"><i class="fas fa-flag"></i> German Manufacturers</h2>
+            <div class="brands-grid">
+                <!-- BMW -->
+                <div class="brand-card" data-country="germany">
+                    <div class="brand-logo">
+                        <img src="images/brands/german/bmw-logo.png" alt="BMW Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>BMW</h3>
+                        <span class="founded">Founded: 1916</span>
+                        <p class="brand-desc">Bayerische Motoren Werke, ultimate driving machines, inline-6 engines, and M performance division.</p>
+                        <div class="iconic-models">
+                            <span>3 Series</span>
+                            <span>M3</span>
+                            <span>5 Series</span>
+                            <span>7 Series</span>
+                            <span>X5</span>
+                        </div>
+                        <a href="brands/bmw.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Mercedes-Benz -->
+                <div class="brand-card" data-country="germany">
+                    <div class="brand-logo">
+                        <img src="images/brands/german/mercedes-logo.png" alt="Mercedes-Benz Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Mercedes-Benz</h3>
+                        <span class="founded">Founded: 1926</span>
+                        <p class="brand-desc">Inventors of the automobile, pioneers in safety, luxury, and the iconic 300SL Gullwing.</p>
+                        <div class="iconic-models">
+                            <span>300SL</span>
+                            <span>S-Class</span>
+                            <span>G-Wagen</span>
+                            <span>SLS</span>
+                            <span>E-Class</span>
+                        </div>
+                        <a href="brands/mercedes-benz.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Audi -->
+                <div class="brand-card" data-country="germany">
+                    <div class="brand-logo">
+                        <img src="images/brands/german/audi-logo.png" alt="Audi Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Audi</h3>
+                        <span class="founded">Founded: 1909</span>
+                        <p class="brand-desc">Quattro AWD pioneers, advanced technology, and motorsport success with rally and Le Mans.</p>
+                        <div class="iconic-models">
+                            <span>Quattro</span>
+                            <span>A4</span>
+                            <span>R8</span>
+                            <span>TT</span>
+                            <span>A8</span>
+                        </div>
+                        <a href="brands/audi.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Volkswagen -->
+                <div class="brand-card" data-country="germany">
+                    <div class="brand-logo">
+                        <img src="images/brands/german/volkswagen-logo.png" alt="Volkswagen Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Volkswagen</h3>
+                        <span class="founded">Founded: 1937</span>
+                        <p class="brand-desc">People's car, Beetle legend, Golf pioneer, and now electric revolution with ID series.</p>
+                        <div class="iconic-models">
+                            <span>Beetle</span>
+                            <span>Golf GTI</span>
+                            <span>Type 2 Bus</span>
+                            <span>Passat</span>
+                            <span>ID.3</span>
+                        </div>
+                        <a href="brands/volkswagen.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Porsche -->
+                <div class="brand-card" data-country="germany">
+                    <div class="brand-logo">
+                        <img src="images/brands/german/porsche-logo.png" alt="Porsche Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Porsche</h3>
+                        <span class="founded">Founded: 1931</span>
+                        <p class="brand-desc">Iconic 911, engineering perfection, motorsport dominance, and now the Taycan electric.</p>
+                        <div class="iconic-models">
+                            <span>911</span>
+                            <span>Cayenne</span>
+                            <span>Boxster</span>
+                            <span>918 Spyder</span>
+                            <span>Taycan</span>
+                        </div>
+                        <a href="brands/porsche.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Opel -->
+                <div class="brand-card" data-country="germany">
+                    <div class="brand-logo">
+                        <img src="images/brands/german/opel-logo.png" alt="Opel Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Opel</h3>
+                        <span class="founded">Founded: 1862</span>
+                        <p class="brand-desc">German manufacturer known for Kadett, Astra, and Manta. Now part of Stellantis.</p>
+                        <div class="iconic-models">
+                            <span>Kadett</span>
+                            <span>Astra</span>
+                            <span>Manta</span>
+                            <span>Corsa</span>
+                            <span>Insignia</span>
+                        </div>
+                        <a href="brands/opel.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Maybach -->
+                <div class="brand-card" data-country="germany">
+                    <div class="brand-logo">
+                        <img src="images/brands/german/maybach-logo.png" alt="Maybach Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Maybach</h3>
+                        <span class="founded">Founded: 1909</span>
+                        <p class="brand-desc">Ultra-luxury brand, now part of Mercedes-Benz, known for chauffeur-driven excellence.</p>
+                        <div class="iconic-models">
+                            <span>Maybach 57</span>
+                            <span>Maybach 62</span>
+                            <span>Maybach S-Class</span>
+                            <span>Maybach GLS</span>
+                        </div>
+                        <a href="brands/maybach.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Smart -->
+                <div class="brand-card" data-country="germany">
+                    <div class="brand-logo">
+                        <img src="images/brands/german/smart-logo.png" alt="Smart Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Smart</h3>
+                        <span class="founded">Founded: 1994</span>
+                        <p class="brand-desc">City car specialist, known for compact size, efficiency, and urban mobility.</p>
+                        <div class="iconic-models">
+                            <span>Fortwo</span>
+                            <span>Forfour</span>
+                            <span>Roadster</span>
+                            <span>EQ Fortwo</span>
+                        </div>
+                        <a href="brands/smart.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- MAN -->
+                <div class="brand-card" data-country="germany">
+                    <div class="brand-logo">
+                        <img src="images/brands/german/man-logo.png" alt="MAN Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>MAN</h3>
+                        <span class="founded">Founded: 1758</span>
+                        <p class="brand-desc">Commercial vehicle and truck manufacturer, also produces buses and engines.</p>
+                        <div class="iconic-models">
+                            <span>TGX</span>
+                            <span>TGS</span>
+                            <span>Lion's Bus</span>
+                            <span>Lion's Coach</span>
+                        </div>
+                        <a href="brands/man.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- American Brands -->
+    <section class="brands-section" id="american-brands">
+        <div class="container">
+            <h2 class="region-title"><i class="fas fa-flag-usa"></i> American Manufacturers</h2>
+            <div class="brands-grid">
+                <!-- Ford -->
+                <div class="brand-card" data-country="usa">
+                    <div class="brand-logo">
+                        <img src="images/brands/american/ford-logo.png" alt="Ford Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Ford</h3>
+                        <span class="founded">Founded: 1903</span>
+                        <p class="brand-desc">Assembly line revolution, Model T, Mustang, F-Series trucks, and American icon.</p>
+                        <div class="iconic-models">
+                            <span>Model T</span>
+                            <span>Mustang</span>
+                            <span>F-150</span>
+                            <span>GT40</span>
+                            <span>Thunderbird</span>
+                        </div>
+                        <a href="brands/ford.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Chevrolet -->
+                <div class="brand-card" data-country="usa">
+                    <div class="brand-logo">
+                        <img src="images/brands/american/chevrolet-logo.png" alt="Chevrolet Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Chevrolet</h3>
+                        <span class="founded">Founded: 1911</span>
+                        <p class="brand-desc">Heart of America, Corvette legend, Camaro muscle, and Silverado trucks.</p>
+                        <div class="iconic-models">
+                            <span>Corvette</span>
+                            <span>Camaro</span>
+                            <span>Bel Air</span>
+                            <span>Silverado</span>
+                            <span>Impala</span>
+                        </div>
+                        <a href="brands/chevrolet.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Dodge -->
+                <div class="brand-card" data-country="usa">
+                    <div class="brand-logo">
+                        <img src="images/brands/american/dodge-logo.png" alt="Dodge Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Dodge</h3>
+                        <span class="founded">Founded: 1900</span>
+                        <p class="brand-desc">Muscle car heritage, Challenger, Charger, Viper, and HEMI V8 power.</p>
+                        <div class="iconic-models">
+                            <span>Challenger</span>
+                            <span>Charger</span>
+                            <span>Viper</span>
+                            <span>Durango</span>
+                            <span>Ram</span>
+                        </div>
+                        <a href="brands/dodge.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Cadillac -->
+                <div class="brand-card" data-country="usa">
+                    <div class="brand-logo">
+                        <img src="images/brands/american/cadillac-logo.png" alt="Cadillac Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Cadillac</h3>
+                        <span class="founded">Founded: 1902</span>
+                        <p class="brand-desc">American luxury, fins, Eldorado, and modern performance with V series.</p>
+                        <div class="iconic-models">
+                            <span>Eldorado</span>
+                            <span>DeVille</span>
+                            <span>CTS-V</span>
+                            <span>Escalade</span>
+                            <span>Fleetwood</span>
+                        </div>
+                        <a href="brands/cadillac.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Tesla -->
+                <div class="brand-card" data-country="usa">
+                    <div class="brand-logo">
+                        <img src="images/brands/american/tesla-logo.png" alt="Tesla Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Tesla</h3>
+                        <span class="founded">Founded: 2003</span>
+                        <p class="brand-desc">Electric revolution, Autopilot, Model S, and sustainable energy focus.</p>
+                        <div class="iconic-models">
+                            <span>Roadster</span>
+                            <span>Model S</span>
+                            <span>Model 3</span>
+                            <span>Model X</span>
+                            <span>Cybertruck</span>
+                        </div>
+                        <a href="brands/tesla.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Jeep -->
+                <div class="brand-card" data-country="usa">
+                    <div class="brand-logo">
+                        <img src="images/brands/american/jeep-logo.png" alt="Jeep Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Jeep</h3>
+                        <span class="founded">Founded: 1941</span>
+                        <p class="brand-desc">Military heritage, Wrangler off-road legend, and 4x4 capability.</p>
+                        <div class="iconic-models">
+                            <span>Wrangler</span>
+                            <span>Cherokee</span>
+                            <span>Grand Cherokee</span>
+                            <span>Willys</span>
+                            <span>Gladiator</span>
+                        </div>
+                        <a href="brands/jeep.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Lincoln -->
+                <div class="brand-card" data-country="usa">
+                    <div class="brand-logo">
+                        <img src="images/brands/american/lincoln-logo.png" alt="Lincoln Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Lincoln</h3>
+                        <span class="founded">Founded: 1917</span>
+                        <p class="brand-desc">Presidential luxury, Continental icon, and American elegance.</p>
+                        <div class="iconic-models">
+                            <span>Continental</span>
+                            <span>Navigator</span>
+                            <span>Mark IV</span>
+                            <span>Zephyr</span>
+                            <span>Aviator</span>
+                        </div>
+                        <a href="brands/lincoln.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Buick -->
+                <div class="brand-card" data-country="usa">
+                    <div class="brand-logo">
+                        <img src="images/brands/american/buick-logo.png" alt="Buick Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Buick</h3>
+                        <span class="founded">Founded: 1899</span>
+                        <p class="brand-desc">Premium American brand, Riviera design icon, and Chinese market leader.</p>
+                        <div class="iconic-models">
+                            <span>Riviera</span>
+                            <span>Regal</span>
+                            <span>LeSabre</span>
+                            <span>Enclave</span>
+                            <span>Wildcat</span>
+                        </div>
+                        <a href="brands/buick.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Chrysler -->
+                <div class="brand-card" data-country="usa">
+                    <div class="brand-logo">
+                        <img src="images/brands/american/chrysler-logo.png" alt="Chrysler Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Chrysler</h3>
+                        <span class="founded">Founded: 1925</span>
+                        <p class="brand-desc">American innovation, minivan pioneer, and luxury sedans.</p>
+                        <div class="iconic-models">
+                            <span>300</span>
+                            <span>Pacifica</span>
+                            <span>Voyager</span>
+                            <span>Crossfire</span>
+                            <span>PT Cruiser</span>
+                        </div>
+                        <a href="brands/chrysler.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- GMC -->
+                <div class="brand-card" data-country="usa">
+                    <div class="brand-logo">
+                        <img src="images/brands/american/gmc-logo.png" alt="GMC Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>GMC</h3>
+                        <span class="founded">Founded: 1911</span>
+                        <p class="brand-desc">Professional grade trucks and SUVs, Sierra, Yukon, and Denali luxury.</p>
+                        <div class="iconic-models">
+                            <span>Sierra</span>
+                            <span>Yukon</span>
+                            <span>Acadia</span>
+                            <span>Canyon</span>
+                            <span>Terrain</span>
+                        </div>
+                        <a href="brands/gmc.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Ram -->
+                <div class="brand-card" data-country="usa">
+                    <div class="brand-logo">
+                        <img src="images/brands/american/ram-logo.png" alt="Ram Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Ram</h3>
+                        <span class="founded">Founded: 2010</span>
+                        <p class="brand-desc">Dodge's truck division, now separate brand, known for heavy-duty pickups.</p>
+                        <div class="iconic-models">
+                            <span>Ram 1500</span>
+                            <span>Ram 2500</span>
+                            <span>Ram 3500</span>
+                            <span>Ram ProMaster</span>
+                            <span>Ram TRX</span>
+                        </div>
+                        <a href="brands/ram.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Italian Brands -->
+    <section class="brands-section" id="italian-brands">
+        <div class="container">
+            <h2 class="region-title"><i class="fas fa-flag"></i> Italian Manufacturers</h2>
+            <div class="brands-grid">
+                <!-- Ferrari -->
+                <div class="brand-card" data-country="italy">
+                    <div class="brand-logo">
+                        <img src="images/brands/italian/ferrari-logo.png" alt="Ferrari Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Ferrari</h3>
+                        <span class="founded">Founded: 1939</span>
+                        <p class="brand-desc">Prancing Horse, F1 legends, 250 GTO, and automotive passion.</p>
+                        <div class="iconic-models">
+                            <span>250 GTO</span>
+                            <span>F40</span>
+                            <span>LaFerrari</span>
+                            <span>Testarossa</span>
+                            <span>Enzo</span>
+                        </div>
+                        <a href="brands/ferrari.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Lamborghini -->
+                <div class="brand-card" data-country="italy">
+                    <div class="brand-logo">
+                        <img src="images/brands/italian/lamborghini-logo.png" alt="Lamborghini Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Lamborghini</h3>
+                        <span class="founded">Founded: 1963</span>
+                        <p class="brand-desc">Raging bull, Miura, Countach, Aventador, and V12 madness.</p>
+                        <div class="iconic-models">
+                            <span>Miura</span>
+                            <span>Countach</span>
+                            <span>Diablo</span>
+                            <span>Aventador</span>
+                            <span>Urus</span>
+                        </div>
+                        <a href="brands/lamborghini.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Maserati -->
+                <div class="brand-card" data-country="italy">
+                    <div class="brand-logo">
+                        <img src="images/brands/italian/maserati-logo.png" alt="Maserati Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Maserati</h3>
+                        <span class="founded">Founded: 1914</span>
+                        <p class="brand-desc">Italian luxury and performance, V8 engines, and elegant design.</p>
+                        <div class="iconic-models">
+                            <span>Ghibli</span>
+                            <span>Quattroporte</span>
+                            <span>MC20</span>
+                            <span>GranTurismo</span>
+                            <span>Bora</span>
+                        </div>
+                        <a href="brands/maserati.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Alfa Romeo -->
+                <div class="brand-card" data-country="italy">
+                    <div class="brand-logo">
+                        <img src="images/brands/italian/alfa-romeo-logo.png" alt="Alfa Romeo Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Alfa Romeo</h3>
+                        <span class="founded">Founded: 1910</span>
+                        <p class="brand-desc">Italian passion, 33 Stradale, Giulia, and motorsport heritage.</p>
+                        <div class="iconic-models">
+                            <span>Giulia</span>
+                            <span>Spider</span>
+                            <span>33 Stradale</span>
+                            <span>8C</span>
+                            <span>Montreal</span>
+                        </div>
+                        <a href="brands/alfa-romeo.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Fiat -->
+                <div class="brand-card" data-country="italy">
+                    <div class="brand-logo">
+                        <img src="images/brands/italian/fiat-logo.png" alt="Fiat Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Fiat</h3>
+                        <span class="founded">Founded: 1899</span>
+                        <p class="brand-desc">Italian everyday cars, 500 icon, and Cinquecento charm.</p>
+                        <div class="iconic-models">
+                            <span>500</span>
+                            <span>Panda</span>
+                            <span>124 Spider</span>
+                            <span>Multipla</span>
+                            <span>Bravo</span>
+                        </div>
+                        <a href="brands/fiat.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Pagani -->
+                <div class="brand-card" data-country="italy">
+                    <div class="brand-logo">
+                        <img src="images/brands/italian/pagani-logo.png" alt="Pagani Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Pagani</h3>
+                        <span class="founded">Founded: 1992</span>
+                        <p class="brand-desc">Art in engineering, Zonda, Huayra, and carbon fiber mastery.</p>
+                        <div class="iconic-models">
+                            <span>Zonda</span>
+                            <span>Huayra</span>
+                            <span>Utopia</span>
+                            <span>Zonda R</span>
+                            <span>Huayra BC</span>
+                        </div>
+                        <a href="brands/pagani.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Lancia -->
+                <div class="brand-card" data-country="italy">
+                    <div class="brand-logo">
+                        <img src="images/brands/italian/lancia-logo.png" alt="Lancia Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Lancia</h3>
+                        <span class="founded">Founded: 1906</span>
+                        <p class="brand-desc">Rally legends, Stratos, Delta Integrale, and Italian innovation.</p>
+                        <div class="iconic-models">
+                            <span>Stratos</span>
+                            <span>Delta HF</span>
+                            <span>Aurelia</span>
+                            <span>Fulvia</span>
+                            <span>Thema</span>
+                        </div>
+                        <a href="brands/lancia.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Abarth -->
+                <div class="brand-card" data-country="italy">
+                    <div class="brand-logo">
+                        <img src="images/brands/italian/abarth-logo.png" alt="Abarth Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Abarth</h3>
+                        <span class="founded">Founded: 1949</span>
+                        <p class="brand-desc">Fiat's performance division, scorpion badge, and hot hatches.</p>
+                        <div class="iconic-models">
+                            <span>Abarth 500</span>
+                            <span>Abarth 595</span>
+                            <span>Abarth 124</span>
+                            <span>Abarth 695</span>
+                        </div>
+                        <a href="brands/abarth.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- British Brands -->
+    <section class="brands-section" id="british-brands">
+        <div class="container">
+            <h2 class="region-title"><i class="fas fa-flag"></i> British Manufacturers</h2>
+            <div class="brands-grid">
+                <!-- Jaguar -->
+                <div class="brand-card" data-country="uk">
+                    <div class="brand-logo">
+                        <img src="images/brands/british/jaguar-logo.png" alt="Jaguar Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Jaguar</h3>
+                        <span class="founded">Founded: 1922</span>
+                        <p class="brand-desc">E-Type beauty, leaping cat, British luxury and performance.</p>
+                        <div class="iconic-models">
+                            <span>E-Type</span>
+                            <span>XK120</span>
+                            <span>XJ</span>
+                            <span>F-Type</span>
+                            <span>XJ220</span>
+                        </div>
+                        <a href="brands/jaguar.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Land Rover -->
+                <div class="brand-card" data-country="uk">
+                    <div class="brand-logo">
+                        <img src="images/brands/british/land-rover-logo.png" alt="Land Rover Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Land Rover</h3>
+                        <span class="founded">Founded: 1948</span>
+                        <p class="brand-desc">Off-road royalty, Defender legend, and British capability.</p>
+                        <div class="iconic-models">
+                            <span>Defender</span>
+                            <span>Range Rover</span>
+                            <span>Discovery</span>
+                            <span>Series I</span>
+                            <span>Freelander</span>
+                        </div>
+                        <a href="brands/land-rover.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Aston Martin -->
+                <div class="brand-card" data-country="uk">
+                    <div class="brand-logo">
+                        <img src="images/brands/british/aston-martin-logo.png" alt="Aston Martin Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Aston Martin</h3>
+                        <span class="founded">Founded: 1913</span>
+                        <p class="brand-desc">James Bond's choice, DB5, V8 Vantage, and British elegance.</p>
+                        <div class="iconic-models">
+                            <span>DB5</span>
+                            <span>DB9</span>
+                            <span>Vantage</span>
+                            <span>Valkyrie</span>
+                            <span>One-77</span>
+                        </div>
+                        <a href="brands/aston-martin.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Bentley -->
+                <div class="brand-card" data-country="uk">
+                    <div class="brand-logo">
+                        <img src="images/brands/british/bentley-logo.png" alt="Bentley Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Bentley</h3>
+                        <span class="founded">Founded: 1919</span>
+                        <p class="brand-desc">British luxury, W12 power, Continental GT, and craftsmanship.</p>
+                        <div class="iconic-models">
+                            <span>Continental GT</span>
+                            <span>Mulsanne</span>
+                            <span>Bentayga</span>
+                            <span>Flying Spur</span>
+                            <span>Speed 8</span>
+                        </div>
+                        <a href="brands/bentley.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Rolls-Royce -->
+                <div class="brand-card" data-country="uk">
+                    <div class="brand-logo">
+                        <img src="images/brands/british/rolls-royce-logo.png" alt="Rolls-Royce Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Rolls-Royce</h3>
+                        <span class="founded">Founded: 1904</span>
+                        <p class="brand-desc">Ultimate luxury, Phantom, Ghost, and coachbuilding heritage.</p>
+                        <div class="iconic-models">
+                            <span>Phantom</span>
+                            <span>Ghost</span>
+                            <span>Silver Shadow</span>
+                            <span>Wraith</span>
+                            <span>Cullinan</span>
+                        </div>
+                        <a href="brands/rolls-royce.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- McLaren -->
+                <div class="brand-card" data-country="uk">
+                    <div class="brand-logo">
+                        <img src="images/brands/british/mclaren-logo.png" alt="McLaren Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>McLaren</h3>
+                        <span class="founded">Founded: 1963</span>
+                        <p class="brand-desc">F1 legends, F1 road car, P1 hybrid, and carbon fiber expertise.</p>
+                        <div class="iconic-models">
+                            <span>F1</span>
+                            <span>P1</span>
+                            <span>720S</span>
+                            <span>Senna</span>
+                            <span>Speedtail</span>
+                        </div>
+                        <a href="brands/mclaren.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Mini -->
+                <div class="brand-card" data-country="uk">
+                    <div class="brand-logo">
+                        <img src="images/brands/british/mini-logo.png" alt="Mini Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Mini</h3>
+                        <span class="founded">Founded: 1959</span>
+                        <p class="brand-desc">British icon, Cooper, city car revolution, and go-kart handling.</p>
+                        <div class="iconic-models">
+                            <span>Original Mini</span>
+                            <span>Cooper</span>
+                            <span>Countryman</span>
+                            <span>Clubman</span>
+                            <span>Electric</span>
+                        </div>
+                        <a href="brands/mini.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Lotus -->
+                <div class="brand-card" data-country="uk">
+                    <div class="brand-logo">
+                        <img src="images/brands/british/lotus-logo.png" alt="Lotus Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Lotus</h3>
+                        <span class="founded">Founded: 1948</span>
+                        <p class="brand-desc">Lightweight sports cars, Colin Chapman's philosophy, and F1 success.</p>
+                        <div class="iconic-models">
+                            <span>Elise</span>
+                            <span>Exige</span>
+                            <span>Esprit</span>
+                            <span>Evija</span>
+                            <span>Emira</span>
+                        </div>
+                        <a href="brands/lotus.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- MG -->
+                <div class="brand-card" data-country="uk">
+                    <div class="brand-logo">
+                        <img src="images/brands/british/mg-logo.png" alt="MG Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>MG</h3>
+                        <span class="founded">Founded: 1924</span>
+                        <p class="brand-desc">British sports car heritage, MGB, now owned by SAIC.</p>
+                        <div class="iconic-models">
+                            <span>MGB</span>
+                            <span>MG TF</span>
+                            <span>MG Metro</span>
+                            <span>MG ZS</span>
+                            <span>MG HS</span>
+                        </div>
+                        <a href="brands/mg.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- French Brands -->
+    <section class="brands-section" id="french-brands">
+        <div class="container">
+            <h2 class="region-title"><i class="fas fa-flag"></i> French Manufacturers</h2>
+            <div class="brands-grid">
+                <!-- Peugeot -->
+                <div class="brand-card" data-country="france">
+                    <div class="brand-logo">
+                        <img src="images/brands/french/peugeot-logo.png" alt="Peugeot Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Peugeot</h3>
+                        <span class="founded">Founded: 1810</span>
+                        <p class="brand-desc">French automotive pioneer, 205 GTI, Le Mans victories, and lion design.</p>
+                        <div class="iconic-models">
+                            <span>205 GTI</span>
+                            <span>504</span>
+                            <span>406</span>
+                            <span>308</span>
+                            <span>RCZ</span>
+                        </div>
+                        <a href="brands/peugeot.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Renault -->
+                <div class="brand-card" data-country="france">
+                    <div class="brand-logo">
+                        <img src="images/brands/french/renault-logo.png" alt="Renault Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Renault</h3>
+                        <span class="founded">Founded: 1899</span>
+                        <p class="brand-desc">French innovation, Clio, Megane, Espace, and F1 championship.</p>
+                        <div class="iconic-models">
+                            <span>Clio</span>
+                            <span>Megane</span>
+                            <span>Espace</span>
+                            <span>R5 Turbo</span>
+                            <span>Alpine A110</span>
+                        </div>
+                        <a href="brands/renault.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Citroën -->
+                <div class="brand-card" data-country="france">
+                    <div class="brand-logo">
+                        <img src="images/brands/french/citroen-logo.png" alt="Citroën Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Citroën</h3>
+                        <span class="founded">Founded: 1919</span>
+                        <p class="brand-desc">Quirky design, DS icon, hydropneumatic suspension, and comfort.</p>
+                        <div class="iconic-models">
+                            <span>DS</span>
+                            <span>2CV</span>
+                            <span>CX</span>
+                            <span>SM</span>
+                            <span>C3</span>
+                        </div>
+                        <a href="brands/citroen.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Bugatti -->
+                <div class="brand-card" data-country="france">
+                    <div class="brand-logo">
+                        <img src="images/brands/french/bugatti-logo.png" alt="Bugatti Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Bugatti</h3>
+                        <span class="founded">Founded: 1909</span>
+                        <p class="brand-desc">Ultimate hypercars, Veyron, Chiron, and 300+ mph speed records.</p>
+                        <div class="iconic-models">
+                            <span>Veyron</span>
+                            <span>Chiron</span>
+                            <span>Divo</span>
+                            <span>Type 35</span>
+                            <span>La Voiture Noire</span>
+                        </div>
+                        <a href="brands/bugatti.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Alpine -->
+                <div class="brand-card" data-country="france">
+                    <div class="brand-logo">
+                        <img src="images/brands/french/alpine-logo.png" alt="Alpine Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Alpine</h3>
+                        <span class="founded">Founded: 1955</span>
+                        <p class="brand-desc">Lightweight sports cars, A110 Berlinette, and Renault revival.</p>
+                        <div class="iconic-models">
+                            <span>A110</span>
+                            <span>A310</span>
+                            <span>GTA</span>
+                            <span>A110-50</span>
+                            <span>Alpenglow</span>
+                        </div>
+                        <a href="brands/alpine.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- DS Automobiles -->
+                <div class="brand-card" data-country="france">
+                    <div class="brand-logo">
+                        <img src="images/brands/french/ds-logo.png" alt="DS Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>DS Automobiles</h3>
+                        <span class="founded">Founded: 2014</span>
+                        <p class="brand-desc">Citroën's luxury spin-off, inspired by the iconic DS.</p>
+                        <div class="iconic-models">
+                            <span>DS 3</span>
+                            <span>DS 4</span>
+                            <span>DS 7</span>
+                            <span>DS 9</span>
+                            <span>DS E-Tense</span>
+                        </div>
+                        <a href="brands/ds.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Korean Brands -->
+    <section class="brands-section" id="korean-brands">
+        <div class="container">
+            <h2 class="region-title"><i class="fas fa-flag"></i> Korean Manufacturers</h2>
+            <div class="brands-grid">
+                <!-- Hyundai -->
+                <div class="brand-card" data-country="korea">
+                    <div class="brand-logo">
+                        <img src="images/brands/korean/hyundai-logo.png" alt="Hyundai Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Hyundai</h3>
+                        <span class="founded">Founded: 1967</span>
+                        <p class="brand-desc">Korean automotive giant, quality improvement, N performance, and Ioniq electric.</p>
+                        <div class="iconic-models">
+                            <span>Sonata</span>
+                            <span>Elantra</span>
+                            <span>Tucson</span>
+                            <span>Santa Fe</span>
+                            <span>Ioniq 5</span>
+                        </div>
+                        <a href="brands/hyundai.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Kia -->
+                <div class="brand-card" data-country="korea">
+                    <div class="brand-logo">
+                        <img src="images/brands/korean/kia-logo.png" alt="Kia Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Kia</h3>
+                        <span class="founded">Founded: 1944</span>
+                        <p class="brand-desc">Design-led brand, Stinger GT, Telluride, and EV6 electric crossover.</p>
+                        <div class="iconic-models">
+                            <span>Stinger</span>
+                            <span>Sportage</span>
+                            <span>Sorento</span>
+                            <span>EV6</span>
+                            <span>Telluride</span>
+                        </div>
+                        <a href="brands/kia.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Genesis -->
+                <div class="brand-card" data-country="korea">
+                    <div class="brand-logo">
+                        <img src="images/brands/korean/genesis-logo.png" alt="Genesis Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Genesis</h3>
+                        <span class="founded">Founded: 2015</span>
+                        <p class="brand-desc">Hyundai's luxury division, G90 flagship, and athletic design.</p>
+                        <div class="iconic-models">
+                            <span>G90</span>
+                            <span>G80</span>
+                            <span>GV80</span>
+                            <span>GV70</span>
+                            <span>X Concept</span>
+                        </div>
+                        <a href="brands/genesis.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- SsangYong -->
+                <div class="brand-card" data-country="korea">
+                    <div class="brand-logo">
+                        <img src="images/brands/korean/ssangyong-logo.png" alt="SsangYong Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>SsangYong</h3>
+                        <span class="founded">Founded: 1954</span>
+                        <p class="brand-desc">SUV specialists, Korando, Rexton, and off-road capability.</p>
+                        <div class="iconic-models">
+                            <span>Korando</span>
+                            <span>Rexton</span>
+                            <span>Tivoli</span>
+                            <span>Musso</span>
+                            <span>Rodius</span>
+                        </div>
+                        <a href="brands/ssangyong.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Swedish Brands -->
+    <section class="brands-section" id="swedish-brands">
+        <div class="container">
+            <h2 class="region-title"><i class="fas fa-flag"></i> Swedish Manufacturers</h2>
+            <div class="brands-grid">
+                <!-- Volvo -->
+                <div class="brand-card" data-country="sweden">
+                    <div class="brand-logo">
+                        <img src="images/brands/swedish/volvo-logo.png" alt="Volvo Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Volvo</h3>
+                        <span class="founded">Founded: 1927</span>
+                        <p class="brand-desc">Safety pioneers, three-point seatbelt, P1800, and Scandinavian design.</p>
+                        <div class="iconic-models">
+                            <span>P1800</span>
+                            <span>240</span>
+                            <span>XC90</span>
+                            <span>Amazon</span>
+                            <span>S60</span>
+                        </div>
+                        <a href="brands/volvo.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Koenigsegg -->
+                <div class="brand-card" data-country="sweden">
+                    <div class="brand-logo">
+                        <img src="images/brands/swedish/koenigsegg-logo.png" alt="Koenigsegg Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Koenigsegg</h3>
+                        <span class="founded">Founded: 1994</span>
+                        <p class="brand-desc">Swedish hypercars, Agera, Jesko, and world record speeds.</p>
+                        <div class="iconic-models">
+                            <span>Agera RS</span>
+                            <span>Jesko</span>
+                            <span>Regera</span>
+                            <span>One:1</span>
+                            <span>Gemera</span>
+                        </div>
+                        <a href="brands/koenigsegg.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Polestar -->
+                <div class="brand-card" data-country="sweden">
+                    <div class="brand-logo">
+                        <img src="images/brands/swedish/polestar-logo.png" alt="Polestar Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Polestar</h3>
+                        <span class="founded">Founded: 2017</span>
+                        <p class="brand-desc">Volvo's electric performance brand, minimalist design, and sustainability.</p>
+                        <div class="iconic-models">
+                            <span>Polestar 1</span>
+                            <span>Polestar 2</span>
+                            <span>Polestar 3</span>
+                            <span>Polestar 4</span>
+                            <span>Polestar 5</span>
+                        </div>
+                        <a href="brands/polestar.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Saab -->
+                <div class="brand-card" data-country="sweden">
+                    <div class="brand-logo">
+                        <img src="images/brands/swedish/saab-logo.png" alt="Saab Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Saab</h3>
+                        <span class="founded">Founded: 1945</span>
+                        <p class="brand-desc">Aircraft heritage, turbo innovation, 900, and unique design.</p>
+                        <div class="iconic-models">
+                            <span>900</span>
+                            <span>9000</span>
+                            <span>9-3</span>
+                            <span>9-5</span>
+                            <span>Sonett</span>
+                        </div>
+                        <a href="brands/saab.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chinese Brands -->
+    <section class="brands-section" id="chinese-brands">
+        <div class="container">
+            <h2 class="region-title"><i class="fas fa-flag"></i> Chinese Manufacturers</h2>
+            <div class="brands-grid">
+                <!-- Geely -->
+                <div class="brand-card" data-country="china">
+                    <div class="brand-logo">
+                        <img src="images/brands/chinese/geely-logo.png" alt="Geely Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Geely</h3>
+                        <span class="founded">Founded: 1986</span>
+                        <p class="brand-desc">Owner of Volvo, Lotus, and Polestar. Rapidly growing global player.</p>
+                        <div class="iconic-models">
+                            <span>Geely Emgrand</span>
+                            <span>Geometry A</span>
+                            <span>Zeekr 001</span>
+                            <span>Lynk & Co 01</span>
+                        </div>
+                        <a href="brands/geely.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- BYD -->
+                <div class="brand-card" data-country="china">
+                    <div class="brand-logo">
+                        <img src="images/brands/chinese/byd-logo.png" alt="BYD Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>BYD</h3>
+                        <span class="founded">Founded: 2003</span>
+                        <p class="brand-desc">Build Your Dreams, world leader in electric vehicles and batteries.</p>
+                        <div class="iconic-models">
+                            <span>BYD Han</span>
+                            <span>BYD Tang</span>
+                            <span>BYD Atto 3</span>
+                            <span>BYD Dolphin</span>
+                            <span>BYD Seal</span>
+                        </div>
+                        <a href="brands/byd.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- NIO -->
+                <div class="brand-card" data-country="china">
+                    <div class="brand-logo">
+                        <img src="images/brands/chinese/nio-logo.png" alt="NIO Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>NIO</h3>
+                        <span class="founded">Founded: 2014</span>
+                        <p class="brand-desc">Premium electric vehicles, battery swap technology, and EP9 supercar.</p>
+                        <div class="iconic-models">
+                            <span>NIO ES8</span>
+                            <span>NIO ES6</span>
+                            <span>NIO ET7</span>
+                            <span>NIO EP9</span>
+                            <span>NIO ET5</span>
+                        </div>
+                        <a href="brands/nio.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Xpeng -->
+                <div class="brand-card" data-country="china">
+                    <div class="brand-logo">
+                        <img src="images/brands/chinese/xpeng-logo.png" alt="Xpeng Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Xpeng</h3>
+                        <span class="founded">Founded: 2014</span>
+                        <p class="brand-desc">Smart electric vehicles with advanced autonomous driving tech.</p>
+                        <div class="iconic-models">
+                            <span>Xpeng G3</span>
+                            <span>Xpeng P7</span>
+                            <span>Xpeng P5</span>
+                            <span>Xpeng G9</span>
+                        </div>
+                        <a href="brands/xpeng.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Li Auto -->
+                <div class="brand-card" data-country="china">
+                    <div class="brand-logo">
+                        <img src="images/brands/chinese/li-auto-logo.png" alt="Li Auto Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Li Auto</h3>
+                        <span class="founded">Founded: 2015</span>
+                        <p class="brand-desc">Range-extender electric SUVs focused on family market.</p>
+                        <div class="iconic-models">
+                            <span>Li L9</span>
+                            <span>Li L8</span>
+                            <span>Li L7</span>
+                            <span>Li One</span>
+                        </div>
+                        <a href="brands/li-auto.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+
+                <!-- Great Wall -->
+                <div class="brand-card" data-country="china">
+                    <div class="brand-logo">
+                        <img src="images/brands/chinese/great-wall-logo.png" alt="Great Wall Logo" loading="lazy">
+                    </div>
+                    <div class="brand-info">
+                        <h3>Great Wall</h3>
+                        <span class="founded">Founded: 1984</span>
+                        <p class="brand-desc">SUV and pickup specialist, owner of Haval, Ora, and Wey.</p>
+                        <div class="iconic-models">
+                            <span>Haval H6</span>
+                            <span>Great Wall Poer</span>
+                            <span>Ora Good Cat</span>
+                            <span>Wey Coffee 01</span>
+                        </div>
+                        <a href="brands/great-wall.html" class="btn-small">View History →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Load More Section -->
+    <section class="more-brands">
+        <div class="container text-center">
+            <h3>More Brands Coming Soon</h3>
+            <p>We're constantly expanding our knowledge base with more manufacturers including: <strong>Rimac, SSC, Hennessey, Spyker, Morgan, TVR, Caterham, Donkervoort, Wiesmann, Gumpert, De Tomaso, and more...</strong></p>
+        </div>
+    </section>
+
+    <!-- Footer (same as index) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="brands.html">Brands</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Brands by Region</h4>
+                    <ul>
+                        <li><a href="#japanese-brands">Japanese</a></li>
+                        <li><a href="#german-brands">German</a></li>
+                        <li><a href="#american-brands">American</a></li>
+                        <li><a href="#italian-brands">Italian</a></li>
+                        <li><a href="#british-brands">British</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                    <p><i class="fas fa-calendar"></i> Submission: 25/12/2025</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/brands-filter.js"></script>
+</body>
+</html>

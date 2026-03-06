@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Evolution of Cars | Complete Automotive History 1886-2026</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore the complete history of automobiles from 1886 to modern electric vehicles. Interactive timeline, 70+ iconic brands, classic cars, and future innovations.">
+    <meta name="keywords" content="car history, automobile evolution, vintage cars, classic cars, muscle cars, electric vehicles, autonomous cars, automotive timeline, car brands">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="The Evolution of Cars">
+    <meta property="og:description" content="Journey through 140 years of automotive innovation">
+    <meta property="og:image" content="images/hero/hero-bg.jpg">
+    <meta property="og:url" content="https://carevolution.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Evolution of Cars">
+    <meta name="twitter:description" content="Complete automotive history resource">
+    <meta name="twitter:image" content="images/hero/hero-bg.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
+    <link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#e63946">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <img src="images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="1886-1920.html"><i class="fas fa-car-side"></i> 1886-1920: Birth of Automobile</a></li>
+                            <li><a href="1920-1950.html"><i class="fas fa-crown"></i> 1920-1950: Golden Age</a></li>
+                            <li><a href="1950-1980.html"><i class="fas fa-horse"></i> 1950-1980: Muscle & Design</a></li>
+                            <li><a href="1980-2010.html"><i class="fas fa-microchip"></i> 1980-2010: Technology Era</a></li>
+                            <li><a href="2010-present.html"><i class="fas fa-bolt"></i> 2010-Present: Electric Future</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="mobile-menu-close" id="closeMenu" aria-label="Close menu">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu" aria-label="Open menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit" aria-label="Submit search"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch" aria-label="Close search"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Hero Section with Video Background -->
+    <header class="hero">
+        <div class="hero-video">
+            <video autoplay muted loop playsinline poster="images/hero/hero-poster.jpg">
+                <source src="assets/videos/hero-background.mp4" type="video/mp4">
+                <source src="assets/videos/hero-background.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+            <div class="overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text animate-text">
+                <span class="hero-subtitle">140+ Years of Innovation</span>
+                <h1 class="hero-title">The Evolution <br>of <span class="highlight">Automobiles</span></h1>
+                <p class="hero-description">From Karl Benz's Patent-Motorwagen to autonomous electric vehicles - discover how cars transformed our world and shaped modern civilization.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#timeline" class="btn btn-primary">
+                        <i class="fas fa-timeline"></i> Explore Timeline
+                    </a>
+                    <a href="#featured" class="btn btn-outline">
+                        <i class="fas fa-play"></i> Watch Story
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="1886">0</span>
+                    <span class="stat-label">First Car</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="70">0</span>
+                    <span class="stat-label">Iconic Brands</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="140">0</span>
+                    <span class="stat-label">Years Evolution</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Scroll to discover</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <!-- Featured Section: Iconic Cars Through Decades -->
+    <section class="featured-cars" id="featured">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Collection</span>
+                <h2 class="section-title">Iconic <span class="highlight">Through Decades</span></h2>
+                <p class="section-subtitle">Explore the vehicles that defined generations and changed automotive history forever. Each car tells a unique story of innovation, design, and cultural impact.</p>
+            </div>
+            
+            <div class="car-showcase">
+                <!-- 1886: First Car -->
+                <div class="car-card" data-era="1886">
+                    <div class="card-image">
+                        <img src="images/eras/1886-benz.jpg" alt="Benz Patent-Motorwagen 1886" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="year">1886</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Benz Patent-Motorwagen</h3>
+                        <p>The world's first automobile powered by an internal combustion engine. Three wheels, one cylinder, and the beginning of a revolution.</p>
+                        <a href="1886-1920.html" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- 1908: Model T -->
+                <div class="car-card" data-era="1908">
+                    <div class="card-image">
+                        <img src="images/eras/1908-model-t.jpg" alt="Ford Model T" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="year">1908</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Ford Model T</h3>
+                        <p>The car that revolutionized manufacturing and made automobiles accessible to the masses. 15 million units sold.</p>
+                        <a href="1920-1950.html" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- 1938: Beetle -->
+                <div class="car-card" data-era="1938">
+                    <div class="card-image">
+                        <img src="images/eras/1938-beetle.jpg" alt="Volkswagen Beetle" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="year">1938</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Volkswagen Beetle</h3>
+                        <p>The people's car that became a cultural icon. Over 21 million produced across seven decades.</p>
+                        <a href="1920-1950.html" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- 1964: Mustang -->
+                <div class="car-card" data-era="1964">
+                    <div class="card-image">
+                        <img src="images/eras/1964-mustang.jpg" alt="Ford Mustang" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="year">1964</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Ford Mustang</h3>
+                        <p>The original pony car that defined American muscle and created an entirely new segment.</p>
+                        <a href="1950-1980.html" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- 1966: Miura -->
+                <div class="car-card" data-era="1966">
+                    <div class="card-image">
+                        <img src="images/eras/1966-miura.jpg" alt="Lamborghini Miura" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="year">1966</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Lamborghini Miura</h3>
+                        <p>The world's first supercar, establishing the template for high-performance exotic cars.</p>
+                        <a href="1950-1980.html" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- 1980: Quattro -->
+                <div class="car-card" data-era="1980">
+                    <div class="card-image">
+                        <img src="images/eras/1980-quattro.jpg" alt="Audi Quattro" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="year">1980</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Audi Quattro</h3>
+                        <p>The car that revolutionized rallying and brought all-wheel drive to performance cars.</p>
+                        <a href="1980-2010.html" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- 1997: Prius -->
+                <div class="car-card" data-era="1997">
+                    <div class="card-image">
+                        <img src="images/eras/1997-prius.jpg" alt="Toyota Prius" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="year">1997</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Toyota Prius</h3>
+                        <p>The first mass-produced hybrid car, pioneering the path toward electrification.</p>
+                        <a href="1980-2010.html" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- 2008: Model S -->
+                <div class="car-card" data-era="2008">
+                    <div class="card-image">
+                        <img src="images/eras/2008-model-s.jpg" alt="Tesla Model S" loading="lazy">
+                        <div class="card-overlay">
+                            <span class="year">2012</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Tesla Model S</h3>
+                        <p>Redefined electric vehicles with range, performance, and technology that rivaled gasoline cars.</p>
+                        <a href="2010-present.html" class="card-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="gallery.html" class="btn btn-secondary">
+                    <i class="fas fa-images"></i> View Full Gallery
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Timeline Section -->
+    <section class="timeline-section" id="timeline">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Historical Journey</span>
+                <h2 class="section-title">The Complete <span class="highlight">Timeline</span></h2>
+                <p class="section-subtitle">Navigate through 140 years of automotive innovation, design evolution, and technological breakthroughs.</p>
+            </div>
+            
+            <div class="timeline-wrapper">
+                <div class="timeline-controls">
+                    <button class="timeline-btn prev" disabled aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+                    
+                    <div class="timeline-years">
+                        <span class="year-marker active" data-year="1886">1886</span>
+                        <span class="year-marker active" data-year="1908">1908</span>
+                        <span class="year-marker active" data-year="1920">1920</span>
+                        <span class="year-marker active" data-year="1938">1938</span>
+                        <span class="year-marker active" data-year="1950">1950</span>
+                        <span class="year-marker active" data-year="1964">1964</span>
+                        <span class="year-marker active" data-year="1980">1980</span>
+                        <span class="year-marker active" data-year="1997">1997</span>
+                        <span class="year-marker active" data-year="2010">2010</span>
+                        <span class="year-marker active" data-year="2024">2024</span>
+                    </div>
+                    
+                    <button class="timeline-btn next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                
+                <div class="timeline-container" id="timelineContainer">
+                    <!-- Timeline items will be loaded via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Showcase -->
+    <section class="brands-showcase">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Manufacturers</span>
+                <h2 class="section-title">Iconic <span class="highlight">Automotive Brands</span></h2>
+                <p class="section-subtitle">The visionaries, engineers, and companies that shaped the automotive world from 19th century to today.</p>
+            </div>
+            
+            <div class="brands-grid">
+                <!-- Japanese Brands -->
+                <div class="brand-item">
+                    <img src="images/brands/japanese/toyota-logo.png" alt="Toyota Logo" loading="lazy">
+                    <h4>Toyota</h4>
+                    <p>1937</p>
+                </div>
+                <div class="brand-item">
+                    <img src="images/brands/japanese/honda-logo.png" alt="Honda Logo" loading="lazy">
+                    <h4>Honda</h4>
+                    <p>1948</p>
+                </div>
+                <div class="brand-item">
+                    <img src="images/brands/japanese/nissan-logo.png" alt="Nissan Logo" loading="lazy">
+                    <h4>Nissan</h4>
+                    <p>1933</p>
+                </div>
+                
+                <!-- German Brands -->
+                <div class="brand-item">
+                    <img src="images/brands/german/bmw-logo.png" alt="BMW Logo" loading="lazy">
+                    <h4>BMW</h4>
+                    <p>1916</p>
+                </div>
+                <div class="brand-item">
+                    <img src="images/brands/german/mercedes-logo.png" alt="Mercedes-Benz Logo" loading="lazy">
+                    <h4>Mercedes-Benz</h4>
+                    <p>1926</p>
+                </div>
+                <div class="brand-item">
+                    <img src="images/brands/german/audi-logo.png" alt="Audi Logo" loading="lazy">
+                    <h4>Audi</h4>
+                    <p>1909</p>
+                </div>
+                
+                <!-- American Brands -->
+                <div class="brand-item">
+                    <img src="images/brands/american/ford-logo.png" alt="Ford Logo" loading="lazy">
+                    <h4>Ford</h4>
+                    <p>1903</p>
+                </div>
+                <div class="brand-item">
+                    <img src="images/brands/american/chevrolet-logo.png" alt="Chevrolet Logo" loading="lazy">
+                    <h4>Chevrolet</h4>
+                    <p>1911</p>
+                </div>
+                <div class="brand-item">
+                    <img src="images/brands/american/tesla-logo.png" alt="Tesla Logo" loading="lazy">
+                    <h4>Tesla</h4>
+                    <p>2003</p>
+                </div>
+                
+                <!-- Italian Brands -->
+                <div class="brand-item">
+                    <img src="images/brands/italian/ferrari-logo.png" alt="Ferrari Logo" loading="lazy">
+                    <h4>Ferrari</h4>
+                    <p>1939</p>
+                </div>
+                <div class="brand-item">
+                    <img src="images/brands/italian/lamborghini-logo.png" alt="Lamborghini Logo" loading="lazy">
+                    <h4>Lamborghini</h4>
+                    <p>1963</p>
+                </div>
+                <div class="brand-item">
+                    <img src="images/brands/italian/maserati-logo.png" alt="Maserati Logo" loading="lazy">
+                    <h4>Maserati</h4>
+                    <p>1914</p>
+                </div>
+                
+                <!-- British Brands -->
+                <div class="brand-item">
+                    <img src="images/brands/british/jaguar-logo.png" alt="Jaguar Logo" loading="lazy">
+                    <h4>Jaguar</h4>
+                    <p>1922</p>
+                </div>
+                <div class="brand-item">
+                    <img src="images/brands/british/land-rover-logo.png" alt="Land Rover Logo" loading="lazy">
+                    <h4>Land Rover</h4>
+                    <p>1948</p>
+                </div>
+                <div class="brand-item">
+                    <img src="images/brands/british/aston-martin-logo.png" alt="Aston Martin Logo" loading="lazy">
+                    <h4>Aston Martin</h4>
+                    <p>1913</p>
+                </div>
+                
+                <!-- Korean Brands -->
+                <div class="brand-item">
+                    <img src="images/brands/korean/hyundai-logo.png" alt="Hyundai Logo" loading="lazy">
+                    <h4>Hyundai</h4>
+                    <p>1967</p>
+                </div>
+                <div class="brand-item">
+                    <img src="images/brands/korean/kia-logo.png" alt="Kia Logo" loading="lazy">
+                    <h4>Kia</h4>
+                    <p>1944</p>
+                </div>
+                <div class="brand-item">
+                    <img src="images/brands/korean/genesis-logo.png" alt="Genesis Logo" loading="lazy">
+                    <h4>Genesis</h4>
+                    <p>2015</p>
+                </div>
+                
+                <!-- French Brands -->
+                <div class="brand-item">
+                    <img src="images/brands/french/peugeot-logo.png" alt="Peugeot Logo" loading="lazy">
+                    <h4>Peugeot</h4>
+                    <p>1810</p>
+                </div>
+                <div class="brand-item">
+                    <img src="images/brands/french/renault-logo.png" alt="Renault Logo" loading="lazy">
+                    <h4>Renault</h4>
+                    <p>1899</p>
+                </div>
+                <div class="brand-item">
+                    <img src="images/brands/french/citroen-logo.png" alt="Citroën Logo" loading="lazy">
+                    <h4>Citroën</h4>
+                    <p>1919</p>
+                </div>
+                
+                <!-- Swedish Brands -->
+                <div class="brand-item">
+                    <img src="images/brands/swedish/volvo-logo.png" alt="Volvo Logo" loading="lazy">
+                    <h4>Volvo</h4>
+                    <p>1927</p>
+                </div>
+                <div class="brand-item">
+                    <img src="images/brands/swedish/koenigsegg-logo.png" alt="Koenigsegg Logo" loading="lazy">
+                    <h4>Koenigsegg</h4>
+                    <p>1994</p>
+                </div>
+                <div class="brand-item">
+                    <img src="images/brands/swedish/polestar-logo.png" alt="Polestar Logo" loading="lazy">
+                    <h4>Polestar</h4>
+                    <p>2017</p>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="brands.html" class="btn btn-primary">
+                    <i class="fas fa-car"></i> View All 70+ Brands
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Preview -->
+    <section class="gallery-preview">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Visual Journey</span>
+                <h2 class="section-title">Photo <span class="highlight">Gallery</span></h2>
+                <p class="section-subtitle">A stunning visual collection of automotive history through the decades - from horseless carriages to hypercars.</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/gallery/classic-cars/classic-1.jpg" alt="1920s Classic Car" loading="lazy">
+                    <div class="gallery-caption">
+                        <span>1920s Classic</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item large">
+                    <img src="images/gallery/muscle-cars/muscle-1.jpg" alt="1960s Muscle Car" loading="lazy">
+                    <div class="gallery-caption">
+                        <span>1960s Muscle</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/gallery/luxury-cars/luxury-1.jpg" alt="Modern Luxury" loading="lazy">
+                    <div class="gallery-caption">
+                        <span>Modern Luxury</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/gallery/supercars/super-1.jpg" alt="Supercar" loading="lazy">
+                    <div class="gallery-caption">
+                        <span>Hypercars</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/gallery/electric-cars/electric-1.jpg" alt="Electric Car" loading="lazy">
+                    <div class="gallery-caption">
+                        <span>Electric Future</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/gallery/concept-cars/concept-1.jpg" alt="Concept Car" loading="lazy">
+                    <div class="gallery-caption">
+                        <span>Concept Cars</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="gallery.html" class="btn btn-secondary">
+                    <i class="fas fa-images"></i> Explore Full Gallery
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Knowledge Quiz Section (for Knowledge Sharing) -->
+    <section class="quiz-section">
+        <div class="container">
+            <div class="quiz-container">
+                <div class="quiz-content">
+                    <span class="quiz-tag">Test Your Knowledge</span>
+                    <h2>How Well Do You Know Car History?</h2>
+                    <p>Challenge yourself with our interactive quiz and discover fascinating facts about automotive evolution. Perfect for enthusiasts and students alike.</p>
+                    
+                    <div class="quiz-stats">
+                        <div class="stat">
+                            <i class="fas fa-question-circle"></i>
+                            <span>20 Questions</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-clock"></i>
+                            <span>10 Minutes</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-trophy"></i>
+                            <span>Leaderboard</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-users"></i>
+                            <span>5,000+ Players</span>
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-buttons">
+                        <a href="quiz-main.html" class="btn btn-primary" id="startQuizBtn">
+                            <i class="fas fa-play"></i> Start Quiz Now
+                        </a>
+                        <a href="quiz-results.html" class="btn btn-outline">
+                            <i class="fas fa-chart-bar"></i> View Leaderboard
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="quiz-image">
+                    <img src="images/quiz-preview.jpg" alt="Car Quiz Preview" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Knowledge Management Section (Project Specific) -->
+    <section class="knowledge-section">
+        <div class="container">
+            <div class="knowledge-grid">
+                <div class="knowledge-card">
+                    <div class="knowledge-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Knowledge Discovery</h3>
+                    <p>Research from car museums, expert interviews, forums, and historical archives across 15 countries.</p>
+                    <ul class="knowledge-list">
+                        <li><i class="fas fa-check"></i> 50+ Expert Interviews</li>
+                        <li><i class="fas fa-check"></i> 100+ Archive Sources</li>
+                        <li><i class="fas fa-check"></i> Museum Collections</li>
+                    </ul>
+                </div>
+                
+                <div class="knowledge-card">
+                    <div class="knowledge-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Knowledge Capture</h3>
+                    <p>Documented articles, images, videos, and technical specifications organized in structured format.</p>
+                    <ul class="knowledge-list">
+                        <li><i class="fas fa-check"></i> 200+ Articles</li>
+                        <li><i class="fas fa-check"></i> 1,000+ Images</li>
+                        <li><i class="fas fa-check"></i> 50+ Video Documentaries</li>
+                    </ul>
+                </div>
+                
+                <div class="knowledge-card">
+                    <div class="knowledge-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3>Knowledge Sharing</h3>
+                    <p>Interactive platform allowing users to comment, share, discuss, and contribute their own car stories.</p>
+                    <ul class="knowledge-list">
+                        <li><i class="fas fa-check"></i> Community Forum</li>
+                        <li><i class="fas fa-check"></i> Social Integration</li>
+                        <li><i class="fas fa-check"></i> Newsletter</li>
+                    </ul>
+                </div>
+                
+                <div class="knowledge-card">
+                    <div class="knowledge-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Knowledge Application</h3>
+                    <p>Applied knowledge to create educational resources, comparison tools, and practical automotive guides.</p>
+                    <ul class="knowledge-list">
+                        <li><i class="fas fa-check"></i> Car Comparison Tool</li>
+                        <li><i class="fas fa-check"></i> Technical Guides</li>
+                        <li><i class="fas fa-check"></i> Buying Guides</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter & Community -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-wrapper">
+                <h2>Join Our <span class="highlight">Community</span></h2>
+                <p>Subscribe to receive weekly articles, rare photographs, restoration tips, and updates from the automotive world.</p>
+                
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="form-group">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </div>
+                    
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="privacy" checked>
+                        <label for="privacy">I agree to receive newsletters and accept the <a href="privacy-policy.html">privacy policy</a>.</label>
+                    </div>
+                </form>
+                
+                <div class="social-links">
+                    <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day. Created as part of Knowledge Management project (MGMT3501).</p>
+                    
+                    <p class="knowledge-statement">
+                        <i class="fas fa-quote-left"></i>
+                        This website applies Knowledge Management processes: Discovery, Capture, Sharing, and Application to preserve automotive heritage.
+                    </p>
+                    
+                    <div class="footer-badges">
+                        <span class="badge"><i class="fas fa-check-circle"></i> Educational Resource</span>
+                        <span class="badge"><i class="fas fa-check-circle"></i> 100+ Sources</span>
+                        <span class="badge"><i class="fas fa-check-circle"></i> Updated 2026</span>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="brands.html"><i class="fas fa-chevron-right"></i> Brands</a></li>
+                        <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Project</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        <li><a href="sitemap.html"><i class="fas fa-chevron-right"></i> Sitemap</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Eras</h4>
+                    <ul>
+                        <li><a href="1886-1920.html"><i class="fas fa-chevron-right"></i> 1886-1920: Birth</a></li>
+                        <li><a href="1920-1950.html"><i class="fas fa-chevron-right"></i> 1920-1950: Golden Age</a></li>
+                        <li><a href="1950-1980.html"><i class="fas fa-chevron-right"></i> 1950-1980: Muscle</a></li>
+                        <li><a href="1980-2010.html"><i class="fas fa-chevron-right"></i> 1980-2010: Technology</a></li>
+                        <li><a href="2010-present.html"><i class="fas fa-chevron-right"></i> 2010-Present: Electric</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir Abdelwahab</p>
+                    <p><i class="fas fa-id-card"></i> Student ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:s.muntasir@university.edu">s.muntasir@university.edu</a></p>
+                    <p><i class="fas fa-university"></i> MGMT3501 - Knowledge Management</p>
+                    <p><i class="fas fa-calendar"></i> Submission: 25/12/2025</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Designed for Knowledge Management Project | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-use.html">Terms of Use</a></p>
+                <p class="signature">I declare that all material in this assignment is my own work. Signature: Sharif Muntasir Abdelwahab | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/timeline.js"></script>
+    
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "The Evolution of Cars",
+        "url": "https://carevolution.com",
+        "description": "Complete automotive history resource from 1886 to present",
+        "author": {
+            "@type": "Person",
+            "name": "Sharif Muntasir Abdelwahab"
+        },
+        "about": {
+            "@type": "Thing",
+            "name": "Automotive History"
+        }
+    }
+    </script>
+</body>
+</html>

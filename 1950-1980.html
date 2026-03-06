@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1950-1980: Muscle Cars & Design Revolution | The Evolution of Cars</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore the muscle car era 1950-1980. From American V8 power to European sports cars, discover the age of performance, style, and cultural icons.">
+    <meta name="keywords" content="muscle cars, 1960s cars, Ford Mustang, Chevrolet Corvette, muscle car era, American muscle, European sports cars">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="1950-1980: Muscle Cars & Design Revolution">
+    <meta property="og:description" content="The era of V8 power, fins, and cultural icons">
+    <meta property="og:image" content="images/eras/1960-muscle-era.jpg">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <img src="images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle active">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="1886-1920.html">1886-1920: Birth of Automobile</a></li>
+                            <li><a href="1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="1950-1980.html" class="active">1950-1980: Muscle & Design</a></li>
+                            <li><a href="1980-2010.html">1980-2010: Technology Era</a></li>
+                            <li><a href="2010-present.html">2010-Present: Electric Future</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Era Hero -->
+    <header class="era-hero" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('images/eras/1960-muscle-era.jpg');">
+        <div class="container">
+            <div class="era-hero-content">
+                <span class="era-years">1950 - 1980</span>
+                <h1>Muscle & <span class="highlight">Design Revolution</span></h1>
+                <p class="era-tagline">The era of V8 power, tailfins, and cultural icons</p>
+                
+                <div class="era-quick-facts">
+                    <div class="fact">
+                        <i class="fas fa-calendar"></i>
+                        <span>30 Years</span>
+                    </div>
+                    <div class="fact">
+                        <i class="fas fa-horse"></i>
+                        <span>Muscle Cars</span>
+                    </div>
+                    <div class="fact">
+                        <i class="fas fa-plane"></i>
+                        <span>Tailfin Era</span>
+                    </div>
+                    <div class="fact">
+                        <i class="fas fa-gas-pump"></i>
+                        <span>Oil Crisis '73</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Era Navigation -->
+    <div class="era-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#overview" class="active">Overview</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#american">American Muscle</a></li>
+                <li><a href="#european">European Icons</a></li>
+                <li><a href="#design">Design Revolution</a></li>
+                <li><a href="#oilcrisis">Oil Crisis</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Overview Section -->
+    <section id="overview" class="era-overview section-padding">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-content reveal-left">
+                    <h2>The <span class="highlight">Golden Era</span> of Performance</h2>
+                    
+                    <p class="lead">The period from 1950 to 1980 represents the most exciting and transformative era in automotive history. It was an age of optimism, excess, and innovation - where cars became cultural icons and expressions of personal freedom.</p>
+                    
+                    <p>The 1950s exploded with chrome, color, and aviation-inspired design. American cars grew longer, lower, and wider each year, adorned with massive tailfins inspired by fighter jets. Harley Earl at General Motors pioneered the art of "planned obsolescence," introducing annual styling changes to encourage frequent trade-ins.</p>
+                    
+                    <p>The 1960s brought the muscle car revolution. In 1964, Ford introduced the Mustang, creating the "pony car" segment and selling over 400,000 units in its first year. Soon, every manufacturer had a muscle car: Chevrolet Camaro, Pontiac GTO, Dodge Charger, Plymouth Barracuda. These were affordable performance cars with massive V8 engines, appealing to a young, prosperous generation.</p>
+                    
+                    <p>Meanwhile, Europe took a different path. Brands like Ferrari, Lamborghini, Porsche, and Jaguar focused on sports cars and grand tourers - lighter, more agile, and often more exotic. The 1966 Lamborghini Miura established the mid-engine supercar template that continues today.</p>
+                    
+                    <p>The party ended in 1973 with the OPEC oil embargo. Fuel prices skyrocketed, insurance rates climbed, and emissions regulations strangled performance. The mighty V8s were choked with smog equipment, and by 1980, the muscle car was effectively dead - though its legend would live forever.</p>
+                    
+                    <div class="era-stats">
+                        <div class="stat">
+                            <span class="stat-number">400k</span>
+                            <span class="stat-label">Mustangs '64</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">426</span>
+                            <span class="stat-label">HEMI CI</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1973</span>
+                            <span class="stat-label">Oil Crisis</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="overview-image reveal-right">
+                    <img src="images/eras/1964-mustang-large.jpg" alt="1964 Ford Mustang" loading="lazy">
+                    <p class="image-caption">1964½ Ford Mustang - The original pony car</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="era-timeline section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Historical Timeline</span>
+                <h2>Key Events <span class="highlight">1950-1980</span></h2>
+            </div>
+            
+            <div class="timeline-vertical">
+                <div class="timeline-item">
+                    <div class="timeline-year">1953</div>
+                    <div class="timeline-content">
+                        <h3>Chevrolet Corvette</h3>
+                        <p style="color: #000">The first American sports car debuts with fiberglass body. Early models had modest performance, but it would become an American icon.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1955</div>
+                    <div class="timeline-content">
+                        <h3>Small-Block V8</h3>
+                        <p style="color: #000">Chevrolet introduces the legendary small-block V8, a compact, lightweight, and powerful engine that would power millions of vehicles for decades.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1957</div>
+                    <div class="timeline-content">
+                        <h3>Peak Tailfin Era</h3>
+                        <p style="color: #000">The 1957 Cadillac Eldorado Brougham features the tallest, most extravagant tailfins ever, epitomizing 1950s excess.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1959</div>
+                    <div class="timeline-content">
+                        <h3>Mini Cooper</h3>
+                        <p style="color: #000">Alec Issigonis designs the Mini, revolutionizing small car design with transverse engine and front-wheel drive. Becomes a 1960s icon.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1961</div>
+                    <div class="timeline-content">
+                        <h3>Jaguar E-Type</h3>
+                        <p style="color: #000">Jaguar unveils the E-Type. Enzo Ferrari calls it "the most beautiful car ever made." Its 150 mph performance costs half of comparable Ferraris.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1963</div>
+                    <div class="timeline-content">
+                        <h3>Porsche 911</h3>
+                        <p style="color: #000">Porsche introduces the 911, a car that would remain in continuous production for over 50 years, becoming the definitive sports car.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1964</div>
+                    <div class="timeline-content">
+                        <h3>Ford Mustang</h3>
+                        <p style="color: #000">The Ford Mustang launches at the New York World's Fair, creating the pony car segment and selling 22,000 units on the first day.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1964</div>
+                    <div class="timeline-content">
+                        <h3>Pontiac GTO</h3>
+                        <p style="color: #000">Considered the first true muscle car - a mid-size car with a big-block V8. The formula of "horsepower on a budget" is born.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1966</div>
+                    <div class="timeline-content">
+                        <h3>Lamborghini Miura</h3>
+                        <p style="color: #000">The Miura debuts, establishing the mid-engine layout for supercars. Its beautiful styling by Bertone sets new standards.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1966</div>
+                    <div class="timeline-content">
+                        <h3>Ford GT40</h3>
+                        <p style="color: #000">Ford GT40 wins Le Mans, beating Ferrari and fulfilling Henry Ford II's mission. It wins again in 1967, 1968, and 1969.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1970</div>
+                    <div class="timeline-content">
+                        <h3>Peak Muscle</h3>
+                        <p style="color: #000">1970 represents the peak of the muscle car era. The Plymouth Hemi Cuda, Chevy Chevelle SS, and Olds 442 offer massive horsepower before emissions strangle them.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1973</div>
+                    <div class="timeline-content">
+                        <h3>OPEC Oil Embargo</h3>
+                        <p style="color: #000">Arab oil embargo causes fuel shortages and skyrocketing prices. The era of cheap gas ends, and performance cars fall out of favor.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1974</div>
+                    <div class="timeline-content">
+                        <h3>55 MPH Speed Limit</h3>
+                        <p style="color: #000">US national speed limit reduced to 55 mph to conserve fuel. Muscle car sales collapse, and many models are discontinued.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1975</div>
+                    <div class="timeline-content">
+                        <h3>First Catalytic Converters</h3>
+                        <p style="color: #000">Catalytic converters become mandatory in the US, further reducing performance and increasing complexity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- American Muscle Section -->
+    <section id="american" class="muscle-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">American Power</span>
+                <h2>The <span class="highlight">Muscle Car</span> Era</h2>
+                <p class="section-subtitle">Big engines, straight lines, and American attitude</p>
+            </div>
+            
+            <div class="muscle-showcase">
+                <div class="muscle-featured">
+                    <img src="images/muscle/muscle-collage.jpg" alt="American Muscle Cars" loading="lazy">
+                </div>
+                
+                <div class="muscle-grid">
+                    <div class="muscle-card">
+                        <img src="images/muscle/ford-mustang-fastback.jpg" alt="Ford Mustang Fastback">
+                        <h3>Ford Mustang</h3>
+                        <p>1964-1973 | The original pony car</p>
+                    </div>
+                    
+                    <div class="muscle-card">
+                        <img src="images/muscle/chevrolet-camaro.jpg" alt="Chevrolet Camaro">
+                        <h3>Chevrolet Camaro</h3>
+                        <p>1967-1969 | Mustang fighter</p>
+                    </div>
+                    
+                    <div class="muscle-card">
+                        <img src="images/muscle/pontiac-gto.jpg" alt="Pontiac GTO">
+                        <h3>Pontiac GTO</h3>
+                        <p>1964-1974 | The first muscle car</p>
+                    </div>
+                    
+                    <div class="muscle-card">
+                        <img src="images/muscle/dodge-charger.jpg" alt="Dodge Charger">
+                        <h3>Dodge Charger</h3>
+                        <p>1968-1970 | The General Lee</p>
+                    </div>
+                    
+                    <div class="muscle-card">
+                        <img src="images/muscle/plymouth-hemi-cuda.jpg" alt="Plymouth Hemi Cuda">
+                        <h3>Plymouth Hemi Cuda</h3>
+                        <p>1970 | The ultimate muscle</p>
+                    </div>
+                    
+                    <div class="muscle-card">
+                        <img src="images/muscle/oldsmobile-442.jpg" alt="Oldsmobile 442">
+                        <h3>Oldsmobile 442</h3>
+                        <p>1964-1971 | Four-four-two</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="muscle-specs">
+                <h3>The Legendary Engines</h3>
+                <div class="specs-grid">
+                    <div class="spec-item">
+                        <h4>426 HEMI</h4>
+                        <p>425 hp | 490 lb-ft | Chrysler</p>
+                    </div>
+                    <div class="spec-item">
+                        <h4>454 LS6</h4>
+                        <p>450 hp | 500 lb-ft | Chevrolet</p>
+                    </div>
+                    <div class="spec-item">
+                        <h4>427 Cobra Jet</h4>
+                        <p>335 hp | 440 lb-ft | Ford</p>
+                    </div>
+                    <div class="spec-item">
+                        <h4>455 Super Duty</h4>
+                        <p>310 hp | 410 lb-ft | Pontiac</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- European Icons -->
+    <section id="european" class="european-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">European Excellence</span>
+                <h2>Sports Cars & <span class="highlight">Supercars</span></h2>
+                <p class="section-subtitle">Precision, handling, and exotic design</p>
+            </div>
+            
+            <div class="european-grid">
+                <div class="european-card">
+                    <img src="images/european/ferrari-250-gto.jpg" alt="Ferrari 250 GTO">
+                    <div class="european-info">
+                        <h3>Ferrari 250 GTO</h3>
+                        <p>1962-1964 | The most valuable car in the world</p>
+                        <p class="specs">3.0L V12 | 300 hp | 36 built</p>
+                    </div>
+                </div>
+                
+                <div class="european-card">
+                    <img src="images/european/lamborghini-miura.jpg" alt="Lamborghini Miura">
+                    <div class="european-info">
+                        <h3>Lamborghini Miura</h3>
+                        <p>1966-1973 | First supercar</p>
+                        <p class="specs">3.9L V12 | 350 hp | 170 mph</p>
+                    </div>
+                </div>
+                
+                <div class="european-card">
+                    <img src="images/european/porsche-911.jpg" alt="Porsche 911">
+                    <div class="european-info">
+                        <h3>Porsche 911</h3>
+                        <p>1963-present | Timeless icon</p>
+                        <p class="specs">2.0L flat-6 | 130 hp | 130 mph</p>
+                    </div>
+                </div>
+                
+                <div class="european-card">
+                    <img src="images/european/jaguar-e-type.jpg" alt="Jaguar E-Type">
+                    <div class="european-info">
+                        <h3>Jaguar E-Type</h3>
+                        <p>1961-1975 | Most beautiful car</p>
+                        <p class="specs">3.8L straight-6 | 265 hp | 150 mph</p>
+                    </div>
+                </div>
+                
+                <div class="european-card">
+                    <img src="images/european/maserati-ghibli.jpg" alt="Maserati Ghibli">
+                    <div class="european-info">
+                        <h3>Maserati Ghibli</h3>
+                        <p>1967-1973 | Italian elegance</p>
+                        <p class="specs">4.7L V8 | 330 hp | 155 mph</p>
+                    </div>
+                </div>
+                
+                <div class="european-card">
+                    <img src="images/european/alfa-romeo-33-stradale.jpg" alt="Alfa Romeo 33 Stradale">
+                    <div class="european-info">
+                        <h3>Alfa Romeo 33 Stradale</h3>
+                        <p>1967-1969 | Art on wheels</p>
+                        <p class="specs">2.0L V8 | 230 hp | 18 built</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="european-quote">
+                <i class="fas fa-quote-left"></i>
+                <blockquote>"The E-Type is the most beautiful car ever made."</blockquote>
+                <cite>- Enzo Ferrari</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Revolution -->
+    <section id="design" class="design-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Styling Revolution</span>
+                <h2>From <span class="highlight">Fins</span> to <span class="highlight">Wedges</span></h2>
+                <p class="section-subtitle">The dramatic evolution of automotive design</p>
+            </div>
+            
+            <div class="design-evolution">
+                <div class="design-era-card">
+                    <h3>1950s: The Jet Age</h3>
+                    <img src="images/design/1950s-cadillac.jpg" alt="1950s Cadillac">
+                    <p>Tailfins, chrome, and aircraft-inspired design. Cars celebrated American optimism and space-age dreams.</p>
+                </div>
+                
+                <div class="design-era-card">
+                    <h3>1960s: The Muscle Era</h3>
+                    <img src="images/design/1960s-mustang.jpg" alt="1960s Mustang">
+                    <p>Long hoods, short decks, and aggressive stance. Design followed function - to house big V8s.</p>
+                </div>
+                
+                <div class="design-era-card">
+                    <h3>1970s: The Wedge</h3>
+                    <img src="images/design/1970s-countach.jpg" alt="1970s Countach">
+                    <p>Angular, sharp, and futuristic. The Lamborghini Countach defined the wedge era.</p>
+                </div>
+            </div>
+            
+            <div class="designers">
+                <h3>Legendary Designers</h3>
+                <div class="designers-grid">
+                    <div class="designer">
+                        <h4>Harley Earl</h4>
+                        <p>GM | Tailfins, Corvette</p>
+                    </div>
+                    <div class="designer">
+                        <h4>Bill Mitchell</h4>
+                        <p>GM | Sting Ray, Corvette</p>
+                    </div>
+                    <div class="designer">
+                        <h4>Marcello Gandini</h4>
+                        <p>Bertone | Miura, Countach</p>
+                    </div>
+                    <div class="designer">
+                        <h4>Pininfarina</h4>
+                        <p>Ferrari | Many classics</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Oil Crisis Section -->
+    <section id="oilcrisis" class="oilcrisis-section section-padding bg-light">
+        <div class="container">
+            <div class="oilcrisis-grid">
+                <div class="oilcrisis-content">
+                    <h2>The <span class="highlight">Oil Crisis</span> of 1973</h2>
+                    
+                    <p>In October 1973, OPEC proclaimed an oil embargo against countries supporting Israel. The price of oil quadrupled, and gas stations ran out of fuel. Long lines, rationing, and panic buying became common across America and Europe.</p>
+                    
+                    <p>The impact on the auto industry was immediate and severe. Sales of large V8-powered cars collapsed. Manufacturers scrambled to produce smaller, more efficient vehicles. The mighty muscle cars, designed for cheap gas, were suddenly dinosaurs.</p>
+                    
+                    <p>By 1974, horsepower ratings had plummeted. The 425 hp Hemi of 1971 became a 250 hp shadow of itself by 1974. Catalytic converters, unleaded fuel, and emissions controls strangled performance. The party was over.</p>
+                    
+                    <p>The crisis had lasting effects: Japanese imports gained massive market share, fuel economy became a selling point, and government regulations would shape cars for decades to come.</p>
+                    
+                    <div class="oilcrisis-stats">
+                        <div class="stat">
+                            <span class="stat-number">400%</span>
+                            <span class="stat-label">Oil Price Increase</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">55</span>
+                            <span class="stat-label">MPH Speed Limit</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1975</span>
+                            <span class="stat-label">CAFE Standards</span>
+                        </div>
+                    </div>
+                    
+                    <a href="1980-2010.html" class="btn btn-primary">
+                        Continue to Technology Era <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="oilcrisis-image">
+                    <img src="images/eras/oil-crisis.jpg" alt="1973 Oil Crisis" loading="lazy">
+                    <p class="image-caption">Long lines at gas stations, 1973</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="brands.html">Brands</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Other Eras</h4>
+                    <ul>
+                        <li><a href="1886-1920.html">1886-1920: Birth</a></li>
+                        <li><a href="1920-1950.html">1920-1950: Golden Age</a></li>
+                        <li><a href="1980-2010.html">1980-2010: Technology</a></li>
+                        <li><a href="2010-present.html">2010-Present: Electric</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                    <p><i class="fas fa-calendar"></i> Submission: 25/12/2025</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

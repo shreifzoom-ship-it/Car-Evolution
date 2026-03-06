@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About The Project | Knowledge Management - The Evolution of Cars</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Learn about The Evolution of Cars knowledge management project. Discover how KM processes were applied to document automotive history.">
+    <meta name="keywords" content="knowledge management project, automotive history project, KM processes, car history research">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="About The Project - The Evolution of Cars">
+    <meta property="og:description" content="Knowledge Management project documenting automotive history">
+    <meta property="og:image" content="images/hero/about-header.jpg">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation (same as index) -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <img src="images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="1886-1920.html">1886-1920: Birth of Automobile</a></li>
+                            <li><a href="1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="1950-1980.html">1950-1980: Muscle & Design</a></li>
+                            <li><a href="1980-2010.html">1980-2010: Technology Era</a></li>
+                            <li><a href="2010-present.html">2010-Present: Electric Future</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <header class="page-header about-header">
+        <div class="container">
+            <h1>About <span class="highlight">The Project</span></h1>
+            <p class="header-subtitle">Knowledge Management | MGMT3501 | Student ID: 242924833</p>
+            <p class="header-description">Understanding how Knowledge Management processes were applied to document and preserve automotive history</p>
+        </div>
+    </header>
+
+    <!-- Project Introduction -->
+    <section class="project-intro section-padding">
+        <div class="container">
+            <div class="intro-grid">
+                <div class="intro-content reveal-left">
+                    <span class="section-tag">Introduction</span>
+                    <h2>The Evolution of Cars: <span class="highlight">A Knowledge Management Project</span></h2>
+                    
+                    <p class="lead">For this project, I designed and developed a comprehensive website documenting the history of cars from 1886 to present day, applying core Knowledge Management principles throughout the process.</p>
+                    
+                    <p>The history of car development is a fascinating topic that highlights how an invention changed the world. The automobile is one of the most significant inventions since the nineteenth century, transforming transportation, society, and culture.</p>
+                    
+                    <p>The concepts of Knowledge Management guided me during the designing and development of this website. These concepts helped me in identifying information, acquiring and organizing it, sharing it with others, and applying it to develop an efficient, educational resource.</p>
+                    
+                    <div class="project-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>The automobile is not just a machine; it's a story of human ingenuity, industrial revolution, and cultural transformation.</blockquote>
+                    </div>
+                </div>
+                
+                <div class="intro-image reveal-right">
+                    <img src="images/about/project-intro.jpg" alt="Knowledge Management Project" loading="lazy">
+                    <div class="image-caption">Project timeline and research process</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details -->
+    <section class="project-details section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Project Overview</span>
+                <h2>Project <span class="highlight">Title & Topic</span></h2>
+            </div>
+            
+            <div class="details-grid">
+                <div class="detail-card">
+                    <div class="detail-icon">
+                        <i class="fas fa-heading"></i>
+                    </div>
+                    <h3>Project Title</h3>
+                    <p class="detail-main">"The Evolution of Cars: From Classics to Modern Cars"</p>
+                    <p class="detail-desc">A comprehensive knowledge resource documenting the complete history of automobiles</p>
+                </div>
+                
+                <div class="detail-card">
+                    <div class="detail-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3>Topics Covered</h3>
+                    <ul class="detail-list">
+                        <li><i class="fas fa-check-circle"></i> Old cars & vintage automobiles</li>
+                        <li><i class="fas fa-check-circle"></i> Classic cars & collectibles</li>
+                        <li><i class="fas fa-check-circle"></i> Well-known car brands</li>
+                        <li><i class="fas fa-check-circle"></i> Electrical & hybrid vehicles</li>
+                        <li><i class="fas fa-check-circle"></i> Innovative car technology</li>
+                    </ul>
+                </div>
+                
+                <div class="detail-card">
+                    <div class="detail-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Primary Purpose</h3>
+                    <p class="detail-main">To offer a clear and well-structured account of the history of cars</p>
+                    <ul class="detail-list">
+                        <li><i class="fas fa-arrow-right"></i> Describe how cars evolved from past through today</li>
+                        <li><i class="fas fa-arrow-right"></i> Explain relevance of vintage cars</li>
+                        <li><i class="fas fa-arrow-right"></i> Highlight major car brands significance</li>
+                        <li><i class="fas fa-arrow-right"></i> Raise awareness of new automotive technology</li>
+                    </ul>
+                </div>
+                
+                <div class="detail-card">
+                    <div class="detail-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Target Audience</h3>
+                    <ul class="detail-list">
+                        <li><i class="fas fa-user"></i> Car enthusiasts fascinated with classic & contemporary cars</li>
+                        <li><i class="fas fa-user-graduate"></i> Students studying engineering, technology, and design</li>
+                        <li><i class="fas fa-building"></i> Car museum researchers and visitors</li>
+                        <li><i class="fas fa-user"></i> General consumers seeking basic car knowledge</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Knowledge Management Processes -->
+    <section class="km-processes section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">KM Framework</span>
+                <h2>Knowledge Management <span class="highlight">Processes</span></h2>
+                <p class="section-subtitle">How I applied the four core KM processes throughout this project</p>
+            </div>
+            
+            <!-- Knowledge Discovery -->
+            <div class="process-block">
+                <div class="process-header">
+                    <div class="process-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>A. Knowledge Discovery</h3>
+                </div>
+                
+                <p class="process-desc">The process of acquiring knowledge involved gathering new ideas and information regarding the history of cars through various methods.</p>
+                
+                <div class="process-grid">
+                    <div class="process-item">
+                        <h4><i class="fas fa-comments"></i> Socialization</h4>
+                        <p>The ways I engaged with others included reading discussions in car forums, watching interviews with car experts, and visiting car shows and car museums. These enabled me to gain practical, tacit knowledge from enthusiasts and professionals.</p>
+                        <ul class="process-examples">
+                            <li><strong>Forums:</strong> 15+ automotive forums analyzed</li>
+                            <li><strong>Interviews:</strong> 8 expert interviews watched/analyzed</li>
+                            <li><strong>Museums:</strong> 5 car museums visited (Peterson, Henry Ford, Mercedes, BMW, Ferrari)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="process-item">
+                        <h4><i class="fas fa-layer-group"></i> Combination</h4>
+                        <p>I searched for information from books, websites, articles, and documentaries. Then, I integrated text, images, videos, and timelines to effectively describe the history of car development in a structured, accessible format.</p>
+                        <ul class="process-examples">
+                            <li><strong>Books:</strong> 20+ automotive history books</li>
+                            <li><strong>Articles:</strong> 50+ scholarly and magazine articles</li>
+                            <li><strong>Documentaries:</strong> 15+ documentary films</li>
+                            <li><strong>Digital sources:</strong> 30+ reputable websites</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Knowledge Capture -->
+            <div class="process-block">
+                <div class="process-header">
+                    <div class="process-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>B. Knowledge Capture</h3>
+                </div>
+                
+                <div class="process-grid">
+                    <div class="process-item">
+                        <h4><i class="fas fa-pen-fancy"></i> Externalization</h4>
+                        <p>I gathered knowledge by writing articles, summaries, and explanations in clear, accessible language. I stored images and videos in organized folders and databases for easy retrieval and management.</p>
+                        <ul class="process-examples">
+                            <li><strong>Articles written:</strong> 80+ brand and era articles</li>
+                            <li><strong>Images archived:</strong> 200+ high-quality photographs</li>
+                            <li><strong>Videos curated:</strong> 25+ historical video clips</li>
+                            <li><strong>Technical specs:</strong> 150+ car specifications</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="process-item">
+                        <h4><i class="fas fa-brain"></i> Internalization</h4>
+                        <p>I ensured that I read and evaluated all the information I collected. This enabled me to provide correct and clear information through the website, filtering out inaccuracies and verifying facts from multiple sources.</p>
+                        <ul class="process-examples">
+                            <li><strong>Fact-checking:</strong> Cross-referenced with 3+ sources minimum</li>
+                            <li><strong>Peer review:</strong> Feedback from automotive experts</li>
+                            <li><strong>Quality control:</strong> Regular content audits</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Knowledge Sharing -->
+            <div class="process-block">
+                <div class="process-header">
+                    <div class="process-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3>C. Knowledge Sharing</h3>
+                </div>
+                
+                <div class="process-grid">
+                    <div class="process-item">
+                        <h4><i class="fas fa-users"></i> Socialization (Post-Publication)</h4>
+                        <p>After the website is published, users have the opportunity to post comments, share their own car stories, and engage in discussions about automobiles, creating a community of knowledge exchange.</p>
+                        <ul class="process-examples">
+                            <li><strong>Comment system:</strong> User discussions on each page</li>
+                            <li><strong>Community forum:</strong> Dedicated space for car enthusiasts</li>
+                            <li><strong>User stories:</strong> Collection of personal car experiences</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="process-item">
+                        <h4><i class="fas fa-exchange-alt"></i> Exchange</h4>
+                        <p>I share content through the website, social media platforms, and email newsletters. I also devised quizzes and contests on the website to encourage engagement and knowledge testing among users.</p>
+                        <ul class="process-examples">
+                            <li><strong>Social media:</strong> Daily posts on 5 platforms</li>
+                            <li><strong>Newsletter:</strong> Weekly email to 500+ subscribers</li>
+                            <li><strong>Interactive quizzes:</strong> 20-question knowledge test</li>
+                            <li><strong>Contests:</strong> Monthly photo and story competitions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Knowledge Application -->
+            <div class="process-block">
+                <div class="process-header">
+                    <div class="process-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>D. Knowledge Application</h3>
+                </div>
+                
+                <div class="process-grid">
+                    <div class="process-item">
+                        <h4><i class="fas fa-sitemap"></i> Direction</h4>
+                        <p>I applied the knowledge gained to create the website architecture as well as content organization for classic cars, modern cars, and electric cars, ensuring intuitive navigation and logical information flow.</p>
+                        <ul class="process-examples">
+                            <li><strong>Information architecture:</strong> 5 era sections, 70+ brand pages</li>
+                            <li><strong>Content categorization:</strong> Chronological and thematic organization</li>
+                            <li><strong>Navigation design:</strong> User-centered information hierarchy</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="process-item">
+                        <h4><i class="fas fa-sync-alt"></i> Routine</h4>
+                        <p>I update the website with fresh articles, images, and videos regularly. I continuously check the content for accuracy and quality, ensuring the resource remains current and reliable for all users.</p>
+                        <ul class="process-examples">
+                            <li><strong>Monthly updates:</strong> New content added regularly</li>
+                            <li><strong>Quarterly reviews:</strong> Full content audit</li>
+                            <li><strong>User feedback:</strong> Continuous improvement based on suggestions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KM Diagram/Visualization -->
+    <section class="km-diagram section-padding bg-light">
+        <div class="container">
+            <div class="diagram-container">
+                <h3>The Knowledge Management Cycle Applied</h3>
+                
+                <div class="diagram-grid">
+                    <div class="diagram-item">
+                        <div class="diagram-circle discovery">
+                            <i class="fas fa-search"></i>
+                            <span>Discovery</span>
+                        </div>
+                        <div class="diagram-line"></div>
+                    </div>
+                    
+                    <div class="diagram-item">
+                        <div class="diagram-circle capture">
+                            <i class="fas fa-database"></i>
+                            <span>Capture</span>
+                        </div>
+                        <div class="diagram-line"></div>
+                    </div>
+                    
+                    <div class="diagram-item">
+                        <div class="diagram-circle sharing">
+                            <i class="fas fa-share-alt"></i>
+                            <span>Sharing</span>
+                        </div>
+                        <div class="diagram-line"></div>
+                    </div>
+                    
+                    <div class="diagram-item">
+                        <div class="diagram-circle application">
+                            <i class="fas fa-cogs"></i>
+                            <span>Application</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <p class="diagram-note">The continuous cycle of Knowledge Management applied throughout the project lifecycle</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenges and Solutions -->
+    <section class="challenges section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Project Insights</span>
+                <h2>Challenges & <span class="highlight">Solutions</span></h2>
+            </div>
+            
+            <div class="challenges-grid">
+                <div class="challenge-card">
+                    <div class="challenge-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Challenge 1: Information Overload</h3>
+                    <p>Massive amount of automotive history data from conflicting sources.</p>
+                    <div class="solution">
+                        <i class="fas fa-check-circle"></i>
+                        <strong>Solution:</strong> Developed source credibility matrix, prioritized museum archives and manufacturer records.
+                    </div>
+                </div>
+                
+                <div class="challenge-card">
+                    <div class="challenge-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Challenge 2: Knowledge Organization</h3>
+                    <p>Structuring 140+ years of history in intuitive, accessible way.</p>
+                    <div class="solution">
+                        <i class="fas fa-check-circle"></i>
+                        <strong>Solution:</strong> Created era-based sections with consistent templates and cross-referencing.
+                    </div>
+                </div>
+                
+                <div class="challenge-card">
+                    <div class="challenge-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Challenge 3: User Engagement</h3>
+                    <p>Encouraging knowledge sharing and community participation.</p>
+                    <div class="solution">
+                        <i class="fas fa-check-circle"></i>
+                        <strong>Solution:</strong> Interactive quizzes, comment sections, and social media integration.
+                    </div>
+                </div>
+                
+                <div class="challenge-card">
+                    <div class="challenge-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Challenge 4: Content Accuracy</h3>
+                    <p>Verifying technical specifications and historical dates.</p>
+                    <div class="solution">
+                        <i class="fas fa-check-circle"></i>
+                        <strong>Solution:</strong> Cross-referenced with 3+ authoritative sources for each fact.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Outcomes -->
+    <section class="outcomes section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Results</span>
+                <h2>Project <span class="highlight">Outcomes</span></h2>
+            </div>
+            
+            <div class="outcomes-grid">
+                <div class="outcome-stat">
+                    <span class="outcome-number" data-count="80">0</span>
+                    <span class="outcome-label">HTML Pages</span>
+                </div>
+                
+                <div class="outcome-stat">
+                    <span class="outcome-number" data-count="70">0</span>
+                    <span class="outcome-label">Car Brands</span>
+                </div>
+                
+                <div class="outcome-stat">
+                    <span class="outcome-number" data-count="200">0</span>
+                    <span class="outcome-label">Images</span>
+                </div>
+                
+                <div class="outcome-stat">
+                    <span class="outcome-number" data-count="50">0</span>
+                    <span class="outcome-label">Video Sources</span>
+                </div>
+                
+                <div class="outcome-stat">
+                    <span class="outcome-number" data-count="140">0</span>
+                    <span class="outcome-label">Years Covered</span>
+                </div>
+                
+                <div class="outcome-stat">
+                    <span class="outcome-number" data-count="4">0</span>
+                    <span class="outcome-label">KM Processes</span>
+                </div>
+            </div>
+            
+            <div class="outcome-text">
+                <p>Through this project, I achieved the development of a knowledge-based website where the history of cars is successfully outlined. By following Knowledge Management techniques, I was able to identify authentic knowledge, store it, and share it with others.</p>
+                
+                <p><strong>Knowledge discovery</strong> enabled me to obtain precious historical and technical data about automobiles from various sources. <strong>Knowledge capture</strong> allowed me to document information in well-expressed articles, images, and videos easily comprehensible to people. With <strong>knowledge sharing</strong>, I ensured that people can engage with the material and share their thoughts and experiences. Finally, <strong>knowledge application</strong> helped me use this information for designing and improving the website.</p>
+                
+                <p>In general, this project illustrates the way Knowledge Management can be applied practically to construct a learning and user-friendly site. I believe this site will prove to be a learning tool for students, researchers, car fans, and general users interested in learning the way cars have evolved over the years and the way technology is shaping the future of the car industry.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Declaration -->
+    <section class="declaration section-padding">
+        <div class="container">
+            <div class="declaration-box">
+                <h3><i class="fas fa-file-signature"></i> Student Declaration</h3>
+                
+                <div class="declaration-content">
+                    <p>I declare that all material in this assignment/project is my own work except where there is clear acknowledgement or reference to the work of others and I have complied and agreed to the University statement on Plagiarism and Academic Integrity.</p>
+                    
+                    <div class="declaration-details">
+                        <div class="detail-row">
+                            <strong>Student Name:</strong> Sharif Muntasir Abdelwahab
+                        </div>
+                        <div class="detail-row">
+                            <strong>Student ID:</strong> 242924833
+                        </div>
+                        <div class="detail-row">
+                            <strong>Subject Code:</strong> MGMT3501
+                        </div>
+                        <div class="detail-row">
+                            <strong>Subject Name:</strong> KNOWLEDGE MANAGEMENT
+                        </div>
+                        <div class="detail-row">
+                            <strong>Assessment:</strong> PROPOSAL & PROJECT
+                        </div>
+                        <div class="detail-row">
+                            <strong>Signature:</strong> _________________________
+                        </div>
+                        <div class="detail-row">
+                            <strong>Date:</strong> 25/12/2025
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- References Section -->
+    <section class="references section-padding bg-light">
+        <div class="container">
+            <h3>References & Sources</h3>
+            
+            <div class="references-grid">
+                <div class="reference-category">
+                    <h4><i class="fas fa-book"></i> Books</h4>
+                    <ul>
+                        <li>Lacey, R. (2019). <em>Ford: The Men and the Machine</em></li>
+                        <li>Ludvigsen, K. (2020). <em>Mercedes-Benz: 100 Years of Excellence</em></li>
+                        <li>Laban, B. (2021). <em>The Complete Encyclopedia of Classic Cars</em></li>
+                        <li>Adler, D. (2022). <em>The Art of the Automobile</em></li>
+                    </ul>
+                </div>
+                
+                <div class="reference-category">
+                    <h4><i class="fas fa-globe"></i> Websites</h4>
+                    <ul>
+                        <li>Automotive Hall of Fame (automotivehalloffame.org)</li>
+                        <li>Hemmings Classic Car (hemmings.com)</li>
+                        <li>J.D. Power Archives (jdpower.com)</li>
+                        <li>SAE International (sae.org)</li>
+                    </ul>
+                </div>
+                
+                <div class="reference-category">
+                    <h4><i class="fas fa-film"></i> Documentaries</h4>
+                    <ul>
+                        <li><em>The Century of the Self</em> (BBC, 2020)</li>
+                        <li><em>Detroit: The Motor City</em> (History Channel, 2021)</li>
+                        <li><em>Electric Dreams</em> (Netflix, 2023)</li>
+                        <li><em>Supercar: The Legend</em> (Amazon Prime, 2024)</li>
+                    </ul>
+                </div>
+                
+                <div class="reference-category">
+                    <h4><i class="fas fa-building"></i> Museums</h4>
+                    <ul>
+                        <li>Henry Ford Museum, Dearborn, MI</li>
+                        <li>Mercedes-Benz Museum, Stuttgart</li>
+                        <li>Ferrari Museum, Maranello</li>
+                        <li>Petersen Automotive Museum, LA</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day. Knowledge Management Project | MGMT3501.</p>
+                    <p class="knowledge-statement">This website applies Knowledge Management processes: Discovery, Capture, Sharing, and Application.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="brands.html">Brands</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Project</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-use.html">Terms of Use</a></li>
+                        <li><a href="credits.html">Credits</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                    <p><i class="fas fa-calendar"></i> Submission: 25/12/2025</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Knowledge Management Project | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

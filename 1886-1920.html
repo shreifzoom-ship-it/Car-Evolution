@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1886-1920: Birth of the Automobile | The Evolution of Cars</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore the birth of the automobile era 1886-1920. From Karl Benz's Patent-Motorwagen to the Ford Model T, discover how the first cars changed the world.">
+    <meta name="keywords" content="birth of automobile, first car, Karl Benz, Ford Model T, early automobiles, horseless carriage">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="1886-1920: Birth of the Automobile Era">
+    <meta property="og:description" content="The dawn of the automotive age">
+    <meta property="og:image" content="images/eras/1886-benz.jpg">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">
+                    <img src="images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle active">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="1886-1920.html" class="active">1886-1920: Birth of Automobile</a></li>
+                            <li><a href="1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="1950-1980.html">1950-1980: Muscle & Design</a></li>
+                            <li><a href="1980-2010.html">1980-2010: Technology Era</a></li>
+                            <li><a href="2010-present.html">2010-Present: Electric Future</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Era Hero -->
+    <header class="era-hero" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('images/eras/1886-benz.jpg');">
+        <div class="container">
+            <div class="era-hero-content">
+                <span class="era-years">1886 - 1920</span>
+                <h1>Birth of the <span class="highlight">Automobile</span></h1>
+                <p class="era-tagline">From horseless carriages to the dawn of mass production</p>
+                
+                <div class="era-quick-facts">
+                    <div class="fact">
+                        <i class="fas fa-calendar"></i>
+                        <span>34 Years</span>
+                    </div>
+                    <div class="fact">
+                        <i class="fas fa-car"></i>
+                        <span>50+ Pioneering Models</span>
+                    </div>
+                    <div class="fact">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span>First Speed: 16 km/h</span>
+                    </div>
+                    <div class="fact">
+                        <i class="fas fa-cogs"></i>
+                        <span>Hand-built Era</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Era Navigation -->
+    <div class="era-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#overview" class="active">Overview</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#key-inventions">Key Inventions</a></li>
+                <li><a href="#pioneers">Pioneers</a></li>
+                <li><a href="#iconic-models">Iconic Models</a></li>
+                <li><a href="#legacy">Legacy</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Overview Section -->
+    <section id="overview" class="era-overview section-padding">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-content reveal-left">
+                    <h2>The Dawn of a <span class="highlight">Revolution</span></h2>
+                    
+                    <p class="lead">The period from 1886 to 1920 marks the birth and infancy of the automobile. What began as experimental horseless carriages evolved into the first practical vehicles that would eventually transform society.</p>
+                    
+                    <p>In 1886, Karl Benz patented the Benz Patent-Motorwagen, widely regarded as the world's first automobile powered by an internal combustion engine. This three-wheeled vehicle with a 0.75 horsepower engine could reach a maximum speed of 16 km/h - a revolutionary achievement for its time.</p>
+                    
+                    <p>The following decades saw rapid experimentation and innovation. Gottlieb Daimler and Wilhelm Maybach developed improved engines, while French manufacturers like Peugeot and Panhard established early automotive industries. By the 1890s, cars were being produced in small numbers across Europe and America.</p>
+                    
+                    <p>The true turning point came in 1908 when Henry Ford introduced the Model T and, perhaps more importantly, the moving assembly line in 1913. This innovation reduced assembly time from 12 hours to just 93 minutes, making cars affordable for the masses. The price of a Model T dropped from $850 in 1908 to $300 by the 1920s.</p>
+                    
+                    <div class="era-stats">
+                        <div class="stat">
+                            <span class="stat-number">1886</span>
+                            <span class="stat-label">First Car</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">15M</span>
+                            <span class="stat-label">Model T Sold</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">12h→93m</span>
+                            <span class="stat-label">Assembly Time</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="overview-image reveal-right">
+                    <img src="images/eras/1886-benz-large.jpg" alt="Benz Patent-Motorwagen 1886" loading="lazy">
+                    <p class="image-caption">1886 Benz Patent-Motorwagen - The world's first automobile</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="era-timeline section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Historical Timeline</span>
+                <h2>Key Events <span class="highlight">1886-1920</span></h2>
+            </div>
+            
+            <div class="timeline-vertical">
+                <div class="timeline-item">
+                    <div class="timeline-year">1886</div>
+                    <div class="timeline-content">
+                        <h3>Benz Patent-Motorwagen</h3>
+                        <p style="color: #000">Karl Benz patents the first gasoline-powered automobile in Mannheim, Germany. The three-wheeled vehicle features a 0.75 hp single-cylinder engine.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1888</div>
+                    <div class="timeline-content">
+                        <h3>Bertha Benz's Historic Drive</h3>
+                        <p style="color: #000">Bertha Benz undertakes the first long-distance automobile trip (106 km) to prove the car's practicality, driving from Mannheim to Pforzheim without permission.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1889</div>
+                    <div class="timeline-content">
+                        <h3>Daimler Steel-wheel Car</h3>
+                        <p style="color: #000">Gottlieb Daimler and Wilhelm Maybach build a more advanced four-wheeled car with a steel frame and 2-cylinder V-engine.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1891</div>
+                    <div class="timeline-content">
+                        <h3>First Front-Engine Design</h3>
+                        <p style="color: #000">Panhard et Levassor introduces the Système Panhard - front-engine, rear-wheel drive layout that becomes the standard for decades.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1893</div>
+                    <div class="timeline-content">
+                        <h3>First American Car</h3>
+                        <p style="color: #000">The Duryea brothers build the first successful American gasoline-powered car in Springfield, Massachusetts.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1895</div>
+                    <div class="timeline-content">
+                        <h3>First Automobile Race</h3>
+                        <p style="color: #000">The Paris-Bordeaux-Paris race, considered the first real automobile race, is won by Émile Levassor driving a Panhard at an average speed of 24 km/h.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1901</div>
+                    <div class="timeline-content">
+                        <h3>Mercedes 35 HP</h3>
+                        <p style="color: #000">Wilhelm Maybach designs the Mercedes 35 HP for Daimler, considered the first modern automobile with its low center of gravity, honeycomb radiator, and lightweight engine.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1903</div>
+                    <div class="timeline-content">
+                        <h3>Ford Motor Company Founded</h3>
+                        <p style="color: #000">Henry Ford establishes Ford Motor Company with $28,000 capital. The company produces its first car, the Model A, the same year.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1908</div>
+                    <div class="timeline-content">
+                        <h3>Ford Model T Introduced</h3>
+                        <p style="color: #000">The Ford Model T is launched, featuring left-side steering, a 20 hp engine, and planetary transmission. It becomes the best-selling car in history.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1913</div>
+                    <div class="timeline-content">
+                        <h3>Moving Assembly Line</h3>
+                        <p style="color: #000">Ford introduces the moving assembly line at Highland Park, reducing chassis assembly time from 12 hours to 93 minutes and revolutionizing manufacturing.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1914</div>
+                    <div class="timeline-content">
+                        <h3>Electric Starters Introduced</h3>
+                        <p style="color: #000">Cadillac introduces the first electric starter, eliminating the dangerous and difficult hand-cranking required to start engines.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1920</div>
+                    <div class="timeline-content">
+                        <h3>End of an Era</h3>
+                        <p style="color: #000">By 1920, automobiles have become common in developed countries. The US alone has over 8 million registered vehicles, and the industry continues to grow exponentially.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Inventions -->
+    <section id="key-inventions" class="key-inventions section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Innovations</span>
+                <h2>Revolutionary <span class="highlight">Inventions</span></h2>
+                <p class="section-subtitle">The technological breakthroughs that made automobiles practical</p>
+            </div>
+            
+            <div class="inventions-grid">
+                <div class="invention-card">
+                    <div class="invention-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Internal Combustion Engine</h3>
+                    <p class="invention-year">1886</p>
+                    <p>Karl Benz's single-cylinder four-stroke engine, based on Nikolaus Otto's design, provided the first practical power source for automobiles.</p>
+                </div>
+                
+                <div class="invention-card">
+                    <div class="invention-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Carburetor</h3>
+                    <p class="invention-year">1893</p>
+                    <p>Wilhelm Maybach develops the float-feed carburetor, allowing precise mixing of air and fuel for more efficient combustion.</p>
+                </div>
+                
+                <div class="invention-card">
+                    <div class="invention-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Pneumatic Tires</h3>
+                    <p class="invention-year">1895</p>
+                    <p>André and Édouard Michelin introduce pneumatic tires for automobiles, greatly improving ride comfort and handling.</p>
+                </div>
+                
+                <div class="invention-card">
+                    <div class="invention-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Steering Wheel</h3>
+                    <p class="invention-year">1894</p>
+                    <p>Alfred Vacheron replaces the tiller with a steering wheel in the Paris-Rouen rally, establishing the modern steering control.</p>
+                </div>
+                
+                <div class="invention-card">
+                    <div class="invention-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Electric Starter</h3>
+                    <p class="invention-year">1914</p>
+                    <p>Charles Kettering invents the electric starter for Cadillac, eliminating dangerous hand-cranking and making cars accessible to everyone.</p>
+                </div>
+                
+                <div class="invention-card">
+                    <div class="invention-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>Assembly Line</h3>
+                    <p class="invention-year">1913</p>
+                    <p>Henry Ford's moving assembly line reduces production time and cost, making automobiles affordable for the masses.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pioneers Section -->
+    <section id="pioneers" class="pioneers-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Visionaries</span>
+                <h2>The <span class="highlight">Pioneers</span></h2>
+                <p class="section-subtitle">The men and women who created the automobile industry</p>
+            </div>
+            
+            <div class="pioneers-grid">
+                <div class="pioneer-card">
+                    <img src="images/pioneers/karl-benz.jpg" alt="Karl Benz" loading="lazy">
+                    <h3>Karl Benz</h3>
+                    <p class="pioneer-years">1844-1929</p>
+                    <p>Inventor of the first practical automobile (1886). Founded Benz & Cie, which later merged with Daimler to form Mercedes-Benz.</p>
+                </div>
+                
+                <div class="pioneer-card">
+                    <img src="images/pioneers/gottlieb-daimler.jpg" alt="Gottlieb Daimler" loading="lazy">
+                    <h3>Gottlieb Daimler</h3>
+                    <p class="pioneer-years">1834-1900</p>
+                    <p>Developed high-speed engines and the first four-wheeled automobile. Co-founder of Daimler-Motoren-Gesellschaft.</p>
+                </div>
+                
+                <div class="pioneer-card">
+                    <img src="images/pioneers/wilhelm-maybach.jpg" alt="Wilhelm Maybach" loading="lazy">
+                    <h3>Wilhelm Maybach</h3>
+                    <p class="pioneer-years">1846-1929</p>
+                    <p>Designed the Mercedes 35 HP, the first modern car. Developed the float-feed carburetor and honeycomb radiator.</p>
+                </div>
+                
+                <div class="pioneer-card">
+                    <img src="images/pioneers/henry-ford.jpg" alt="Henry Ford" loading="lazy">
+                    <h3>Henry Ford</h3>
+                    <p class="pioneer-years">1863-1947</p>
+                    <p>Revolutionized manufacturing with the moving assembly line. Made automobiles affordable with the Model T.</p>
+                </div>
+                
+                <div class="pioneer-card">
+                    <img src="images/pioneers/bertha-benz.jpg" alt="Bertha Benz" loading="lazy">
+                    <h3>Bertha Benz</h3>
+                    <p class="pioneer-years">1849-1944</p>
+                    <p>First person to drive an automobile over a long distance, proving its practicality and generating worldwide publicity.</p>
+                </div>
+                
+                <div class="pioneer-card">
+                    <img src="images/pioneers/rance-olds.jpg" alt="Ransom E. Olds" loading="lazy">
+                    <h3>Ransom E. Olds</h3>
+                    <p class="pioneer-years">1864-1950</p>
+                    <p>Pioneered mass production techniques before Ford. Founder of Oldsmobile, the first high-volume gasoline car manufacturer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iconic Models -->
+    <section id="iconic-models" class="iconic-models-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Legendary Vehicles</span>
+                <h2>Iconic <span class="highlight">Models</span></h2>
+                <p class="section-subtitle">The cars that defined the birth era</p>
+            </div>
+            
+            <div class="models-showcase">
+                <div class="model-featured">
+                    <img src="images/eras/model-t-featured.jpg" alt="Ford Model T" loading="lazy">
+                    <div class="model-info">
+                        <h3>Ford Model T (1908-1927)</h3>
+                        <p>The car that put America on wheels. Over 15 million produced, the first affordable automobile for the masses. Known as "Tin Lizzie," it featured a 20 hp engine and top speed of 45 mph.</p>
+                        <ul class="model-specs">
+                            <li><i class="fas fa-cog"></i> 2.9L 4-cylinder</li>
+                            <li><i class="fas fa-tachometer-alt"></i> 45 mph top speed</li>
+                            <li><i class="fas fa-weight-hanging"></i> 1,200 lbs</li>
+                            <li><i class="fas fa-dollar-sign"></i> $850 → $300</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="models-grid">
+                    <div class="model-card">
+                        <img src="images/eras/benz-patent.jpg" alt="Benz Patent-Motorwagen">
+                        <h4>Benz Patent-Motorwagen</h4>
+                        <p>1886 | First automobile</p>
+                    </div>
+                    
+                    <div class="model-card">
+                        <img src="images/eras/daimler-mercedes.jpg" alt="Mercedes 35 HP">
+                        <h4>Mercedes 35 HP</h4>
+                        <p>1901 | First modern car</p>
+                    </div>
+                    
+                    <div class="model-card">
+                        <img src="images/eras/oldsmobile-curved-dash.jpg" alt="Oldsmobile Curved Dash">
+                        <h4>Oldsmobile Curved Dash</h4>
+                        <p>1901 | First mass-produced</p>
+                    </div>
+                    
+                    <div class="model-card">
+                        <img src="images/eras/rolls-royce-silver-ghost.jpg" alt="Rolls-Royce Silver Ghost">
+                        <h4>Rolls-Royce Silver Ghost</h4>
+                        <p>1907 | "Best car in the world"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legacy Section -->
+    <section id="legacy" class="legacy-section section-padding bg-light">
+        <div class="container">
+            <div class="legacy-grid">
+                <div class="legacy-content">
+                    <h2>Lasting <span class="highlight">Legacy</span></h2>
+                    
+                    <p>The birth era of the automobile laid the foundation for everything that followed. By 1920, the basic template of the automobile was established: front engine, rear drive, enclosed body, and electric starting. Manufacturing techniques pioneered during this period, particularly Ford's assembly line, transformed industry worldwide.</p>
+                    
+                    <p>Many of the brands founded during this era continue to this day: Mercedes-Benz, Ford, Renault, Fiat, Peugeot, and Rolls-Royce, among others. The innovations of the pioneers - Benz, Daimler, Maybach, Ford - remain fundamental to automotive design.</p>
+                    
+                    <p>Most importantly, this era transformed the automobile from a rich man's toy into a practical tool for the masses, setting the stage for the automotive century that would follow.</p>
+                    
+                    <a href="1920-1950.html" class="btn btn-primary">
+                        Continue to Golden Age <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="legacy-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-car"></i>
+                        <span class="stat-number">8M+</span>
+                        <span class="stat-label">US Cars by 1920</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-industry"></i>
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Manufacturers</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-road"></i>
+                        <span class="stat-number">387,000</span>
+                        <span class="stat-label">Miles of Roads</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="brands.html">Brands</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Other Eras</h4>
+                    <ul>
+                        <li><a href="1920-1950.html">1920-1950: Golden Age</a></li>
+                        <li><a href="1950-1980.html">1950-1980: Muscle & Design</a></li>
+                        <li><a href="1980-2010.html">1980-2010: Technology</a></li>
+                        <li><a href="2010-present.html">2010-Present: Electric</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                    <p><i class="fas fa-calendar"></i> Submission: 25/12/2025</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/timeline.js"></script>
+</body>
+</html>
