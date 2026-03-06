@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acura History | Complete Brand Profile & Iconic Models</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore Acura's complete history from 1986 to present. Discover iconic models like NSX, Integra, Legend, and how Honda's luxury brand changed the automotive world.">
+    <meta name="keywords" content="Acura history, Acura NSX, Acura Integra, Honda luxury, Japanese luxury cars, Acura Legend">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Acura History | Complete Brand Profile">
+    <meta property="og:description" content="The story of Honda's luxury division">
+    <meta property="og:image" content="../images/brands/japanese/acura-logo.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/brands.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../1886-1920.html">1886-1920: Birth</a></li>
+                            <li><a href="../1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="../1950-1980.html">1950-1980: Muscle</a></li>
+                            <li><a href="../1980-2010.html">1980-2010: Technology</a></li>
+                            <li><a href="../2010-present.html">2010-Present: Electric</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../brands.html">Brands</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Brand Hero -->
+    <header class="brand-hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../images/brands/japanese/acura-hero.jpg');">
+        <div class="container">
+            <div class="brand-hero-content">
+                <img src="../images/brands/japanese/acura-logo.png" alt="Acura Logo" class="brand-hero-logo">
+                <h1>Acura</h1>
+                <p class="brand-tagline">Precision Crafted Performance</p>
+                
+                <div class="brand-quick-facts">
+                    <span><i class="fas fa-calendar"></i> Founded: 1986</span>
+                    <span><i class="fas fa-globe"></i> Country: Japan</span>
+                    <span><i class="fas fa-trophy"></i> Icon: NSX</span>
+                    <span><i class="fas fa-crown"></i> First Japanese Luxury</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Navigation -->
+    <div class="brand-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#history" class="active">History</a></li>
+                <li><a href="#models">Iconic Models</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#motorsport">Motorsport</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- History Section -->
+    <section id="history" class="brand-section">
+        <div class="container">
+            <h2>Acura: <span class="highlight">The First Japanese Luxury Brand</span></h2>
+            
+            <div class="history-grid">
+                <div class="history-text">
+                    <p>In 1986, Honda made automotive history by launching Acura, the first Japanese luxury automotive brand. This bold move would fundamentally change the global luxury car market and force established European competitors to take notice.</p>
+                    
+                    <p>The timing was perfect. Japanese cars had earned a reputation for reliability and value, but luxury remained the domain of Mercedes, BMW, and Jaguar. Honda believed there was an opportunity for a brand that combined Japanese reliability with luxury features and performance.</p>
+                    
+                    <p>Acura launched with two models: the Integra and the Legend. The Integra was a sporty compact that appealed to younger buyers, while the Legend was a full-sized luxury sedan that competed directly with European offerings. Both were immediate successes, praised for their quality, refinement, and value.</p>
+                    
+                    <p>The 1991 NSX changed everything. The brainchild of Honda's F1 program and the legendary driver Ayrton Senna, the NSX was a mid-engine supercar that matched Ferrari and Porsche on performance while offering Honda reliability and everyday usability. It rewrote the supercar rulebook and remains one of the most significant cars ever built.</p>
+                    
+                    <p>Through the 1990s and 2000s, Acura expanded its lineup with SUVs like the MDX (which created the three-row luxury SUV segment) and performance models like the Type S variants. The brand's "Precision Crafted Performance" philosophy emphasized engaging driving dynamics, innovative technology, and meticulous attention to detail.</p>
+                    
+                    <p>Today, Acura continues to evolve with models like the TLX Type S and the second-generation NSX hybrid supercar. The brand remains committed to its founding principles: performance, precision, and premium value.</p>
+                </div>
+                
+                <div class="history-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar"></i>
+                        <span class="stat-number">1986</span>
+                        <span class="stat-label">Founded</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-car"></i>
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Models</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <span class="stat-number">1991</span>
+                        <span class="stat-label">NSX Launched</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-flag"></i>
+                        <span class="stat-number">1st</span>
+                        <span class="stat-label">Japanese Luxury</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iconic Models Section -->
+    <section id="models" class="brand-section bg-light">
+        <div class="container">
+            <h2>Iconic <span class="highlight">Models</span></h2>
+            
+            <div class="models-grid">
+                <!-- Acura NSX -->
+                <div class="model-card featured">
+                    <img src="../images/eras/acura-nsx.jpg" alt="Acura NSX">
+                    <div class="model-info">
+                        <h3>Acura NSX (1991-2005)</h3>
+                        <p class="model-years">1991-2005 | 2016-present</p>
+                        <p>The supercar that changed everything. Developed with input from Ayrton Senna, the NSX combined Ferrari performance with Honda reliability and everyday usability. The first aluminum-bodied production car, it rewrote the supercar rulebook.</p>
+                        <ul class="model-specs">
+                            <li><i class="fas fa-cog"></i> 3.0L V6 VTEC → 3.5L Twin-Turbo V6 Hybrid</li>
+                            <li><i class="fas fa-tachometer-alt"></i> 270 hp → 573 hp</li>
+                            <li><i class="fas fa-clock"></i> 0-60: 5.0s → 2.9s</li>
+                            <li><i class="fas fa-weight-hanging"></i> Aluminum monocoque</li>
+                        </ul>
+                        <p class="model-quote">"The NSX drives like a car that was developed by someone who understands what drivers want." - Ayrton Senna</p>
+                    </div>
+                </div>
+                
+                <!-- Acura Integra -->
+                <div class="model-card">
+                    <img src="../images/models/acura-integra.jpg" alt="Acura Integra">
+                    <h3>Acura Integra</h3>
+                    <p class="model-years">1986-2006 | 2023-present</p>
+                    <p>The sporty compact that defined a generation. The Integra, especially the Type R, became a cult classic for its perfect balance, high-revving VTEC engine, and affordable performance.</p>
+                </div>
+                
+                <!-- Acura Legend -->
+                <div class="model-card">
+                    <img src="../images/models/acura-legend.jpg" alt="Acura Legend">
+                    <h3>Acura Legend</h3>
+                    <p class="model-years">1986-1995</p>
+                    <p>The car that launched the brand. A full-size luxury sedan that competed with European offerings at a lower price, establishing Acura's reputation.</p>
+                </div>
+                
+                <!-- Acura MDX -->
+                <div class="model-card">
+                    <img src="../images/models/acura-mdx.jpg" alt="Acura MDX">
+                    <h3>Acura MDX</h3>
+                    <p class="model-years">2000-present</p>
+                    <p>The first three-row luxury SUV, creating a segment and becoming Acura's best-selling model. Combined practicality with sporty handling.</p>
+                </div>
+                
+                <!-- Acura TLX -->
+                <div class="model-card">
+                    <img src="../images/models/acura-tlx.jpg" alt="Acura TLX Type S">
+                    <h3>Acura TLX Type S</h3>
+                    <p class="model-years">2021-present</p>
+                    <p>The modern performance sedan with turbo V6, SH-AWD, and aggressive styling. Revives the Type S performance legacy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="brand-section">
+        <div class="container">
+            <h2>Pioneering <span class="highlight">Technologies</span></h2>
+            
+            <div class="technology-grid">
+                <div class="tech-card">
+                    <i class="fas fa-microchip"></i>
+                    <h3>VTEC</h3>
+                    <p>Variable Valve Timing and Lift Electronic Control. Honda's revolutionary technology that gave engines both efficiency and high-RPM power.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>SH-AWD</h3>
+                    <p>Super Handling All-Wheel Drive. Advanced torque vectoring that sends power to the outside rear wheel during cornering for enhanced agility.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <i class="fas fa-car"></i>
+                    <h3>Aluminum Body</h3>
+                    <p>The NSX was the first production car with an all-aluminum monocoque, reducing weight while maintaining rigidity.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Hybrid Supercar</h3>
+                    <p>The second-generation NSX combined twin-turbo V6 with three electric motors for instant response and torque vectoring.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <i class="fas fa-gem"></i>
+                    <h3>Jewel Eye LED</h3>
+                    <p>Acura's distinctive LED headlight design that provided superior illumination while creating a signature look.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>AcuraWatch</h3>
+                    <p>Suite of advanced safety and driver assistance technologies including adaptive cruise, collision mitigation, and lane keeping.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Motorsport Section -->
+    <section id="motorsport" class="brand-section bg-light">
+        <div class="container">
+            <h2>Racing <span class="highlight">Heritage</span></h2>
+            
+            <div class="motorsport-grid">
+                <div class="motorsport-content">
+                    <p>Acura's motorsport involvement has been extensive and successful, leveraging Honda's deep racing expertise:</p>
+                    
+                    <ul class="motorsport-list">
+                        <li><i class="fas fa-trophy"></i> <strong>IMSA GTP:</strong> Multiple championships in the 1990s with the V6 turbo-powered prototypes</li>
+                        <li><i class="fas fa-trophy"></i> <strong>IMSA GTO:</strong> Dominant with the Comptech-prepared NSX</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Rolex 24 at Daytona:</strong> Class wins with the NSX GT3</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Pikes Peak:</strong> Record-setting runs with modified NSX and TLX</li>
+                        <li><i class="fas fa-trophy"></i> <strong>SCCA World Challenge:</strong> Championships with the TLX GT</li>
+                    </ul>
+                    
+                    <p>The NSX GT3 has been a competitive customer racing car worldwide, winning in IMSA, Blancpain, and Super GT series. Acura's "Precision Crafted Performance" philosophy is proven on racetracks around the world.</p>
+                </div>
+                
+                <div class="motorsport-image">
+                    <img src="../images/motorsport/acura-racing.jpg" alt="Acura NSX GT3 Racing">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="brand-section">
+        <div class="container">
+            <h2>Acura <span class="highlight">Timeline</span></h2>
+            
+            <div class="brand-timeline">
+                <div class="timeline-item">
+                    <div class="year">1986</div>
+                    <div class="desc">Acura launches as the first Japanese luxury brand with Integra and Legend</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1991</div>
+                    <div class="desc">NSX debuts, revolutionizing the supercar segment with aluminum construction and everyday usability</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1995</div>
+                    <div class="desc">Integra Type R introduced, setting new standards for front-wheel drive performance</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2000</div>
+                    <div class="desc">MDX launches, creating the three-row luxury SUV segment</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2005</div>
+                    <div class="desc">First-generation NSX production ends after 14 years</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2016</div>
+                    <div class="desc">Second-generation NSX debuts as a twin-turbo hybrid supercar</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2021</div>
+                    <div class="desc">TLX Type S revives the performance variant with turbo V6 and SH-AWD</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2023</div>
+                    <div class="desc">Integra returns as a premium sport compact, reviving a beloved nameplate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Brands -->
+    <div class="text-center section-padding">
+        <a href="../brands.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to All Brands</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../brands.html">Brands</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Other Brands</h4>
+                    <ul>
+                        <li><a href="honda.html">Honda</a></li>
+                        <li><a href="toyota.html">Toyota</a></li>
+                        <li><a href="nissan.html">Nissan</a></li>
+                        <li><a href="bmw.html">BMW</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

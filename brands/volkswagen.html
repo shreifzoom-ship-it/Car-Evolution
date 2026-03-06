@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volkswagen History | Complete Brand Profile & Iconic Models</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore Volkswagen's complete history from 1937 to present. Discover iconic models like Beetle, Golf GTI, Type 2 Bus, and how Volkswagen became the people's car.">
+    <meta name="keywords" content="Volkswagen history, VW Beetle, Golf GTI, Type 2 Bus, German cars, people's car, Ferdinand Porsche">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Volkswagen History | Complete Brand Profile">
+    <meta property="og:description" content="Das Auto - The People's Car">
+    <meta property="og:image" content="../images/brands/german/volkswagen-logo.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/brands.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../1886-1920.html">1886-1920: Birth</a></li>
+                            <li><a href="../1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="../1950-1980.html">1950-1980: Muscle</a></li>
+                            <li><a href="../1980-2010.html">1980-2010: Technology</a></li>
+                            <li><a href="../2010-present.html">2010-Present: Electric</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../brands.html">Brands</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Brand Hero -->
+    <header class="brand-hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../images/brands/german/volkswagen-hero.jpg');">
+        <div class="container">
+            <div class="brand-hero-content">
+                <img src="../images/brands/german/volkswagen-logo.png" alt="Volkswagen Logo" class="brand-hero-logo">
+                <h1>Volkswagen</h1>
+                <p class="brand-tagline">Das Auto</p>
+                
+                <div class="brand-quick-facts">
+                    <span><i class="fas fa-calendar"></i> Founded: 1937</span>
+                    <span><i class="fas fa-globe"></i> Country: Germany</span>
+                    <span><i class="fas fa-trophy"></i> Icon: Beetle, Golf</span>
+                    <span><i class="fas fa-cog"></i> People's Car</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Navigation -->
+    <div class="brand-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#history" class="active">History</a></li>
+                <li><a href="#models">Iconic Models</a></li>
+                <li><a href="#beetle">Beetle Story</a></li>
+                <li><a href="#golf">Golf & GTI</a></li>
+                <li><a href="#bus">Type 2 Bus</a></li>
+                <li><a href="#motorsport">Motorsport</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- History Section -->
+    <section id="history" class="brand-section">
+        <div class="container">
+            <h2>Volkswagen: <span class="highlight">The People's Car</span></h2>
+            
+            <div class="history-grid">
+                <div class="history-text">
+                    <p>Volkswagen's story is one of the most remarkable in automotive history – from Nazi origins to post-war rebirth, from a single model to the world's largest automaker.</p>
+                    
+                    <p>In the 1930s, Adolf Hitler wanted a "people's car" – affordable transportation for the masses. He tasked Ferdinand Porsche with designing it. The result was the Volkswagen Beetle (Type 1), with its distinctive rounded shape, air-cooled rear engine, and simple engineering.</p>
+                    
+                    <p>The factory was built in Wolfsburg, but wartime production focused on military vehicles – the Kübelwagen and Schwimmwagen. After the war, the factory was in ruins, and Volkswagen faced an uncertain future.</p>
+                    
+                    <p>British Army officer Major Ivan Hirst took control of the factory and restarted production. He recognized the Beetle's potential and ordered 20,000 cars. This decision saved Volkswagen. By 1946, they were producing 1,000 cars per month.</p>
+                    
+                    <p>The 1950s saw Volkswagen's export boom. The Beetle became a phenomenon in America – cheap, reliable, and distinctive. The Type 2 Bus became the vehicle of choice for surfers and hippies. Volkswagen's advertising, created by Doyle Dane Bernbach, was revolutionary – honest, witty, and self-deprecating.</p>
+                    
+                    <p>The Beetle kept improving but remained fundamentally the same for decades. By the 1970s, it was outdated. Volkswagen faced a crisis – the Beetle couldn't last forever. The solution was the 1974 Golf, designed by Giorgetto Giugiaro. Front-wheel drive, water-cooled, hatchback – it was completely different from the Beetle and saved the company again.</p>
+                    
+                    <p>The Golf became Volkswagen's new icon, evolving through eight generations. The 1976 Golf GTI created the "hot hatch" segment. Volkswagen expanded with Passat, Polo, and Scirocco.</p>
+                    
+                    <p>Through acquisitions, Volkswagen became an empire – Audi, SEAT, Škoda, Bentley, Bugatti, Lamborghini, Porsche. The group is now the world's largest automaker. The 2015 "Dieselgate" scandal was a major setback, forcing a massive shift toward electrification. Today, Volkswagen is investing heavily in EVs with the ID family, aiming to become the leader in electric mobility.</p>
+                    
+                    <div class="founder-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>"The Beetle will be built as long as it makes sense."</blockquote>
+                        <cite>- Heinz Nordhoff, VW CEO 1948-1968</cite>
+                    </div>
+                </div>
+                
+                <div class="history-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar"></i>
+                        <span class="stat-number">1937</span>
+                        <span class="stat-label">Founded</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <span class="stat-number">21M+</span>
+                        <span class="stat-label">Beetles Sold</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-car"></i>
+                        <span class="stat-number">1974</span>
+                        <span class="stat-label">Golf Launched</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-cog"></i>
+                        <span class="stat-number">#1</span>
+                        <span class="stat-label">World's Largest</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iconic Models Section -->
+    <section id="models" class="brand-section bg-light">
+        <div class="container">
+            <h2>Iconic <span class="highlight">Models</span></h2>
+            
+            <div class="models-grid">
+                <!-- Volkswagen Beetle -->
+                <div class="model-card featured">
+                    <img src="../images/models/vw-beetle.jpg" alt="Volkswagen Beetle">
+                    <div class="model-info">
+                        <h3>Volkswagen Beetle (Type 1)</h3>
+                        <p class="model-years">1938-2003</p>
+                        <p>Over 21 million produced – the most popular car of its era. The Beetle's air-cooled rear engine, distinctive shape, and reliability made it a global icon. Production continued in Mexico until 2003.</p>
+                        <ul class="model-specs">
+                            <li><i class="fas fa-cog"></i> Air-cooled flat-4, 1.1L to 1.6L</li>
+                            <li><i class="fas fa-tachometer-alt"></i> 25 hp (1938) to 50 hp (2003)</li>
+                            <li><i class="fas fa-trophy"></i> Over 21 million sold – most of any single platform</li>
+                            <li><i class="fas fa-heart"></i> Cultural icon – from Nazi Germany to hippie symbol</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Volkswagen Golf -->
+                <div class="model-card">
+                    <img src="../images/models/vw-golf.jpg" alt="Volkswagen Golf">
+                    <h3>Volkswagen Golf</h3>
+                    <p class="model-years">1974-present</p>
+                    <p>Volkswagen's modern icon. The Golf defined the hatchback segment and has been Europe's best-seller for decades. Eight generations, over 35 million sold.</p>
+                </div>
+                
+                <!-- Volkswagen Golf GTI -->
+                <div class="model-card">
+                    <img src="../images/models/vw-gti.jpg" alt="Volkswagen Golf GTI">
+                    <h3>Volkswagen Golf GTI</h3>
+                    <p class="model-years">1976-present</p>
+                    <p>The original hot hatch. A group of VW engineers created a sporty Golf with fuel injection, sport suspension, and plaid seats. It created a segment and a cult following.</p>
+                </div>
+                
+                <!-- Volkswagen Type 2 Bus -->
+                <div class="model-card">
+                    <img src="../images/models/vw-bus.jpg" alt="Volkswagen Type 2 Bus">
+                    <h3>Volkswagen Type 2 Bus</h3>
+                    <p class="model-years">1950-2013</p>
+                    <p>The hippie van. The Type 2 was based on Beetle mechanicals but offered space and versatility. Icon of the counterculture movement.</p>
+                </div>
+                
+                <!-- Volkswagen Passat -->
+                <div class="model-card">
+                    <img src="../images/models/vw-passat.jpg" alt="Volkswagen Passat">
+                    <h3>Volkswagen Passat</h3>
+                    <p class="model-years">1973-present</p>
+                    <p>The midsize sedan and wagon. European sophistication and space at accessible prices.</p>
+                </div>
+                
+                <!-- Volkswagen Scirocco -->
+                <div class="model-card">
+                    <img src="../images/models/vw-scirocco.jpg" alt="Volkswagen Scirocco">
+                    <h3>Volkswagen Scirocco</h3>
+                    <p class="model-years">1974-1992, 2008-2017</p>
+                    <p>The sporty coupe designed by Giugiaro. Sleek and affordable style.</p>
+                </div>
+                
+                <!-- Volkswagen Karmann Ghia -->
+                <div class="model-card">
+                    <img src="../images/models/vw-karmann-ghia.jpg" alt="Volkswagen Karmann Ghia">
+                    <h3>Volkswagen Karmann Ghia</h3>
+                    <p class="model-years">1955-1974</p>
+                    <p>Beauty on Beetle mechanics. Stunning Italian design wrapped around reliable VW engineering.</p>
+                </div>
+                
+                <!-- Volkswagen ID.3 -->
+                <div class="model-card">
+                    <img src="../images/models/vw-id3.jpg" alt="Volkswagen ID.3">
+                    <h3>Volkswagen ID.3</h3>
+                    <p class="model-years">2020-present</p>
+                    <p>The electric Golf. First model on VW's MEB electric platform, launching the ID family and VW's electric future.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beetle Story Section -->
+    <section id="beetle" class="brand-section">
+        <div class="container">
+            <h2>The <span class="highlight">Beetle</span> Story</h2>
+            
+            <div class="beetle-grid">
+                <div class="beetle-text">
+                    <p>The Beetle's journey from Nazi project to global icon is one of automotive history's most fascinating stories.</p>
+                    
+                    <h4>Origins (1930s)</h4>
+                    <p>Ferdinand Porsche's design was innovative: rear-mounted air-cooled engine, torsion bar suspension, and distinctive rounded shape. The "KdF-Wagen" (Strength Through Joy Car) was meant to be affordable for every German family. War intervened, and only a few hundred were built before production switched to military vehicles.</p>
+                    
+                    <h4>British Rescue (1945)</h4>
+                    <p>The factory was in ruins, but British Army officer Ivan Hirst saw potential. He restarted production, and the first post-war Beetles were actually sold to British occupation forces. By 1946, production reached 1,000 per month.</p>
+                    
+                    <h4>Export Boom (1950s)</h4>
+                    <p>Volkswagen's CEO Heinz Nordhoff focused on exports, especially America. The Beetle's small size, reliability, and low price appealed to practical Americans. Sales skyrocketed.</p>
+                    
+                    <h4>Cultural Icon (1960s)</h4>
+                    <p>The Beetle became a symbol of the counterculture – cheap, simple, and anti-establishment. It starred in Disney's "The Love Bug" as Herbie. Its advertising was revolutionary.</p>
+                    
+                    <h4>The End (1970s-2003)</h4>
+                    <p>By the 1970s, the Beetle was outdated. Production in Germany ended in 1978, but continued in Mexico and Brazil. The last Beetle (the 21,529,464th) rolled off the line in Puebla, Mexico, in 2003, shipped to Germany and displayed at Wolfsburg.</p>
+                    
+                    <h4>New Beetle (1998-2010)</h4>
+                    <p>A retro revival on Golf platform, capturing the spirit if not the engineering. Followed by the Beetle (2011-2019), more masculine and modern.</p>
+                </div>
+                
+                <div class="beetle-image">
+                    <img src="../images/vw/beetle-generations.jpg" alt="Beetle Generations">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Golf & GTI Section -->
+    <section id="golf" class="brand-section bg-light">
+        <div class="container">
+            <h2><span class="highlight">Golf</span> & GTI</h2>
+            
+            <div class="golf-grid">
+                <div class="golf-text">
+                    <p>The Golf, introduced in 1974, was Volkswagen's most important car since the Beetle. Designed by Giorgetto Giugiaro, it established the modern hatchback template – front-wheel drive, foldable rear seats, and efficient packaging.</p>
+                    
+                    <h4>Generations:</h4>
+                    <ul>
+                        <li><strong>Mk1 (1974-1983):</strong> Giugiaro design, replaced Beetle. GTI introduced 1976.</li>
+                        <li><strong>Mk2 (1983-1991):</strong> Larger, more refined. Rallye Golf with supercharged engine.</li>
+                        <li><strong>Mk3 (1991-1997):</strong> First with VR6 engine. VR6 model offered 174 hp.</li>
+                        <li><strong>Mk4 (1997-2003):</strong> Quality leap, R32 with 241 hp and 4Motion AWD.</li>
+                        <li><strong>Mk5 (2003-2008):</strong> Multi-link rear suspension, GTI returned to prominence.</li>
+                        <li><strong>Mk6 (2008-2012):</strong> Evolved design, efficiency focus.</li>
+                        <li><strong>Mk7 (2012-2017):</strong> MQB platform, lighter, more efficient. Clubsport, R models.</li>
+                        <li><strong>Mk8 (2017-present):</strong> Digital cockpit, touch controls, electrified options.</li>
+                    </ul>
+                    
+                    <h4>The GTI Story:</h4>
+                    <p>In 1975, a group of VW engineers led by Alfons Löwenberg created a secret project – a sporty Golf with fuel injection, sport suspension, wider tires, and distinctive red trim. They presented it to management, who approved production. The 1976 Golf GTI had 110 hp and could reach 113 mph – revolutionary for a small hatchback. It created the "hot hatch" segment and became a legend.</p>
+                </div>
+                
+                <div class="golf-image">
+                    <img src="../images/vw/golf-generations.jpg" alt="Golf Generations">
+                </div>
+            </div>
+            
+            <div class="gti-quote">
+                <i class="fas fa-quote-left"></i>
+                <blockquote>"The Golf GTI is the original hot hatch – the benchmark that all others aspire to."</blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Type 2 Bus Section -->
+    <section id="bus" class="brand-section">
+        <div class="container">
+            <h2>The <span class="highlight">Type 2 Bus</span> – Freedom on Wheels</h2>
+            
+            <div class="bus-grid">
+                <div class="bus-text">
+                    <p>The Type 2 Bus was born from a simple idea: put a box on Beetle mechanicals. Dutch VW importer Ben Pon sketched the concept in 1947, and production began in 1950.</p>
+                    
+                    <h4>Generations:</h4>
+                    <ul>
+                        <li><strong>T1 (1950-1967):</strong> Split windshield, VW logo on front. The classic "Hippie Van."</li>
+                        <li><strong>T2 (1967-1979):</strong> Larger, single windshield. Bay window.</li>
+                        <li><strong>T3 (1979-1992):</strong> Boxier, water-cooled engines available.</li>
+                        <li><strong>T4 (1990-2003):</strong> Front-engine, water-cooled, European focus.</li>
+                        <li><strong>T5 (2003-2015):</strong> Modern van, comfort and safety.</li>
+                        <li><strong>T6 (2015-present):</strong> Current generation, upscale and versatile.</li>
+                        <li><strong>ID. Buzz (2023):</strong> Electric revival – modern T1 with EV technology.</li>
+                    </ul>
+                    
+                    <p>The T1 became a counterculture icon. In the 1960s, it was the vehicle of choice for surfers, hippies, and free spirits – practical, affordable, and symbolic of alternative lifestyles. The ID. Buzz electric version brings the spirit into the 21st century.</p>
+                </div>
+                
+                <div class="bus-image">
+                    <img src="../images/vw/bus-t1.jpg" alt="VW Type 2 T1">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Motorsport Section -->
+    <section id="motorsport" class="brand-section bg-light">
+        <div class="container">
+            <h2>Volkswagen in <span class="highlight">Motorsport</span></h2>
+            
+            <div class="motorsport-grid">
+                <div class="motorsport-content">
+                    <ul>
+                        <li><i class="fas fa-trophy"></i> <strong>World Rally Championship:</strong> 1986 drivers' title with Golf GTI 16V</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Dakar Rally:</strong> 2009-2011 three consecutive wins with Race Touareg</li>
+                        <li><i class="fas fa-trophy"></i> <strong>World Rallycross:</strong> Multiple titles with Polo RX Supercar</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Formula 3:</strong> Success with customer engines</li>
+                        <li><i class="fas fa-trophy"></i> <strong>ADAC TCR:</strong> Golf GTI TCR a customer racing success</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Pikes Peak:</strong> 2018 win with electric I.D. R Pikes Peak – overall record</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Goodwood:</strong> I.D. R sets hillclimb record</li>
+                    </ul>
+                    
+                    <p>The I.D. R electric racer demonstrated Volkswagen's EV performance potential. It smashed the Pikes Peak record in 2018 and the Goodwood hillclimb record in 2019 – proving electric can be fast.</p>
+                </div>
+                
+                <div class="motorsport-image">
+                    <img src="../images/motorsport/vw-idr.jpg" alt="VW I.D. R Pikes Peak">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="brand-section">
+        <div class="container">
+            <h2>Volkswagen <span class="highlight">Timeline</span></h2>
+            
+            <div class="brand-timeline">
+                <div class="timeline-item">
+                    <div class="year">1937</div>
+                    <div class="desc">Gesellschaft zur Vorbereitung des Deutschen Volkswagens mbH founded</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1938</div>
+                    <div class="desc">Wolfsburg factory built; Beetle (Type 1) introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1945</div>
+                    <div class="desc">British take control; Ivan Hirst restarts production</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1949</div>
+                    <div class="desc">First Beetles exported to America</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1950</div>
+                    <div class="desc">Type 2 Bus introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1955</div>
+                    <div class="desc">Karmann Ghia introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1960</div>
+                    <div class="desc">Volkswagen privatized</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1968</div>
+                    <div class="desc">Beetle becomes best-selling car ever</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1974</div>
+                    <div class="desc">Golf introduced; Beetle production ends in Germany</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1974</div>
+                    <div class="desc">Scirocco launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1976</div>
+                    <div class="desc">Golf GTI introduced – hot hatch born</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1983</div>
+                    <div class="desc">Golf Mk2 launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1991</div>
+                    <div class="desc">Golf Mk3 with VR6</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1998</div>
+                    <div class="desc">New Beetle launched; VW acquires Bentley, Bugatti, Lamborghini</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2002</div>
+                    <div class="desc">Touareg launched – first SUV</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2003</div>
+                    <div class="desc">Last Beetle produced in Mexico</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2007</div>
+                    <div class="desc">Porsche begins acquiring VW shares (later merges)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2012</div>
+                    <div class="desc">Up! city car launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2015</div>
+                    <div class="desc">Dieselgate scandal – VW admits emissions cheating</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2018</div>
+                    <div class="desc">I.D. R Pikes Peak sets record</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2019</div>
+                    <div class="desc">ID.3 unveiled – first MEB electric</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2022</div>
+                    <div class="desc">ID. Buzz electric Bus launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2024</div>
+                    <div class="desc">ID.7 electric flagship sedan</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Brands -->
+    <div class="text-center section-padding">
+        <a href="../brands.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to All Brands</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../brands.html">Brands</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>German Brands</h4>
+                    <ul>
+                        <li><a href="bmw.html">BMW</a></li>
+                        <li><a href="mercedes-benz.html">Mercedes-Benz</a></li>
+                        <li><a href="audi.html">Audi</a></li>
+                        <li><a href="volkswagen.html">Volkswagen</a></li>
+                        <li><a href="porsche.html">Porsche</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

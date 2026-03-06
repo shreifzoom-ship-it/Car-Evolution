@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla History | Complete Brand Profile & Iconic Models</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore Tesla's complete history from 2003 to present. Discover iconic models like Model S, Model 3, Roadster, and how Tesla revolutionized the automotive industry.">
+    <meta name="keywords" content="Tesla history, Tesla Model S, Tesla Model 3, Tesla Roadster, Elon Musk, electric cars, EV revolution">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Tesla History | Complete Brand Profile">
+    <meta property="og:description" content="Accelerating the world's transition to sustainable energy">
+    <meta property="og:image" content="../images/brands/american/tesla-logo.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/brands.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../1886-1920.html">1886-1920: Birth</a></li>
+                            <li><a href="../1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="../1950-1980.html">1950-1980: Muscle</a></li>
+                            <li><a href="../1980-2010.html">1980-2010: Technology</a></li>
+                            <li><a href="../2010-present.html">2010-Present: Electric</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../brands.html">Brands</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Brand Hero -->
+    <header class="brand-hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../images/brands/american/tesla-hero.jpg');">
+        <div class="container">
+            <div class="brand-hero-content">
+                <img src="../images/brands/american/tesla-logo.png" alt="Tesla Logo" class="brand-hero-logo">
+                <h1>Tesla</h1>
+                <p class="brand-tagline">Accelerating the World's Transition to Sustainable Energy</p>
+                
+                <div class="brand-quick-facts">
+                    <span><i class="fas fa-calendar"></i> Founded: 2003</span>
+                    <span><i class="fas fa-globe"></i> Country: USA</span>
+                    <span><i class="fas fa-trophy"></i> Icon: Model S</span>
+                    <span><i class="fas fa-bolt"></i> EV Revolution</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Navigation -->
+    <div class="brand-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#history" class="active">History</a></li>
+                <li><a href="#models">Models</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#autopilot">Autopilot</a></li>
+                <li><a href="#supercharger">Supercharger</a></li>
+                <li><a href="#future">Future</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- History Section -->
+    <section id="history" class="brand-section">
+        <div class="container">
+            <h2>Tesla: <span class="highlight">The EV Revolution</span></h2>
+            
+            <div class="history-grid">
+                <div class="history-text">
+                    <p>Tesla's story is the most remarkable in modern automotive history. In less than two decades, a Silicon Valley startup transformed the global auto industry and forced every manufacturer to take electric vehicles seriously.</p>
+                    
+                    <p>The company was founded in 2003 by Martin Eberhard and Marc Tarpenning, named after inventor Nikola Tesla. They wanted to prove that electric cars could be better than gasoline cars – not just eco-friendly compromises.</p>
+                    
+                    <p>Elon Musk joined in 2004 as chairman, leading the first investment round. He became CEO in 2008 and is the public face of Tesla, though not a founder. Musk's vision and relentless drive have been crucial to Tesla's success.</p>
+                    
+                    <p>The first Tesla, the 2008 Roadster, was based on the Lotus Elise chassis but fitted with a revolutionary battery pack using thousands of laptop-style lithium-ion cells. It proved EVs could be fast (0-60 in 3.7 seconds) and have decent range (244 miles).</p>
+                    
+                    <p>The 2012 Model S changed everything. It was a ground-up electric luxury sedan with stunning design, 265-mile range (later over 400), and a giant 17-inch touchscreen. It won every car of the year award and showed the world what an EV could be.</p>
+                    
+                    <p>Tesla faced "production hell" with the Model X (2015) and especially the Model 3 (2017). The Model 3 was supposed to be the affordable Tesla, but production delays nearly bankrupted the company. Musk slept at the factory, and they eventually solved the problems.</p>
+                    
+                    <p>Today, Tesla is the world's most valuable automaker, with factories in the US, China, and Europe. The Model Y is one of the best-selling vehicles globally. Tesla has proven that EVs can be desirable, profitable, and mainstream.</p>
+                    
+                    <div class="founder-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>"If something is important enough, you should try, even if the probable outcome is failure."</blockquote>
+                        <cite>- Elon Musk</cite>
+                    </div>
+                </div>
+                
+                <div class="history-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar"></i>
+                        <span class="stat-number">2003</span>
+                        <span class="stat-label">Founded</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <span class="stat-number">2012</span>
+                        <span class="stat-label">Model S</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-car"></i>
+                        <span class="stat-number">5M+</span>
+                        <span class="stat-label">EVs Sold</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-cog"></i>
+                        <span class="stat-number">#1</span>
+                        <span class="stat-label">Most Valuable</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Models Section -->
+    <section id="models" class="brand-section bg-light">
+        <div class="container">
+            <h2>Tesla <span class="highlight">Models</span></h2>
+            
+            <div class="models-grid">
+                <!-- Tesla Roadster -->
+                <div class="model-card featured">
+                    <img src="../images/models/tesla-roadster.jpg" alt="Tesla Roadster">
+                    <div class="model-info">
+                        <h3>Tesla Roadster (2008-2012)</h3>
+                        <p class="model-years">2008-2012</p>
+                        <p>The first Tesla. Based on Lotus Elise chassis, it proved EVs could be fast and desirable. Only about 2,500 built.</p>
+                        <ul class="model-specs">
+                            <li><i class="fas fa-bolt"></i> 53 kWh battery</li>
+                            <li><i class="fas fa-tachometer-alt"></i> 244 mile range</li>
+                            <li><i class="fas fa-clock"></i> 0-60 in 3.7 seconds</li>
+                            <li><i class="fas fa-trophy"></i> First highway-capable EV</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Tesla Model S -->
+                <div class="model-card">
+                    <img src="../images/models/tesla-model-s.jpg" alt="Tesla Model S">
+                    <h3>Tesla Model S</h3>
+                    <p class="model-years">2012-present</p>
+                    <p>The car that changed everything. Luxury sedan with massive range, insane performance, and over-the-air updates. Plaid version does 0-60 in 1.99 seconds.</p>
+                </div>
+                
+                <!-- Tesla Model X -->
+                <div class="model-card">
+                    <img src="../images/models/tesla-model-x.jpg" alt="Tesla Model X">
+                    <h3>Tesla Model X</h3>
+                    <p class="model-years">2015-present</p>
+                    <p>The falcon-wing SUV. Distinctive rear doors, spacious interior, and incredible performance. The fastest SUV in the world (Plaid).</p>
+                </div>
+                
+                <!-- Tesla Model 3 -->
+                <div class="model-card">
+                    <img src="../images/models/tesla-model-3.jpg" alt="Tesla Model 3">
+                    <h3>Tesla Model 3</h3>
+                    <p class="model-years">2017-present</p>
+                    <p>The affordable Tesla. Smaller, simpler, but still fast and efficient. Became the best-selling EV in history and one of the best-selling cars globally.</p>
+                </div>
+                
+                <!-- Tesla Model Y -->
+                <div class="model-card">
+                    <img src="../images/models/tesla-model-y.jpg" alt="Tesla Model Y">
+                    <h3>Tesla Model Y</h3>
+                    <p class="model-years">2020-present</p>
+                    <p>The compact SUV based on Model 3. More practical, more space, same performance. Now Tesla's best-seller.</p>
+                </div>
+                
+                <!-- Tesla Cybertruck -->
+                <div class="model-card">
+                    <img src="../images/models/tesla-cybertruck.jpg" alt="Tesla Cybertruck">
+                    <h3>Tesla Cybertruck</h3>
+                    <p class="model-years">2023-present</p>
+                    <p>The polarizing pickup. Stainless steel exoskeleton, armored glass, and futuristic design. Over 1 million reservations.</p>
+                </div>
+                
+                <!-- Tesla Semi -->
+                <div class="model-card">
+                    <img src="../images/models/tesla-semi.jpg" alt="Tesla Semi">
+                    <h3>Tesla Semi</h3>
+                    <p class="model-years">2022-present</p>
+                    <p>Electric semi truck. 500-mile range, megawatt charging, and lower operating costs than diesel. In production for customers like Pepsi.</p>
+                </div>
+                
+                <!-- Tesla Roadster 2.0 -->
+                <div class="model-card">
+                    <img src="../images/models/tesla-roadster-2020.jpg" alt="Tesla Roadster 2.0">
+                    <h3>Tesla Roadster (2025)</h3>
+                    <p class="model-years">Announced</p>
+                    <p>The next-generation Roadster promises 0-60 in under 1 second, 620-mile range, and rocket thrusters. The ultimate Tesla.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="brand-section">
+        <div class="container">
+            <h2>Tesla <span class="highlight">Technology</span></h2>
+            
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <i class="fas fa-battery-full"></i>
+                    <h3>Battery Technology</h3>
+                    <p>Tesla pioneered the use of thousands of small cylindrical cells (18650, then 2170, now 4680) with advanced thermal management. The 4680 cells offer 5x energy, 6x power, and reduce cost by 14%.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <i class="fas fa-microchip"></i>
+                    <h3>Over-the-Air Updates</h3>
+                    <p>Tesla cars improve over time. New features, performance increases, and even safety improvements are downloaded wirelessly – like a smartphone.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <h3>Plaid Powertrain</h3>
+                    <p>Three electric motors, carbon-sleeved rotors, and advanced thermal management. The Model S Plaid has 1,020 hp and is the fastest production sedan.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <i class="fas fa-charging-station"></i>
+                    <h3>V4 Supercharging</h3>
+                    <p>Up to 350 kW charging, adding 200 miles in 15 minutes. The Supercharger network is the largest fast-charging network globally, with over 50,000 stalls.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <i class="fas fa-cog"></i>
+                    <h3>Structural Battery</h3>
+                    <p>The battery pack becomes part of the car's structure, saving weight and improving rigidity. Used in Model Y and Cybertruck.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <i class="fas fa-gem"></i>
+                    <h3>Giga Press</h3>
+                    <p>Massive aluminum die-casting machines that produce large single-piece castings, replacing dozens of stamped parts and reducing complexity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Autopilot Section -->
+    <section id="autopilot" class="brand-section bg-light">
+        <div class="container">
+            <h2><span class="highlight">Autopilot</span> & Full Self-Driving</h2>
+            
+            <div class="autopilot-grid">
+                <div class="autopilot-text">
+                    <p>Tesla's approach to autonomy is different from others. While most companies use lidar and detailed maps, Tesla relies on cameras and neural networks – "Tesla Vision."</p>
+                    
+                    <h4>Levels:</h4>
+                    <ul>
+                        <li><strong>Autopilot:</strong> Standard on all cars. Adaptive cruise control, lane centering, traffic-aware cruise.</li>
+                        <li><strong>Enhanced Autopilot:</strong> Adds auto lane change, navigate on autopilot, auto park, summon.</li>
+                        <li><strong>Full Self-Driving (FSD):</strong> Beta feature that attempts full autonomy in city streets. Controversial, constantly improving, requires driver supervision.</li>
+                    </ul>
+                    
+                    <p>FSD Beta has been testing with customers since 2020. It can navigate complex city streets, stop at traffic lights and stop signs, make turns, and roundabouts. It's not fully autonomous – driver must supervise – but it's the most advanced production system.</p>
+                    
+                    <p>Tesla also uses its massive fleet of cars to collect data, training neural networks on millions of miles of real-world driving. This data advantage is significant.</p>
+                </div>
+                
+                <div class="autopilot-image">
+                    <img src="../images/tesla/fsd-display.jpg" alt="Tesla FSD Display">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Supercharger Section -->
+    <section id="supercharger" class="brand-section">
+        <div class="container">
+            <h2>The <span class="highlight">Supercharger</span> Network</h2>
+            
+            <div class="supercharger-grid">
+                <div class="supercharger-text">
+                    <p>One of Tesla's biggest advantages is its Supercharger network. Started in 2012, it now has over 50,000 stalls globally, with plans to expand rapidly.</p>
+                    
+                    <h4>Generations:</h4>
+                    <ul>
+                        <li><strong>V1/V2 (2012):</strong> 120-150 kW, began network</li>
+                        <li><strong>V3 (2019):</strong> 250 kW, adds 75 miles in 5 minutes</li>
+                        <li><strong>V4 (2023):</strong> Up to 350 kW, longer cables for all EVs, Magic Dock for CCS compatibility</li>
+                    </ul>
+                    
+                    <p>Tesla has opened its network to other EVs in many regions, becoming a standard. The North American Charging Standard (NACS) connector is being adopted by Ford, GM, Rivian, and others.</p>
+                    
+                    <p>Superchargers are strategically located along travel routes, with amenities nearby. The network eliminates range anxiety for long-distance travel.</p>
+                </div>
+                
+                <div class="supercharger-image">
+                    <img src="../images/tesla/supercharger.jpg" alt="Tesla Supercharger">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Section -->
+    <section id="future" class="brand-section bg-light">
+        <div class="container">
+            <h2>Tesla <span class="highlight">Future</span></h2>
+            
+            <div class="future-grid">
+                <div class="future-text">
+                    <h4>Robotaxi</h4>
+                    <p>Tesla's goal is a dedicated robotaxi vehicle without steering wheel or pedals, operating as an autonomous taxi network. Unveiled in 2024, production unknown.</p>
+                    
+                    <h4>Cybertruck Variants</h4>
+                    <p>More versions of the polarizing pickup, including a potential smaller model for Europe.</p>
+                    
+                    <h4>Roadster</h4>
+                    <p>The next-generation Roadster promises 0-60 in under 1 second – the quickest production car ever. SpaceX option includes cold air thrusters.</p>
+                    
+                    <h4>Semi</h4>
+                    <p>Expanding production of the electric semi truck, with more customers and potentially a consumer version.</p>
+                    
+                    <h4>Optimist Robot</h4>
+                    <p>Tesla's humanoid robot, using the same AI and sensors as the cars. Long-term vision for labor automation.</p>
+                    
+                    <h4>Energy Business</h4>
+                    <p>Tesla's solar, Powerwall, and Megapack businesses are growing rapidly, potentially as big as automotive.</p>
+                </div>
+                
+                <div class="future-image">
+                    <img src="../images/tesla/robotaxi.jpg" alt="Tesla Robotaxi">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="brand-section">
+        <div class="container">
+            <h2>Tesla <span class="highlight">Timeline</span></h2>
+            
+            <div class="brand-timeline">
+                <div class="timeline-item">
+                    <div class="year">2003</div>
+                    <div class="desc">Tesla founded by Martin Eberhard and Marc Tarpenning</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2004</div>
+                    <div class="desc">Elon Musk leads Series A investment, becomes chairman</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2008</div>
+                    <div class="desc">Tesla Roadster launched – first highway-capable EV</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2008</div>
+                    <div class="desc">Elon Musk becomes CEO</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2010</div>
+                    <div class="desc">Tesla IPO – first American car company IPO since Ford (1956)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2012</div>
+                    <div class="desc">Model S launched – Motor Trend Car of the Year</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2012</div>
+                    <div class="desc">First Superchargers installed</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2015</div>
+                    <div class="desc">Model X launched with falcon doors</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2015</div>
+                    <div class="desc">Autopilot introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2016</div>
+                    <div class="desc">Model 3 revealed; over 500,000 reservations</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2017</div>
+                    <div class="desc">Model 3 production begins – "production hell"</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2019</div>
+                    <div class="desc">Cybertruck revealed – polarizing design</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2020</div>
+                    <div class="desc">Model Y launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2020</div>
+                    <div class="desc">Tesla becomes most valuable automaker</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2021</div>
+                    <div class="desc">Model S Plaid with 0-60 in 1.99 seconds</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2022</div>
+                    <div class="desc">Berlin and Texas Gigafactories open</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2023</div>
+                    <div class="desc">Cybertruck production begins</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2024</div>
+                    <div class="desc">Robotaxi unveiled</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2025</div>
+                    <div class="desc">Next-generation Roadster expected</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Brands -->
+    <div class="text-center section-padding">
+        <a href="../brands.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to All Brands</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../brands.html">Brands</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>American Brands</h4>
+                    <ul>
+                        <li><a href="ford.html">Ford</a></li>
+                        <li><a href="chevrolet.html">Chevrolet</a></li>
+                        <li><a href="dodge.html">Dodge</a></li>
+                        <li><a href="cadillac.html">Cadillac</a></li>
+                        <li><a href="tesla.html">Tesla</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

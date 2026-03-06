@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bentley History | Complete Brand Profile & Iconic Models</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore Bentley's complete history from 1919 to present. Discover iconic models like Continental GT, Mulsanne, and how Bentley defines British luxury and performance.">
+    <meta name="keywords" content="Bentley history, Bentley Continental GT, Bentley Mulsanne, British luxury cars, W.O. Bentley, Crewe">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Bentley History | Complete Brand Profile">
+    <meta property="og:description" content="The World's Most Luxurious Grand Tourers">
+    <meta property="og:image" content="../images/brands/british/bentley-logo.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/brands.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../1886-1920.html">1886-1920: Birth</a></li>
+                            <li><a href="../1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="../1950-1980.html">1950-1980: Muscle</a></li>
+                            <li><a href="../1980-2010.html">1980-2010: Technology</a></li>
+                            <li><a href="../2010-present.html">2010-Present: Electric</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../brands.html">Brands</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Brand Hero -->
+    <header class="brand-hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../images/brands/british/bentley-hero.jpg');">
+        <div class="container">
+            <div class="brand-hero-content">
+                <img src="../images/brands/british/bentley-logo.png" alt="Bentley Logo" class="brand-hero-logo">
+                <h1>Bentley</h1>
+                <p class="brand-tagline">The World's Most Luxurious Grand Tourers</p>
+                
+                <div class="brand-quick-facts">
+                    <span><i class="fas fa-calendar"></i> Founded: 1919</span>
+                    <span><i class="fas fa-globe"></i> Country: UK</span>
+                    <span><i class="fas fa-trophy"></i> Icon: Continental GT</span>
+                    <span><i class="fas fa-cog"></i> British Luxury</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Navigation -->
+    <div class="brand-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#history" class="active">History</a></li>
+                <li><a href="#models">Iconic Models</a></li>
+                <li><a href="#continental">Continental GT</a></li>
+                <li><a href="#racing">Racing Heritage</a></li>
+                <li><a href="#craftsmanship">Craftsmanship</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- History Section -->
+    <section id="history" class="brand-section">
+        <div class="container">
+            <h2>Bentley: <span class="highlight">The World's Most Luxurious Grand Tourers</span></h2>
+            
+            <div class="history-grid">
+                <div class="history-text">
+                    <p>Bentley Motors was founded in 1919 by Walter Owen Bentley, known as W.O. Bentley. His vision was simple: "To build a fast car, a good car, the best in class." From the beginning, Bentley combined luxury with performance in a way no other manufacturer had.</p>
+                    
+                    <p>The first Bentley, the 3-Litre, debuted in 1921. It was an immediate success in racing, winning at Brooklands and Le Mans. W.O.'s engineering philosophy focused on durability and performance – his cars were built to last and to win.</p>
+                    
+                    <p>The 1920s were Bentley's golden age of racing. The "Bentley Boys" – a group of wealthy, aristocratic British drivers – campaigned Bentleys at Le Mans, winning five times between 1924 and 1930. The 1927 3-Litre, 1928 4½ Litre, and the legendary 6½ Litre "Speed Six" dominated.</p>
+                    
+                    <p>The 1929 4½ Litre "Blower" Bentley, supercharged by Sir Henry Birkin, became an icon despite limited racing success. Its aggressive appearance and distinctive supercharger sound made it legendary.</p>
+                    
+                    <p>The Great Depression hit Bentley hard. Rolls-Royce acquired Bentley in 1931, moving production to Derby. For decades, Bentleys became "Rolls-Royces with a different badge" – luxurious but less sporting. The 1952 R-Type Continental was an exception – a stunning fastback grand tourer that defined the GT category.</p>
+                    
+                    <p>In 1998, Volkswagen AG acquired Bentley in a dramatic battle with BMW. VW invested billions in a new factory at Crewe, returning Bentley to its sporting roots. The 2003 Continental GT, with its W12 engine and stunning design, relaunched Bentley as a global luxury powerhouse.</p>
+                    
+                    <p>Today, Bentley offers the Continental GT, Flying Spur, Bentayga SUV, and Mulsanne flagship. Each is handcrafted in Crewe, combining exquisite materials with immense performance. The brand is transitioning to electrification while maintaining its core values of luxury, performance, and craftsmanship.</p>
+                    
+                    <div class="founder-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>"To build a fast car, a good car, the best in class."</blockquote>
+                        <cite>- W.O. Bentley</cite>
+                    </div>
+                </div>
+                
+                <div class="history-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar"></i>
+                        <span class="stat-number">1919</span>
+                        <span class="stat-label">Founded</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <span class="stat-number">6x</span>
+                        <span class="stat-label">Le Mans Wins</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-car"></i>
+                        <span class="stat-number">2003</span>
+                        <span class="stat-label">Continental GT</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-cog"></i>
+                        <span class="stat-number">Crewe</span>
+                        <span class="stat-label">Handcrafted</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iconic Models Section -->
+    <section id="models" class="brand-section bg-light">
+        <div class="container">
+            <h2>Iconic <span class="highlight">Models</span></h2>
+            
+            <div class="models-grid">
+                <!-- Bentley 3-Litre -->
+                <div class="model-card featured">
+                    <img src="../images/models/bentley-3litre.jpg" alt="Bentley 3-Litre">
+                    <div class="model-info">
+                        <h3>Bentley 3-Litre (1921-1929)</h3>
+                        <p class="model-years">1921-1929</p>
+                        <p>The first Bentley. W.O.'s masterpiece – a 3.0L four-cylinder with overhead cam, four valves per cylinder, and aluminum pistons. Advanced for its time and successful in racing.</p>
+                        <ul class="model-specs">
+                            <li><i class="fas fa-cog"></i> 3.0L four-cylinder, 70 hp</li>
+                            <li><i class="fas fa-trophy"></i> 1924 Le Mans winner</li>
+                            <li><i class="fas fa-gem"></i> Only 1,622 built</li>
+                            <li><i class="fas fa-flag"></i> The original Bentley</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Bentley 4½ Litre "Blower" -->
+                <div class="model-card">
+                    <img src="../images/models/bentley-blower.jpg" alt="Bentley 4½ Litre Blower">
+                    <h3>Bentley 4½ Litre "Blower"</h3>
+                    <p class="model-years">1929-1931</p>
+                    <p>The supercharged Bentley. Developed by Sir Henry Birkin against W.O.'s wishes. Loud, fast, and iconic. Only 55 built, now among the most valuable cars.</p>
+                </div>
+                
+                <!-- Bentley R-Type Continental -->
+                <div class="model-card">
+                    <img src="../images/models/bentley-r-type.jpg" alt="Bentley R-Type Continental">
+                    <h3>Bentley R-Type Continental</h3>
+                    <p class="model-years">1952-1955</p>
+                    <p>The first modern grand tourer. Fastback body, 120 mph top speed, and exquisite style. The "R" in R-Type stands for "Road Test" – it set the GT template.</p>
+                </div>
+                
+                <!-- Bentley Continental GT -->
+                <div class="model-card">
+                    <img src="../images/models/bentley-continental-gt.jpg" alt="Bentley Continental GT">
+                    <h3>Bentley Continental GT</h3>
+                    <p class="model-years">2003-present</p>
+                    <p>The car that saved Bentley. W12 power, stunning design, and handcrafted luxury. Over 80,000 sold – more than any previous Bentley combined.</p>
+                </div>
+                
+                <!-- Bentley Mulsanne -->
+                <div class="model-card">
+                    <img src="../images/models/bentley-mulsanne.jpg" alt="Bentley Mulsanne">
+                    <h3>Bentley Mulsanne</h3>
+                    <p class="model-years">1980-1992, 2010-2020</p>
+                    <p>The flagship luxury sedan. Handcrafted in Crewe, V8 power, and unparalleled luxury. The ultimate Bentley for owners and chauffeurs alike.</p>
+                </div>
+                
+                <!-- Bentley Bentayga -->
+                <div class="model-card">
+                    <img src="../images/models/bentley-bentayga.jpg" alt="Bentley Bentayga">
+                    <h3>Bentley Bentayga</h3>
+                    <p class="model-years">2015-present</p>
+                    <p>The first Bentley SUV. Controversial but brilliant – W12 power, off-road capability, and Bentley luxury. Now the brand's best-seller.</p>
+                </div>
+                
+                <!-- Bentley Flying Spur -->
+                <div class="model-card">
+                    <img src="../images/models/bentley-flying-spur.jpg" alt="Bentley Flying Spur">
+                    <h3>Bentley Flying Spur</h3>
+                    <p class="model-years">2005-present</p>
+                    <p>The luxury sports sedan. Four doors, immense performance, and all the luxury of a Bentley.</p>
+                </div>
+                
+                <!-- Bentley Speed Six -->
+                <div class="model-card">
+                    <img src="../images/models/bentley-speed-six.jpg" alt="Bentley Speed Six">
+                    <h3>Bentley Speed Six</h3>
+                    <p class="model-years">1928-1930</p>
+                    <p>The ultimate "Bentley Boy" car. 6.5L straight-six, 180 hp, and Le Mans winner in 1929 and 1930.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Continental GT Section -->
+    <section id="continental" class="brand-section">
+        <div class="container">
+            <h2>The <span class="highlight">Continental GT</span> – Bentley's Salvation</h2>
+            
+            <div class="continental-grid">
+                <div class="continental-text">
+                    <p>The Continental GT, launched in 2003, was Bentley's most important car since the 1920s. After Volkswagen's acquisition, Bentley needed a modern grand tourer that could compete with the best from Europe.</p>
+                    
+                    <h4>First Generation (2003-2011):</h4>
+                    <ul>
+                        <li>6.0L W12 engine, twin-turbo, 552 hp</li>
+                        <li>198 mph top speed – fastest four-seater at launch</li>
+                        <li>All-wheel drive, air suspension</li>
+                        <li>Design by Dirk van Braeckel – modern yet timeless</li>
+                        <li>Over 80,000 sold – saved the company</li>
+                    </ul>
+                    
+                    <h4>Second Generation (2011-2018):</h4>
+                    <ul>
+                        <li>More powerful W12 (616 hp)</li>
+                        <li>V8 option (4.0L twin-turbo, 500 hp)</li>
+                        <li>More luxurious interior</li>
+                        <li>Convertible (GTC) version</li>
+                    </ul>
+                    
+                    <h4>Third Generation (2018-present):</h4>
+                    <ul>
+                        <li>New design – sharper, more muscular</li>
+                        <li>W12 (635 hp) and V8 (542 hp)</li>
+                        <li>PHEV option (2024)</li>
+                        <li>Advanced chassis, 48V anti-roll system</li>
+                        <li>The ultimate grand tourer</li>
+                    </ul>
+                    
+                    <p>The Continental GT proved that a luxury grand tourer could also be a genuine performance car. It defined the modern Bentley and remains the heart of the brand.</p>
+                </div>
+                
+                <div class="continental-image">
+                    <img src="../images/bentley/continental-gt-generations.jpg" alt="Continental GT Generations">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Racing Heritage Section -->
+    <section id="racing" class="brand-section bg-light">
+        <div class="container">
+            <h2>Bentley's <span class="highlight">Racing</span> Heritage</h2>
+            
+            <div class="racing-grid">
+                <div class="racing-content">
+                    <h4>Le Mans Victories:</h4>
+                    <ul>
+                        <li><strong>1924:</strong> 3-Litre – first win</li>
+                        <li><strong>1927:</strong> 3-Litre</li>
+                        <li><strong>1928:</strong> 4½ Litre</li>
+                        <li><strong>1929:</strong> Speed Six</li>
+                        <li><strong>1930:</strong> Speed Six – 1-2 finish</li>
+                        <li><strong>2003:</strong> Speed 8 – victory (shared with Audi)</li>
+                    </ul>
+                    
+                    <h4>The Bentley Boys:</h4>
+                    <p>The "Bentley Boys" were a group of wealthy British gentlemen who raced Bentleys in the 1920s. They included Woolf Barnato (heir to the Barnato banking fortune), Sir Henry "Tim" Birkin (baronet and racing driver), and Glen Kidston. They were glamorous, daring, and successful.</p>
+                    
+                    <h4>Brooklands:</h4>
+                    <p>Bentleys dominated at Brooklands, the world's first purpose-built motor racing circuit. The 1920s Bentleys were unbeatable on the high-speed oval.</p>
+                    
+                    <h4>Modern Racing:</h4>
+                    <p>Bentley returned to racing with the Continental GT3 in 2014, winning at Bathurst, Spa, and other GT circuits. The GT3 program continues today, proving Bentley's performance credentials.</p>
+                </div>
+                
+                <div class="racing-image">
+                    <img src="../images/motorsport/bentley-lemans.jpg" alt="Bentley at Le Mans">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Craftsmanship Section -->
+    <section id="craftsmanship" class="brand-section">
+        <div class="container">
+            <h2><span class="highlight">Craftsmanship</span> at Crewe</h2>
+            
+            <div class="craft-grid">
+                <div class="craft-text">
+                    <p>Every Bentley is handcrafted at the company's factory in Crewe, England. The level of craftsmanship is extraordinary.</p>
+                    
+                    <h4>Leather:</h4>
+                    <p>Each Bentley uses up to 10 hides of leather, all from northern European bulls (fewer insect bites). The hides are inspected by hand, cut with precision, and stitched by skilled craftspeople. The Continental GT has 300,000 stitches inside.</p>
+                    
+                    <h4>Wood:</h4>
+                    <p>Bentley offers 10 different wood veneers, each taking 30 days to prepare. The wood is bookmatched – opened like a book to create symmetrical grain patterns. In the Flying Spur, the wood panels are cut from a single tree.</p>
+                    
+                    <h4>Metal:</h4>
+                    <p>The knurling on Bentley's switches and vents is inspired by fine jewelry. The organ-stop air vents are machined from solid aluminum. Even the start-stop button is crafted with precision.</p>
+                    
+                    <h4>Mulliner:</h4>
+                    <p>Bentley's bespoke division, named after the legendary coachbuilder. Mulliner can create virtually anything a customer desires – unique paint, embroidery, picnic hampers, even dog beds.</p>
+                    
+                    <p>Each Bentley takes months to complete. The craftspeople at Crewe are among the most skilled in the world, passing down techniques through generations.</p>
+                </div>
+                
+                <div class="craft-image">
+                    <img src="../images/bentley/craftsmanship.jpg" alt="Bentley Craftsmanship">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="brand-section bg-light">
+        <div class="container">
+            <h2>Bentley <span class="highlight">Timeline</span></h2>
+            
+            <div class="brand-timeline">
+                <div class="timeline-item">
+                    <div class="year">1919</div>
+                    <div class="desc">Bentley Motors founded by W.O. Bentley</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1921</div>
+                    <div class="desc">First Bentley 3-Litre sold</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1924</div>
+                    <div class="desc">First Le Mans victory</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1927</div>
+                    <div class="desc">Second Le Mans win</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1928</div>
+                    <div class="desc">Third Le Mans win</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1929</div>
+                    <div class="desc">Speed Six wins Le Mans – fourth victory</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1930</div>
+                    <div class="desc">Speed Six wins Le Mans – fifth victory; Blower Bentley</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1931</div>
+                    <div class="desc">Rolls-Royce acquires Bentley</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1952</div>
+                    <div class="desc">R-Type Continental launched – the GT icon</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1980</div>
+                    <div class="desc">Mulsanne launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1998</div>
+                    <div class="desc">Volkswagen acquires Bentley</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2003</div>
+                    <div class="desc">Continental GT launched; Speed 8 wins Le Mans</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2005</div>
+                    <div class="desc">Flying Spur introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2015</div>
+                    <div class="desc">Bentayga SUV launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2018</div>
+                    <div class="desc">Third-generation Continental GT</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2020</div>
+                    <div class="desc">Mulsanne production ends</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2024</div>
+                    <div class="desc">First Bentley EV announced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2030</div>
+                    <div class="desc">Bentley aims for full electrification</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Brands -->
+    <div class="text-center section-padding">
+        <a href="../brands.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to All Brands</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../brands.html">Brands</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>British Brands</h4>
+                    <ul>
+                        <li><a href="jaguar.html">Jaguar</a></li>
+                        <li><a href="land-rover.html">Land Rover</a></li>
+                        <li><a href="aston-martin.html">Aston Martin</a></li>
+                        <li><a href="bentley.html">Bentley</a></li>
+                        <li><a href="rolls-royce.html">Rolls-Royce</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

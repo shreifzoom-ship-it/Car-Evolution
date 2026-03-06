@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kia History | Complete Brand Profile & Iconic Models</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore Kia's complete history from 1944 to present. Discover iconic models like Stinger, Sportage, EV6, Telluride, and how Kia became a design-led global brand.">
+    <meta name="keywords" content="Kia history, Kia Stinger, Kia Sportage, Kia EV6, Korean cars, Peter Schreyer, Telluride">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Kia History | Complete Brand Profile">
+    <meta property="og:description" content="Movement that inspires - Korean Design Powerhouse">
+    <meta property="og:image" content="../images/brands/korean/kia-logo.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/brands.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../1886-1920.html">1886-1920: Birth</a></li>
+                            <li><a href="../1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="../1950-1980.html">1950-1980: Muscle</a></li>
+                            <li><a href="../1980-2010.html">1980-2010: Technology</a></li>
+                            <li><a href="../2010-present.html">2010-Present: Electric</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../brands.html">Brands</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Brand Hero -->
+    <header class="brand-hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../images/brands/korean/kia-hero.jpg');">
+        <div class="container">
+            <div class="brand-hero-content">
+                <img src="../images/brands/korean/kia-logo.png" alt="Kia Logo" class="brand-hero-logo">
+                <h1>Kia</h1>
+                <p class="brand-tagline">Movement that inspires</p>
+                
+                <div class="brand-quick-facts">
+                    <span><i class="fas fa-calendar"></i> Founded: 1944</span>
+                    <span><i class="fas fa-globe"></i> Country: South Korea</span>
+                    <span><i class="fas fa-trophy"></i> Icon: Stinger, EV6</span>
+                    <span><i class="fas fa-cog"></i> Design Leader</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Navigation -->
+    <div class="brand-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#history" class="active">History</a></li>
+                <li><a href="#models">Iconic Models</a></li>
+                <li><a href="#design">Design Revolution</a></li>
+                <li><a href="#stinger">Stinger</a></li>
+                <li><a href="#ev">EV Lineup</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- History Section -->
+    <section id="history" class="brand-section">
+        <div class="container">
+            <h2>Kia: <span class="highlight">Movement that inspires</span></h2>
+            
+            <div class="history-grid">
+                <div class="history-text">
+                    <p>Kia is Korea's oldest car manufacturer, founded in 1944 as a manufacturer of bicycle parts and steel tubing. The name "Kia" means "to rise from Asia."</p>
+                    
+                    <p>After WWII, Kia built bicycles, then motorcycles, then trucks. The first Kia passenger car, the Brisa, appeared in 1974. It was a small car based on Mazda technology.</p>
+                    
+                    <p>Through the 1980s, Kia partnered with Ford and Mazda, building the Mazda-based Pride (Ford Festiva). Quality was basic, but prices were low.</p>
+                    
+                    <p>The 1990s saw Kia expand globally, but the Asian financial crisis hit hard. Kia filed for bankruptcy in 1997 and was acquired by Hyundai in 1998, forming the Hyundai Motor Group.</p>
+                    
+                    <p>Under Hyundai, Kia was allowed to operate independently but with shared platforms and R&D. The 2000s brought rapid growth. Kia hired Peter Schreyer (former Audi designer) in 2006, and his influence transformed the brand.</p>
+                    
+                    <p>Schreyer's "tiger nose" grille became Kia's signature. Models like the Optima, Sportage, and Soul gained distinctive styling. Quality improved dramatically.</p>
+                    
+                    <p>The 2017 Stinger was a revelation – a rear-wheel drive sports sedan that could compete with BMW and Audi. It proved Kia could build a genuine driver's car.</p>
+                    
+                    <p>Today, Kia is a design-led brand with a stunning lineup. The EV6 electric crossover won multiple awards. The Telluride SUV is one of America's most acclaimed vehicles. Kia has shed its cheap image entirely.</p>
+                    
+                    <div class="founder-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>"Design is the soul of our brand."</blockquote>
+                        <cite>- Peter Schreyer, Design Chief</cite>
+                    </div>
+                </div>
+                
+                <div class="history-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar"></i>
+                        <span class="stat-number">1944</span>
+                        <span class="stat-label">Founded</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <span class="stat-number">2006</span>
+                        <span class="stat-label">Schreyer Era</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-car"></i>
+                        <span class="stat-number">2017</span>
+                        <span class="stat-label">Stinger</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-cog"></i>
+                        <span class="stat-number">EV6</span>
+                        <span class="stat-label">2021</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iconic Models Section -->
+    <section id="models" class="brand-section bg-light">
+        <div class="container">
+            <h2>Iconic <span class="highlight">Models</span></h2>
+            
+            <div class="models-grid">
+                <!-- Kia Stinger -->
+                <div class="model-card featured">
+                    <img src="../images/models/kia-stinger.jpg" alt="Kia Stinger">
+                    <div class="model-info">
+                        <h3>Kia Stinger (2017-2023)</h3>
+                        <p class="model-years">2017-2023</p>
+                        <p>The car that proved Kia could build a rear-wheel drive sports sedan. Twin-turbo V6, 365 hp, and genuine BMW-fighting dynamics.</p>
+                        <ul class="model-specs">
+                            <li><i class="fas fa-cog"></i> 2.0L turbo or 3.3L twin-turbo V6</li>
+                            <li><i class="fas fa-tachometer-alt"></i> 365 hp (V6), 0-60 in 4.6s</li>
+                            <li><i class="fas fa-trophy"></i> 2018 Car of the Year (Canada)</li>
+                            <li><i class="fas fa-crown"></i> Gran Turismo legend</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Kia EV6 -->
+                <div class="model-card">
+                    <img src="../images/models/kia-ev6.jpg" alt="Kia EV6">
+                    <h3>Kia EV6</h3>
+                    <p class="model-years">2021-present</p>
+                    <p>2022 European Car of the Year. E-GMP platform, 800V charging, up to 328 mile range. GT version with 576 hp.</p>
+                </div>
+                
+                <!-- Kia Sportage -->
+                <div class="model-card">
+                    <img src="../images/models/kia-sportage.jpg" alt="Kia Sportage">
+                    <h3>Kia Sportage</h3>
+                    <p class="model-years">1993-present</p>
+                    <p>Kia's longest-running nameplate. Evolved from basic off-roader to stylish global best-seller.</p>
+                </div>
+                
+                <!-- Kia Telluride -->
+                <div class="model-card">
+                    <img src="../images/models/kia-telluride.jpg" alt="Kia Telluride">
+                    <h3>Kia Telluride</h3>
+                    <p class="model-years">2019-present</p>
+                    <p>Large SUV that won every award. Bold design, upscale interior, unbeatable value. World Car of the Year 2020.</p>
+                </div>
+                
+                <!-- Kia Soul -->
+                <div class="model-card">
+                    <img src="../images/models/kia-soul.jpg" alt="Kia Soul">
+                    <h3>Kia Soul</h3>
+                    <p class="model-years">2008-present</p>
+                    <p>Quirky box on wheels. Distinctive design, practical interior, and hamster marketing. Cult classic.</p>
+                </div>
+                
+                <!-- Kia Optima/K5 -->
+                <div class="model-card">
+                    <img src="../images/models/kia-k5.jpg" alt="Kia K5">
+                    <h3>Kia K5 (Optima)</h3>
+                    <p class="model-years">2000-present</p>
+                    <p>Mid-size sedan. Current K5 has stunning design, available AWD, and GT version.</p>
+                </div>
+                
+                <!-- Kia Sorento -->
+                <div class="model-card">
+                    <img src="../images/models/kia-sorento.jpg" alt="Kia Sorento">
+                    <h3>Kia Sorento</h3>
+                    <p class="model-years">2002-present</p>
+                    <p>Three-row SUV. Practical, stylish, available hybrid.</p>
+                </div>
+                
+                <!-- Kia Pride -->
+                <div class="model-card">
+                    <img src="../images/models/kia-pride.jpg" alt="Kia Pride">
+                    <h3>Kia Pride</h3>
+                    <p class="model-years">1987-2000</p>
+                    <p>First global success. Mazda-based small car, sold as Ford Festiva in some markets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Revolution Section -->
+    <section id="design" class="brand-section">
+        <div class="container">
+            <h2>The <span class="highlight">Design</span> Revolution</h2>
+            
+            <div class="design-grid">
+                <div class="design-text">
+                    <p>When Peter Schreyer joined Kia in 2006, he transformed the brand. He was the first foreign design chief in a Korean company and later became the first non-Korean president.</p>
+                    
+                    <h4>Schreyer's Impact:</h4>
+                    <ul>
+                        <li>Introduced "tiger nose" grille – Kia's signature</li>
+                        <li>Clean, European-inspired lines</li>
+                        <li>Premium materials and proportions</li>
+                        <li>Designed the Stinger himself</li>
+                    </ul>
+                    
+                    <h4>Opposites United (Current):</h4>
+                    <p>Kia's new design philosophy, led by Karim Habib (ex-BMW). Based on contrast and harmony – combining sharp edges with organic surfaces. Seen on EV6, EV9, K5.</p>
+                    
+                    <h4>Design Icons:</h4>
+                    <ul>
+                        <li>Peter Schreyer (2006-2018)</li>
+                        <li>Karim Habib (2019-present)</li>
+                        <li>Gregory Guillaume (Stinger designer)</li>
+                    </ul>
+                </div>
+                
+                <div class="design-image">
+                    <img src="../images/kia/schreyer.jpg" alt="Kia Design Evolution">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stinger Section -->
+    <section id="stinger" class="brand-section bg-light">
+        <div class="container">
+            <h2>The <span class="highlight">Stinger</span> – Gran Turismo</h2>
+            
+            <div class="stinger-grid">
+                <div class="stinger-text">
+                    <p>The Stinger was Kia's statement of intent. A rear-wheel drive sports sedan with a twin-turbo V6, designed to compete with the best from Europe.</p>
+                    
+                    <h4>Development:</h4>
+                    <p>Developed under Albert Biermann (ex-BMW M) and tested at the Nürburgring. The chassis was tuned for genuine driving pleasure.</p>
+                    
+                    <h4>Models:</h4>
+                    <ul>
+                        <li><strong>2.0L Turbo:</strong> 255 hp, 4-cylinder</li>
+                        <li><strong>3.3L Twin-Turbo V6:</strong> 365 hp, 0-60 in 4.6s</li>
+                        <li><strong>GT:</strong> V6 with Brembo brakes, adaptive suspension</li>
+                        <li><strong>GT1/GT2:</strong> Loaded versions</li>
+                    </ul>
+                    
+                    <h4>Legacy:</h4>
+                    <p>The Stinger proved Kia could build a genuine driver's car. It won praise worldwide and became a cult favorite. Production ended in 2023, but its impact remains.</p>
+                </div>
+                
+                <div class="stinger-image">
+                    <img src="../images/kia/stinger-profile.jpg" alt="Kia Stinger">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EV Lineup Section -->
+    <section id="ev" class="brand-section">
+        <div class="container">
+            <h2><span class="highlight">EV</span> Lineup</h2>
+            
+            <div class="ev-grid">
+                <div class="ev-text">
+                    <p>Kia is committed to electrification with a dedicated EV lineup built on the E-GMP platform (shared with Hyundai and Genesis).</p>
+                    
+                    <h4>Current EVs:</h4>
+                    <ul>
+                        <li><strong>EV6 (2021):</strong> Crossover, up to 328 mile range, GT with 576 hp</li>
+                        <li><strong>Niro EV (2022):</strong> Compact SUV, practical and efficient</li>
+                        <li><strong>EV9 (2023):</strong> Large three-row SUV, 350 mile range, 800V charging</li>
+                        <li><strong>EV5 (2024):</strong> Mid-size SUV (global markets)</li>
+                        <li><strong>EV4 / EV3 (2025):</strong> Compact sedans/hatches</li>
+                    </ul>
+                    
+                    <h4>E-GMP Advantages:</h4>
+                    <ul>
+                        <li>800V architecture – 10-80% charge in 18 minutes</li>
+                        <li>Vehicle-to-Load (V2L) – power external devices</li>
+                        <li>Up to 576 hp (EV6 GT)</li>
+                        <li>Ultra-fast charging network access</li>
+                    </ul>
+                </div>
+                
+                <div class="ev-image">
+                    <img src="../images/kia/ev6-ev9.jpg" alt="Kia EV6 and EV9">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="brand-section bg-light">
+        <div class="container">
+            <h2>Kia <span class="highlight">Timeline</span></h2>
+            
+            <div class="brand-timeline">
+                <div class="timeline-item">
+                    <div class="year">1944</div>
+                    <div class="desc">Kyungsung Precision Industry founded (bicycle parts)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1951</div>
+                    <div class="desc">First bicycle – Samchully</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1962</div>
+                    <div class="desc">First motorcycle – C-100</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1974</div>
+                    <div class="desc">Brisa – first passenger car</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1987</div>
+                    <div class="desc">Pride launched (Mazda 121 based)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1993</div>
+                    <div class="desc">Sportage – first SUV</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1997</div>
+                    <div class="desc">Bankruptcy due to Asian financial crisis</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1998</div>
+                    <div class="desc">Acquired by Hyundai Motor Company</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2006</div>
+                    <div class="desc">Peter Schreyer joins as design chief</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2007</div>
+                    <div class="desc">New logo, "tiger nose" grille introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2008</div>
+                    <div class="desc">Soul launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2017</div>
+                    <div class="desc">Stinger launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2019</div>
+                    <div class="desc">Telluride – World Car of the Year 2020</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2021</div>
+                    <div class="desc">EV6 – European Car of the Year 2022</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2021</div>
+                    <div class="desc">New logo: "Kia" in stylized script</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2023</div>
+                    <div class="desc">EV9 large SUV; Stinger production ends</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2025</div>
+                    <div class="desc">Expanded EV lineup planned</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Brands -->
+    <div class="text-center section-padding">
+        <a href="../brands.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to All Brands</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../brands.html">Brands</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Korean Brands</h4>
+                    <ul>
+                        <li><a href="hyundai.html">Hyundai</a></li>
+                        <li><a href="kia.html">Kia</a></li>
+                        <li><a href="genesis.html">Genesis</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

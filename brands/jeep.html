@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeep History | Complete Brand Profile & Iconic Models</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore Jeep's complete history from 1941 to present. Discover iconic models like Wrangler, Cherokee, Grand Cherokee, and how Jeep became the ultimate off-road brand.">
+    <meta name="keywords" content="Jeep history, Jeep Wrangler, Jeep Cherokee, Jeep Grand Cherokee, Willys MB, off-road, 4x4">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Jeep History | Complete Brand Profile">
+    <meta property="og:description" content="Go Anywhere, Do Anything">
+    <meta property="og:image" content="../images/brands/american/jeep-logo.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/brands.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../1886-1920.html">1886-1920: Birth</a></li>
+                            <li><a href="../1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="../1950-1980.html">1950-1980: Muscle</a></li>
+                            <li><a href="../1980-2010.html">1980-2010: Technology</a></li>
+                            <li><a href="../2010-present.html">2010-Present: Electric</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../brands.html">Brands</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Brand Hero -->
+    <header class="brand-hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../images/brands/american/jeep-hero.jpg');">
+        <div class="container">
+            <div class="brand-hero-content">
+                <img src="../images/brands/american/jeep-logo.png" alt="Jeep Logo" class="brand-hero-logo">
+                <h1>Jeep</h1>
+                <p class="brand-tagline">Go Anywhere, Do Anything</p>
+                
+                <div class="brand-quick-facts">
+                    <span><i class="fas fa-calendar"></i> Founded: 1941</span>
+                    <span><i class="fas fa-globe"></i> Country: USA</span>
+                    <span><i class="fas fa-trophy"></i> Icon: Wrangler</span>
+                    <span><i class="fas fa-cog"></i> 4x4 Legend</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Navigation -->
+    <div class="brand-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#history" class="active">History</a></li>
+                <li><a href="#models">Iconic Models</a></li>
+                <li><a href="#wrangler">Wrangler</a></li>
+                <li><a href="#grandcherokee">Grand Cherokee</a></li>
+                <li><a href="#offroad">Off-Road Tech</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- History Section -->
+    <section id="history" class="brand-section">
+        <div class="container">
+            <h2>Jeep: <span class="highlight">The Original Off-Roader</span></h2>
+            
+            <div class="history-grid">
+                <div class="history-text">
+                    <p>Jeep's story begins with World War II. In 1940, the US Army needed a light reconnaissance vehicle. It invited 135 manufacturers to bid; only two responded. Willys-Overland and Ford produced prototypes, and the Willys MA (later MB) was selected.</p>
+                    
+                    <p>The Willys MB, along with the Ford GPW, became the iconic "Jeep." The origin of the name is debated – some say it's from "GP" (General Purpose), others from a Popeye character "Eugene the Jeep." Whatever the origin, the Jeep became legendary for its toughness and versatility.</p>
+                    
+                    <p>After the war, Willys saw civilian potential. The 1945 CJ-2A (Civilian Jeep) was the first production off-road vehicle for the public. It was basic – canvas top, no doors, simple mechanics – but capable. The CJ (Civilian Jeep) line continued through 1986.</p>
+                    
+                    <p>In 1949, Willys introduced the Jeep Wagon, the first all-steel station wagon, and the Jeep Truck. These expanded Jeep beyond pure off-roaders.</p>
+                    
+                    <p>The 1963 Wagoneer was revolutionary – the first luxury 4x4 with automatic transmission and independent front suspension. It was ahead of its time and is considered the first true SUV.</p>
+                    
+                    <p>American Motors Corporation (AMC) bought Jeep in 1970 and modernized the lineup. The 1974 Cherokee (SJ) was a two-door version of Wagoneer, creating the sporty SUV segment. The 1984 XJ Cherokee was groundbreaking – unibody construction, lighter, more efficient, and hugely successful.</p>
+                    
+                    <p>Chrysler bought AMC in 1987 primarily for Jeep. The Wrangler (YJ) replaced the CJ, with square headlights (controversial). The 1993 Grand Cherokee launched as a luxury SUV, creating the modern SUV market.</p>
+                    
+                    <p>Today, Jeep is a global brand under Stellantis, with models ranging from the rugged Wrangler to the luxurious Grand Cherokee and the compact Renegade. The upcoming Wagoneer and Grand Wagoneer return to the luxury full-size segment. Jeep remains the benchmark for off-road capability.</p>
+                    
+                    <div class="founder-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>"The Jeep is the only true American sports car – because it's about going anywhere, not just going fast."</blockquote>
+                        <cite>- Automotive journalist</cite>
+                    </div>
+                </div>
+                
+                <div class="history-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar"></i>
+                        <span class="stat-number">1941</span>
+                        <span class="stat-label">Willys MB</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <span class="stat-number">1984</span>
+                        <span class="stat-label">XJ Cherokee</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-car"></i>
+                        <span class="stat-number">1993</span>
+                        <span class="stat-label">Grand Cherokee</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-cog"></i>
+                        <span class="stat-number">#1</span>
+                        <span class="stat-label">Off-Road</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iconic Models Section -->
+    <section id="models" class="brand-section bg-light">
+        <div class="container">
+            <h2>Iconic <span class="highlight">Models</span></h2>
+            
+            <div class="models-grid">
+                <!-- Jeep Willys MB -->
+                <div class="model-card featured">
+                    <img src="../images/models/jeep-willys.jpg" alt="Jeep Willys MB">
+                    <div class="model-info">
+                        <h3>Willys MB / Ford GPW (1941-1945)</h3>
+                        <p class="model-years">1941-1945</p>
+                        <p>The original Jeep. Over 600,000 built for WWII. Lightweight, rugged, and versatile. The grandfather of all off-road vehicles.</p>
+                        <ul class="model-specs">
+                            <li><i class="fas fa-cog"></i> 2.2L 4-cylinder, 60 hp</li>
+                            <li><i class="fas fa-weight-hanging"></i> 2,400 lbs</li>
+                            <li><i class="fas fa-trophy"></i> WWII legend</li>
+                            <li><i class="fas fa-flag"></i> Go-Devil engine</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Jeep Wrangler -->
+                <div class="model-card">
+                    <img src="../images/models/jeep-wrangler.jpg" alt="Jeep Wrangler">
+                    <h3>Jeep Wrangler</h3>
+                    <p class="model-years">1987-present</p>
+                    <p>The direct descendant of the original Jeep. Solid axles, removable doors and top, and legendary off-road capability. The ultimate 4x4.</p>
+                </div>
+                
+                <!-- Jeep Cherokee XJ -->
+                <div class="model-card">
+                    <img src="../images/models/jeep-cherokee-xj.jpg" alt="Jeep Cherokee XJ">
+                    <h3>Jeep Cherokee XJ</h3>
+                    <p class="model-years">1984-2001</p>
+                    <p>Revolutionary unibody SUV. Lighter, more efficient, and hugely successful. The XJ created the modern compact SUV segment and has a massive cult following.</p>
+                </div>
+                
+                <!-- Jeep Grand Cherokee -->
+                <div class="model-card">
+                    <img src="../images/models/jeep-grand-cherokee.jpg" alt="Jeep Grand Cherokee">
+                    <h3>Jeep Grand Cherokee</h3>
+                    <p class="model-years">1993-present</p>
+                    <p>The luxury SUV that defined the segment. Combined off-road capability with on-road comfort and luxury. Four generations, millions sold.</p>
+                </div>
+                
+                <!-- Jeep Wagoneer -->
+                <div class="model-card">
+                    <img src="../images/models/jeep-wagoneer.jpg" alt="Jeep Wagoneer">
+                    <h3>Jeep Wagoneer / Grand Wagoneer</h3>
+                    <p class="model-years">1963-1991, 2022-present</p>
+                    <p>The first luxury 4x4. Woodgrain sides, luxurious interior, and ahead of its time. Revived in 2022 as a full-size luxury SUV.</p>
+                </div>
+                
+                <!-- Jeep CJ-5 -->
+                <div class="model-card">
+                    <img src="../images/models/jeep-cj5.jpg" alt="Jeep CJ-5">
+                    <h3>Jeep CJ-5</h3>
+                    <p class="model-years">1954-1983</p>
+                    <p>The longest-running CJ. Over 600,000 built. The definitive post-war Jeep, loved by farmers, off-roaders, and enthusiasts.</p>
+                </div>
+                
+                <!-- Jeep Gladiator -->
+                <div class="model-card">
+                    <img src="../images/models/jeep-gladiator.jpg" alt="Jeep Gladiator">
+                    <h3>Jeep Gladiator</h3>
+                    <p class="model-years">2020-present</p>
+                    <p>The Wrangler-based pickup. Removable doors and top, off-road capability, and a truck bed. The ultimate adventure vehicle.</p>
+                </div>
+                
+                <!-- Jeep Compass -->
+                <div class="model-card">
+                    <img src="../images/models/jeep-compass.jpg" alt="Jeep Compass">
+                    <h3>Jeep Compass</h3>
+                    <p class="model-years">2007-present</p>
+                    <p>The compact crossover, bringing Jeep capability to a smaller, more efficient package.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wrangler Section -->
+    <section id="wrangler" class="brand-section">
+        <div class="container">
+            <h2>The <span class="highlight">Wrangler</span> – King of Off-Road</h2>
+            
+            <div class="wrangler-grid">
+                <div class="wrangler-text">
+                    <p>The Wrangler is the direct descendant of the original Willys MB. It's the most capable production off-road vehicle in the world.</p>
+                    
+                    <h4>Generations:</h4>
+                    <ul>
+                        <li><strong>YJ (1987-1995):</strong> First Wrangler. Square headlights (controversial), wider track, better on-road manners.</li>
+                        <li><strong>TJ (1997-2006):</strong> Return to round headlights. Coil springs (finally), better ride, Rubicon trim introduced (2003).</li>
+                        <li><strong>JK (2007-2018):</strong> Larger, more refined. Four-door Unlimited model introduced – game-changer. More power, more capability.</li>
+                        <li><strong>JL (2018-present):</strong> Current generation. Lighter, more efficient, advanced technology. Diesel, 4xe plug-in hybrid, 392 V8 options.</li>
+                    </ul>
+                    
+                    <h4>Rubicon:</h4>
+                    <p>The Rubicon trim is named after the Rubicon Trail in California, one of the toughest off-road trails. It features locking differentials, disconnecting sway bar, low-range transfer case, and heavy-duty axles. It's ready for the hardest trails straight from the factory.</p>
+                    
+                    <h4>4xe:</h4>
+                    <p>The plug-in hybrid Wrangler offers 49 MPGe, 21 miles electric range, and instant torque for off-road. The best-selling PHEV in America.</p>
+                    
+                    <p>The Wrangler's removable doors and top, fold-down windshield, and solid axles keep it true to the original Jeep spirit.</p>
+                </div>
+                
+                <div class="wrangler-image">
+                    <img src="../images/jeep/wrangler-rubicon.jpg" alt="Jeep Wrangler Rubicon">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grand Cherokee Section -->
+    <section id="grandcherokee" class="brand-section bg-light">
+        <div class="container">
+            <h2><span class="highlight">Grand Cherokee</span> – The Luxury SUV</h2>
+            
+            <div class="grandcherokee-grid">
+                <div class="grandcherokee-text">
+                    <p>The Grand Cherokee created the modern luxury SUV segment. It combined off-road capability with on-road comfort and luxury, a formula that every manufacturer now follows.</p>
+                    
+                    <h4>Generations:</h4>
+                    <ul>
+                        <li><strong>ZJ (1993-1998):</strong> First generation. Based on Chrysler's new platform, it was a revelation. V8 option, luxurious interior, and genuine off-road ability.</li>
+                        <li><strong>WJ (1999-2004):</strong> Refined design, Quadra-Drive system, more luxury. Overland trim introduced.</li>
+                        <li><strong>WK (2005-2010):</strong> Bolder design, independent front suspension (controversial but better on-road). SRT8 version with 420 hp.</li>
+                        <li><strong>WK2 (2011-2021):</strong> Lighter, more efficient, available diesel. Trackhawk version with 707 hp – insane SUV.</li>
+                        <li><strong>WL (2021-present):</strong> Current generation. Three rows available, advanced luxury, plug-in 4xe version.</li>
+                    </ul>
+                    
+                    <h4>Performance Versions:</h4>
+                    <ul>
+                        <li><strong>SRT8 (2006-2010):</strong> 6.1L HEMI, 420 hp</li>
+                        <li><strong>SRT8 (2012-2021):</strong> 6.4L HEMI, 475 hp</li>
+                        <li><strong>Trackhawk (2018-2021):</strong> Supercharged 6.2L Hellcat, 707 hp – 0-60 in 3.5 seconds</li>
+                    </ul>
+                </div>
+                
+                <div class="grandcherokee-image">
+                    <img src="../images/jeep/grand-cherokee-trackhawk.jpg" alt="Jeep Grand Cherokee Trackhawk">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Off-Road Technology Section -->
+    <section id="offroad" class="brand-section">
+        <div class="container">
+            <h2>Jeep <span class="highlight">Off-Road</span> Technology</h2>
+            
+            <div class="offroad-grid">
+                <div class="offroad-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>Locking Differentials</h3>
+                    <p>Front and rear locking diffs allow power to go to all wheels even if some have no traction. Essential for serious off-roading.</p>
+                </div>
+                
+                <div class="offroad-card">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <h3>Rock-Trac 4x4</h3>
+                    <p>Heavy-duty transfer case with 4:1 low-range ratio. Crawl ratio of 84:1 for precise control at low speeds.</p>
+                </div>
+                
+                <div class="offroad-card">
+                    <i class="fas fa-car"></i>
+                    <h3>Disconnecting Sway Bar</h3>
+                    <p>Electronic disconnecting sway bar allows maximum wheel articulation on rough terrain, keeping tires on the ground.</p>
+                </div>
+                
+                <div class="offroad-card">
+                    <i class="fas fa-tint"></i>
+                    <h3>Water Fording</h3>
+                    <p>Wrangler can ford up to 30 inches of water. Air intake is high in the engine bay.</p>
+                </div>
+                
+                <div class="offroad-card">
+                    <i class="fas fa-mountain"></i>
+                    <h3>Approach / Departure Angles</h3>
+                    <p>Wrangler Rubicon: 44° approach, 37° departure, 27.8° breakover – can climb over huge obstacles.</p>
+                </div>
+                
+                <div class="offroad-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>4xe Electric Torque</h3>
+                    <p>Instant torque from electric motors provides precise control off-road, with regenerative braking for descents.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="brand-section bg-light">
+        <div class="container">
+            <h2>Jeep <span class="highlight">Timeline</span></h2>
+            
+            <div class="brand-timeline">
+                <div class="timeline-item">
+                    <div class="year">1940</div>
+                    <div class="desc">US Army requests light reconnaissance vehicle</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1941</div>
+                    <div class="desc">Willys MB and Ford GPW enter production</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1945</div>
+                    <div class="desc">CJ-2A civilian Jeep introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1946</div>
+                    <div class="desc">Jeep Station Wagon – first all-steel wagon</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1949</div>
+                    <div class="desc">Jeep Truck introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1954</div>
+                    <div class="desc">CJ-5 launched – 28-year run</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1963</div>
+                    <div class="desc">Wagoneer introduced – first luxury 4x4</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1970</div>
+                    <div class="desc">American Motors (AMC) buys Jeep</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1974</div>
+                    <div class="desc">Cherokee (SJ) introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1984</div>
+                    <div class="desc">XJ Cherokee – revolutionary unibody SUV</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1987</div>
+                    <div class="desc">Chrysler buys AMC; Wrangler YJ introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1993</div>
+                    <div class="desc">Grand Cherokee (ZJ) launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1997</div>
+                    <div class="desc">Wrangler TJ with coil springs</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2003</div>
+                    <div class="desc">Wrangler Rubicon introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2007</div>
+                    <div class="desc">Wrangler JK with four-door Unlimited</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2014</div>
+                    <div class="desc">Cherokee KL reintroduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2018</div>
+                    <div class="desc">Wrangler JL launched; Grand Cherokee Trackhawk (707 hp)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2020</div>
+                    <div class="desc">Gladiator pickup launched; Wrangler 4xe plug-in hybrid</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2022</div>
+                    <div class="desc">Grand Wagoneer returns as full-size luxury SUV</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2024</div>
+                    <div class="desc">Wrangler 392 with V8 (470 hp)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Brands -->
+    <div class="text-center section-padding">
+        <a href="../brands.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to All Brands</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../brands.html">Brands</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>American Brands</h4>
+                    <ul>
+                        <li><a href="ford.html">Ford</a></li>
+                        <li><a href="chevrolet.html">Chevrolet</a></li>
+                        <li><a href="dodge.html">Dodge</a></li>
+                        <li><a href="cadillac.html">Cadillac</a></li>
+                        <li><a href="jeep.html">Jeep</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

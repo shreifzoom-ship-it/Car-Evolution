@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadillac History | Complete Brand Profile & Iconic Models</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore Cadillac's complete history from 1902 to present. Discover iconic models like Eldorado, DeVille, CTS-V, and how Cadillac defined American luxury.">
+    <meta name="keywords" content="Cadillac history, Cadillac Eldorado, Cadillac DeVille, Cadillac CTS-V, American luxury cars, tailfins">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Cadillac History | Complete Brand Profile">
+    <meta property="og:description" content="Standard of the World - American Luxury">
+    <meta property="og:image" content="../images/brands/american/cadillac-logo.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/brands.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../1886-1920.html">1886-1920: Birth</a></li>
+                            <li><a href="../1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="../1950-1980.html">1950-1980: Muscle</a></li>
+                            <li><a href="../1980-2010.html">1980-2010: Technology</a></li>
+                            <li><a href="../2010-present.html">2010-Present: Electric</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../brands.html">Brands</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Brand Hero -->
+    <header class="brand-hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../images/brands/american/cadillac-hero.jpg');">
+        <div class="container">
+            <div class="brand-hero-content">
+                <img src="../images/brands/american/cadillac-logo.png" alt="Cadillac Logo" class="brand-hero-logo">
+                <h1>Cadillac</h1>
+                <p class="brand-tagline">Standard of the World</p>
+                
+                <div class="brand-quick-facts">
+                    <span><i class="fas fa-calendar"></i> Founded: 1902</span>
+                    <span><i class="fas fa-globe"></i> Country: USA</span>
+                    <span><i class="fas fa-trophy"></i> Icon: Eldorado</span>
+                    <span><i class="fas fa-cog"></i> American Luxury</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Navigation -->
+    <div class="brand-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#history" class="active">History</a></li>
+                <li><a href="#models">Iconic Models</a></li>
+                <li><a href="#tailfins">Tailfin Era</a></li>
+                <li><a href="#vseries">V-Series</a></li>
+                <li><a href="#design">Design</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- History Section -->
+    <section id="history" class="brand-section">
+        <div class="container">
+            <h2>Cadillac: <span class="highlight">Standard of the World</span></h2>
+            
+            <div class="history-grid">
+                <div class="history-text">
+                    <p>Cadillac was founded in 1902 from the remnants of the Henry Ford Company (after Ford left). Named after Antoine Laumet de La Mothe, sieur de Cadillac, the French explorer who founded Detroit, the brand quickly established a reputation for precision engineering.</p>
+                    
+                    <p>In 1908, Cadillac demonstrated its commitment to precision by disassembling three cars, mixing up the parts, and reassembling them – all ran perfectly. This proved interchangeability of parts, a revolutionary concept at the time. Cadillac won the prestigious Dewar Trophy and adopted the slogan "Standard of the World."</p>
+                    
+                    <p>Cadillac became part of General Motors in 1909, positioned as the company's luxury flagship. Under GM, Cadillac introduced innovations that would become industry standards: the electric starter (1912), synchromesh transmission (1929), independent front suspension (1934), and the first mass-produced V16 engine (1930).</p>
+                    
+                    <p>The 1930s V16 Cadillacs were among the most luxurious cars ever built, competing with the best from Europe. The 1940s brought beautiful designs by Harley Earl, establishing Cadillac's design leadership.</p>
+                    
+                    <p>The 1950s were Cadillac's golden era. Harley Earl's designs grew increasingly extravagant – tailfins inspired by the Lockheed P-38 Lightning fighter plane, chrome, and two-tone paint. The 1959 Cadillac had the tallest fins ever, epitomizing 1950s American optimism.</p>
+                    
+                    <p>The 1960s and 1970s saw Cadillac expand with front-wheel drive (Eldorado), personal luxury coupes, and eventually downsizing in the 1980s. The 1980s also brought the first front-wheel drive Cadillacs (Cimarron, a mistake) and the Allanté luxury roadster built with Italian design.</p>
+                    
+                    <p>In the 2000s, Cadillac reinvented itself with "Art and Science" design – sharp, angular, and modern. The CTS-V and other V-Series models brought serious performance. Today, Cadillac is transitioning to electric with the Lyriq, Celestiq, and a future all-electric lineup.</p>
+                    
+                    <div class="founder-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>"The penalty of leadership – Cadillac has paid it consistently for many years."</blockquote>
+                        <cite>- 1915 Cadillac advertisement</cite>
+                    </div>
+                </div>
+                
+                <div class="history-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar"></i>
+                        <span class="stat-number">1902</span>
+                        <span class="stat-label">Founded</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <span class="stat-number">1912</span>
+                        <span class="stat-label">Electric Starter</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-car"></i>
+                        <span class="stat-number">1959</span>
+                        <span class="stat-label">Peak Tailfins</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-cog"></i>
+                        <span class="stat-number">V-Series</span>
+                        <span class="stat-label">Performance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iconic Models Section -->
+    <section id="models" class="brand-section bg-light">
+        <div class="container">
+            <h2>Iconic <span class="highlight">Models</span></h2>
+            
+            <div class="models-grid">
+                <!-- Cadillac Eldorado -->
+                <div class="model-card featured">
+                    <img src="../images/models/cadillac-eldorado.jpg" alt="Cadillac Eldorado">
+                    <div class="model-info">
+                        <h3>Cadillac Eldorado (1953-2002)</h3>
+                        <p class="model-years">1953-2002</p>
+                        <p>The ultimate American luxury car. The Eldorado defined Cadillac for generations. The 1959 Eldorado Biarritz had the tallest tailfins ever. The 1967-1970 front-wheel drive Eldorados were elegant personal luxury coupes.</p>
+                        <ul class="model-specs">
+                            <li><i class="fas fa-cog"></i> 1953: Convertible special, only 532 built</li>
+                            <li><i class="fas fa-tachometer-alt"></i> 1959: 390 V8, 345 hp</li>
+                            <li><i class="fas fa-crown"></i> "Standard of the World" epitomized</li>
+                            <li><i class="fas fa-palette"></i> Tailfin design icon</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Cadillac DeVille -->
+                <div class="model-card">
+                    <img src="../images/models/cadillac-deville.jpg" alt="Cadillac DeVille">
+                    <h3>Cadillac DeVille / Fleetwood</h3>
+                    <p class="model-years">1949-2005</p>
+                    <p>The classic Cadillac sedan. The DeVille (French for "of the town") was Cadillac's best-seller for decades. The Fleetwood was the top luxury version.</p>
+                </div>
+                
+                <!-- Cadillac CTS-V -->
+                <div class="model-card">
+                    <img src="../images/models/cadillac-ctsv.jpg" alt="Cadillac CTS-V">
+                    <h3>Cadillac CTS-V</h3>
+                    <p class="model-years">2004-2019</p>
+                    <p>The car that proved Cadillac could compete with BMW M and Mercedes AMG. Supercharged V8, manual transmission, and track capability.</p>
+                </div>
+                
+                <!-- Cadillac V-16 -->
+                <div class="model-card">
+                    <img src="../images/models/cadillac-v16.jpg" alt="Cadillac V-16">
+                    <h3>Cadillac V-16</h3>
+                    <p class="model-years">1930-1940</p>
+                    <p>The ultimate pre-war luxury car. A 452 cubic inch V16 engine, coachbuilt bodies, and unparalleled prestige. Only the wealthiest could afford one.</p>
+                </div>
+                
+                <!-- Cadillac Allanté -->
+                <div class="model-card">
+                    <img src="../images/models/cadillac-allante.jpg" alt="Cadillac Allanté">
+                    <h3>Cadillac Allanté</h3>
+                    <p class="model-years">1987-1993</p>
+                    <p>The Italian-American roadster. Bodies built by Pininfarina in Italy, flown to Detroit on 747s for final assembly. A bold attempt at a Mercedes SL competitor.</p>
+                </div>
+                
+                <!-- Cadillac Escalade -->
+                <div class="model-card">
+                    <img src="../images/models/cadillac-escalade.jpg" alt="Cadillac Escalade">
+                    <h3>Cadillac Escalade</h3>
+                    <p class="model-years">1999-present</p>
+                    <p>The ultimate luxury SUV. The Escalade defined the segment and became a cultural icon in hip-hop and celebrity culture. Massive, bold, and luxurious.</p>
+                </div>
+                
+                <!-- Cadillac Seville -->
+                <div class="model-card">
+                    <img src="../images/models/cadillac-seville.jpg" alt="Cadillac Seville">
+                    <h3>Cadillac Seville</h3>
+                    <p class="model-years">1975-2004</p>
+                    <p>The international-size Cadillac. The 1975 Seville was smaller than traditional Cadillacs, designed to compete with European luxury sedans.</p>
+                </div>
+                
+                <!-- Cadillac Lyriq -->
+                <div class="model-card">
+                    <img src="../images/models/cadillac-lyriq.jpg" alt="Cadillac Lyriq">
+                    <h3>Cadillac Lyriq</h3>
+                    <p class="model-years">2023-present</p>
+                    <p>Cadillac's electric future. The Lyriq is the first of an all-electric lineup, with stunning design and advanced technology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tailfin Era Section -->
+    <section id="tailfins" class="brand-section">
+        <div class="container">
+            <h2>The <span class="highlight">Tailfin</span> Era</h2>
+            
+            <div class="tailfins-grid">
+                <div class="tailfins-text">
+                    <p>Cadillac's design chief Harley Earl introduced tailfins on the 1948 Cadillac, inspired by the Lockheed P-38 Lightning fighter plane. This started an arms race that defined 1950s American car design.</p>
+                    
+                    <h4>Evolution:</h4>
+                    <ul>
+                        <li><strong>1948:</strong> First small fins, subtle and elegant</li>
+                        <li><strong>1954:</strong> Fins grow larger</li>
+                        <li><strong>1957:</strong> Quad headlights, bigger fins</li>
+                        <li><strong>1959:</strong> Peak fin – tallest fins ever on a production car</li>
+                        <li><strong>1960:</strong> Fins begin to shrink</li>
+                        <li><strong>1964:</strong> Fins gone, replaced by clean design</li>
+                    </ul>
+                    
+                    <p>The 1959 Cadillac had fins that stood 42 inches tall. Combined with bullet-shaped tail lights, it's the ultimate expression of 1950s American automotive excess. The tailfin era coincided with American optimism, space age enthusiasm, and economic prosperity.</p>
+                    
+                    <p>Harley Earl retired in 1958, and his successor Bill Mitchell took Cadillac in a cleaner direction. But the tailfin era remains Cadillac's most distinctive and memorable period.</p>
+                </div>
+                
+                <div class="tailfins-image">
+                    <img src="../images/cadillac/1959-cadillac.jpg" alt="1959 Cadillac Eldorado">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- V-Series Section -->
+    <section id="vseries" class="brand-section bg-light">
+        <div class="container">
+            <h2><span class="highlight">V-Series</span> – Performance Cadillacs</h2>
+            
+            <div class="vseries-grid">
+                <div class="vseries-text">
+                    <p>In the early 2000s, Cadillac decided it needed to compete with European performance sedans. The result was the V-Series – Cadillacs with serious power and track capability.</p>
+                    
+                    <h4>Generations:</h4>
+                    <ul>
+                        <li><strong>CTS-V (2004-2007):</strong> First generation. 5.7L V8 (LS6), 400 hp. Manual transmission. Track-capable.</li>
+                        <li><strong>CTS-V (2009-2014):</strong> Second generation. Supercharged 6.2L LSA V8, 556 hp. Magnetic ride control.</li>
+                        <li><strong>CTS-V (2016-2019):</strong> Third generation. Supercharged 6.2L LT4 V8, 640 hp. 0-60 in 3.6 seconds.</li>
+                        <li><strong>ATS-V (2015-2019):</strong> Smaller, twin-turbo V6, 464 hp. BMW M3 competitor.</li>
+                        <li><strong>CT5-V Blackwing (2020-present):</strong> Current king. Supercharged 6.2L V8, 668 hp, manual transmission available. One of the last manual super sedans.</li>
+                        <li><strong>CT4-V Blackwing (2021-present):</strong> Twin-turbo V6, 472 hp, manual available.</li>
+                    </ul>
+                    
+                    <p>The V-Series proved Cadillac could build world-class performance cars. The Blackwing models are among the most praised sports sedans ever, with superb chassis dynamics and that glorious supercharged V8.</p>
+                </div>
+                
+                <div class="vseries-image">
+                    <img src="../images/cadillac/ct5-blackwing.jpg" alt="Cadillac CT5-V Blackwing">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Section -->
+    <section id="design" class="brand-section">
+        <div class="container">
+            <h2>Cadillac <span class="highlight">Design</span> Language</h2>
+            
+            <div class="design-grid">
+                <div class="design-text">
+                    <h4>Art and Science (2000s-2010s)</h4>
+                    <p>Introduced in 1999 with the Evoq concept, "Art and Science" was a radical departure – sharp edges, vertical headlights and taillights, and bold geometric forms. It transformed Cadillac from a stodgy brand to a modern luxury contender.</p>
+                    
+                    <h4>Escala / Modern Luxury (2020s)</h4>
+                    <p>The current design language is more sculptural and elegant while maintaining Cadillac's distinctive vertical lighting. The Lyriq and Celestiq show a softer, more sophisticated direction while remaining unmistakably Cadillac.</p>
+                    
+                    <h4>Design Icons:</h4>
+                    <ul>
+                        <li><strong>Harley Earl (1893-1969):</strong> First GM design chief, created tailfins</li>
+                        <li><strong>Bill Mitchell (1912-1988):</strong> Earl's successor, designed clean 1960s Cadillacs</li>
+                        <li><strong>Kip Wasenko:</strong> Designed CTS and CTS-V</li>
+                        <li><strong>Christine Park:</strong> Lead designer for Celestiq</li>
+                    </ul>
+                </div>
+                
+                <div class="design-image">
+                    <img src="../images/cadillac/cadillac-design.jpg" alt="Cadillac Design Evolution">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="brand-section bg-light">
+        <div class="container">
+            <h2>Cadillac <span class="highlight">Timeline</span></h2>
+            
+            <div class="brand-timeline">
+                <div class="timeline-item">
+                    <div class="year">1902</div>
+                    <div class="desc">Cadillac founded from Henry Ford Company</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1908</div>
+                    <div class="desc">Interchangeable parts demonstration wins Dewar Trophy</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1909</div>
+                    <div class="desc">Cadillac becomes part of General Motors</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1912</div>
+                    <div class="desc">First car with electric starter</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1930</div>
+                    <div class="desc">First mass-produced V16 engine</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1948</div>
+                    <div class="desc">First tailfins, inspired by P-38 Lightning</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1949</div>
+                    <div class="desc">Coupe de Ville introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1953</div>
+                    <div class="desc">Eldorado introduced (limited edition)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1957</div>
+                    <div class="desc">Eldorado Brougham ultra-luxury</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1959</div>
+                    <div class="desc">Peak tailfins – highest ever</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1967</div>
+                    <div class="desc">Front-wheel drive Eldorado</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1975</div>
+                    <div class="desc">Seville introduced – smaller luxury sedan</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1987</div>
+                    <div class="desc">Allanté with Pininfarina bodies</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1999</div>
+                    <div class="desc">Escalade introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2002</div>
+                    <div class="desc">CTS introduced – "Art and Science" design</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2004</div>
+                    <div class="desc">First CTS-V (400 hp)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2008</div>
+                    <div class="desc">Second-gen CTS-V with 556 hp</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2015</div>
+                    <div class="desc">Third-gen CTS-V with 640 hp</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2020</div>
+                    <div class="desc">CT5-V Blackwing with 668 hp, manual</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2023</div>
+                    <div class="desc">Lyriq electric SUV launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2024</div>
+                    <div class="desc">Celestiq flagship electric sedan</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Brands -->
+    <div class="text-center section-padding">
+        <a href="../brands.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to All Brands</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../brands.html">Brands</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>American Brands</h4>
+                    <ul>
+                        <li><a href="ford.html">Ford</a></li>
+                        <li><a href="chevrolet.html">Chevrolet</a></li>
+                        <li><a href="dodge.html">Dodge</a></li>
+                        <li><a href="cadillac.html">Cadillac</a></li>
+                        <li><a href="tesla.html">Tesla</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

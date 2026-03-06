@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyota History | Complete Brand Profile & Iconic Models</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore Toyota's complete history from 1937 to present. Discover iconic models like Corolla, Land Cruiser, Supra, Prius, and how Toyota became the world's largest automaker.">
+    <meta name="keywords" content="Toyota history, Toyota Corolla, Toyota Land Cruiser, Toyota Supra, Toyota Prius, Toyota Production System, Japanese cars">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Toyota History | Complete Brand Profile">
+    <meta property="og:description" content="The world's largest automaker - from looms to land cruisers">
+    <meta property="og:image" content="../images/brands/japanese/toyota-logo.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/brands.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation (same structure) -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../1886-1920.html">1886-1920: Birth</a></li>
+                            <li><a href="../1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="../1950-1980.html">1950-1980: Muscle</a></li>
+                            <li><a href="../1980-2010.html">1980-2010: Technology</a></li>
+                            <li><a href="../2010-present.html">2010-Present: Electric</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../brands.html">Brands</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Brand Hero -->
+    <header class="brand-hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../images/brands/japanese/toyota-hero.jpg');">
+        <div class="container">
+            <div class="brand-hero-content">
+                <img src="../images/brands/japanese/toyota-logo.png" alt="Toyota Logo" class="brand-hero-logo">
+                <h1>Toyota</h1>
+                <p class="brand-tagline">Always a Better Way</p>
+                
+                <div class="brand-quick-facts">
+                    <span><i class="fas fa-calendar"></i> Founded: 1937</span>
+                    <span><i class="fas fa-globe"></i> Country: Japan</span>
+                    <span><i class="fas fa-trophy"></i> Icon: Corolla, Land Cruiser</span>
+                    <span><i class="fas fa-chart-line"></i> World's Largest</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Navigation -->
+    <div class="brand-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#history" class="active">History</a></li>
+                <li><a href="#models">Iconic Models</a></li>
+                <li><a href="#tps">Toyota Production System</a></li>
+                <li><a href="#hybrid">Hybrid Revolution</a></li>
+                <li><a href="#offroad">Off-Road Legends</a></li>
+                <li><a href="#motorsport">Motorsport</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- History Section -->
+    <section id="history" class="brand-section">
+        <div class="container">
+            <h2>Toyota: <span class="highlight">From Looms to Global Giant</span></h2>
+            
+            <div class="history-grid">
+                <div class="history-text">
+                    <p>Toyota's story begins not with cars, but with looms. Sakichi Toyoda, a brilliant inventor and craftsman, revolutionized the textile industry with his automatic looms. The fortune from this invention funded the company's entry into automobiles.</p>
+                    
+                    <p>Sakichi's son, Kiichiro Toyoda, traveled to Europe and America in the 1920s, studying automobile manufacturing. He was convinced that Japan needed its own automotive industry. In 1933, he established an automobile department within Toyoda Automatic Loom Works.</p>
+                    
+                    <p>The first Toyota passenger car, the Model AA, was introduced in 1936. The following year, Toyota Motor Co., Ltd. was officially founded. Early years focused on trucks for military use during World War II, but Kiichiro's vision extended far beyond.</p>
+                    
+                    <p>After the war, Toyota faced bankruptcy. This crisis led to the development of the Toyota Production System (TPS) - a revolutionary approach to manufacturing that would eventually transform global industry. Based on principles of "Just-in-Time" production and "Jidoka" (automation with human touch), TPS eliminated waste and empowered workers.</p>
+                    
+                    <p>The 1950s saw Toyota's first exports to America, initially met with skepticism. The 1966 Corolla changed everything. Designed for the mass market, it combined reliability, efficiency, and affordability in a way no other car had. The Corolla would become the best-selling car in history, with over 50 million sold.</p>
+                    
+                    <p>Through the 1970s and 1980s, Toyota built a reputation for quality that became legendary. The company's meticulous approach to engineering and manufacturing produced vehicles that simply didn't break. This reputation, combined with fuel efficiency during oil crises, drove explosive growth.</p>
+                    
+                    <p>In 1989, Toyota launched Lexus, challenging European luxury dominance. The LS 400 shocked the world with its refinement and value. In 1997, the Prius launched the hybrid revolution. Today, Toyota is the world's largest automaker, a pioneer in electrification, and a company whose production methods are studied worldwide.</p>
+                    
+                    <div class="founder-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>"Open the window. It is a big world out there."</blockquote>
+                        <cite>- Kiichiro Toyoda</cite>
+                    </div>
+                </div>
+                
+                <div class="history-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar"></i>
+                        <span class="stat-number">1937</span>
+                        <span class="stat-label">Founded</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-car"></i>
+                        <span class="stat-number">50M+</span>
+                        <span class="stat-label">Corolla Sold</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-leaf"></i>
+                        <span class="stat-number">1997</span>
+                        <span class="stat-label">Prius Launched</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <span class="stat-number">#1</span>
+                        <span class="stat-label">World's Largest</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iconic Models Section -->
+    <section id="models" class="brand-section bg-light">
+        <div class="container">
+            <h2>Iconic <span class="highlight">Models</span></h2>
+            
+            <div class="models-grid">
+                <!-- Toyota Corolla -->
+                <div class="model-card featured">
+                    <img src="../images/models/toyota-corolla.jpg" alt="Toyota Corolla">
+                    <div class="model-info">
+                        <h3>Toyota Corolla (1966-present)</h3>
+                        <p class="model-years">12 generations | 1966-present</p>
+                        <p>The best-selling car in history. Over 50 million Corollas have been sold across 12 generations. The name "Corolla" means "crown" in Latin, and this car has truly worn the crown of global automotive success.</p>
+                        <ul class="model-specs">
+                            <li><i class="fas fa-cog"></i> 1966: 1.1L engine, 60 hp</li>
+                            <li><i class="fas fa-tachometer-alt"></i> 2024: 2.0L hybrid, 169 hp, 50+ mpg</li>
+                            <li><i class="fas fa-globe"></i> Sold in over 150 countries</li>
+                            <li><i class="fas fa-trophy"></i> Best-selling car nameplate in history</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Toyota Land Cruiser -->
+                <div class="model-card">
+                    <img src="../images/models/toyota-land-cruiser.jpg" alt="Toyota Land Cruiser">
+                    <h3>Toyota Land Cruiser</h3>
+                    <p class="model-years">1951-present</p>
+                    <p>The ultimate off-road legend. Born from the Jeep, the Land Cruiser evolved into the most capable and reliable off-road vehicle ever built, trusted by the UN, aid organizations, and adventurers worldwide.</p>
+                </div>
+                
+                <!-- Toyota Supra -->
+                <div class="model-card">
+                    <img src="../images/models/toyota-supra.jpg" alt="Toyota Supra">
+                    <h3>Toyota Supra</h3>
+                    <p class="model-years">1978-2002 | 2019-present</p>
+                    <p>The iconic sports car. The fourth-generation Supra (1993-2002) with its 2JZ engine became a tuning legend and pop culture icon, thanks to "The Fast and the Furious."</p>
+                </div>
+                
+                <!-- Toyota Prius -->
+                <div class="model-card">
+                    <img src="../images/models/toyota-prius.jpg" alt="Toyota Prius">
+                    <h3>Toyota Prius</h3>
+                    <p class="model-years">1997-present</p>
+                    <p>The car that defined hybrid technology. The Prius became the symbol of environmental consciousness and proved that hybrids could be practical, reliable, and popular.</p>
+                </div>
+                
+                <!-- Toyota Hilux -->
+                <div class="model-card">
+                    <img src="../images/models/toyota-hilux.jpg" alt="Toyota Hilux">
+                    <h3>Toyota Hilux</h3>
+                    <p class="model-years">1968-present</p>
+                    <p>The indestructible pickup. Famous for its reliability - Top Gear famously tried and failed to kill one. The choice of armed groups, aid workers, and adventurers.</p>
+                </div>
+                
+                <!-- Toyota Camry -->
+                <div class="model-card">
+                    <img src="../images/models/toyota-camry.jpg" alt="Toyota Camry">
+                    <h3>Toyota Camry</h3>
+                    <p class="model-years">1982-present</p>
+                    <p>America's best-selling car for 15+ years. The Camry defined the midsize sedan segment with its combination of reliability, comfort, and value.</p>
+                </div>
+                
+                <!-- Toyota 2000GT -->
+                <div class="model-card">
+                    <img src="../images/models/toyota-2000gt.jpg" alt="Toyota 2000GT">
+                    <h3>Toyota 2000GT</h3>
+                    <p class="model-years">1967-1970</p>
+                    <p>Japan's first supercar. A beautiful grand tourer that proved Japan could build world-class sports cars. Only 351 built, now among the most valuable Japanese cars.</p>
+                </div>
+                
+                <!-- Toyota Celica -->
+                <div class="model-card">
+                    <img src="../images/models/toyota-celica.jpg" alt="Toyota Celica">
+                    <h3>Toyota Celica</h3>
+                    <p class="model-years">1970-2006</p>
+                    <p>The sporty coupe that introduced many to driving pleasure. Rally champion and pop culture icon.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toyota Production System -->
+    <section id="tps" class="brand-section">
+        <div class="container">
+            <h2>The <span class="highlight">Toyota Production System</span></h2>
+            
+            <div class="tps-grid">
+                <div class="tps-content">
+                    <p>The Toyota Production System (TPS) is perhaps Toyota's most important innovation - more significant than any single car. Developed after World War II, TPS revolutionized manufacturing and has been studied and adopted worldwide.</p>
+                    
+                    <h3>Core Principles:</h3>
+                    
+                    <div class="tps-principle">
+                        <h4><i class="fas fa-clock"></i> Just-in-Time</h4>
+                        <p>Parts arrive exactly when needed, not before. This eliminates waste from inventory and storage, and forces problems to be immediately visible.</p>
+                    </div>
+                    
+                    <div class="tps-principle">
+                        <h4><i class="fas fa-user-check"></i> Jidoka (Automation with Human Touch)</h4>
+                        <p>Machines automatically stop when problems occur, and workers can stop the production line. This builds quality in, rather than inspecting it later.</p>
+                    </div>
+                    
+                    <div class="tps-principle">
+                        <h4><i class="fas fa-users"></i> Kaizen (Continuous Improvement)</h4>
+                        <p>Every employee, from assembly line workers to executives, is expected to suggest improvements. Small, continuous changes add up to major advances.</p>
+                    </div>
+                    
+                    <div class="tps-principle">
+                        <h4><i class="fas fa-respect"></i> Respect for People</h4>
+                        <p>Workers are treated as problem-solvers, not interchangeable parts. Their knowledge and experience are valued.</p>
+                    </div>
+                    
+                    <div class="tps-principle">
+                        <h4><i class="fas fa-search"></i> Genchi Genbutsu</h4>
+                        <p>"Go and see." Decisions are based on direct observation, not reports. Engineers go to the factory floor, executives visit dealerships.</p>
+                    </div>
+                    
+                    <p>TPS has been adopted by organizations far beyond automotive - hospitals, software companies, and government agencies use Toyota's principles to improve quality and efficiency.</p>
+                </div>
+                
+                <div class="tps-image">
+                    <img src="../images/toyota/tps-diagram.jpg" alt="Toyota Production System">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hybrid Revolution -->
+    <section id="hybrid" class="brand-section bg-light">
+        <div class="container">
+            <h2>The <span class="highlight">Hybrid</span> Revolution</h2>
+            
+            <div class="hybrid-story">
+                <div class="hybrid-text">
+                    <p>In 1997, Toyota launched the first-generation Prius - a radical gamble that would reshape the automotive industry. While other manufacturers dismissed hybrids as impractical, Toyota invested billions in developing the technology.</p>
+                    
+                    <p>The Toyota Hybrid System (THS) combined a gasoline engine with an electric motor and battery, allowing the car to run on electricity at low speeds, capture energy during braking, and achieve dramatically improved fuel economy - especially in city driving.</p>
+                    
+                    <p>The second-generation Prius (2003) was a breakthrough. Its distinctive wedge design became instantly recognizable, and the car became a status symbol for environmental consciousness. Celebrities drove them, and "Prius" entered the cultural lexicon.</p>
+                    
+                    <p>Toyota has since applied hybrid technology across its lineup - from the Camry and Corolla to the Highlander and RAV4. The company has sold over 20 million hybrid vehicles, saving billions of gallons of fuel and reducing CO2 emissions by millions of tons.</p>
+                    
+                    <p>Today, Toyota continues to lead in electrification, with hydrogen fuel cell vehicles like the Mirai and a growing lineup of battery electric vehicles, all building on the hybrid experience.</p>
+                    
+                    <div class="hybrid-stats">
+                        <div class="stat">
+                            <span class="stat-number">20M+</span>
+                            <span class="stat-label">Hybrids Sold</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1997</span>
+                            <span class="stat-label">First Prius</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Hybrid Models</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hybrid-image">
+                    <img src="../images/toyota/prius-evolution.jpg" alt="Prius Evolution">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Off-Road Legends -->
+    <section id="offroad" class="brand-section">
+        <div class="container">
+            <h2>Off-Road <span class="highlight">Legends</span></h2>
+            
+            <div class="offroad-grid">
+                <div class="offroad-card">
+                    <img src="../images/models/land-cruiser-40.jpg" alt="Land Cruiser 40 Series">
+                    <h3>Land Cruiser 40 Series</h3>
+                    <p>The legendary FJ40 - the vehicle that built Toyota's off-road reputation worldwide. Simple, rugged, and nearly indestructible.</p>
+                </div>
+                
+                <div class="offroad-card">
+                    <img src="../images/models/land-cruiser-100.jpg" alt="Land Cruiser 100 Series">
+                    <h3>Land Cruiser 100 Series</h3>
+                    <p>The luxury off-roader that combined legendary reliability with comfort. The choice of the UN, NGOs, and overlanders.</p>
+                </div>
+                
+                <div class="offroad-card">
+                    <img src="../images/models/toyota-4runner.jpg" alt="Toyota 4Runner">
+                    <h3>Toyota 4Runner</h3>
+                    <p>Body-on-frame SUV that refuses to die. Still built with rugged simplicity, beloved by off-road enthusiasts.</p>
+                </div>
+                
+                <div class="offroad-card">
+                    <img src="../images/models/toyota-tacoma.jpg" alt="Toyota Tacoma">
+                    <h3>Toyota Tacoma</h3>
+                    <p>The mid-size pickup that dominates off-road culture. Countless TRD Pro editions conquer trails worldwide.</p>
+                </div>
+                
+                <div class="offroad-card">
+                    <img src="../images/models/toyota-fj-cruiser.jpg" alt="Toyota FJ Cruiser">
+                    <h3>Toyota FJ Cruiser</h3>
+                    <p>Retro-styled off-roader inspired by the FJ40. Built from 2006-2022, it developed a cult following.</p>
+                </div>
+                
+                <div class="offroad-card">
+                    <img src="../images/models/toyota-tundra.jpg" alt="Toyota Tundra">
+                    <h3>Toyota Tundra</h3>
+                    <p>Full-size American pickup, proving Toyota could compete in the heart of truck country.</p>
+                </div>
+            </div>
+            
+            <div class="offroad-quote">
+                <p>The Land Cruiser is often described as "the vehicle that can get you there and bring you back." It's trusted by the United Nations, the Australian outback, and adventurers on every continent. Its legendary reliability means you'll see 40-year-old Land Cruisers still working hard in developing countries.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Motorsport Section -->
+    <section id="motorsport" class="brand-section bg-light">
+        <div class="container">
+            <h2>Motorsport <span class="highlight">Heritage</span></h2>
+            
+            <div class="motorsport-grid">
+                <div class="motorsport-content">
+                    <h3>World Rally Championship</h3>
+                    <p>The Toyota Celica GT-Four and Corolla WRC dominated WRC in the 1990s, winning multiple drivers' and manufacturers' championships with drivers like Carlos Sainz and Didier Auriol.</p>
+                    
+                    <h3>Le Mans & WEC</h3>
+                    <p>After years of trying, Toyota finally won the 24 Hours of Le Mans in 2018, followed by multiple victories. The TS050 Hybrid and GR010 Hybrid showcase Toyota's hybrid technology under extreme conditions.</p>
+                    
+                    <h3>NASCAR</h3>
+                    <p>Toyota entered NASCAR in 2004 and has won multiple championships in the Cup Series with drivers like Kyle Busch and Denny Hamlin.</p>
+                    
+                    <h3>Dakar Rally</h3>
+                    <p>The Toyota Hilux has won the grueling Dakar Rally multiple times, proving its off-road capability in the world's toughest race.</p>
+                    
+                    <h3>Formula 1</h3>
+                    <p>Toyota competed in F1 from 2002-2009, spending heavily but never winning a race. The experience informed their Le Mans success.</p>
+                </div>
+                
+                <div class="motorsport-image">
+                    <img src="../images/motorsport/toyota-wrc.jpg" alt="Toyota Celica WRC">
+                    <img src="../images/motorsport/toyota-lemans.jpg" alt="Toyota TS050 Le Mans">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="brand-section">
+        <div class="container">
+            <h2>Toyota <span class="highlight">Timeline</span></h2>
+            
+            <div class="brand-timeline">
+                <div class="timeline-item">
+                    <div class="year">1926</div>
+                    <div class="desc">Toyoda Automatic Loom Works founded by Sakichi Toyoda</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1933</div>
+                    <div class="desc">Automobile department established within Toyoda Loom Works</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1936</div>
+                    <div class="desc">First passenger car - Toyota Model AA</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1937</div>
+                    <div class="desc">Toyota Motor Co., Ltd. officially founded</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1950</div>
+                    <div class="desc">Toyota faces bankruptcy; development of Toyota Production System begins</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1951</div>
+                    <div class="desc">Toyota Land Cruiser (BJ series) introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1957</div>
+                    <div class="desc">Toyota enters American market</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1966</div>
+                    <div class="desc">Toyota Corolla launched - becomes best-selling car in history</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1967</div>
+                    <div class="desc">Toyota 2000GT introduced - Japan's first supercar</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1989</div>
+                    <div class="desc">Lexus luxury brand launched with LS 400</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1997</div>
+                    <div class="desc">Toyota Prius launched - world's first mass-produced hybrid</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2002</div>
+                    <div class="desc">Toyota enters Formula 1</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2015</div>
+                    <div class="desc">Toyota Mirai hydrogen fuel cell vehicle launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2018</div>
+                    <div class="desc">Toyota wins 24 Hours of Le Mans</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2020</div>
+                    <div class="desc">Toyota becomes world's largest automaker</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2023</div>
+                    <div class="desc">Announces $70 billion investment in electrification</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Brands -->
+    <div class="text-center section-padding">
+        <a href="../brands.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to All Brands</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../brands.html">Brands</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Japanese Brands</h4>
+                    <ul>
+                        <li><a href="toyota.html">Toyota</a></li>
+                        <li><a href="honda.html">Honda</a></li>
+                        <li><a href="nissan.html">Nissan</a></li>
+                        <li><a href="mazda.html">Mazda</a></li>
+                        <li><a href="acura.html">Acura</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honda History | Complete Brand Profile & Iconic Models</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore Honda's complete history from 1948 to present. Discover iconic models like Civic, Accord, NSX, and how Honda revolutionized engines and motorcycles.">
+    <meta name="keywords" content="Honda history, Honda Civic, Honda Accord, Honda NSX, VTEC, Japanese cars, Honda motorcycles">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Honda History | Complete Brand Profile">
+    <meta property="og:description" content="The power of dreams - Honda's automotive legacy">
+    <meta property="og:image" content="../images/brands/japanese/honda-logo.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/brands.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation (same structure as acura.html) -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../1886-1920.html">1886-1920: Birth</a></li>
+                            <li><a href="../1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="../1950-1980.html">1950-1980: Muscle</a></li>
+                            <li><a href="../1980-2010.html">1980-2010: Technology</a></li>
+                            <li><a href="../2010-present.html">2010-Present: Electric</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../brands.html">Brands</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Brand Hero -->
+    <header class="brand-hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../images/brands/japanese/honda-hero.jpg');">
+        <div class="container">
+            <div class="brand-hero-content">
+                <img src="../images/brands/japanese/honda-logo.png" alt="Honda Logo" class="brand-hero-logo">
+                <h1>Honda</h1>
+                <p class="brand-tagline">The Power of Dreams</p>
+                
+                <div class="brand-quick-facts">
+                    <span><i class="fas fa-calendar"></i> Founded: 1948</span>
+                    <span><i class="fas fa-globe"></i> Country: Japan</span>
+                    <span><i class="fas fa-trophy"></i> Icon: Civic, NSX</span>
+                    <span><i class="fas fa-cog"></i> VTEC Pioneer</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Navigation -->
+    <div class="brand-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#history" class="active">History</a></li>
+                <li><a href="#models">Iconic Models</a></li>
+                <li><a href="#technology">VTEC & Engineering</a></li>
+                <li><a href="#motorsport">F1 & Racing</a></li>
+                <li><a href="#motorcycles">Motorcycles</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- History Section -->
+    <section id="history" class="brand-section">
+        <div class="container">
+            <h2>Honda: <span class="highlight">The Power of Dreams</span></h2>
+            
+            <div class="history-grid">
+                <div class="history-text">
+                    <p>Soichiro Honda was an extraordinary engineer with a vision. After World War II, Japan was devastated and transportation was scarce. Honda saw an opportunity to attach small motors to bicycles, creating affordable mobility. From these humble beginnings, Honda Motor Co., Ltd. was founded in 1948.</p>
+                    
+                    <p>The company grew rapidly through the 1950s, becoming the world's largest motorcycle manufacturer by 1959. The famous "You meet the nicest people on a Honda" campaign transformed motorcycling's image in America from rebellious to respectable.</p>
+                    
+                    <p>Honda entered automobile production in 1963 with the T360 truck and S500 sports car. But it was the 1972 Civic that changed everything. Designed during the oil crisis, the Civic was efficient, reliable, and well-built. It established Honda as a serious automaker and began the company's reputation for engineering excellence.</p>
+                    
+                    <p>The 1976 Accord became a phenomenon, eventually becoming the best-selling Japanese car in America. Honda's approach was unique: instead of building small, cheap cars, they built small, high-quality cars with thoughtful engineering and excellent driving dynamics.</p>
+                    
+                    <p>Honda's engineering culture produced legendary innovations: the CVCC engine that met 1970s emissions without catalytic converters, VTEC variable valve timing that gave engines dual personalities, and the NSX supercar that rewrote the rules of performance and usability.</p>
+                    
+                    <p>Today, Honda is the world's largest engine manufacturer, producing everything from lawn mowers to jets. The company remains independent, family-controlled, and committed to Soichiro's vision of challenging conventions and pursuing dreams.</p>
+                    
+                    <div class="founder-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>"Success represents the 1% of your work which results from the 99% that is called failure."</blockquote>
+                        <cite>- Soichiro Honda</cite>
+                    </div>
+                </div>
+                
+                <div class="history-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar"></i>
+                        <span class="stat-number">1948</span>
+                        <span class="stat-label">Founded</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-motorcycle"></i>
+                        <span class="stat-number">#1</span>
+                        <span class="stat-label">Motorcycle Maker</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <span class="stat-number">1972</span>
+                        <span class="stat-label">Civic Launched</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-cog"></i>
+                        <span class="stat-number">VTEC</span>
+                        <span class="stat-label">1989</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iconic Models Section -->
+    <section id="models" class="brand-section bg-light">
+        <div class="container">
+            <h2>Iconic <span class="highlight">Models</span></h2>
+            
+            <div class="models-grid">
+                <!-- Honda Civic -->
+                <div class="model-card featured">
+                    <img src="../images/models/honda-civic.jpg" alt="Honda Civic">
+                    <div class="model-info">
+                        <h3>Honda Civic (1972-present)</h3>
+                        <p class="model-years">11 generations | 1972-present</p>
+                        <p>The car that established Honda in the automotive world. The Civic has evolved from a small economy car to a global icon available as sedan, coupe, hatchback, and performance Type R. Known for reliability, efficiency, and engaging driving dynamics.</p>
+                        <ul class="model-specs">
+                            <li><i class="fas fa-cog"></i> CVCC engine (1975) met emissions without catalytic converter</li>
+                            <li><i class="fas fa-tachometer-alt"></i> Type R: 306 hp, 0-60 in 5.0s</li>
+                            <li><i class="fas fa-trophy"></i> Best-selling car in Canada for decades</li>
+                            <li><i class="fas fa-gas-pump"></i> Over 50 mpg available in hybrid versions</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Honda Accord -->
+                <div class="model-card">
+                    <img src="../images/models/honda-accord.jpg" alt="Honda Accord">
+                    <h3>Honda Accord</h3>
+                    <p class="model-years">1976-present</p>
+                    <p>The benchmark midsize sedan. The Accord defined the segment with its combination of quality, refinement, and value. Often named to "Best Cars" lists for decades.</p>
+                </div>
+                
+                <!-- Honda NSX -->
+                <div class="model-card">
+                    <img src="../images/models/honda-nsx.jpg" alt="Honda NSX">
+                    <h3>Honda NSX</h3>
+                    <p class="model-years">1990-2005 | 2016-present</p>
+                    <p>The supercar that changed everything. Developed with Ayrton Senna, it matched Ferrari performance with Honda reliability and everyday usability.</p>
+                </div>
+                
+                <!-- Honda S2000 -->
+                <div class="model-card">
+                    <img src="../images/models/honda-s2000.jpg" alt="Honda S2000">
+                    <h3>Honda S2000</h3>
+                    <p class="model-years">1999-2009</p>
+                    <p>The ultimate roadster. Its 2.0L engine produced 240 hp - 120 hp per liter, a record at the time. 9,000 rpm redline and perfect 50:50 balance.</p>
+                </div>
+                
+                <!-- Honda CR-V -->
+                <div class="model-card">
+                    <img src="../images/models/honda-cr-v.jpg" alt="Honda CR-V">
+                    <h3>Honda CR-V</h3>
+                    <p class="model-years">1995-present</p>
+                    <p>The compact SUV that balanced car-like driving with utility. Consistently one of the best-selling SUVs in America.</p>
+                </div>
+                
+                <!-- Honda Prelude -->
+                <div class="model-card">
+                    <img src="../images/models/honda-prelude.jpg" alt="Honda Prelude">
+                    <h3>Honda Prelude</h3>
+                    <p class="model-years">1978-2001</p>
+                    <p>The sporty coupe that introduced many to Honda performance. Featured four-wheel steering in later generations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VTEC & Engineering Section -->
+    <section id="technology" class="brand-section">
+        <div class="container">
+            <h2>VTEC & <span class="highlight">Engineering Excellence</span></h2>
+            
+            <div class="technology-grid">
+                <div class="tech-card">
+                    <i class="fas fa-microchip"></i>
+                    <h3>VTEC</h3>
+                    <p>Variable Valve Timing and Lift Electronic Control. Introduced in 1989, it gave engines two cam profiles - one for efficiency, one for high-RPM power. The VTEC "crossover" became a beloved feature.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>CVCC</h3>
+                    <p>Compound Vortex Controlled Combustion. Honda's 1975 engine met US emissions without catalytic converters, giving Honda a huge advantage.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <i class="fas fa-car"></i>
+                    <h3>Aluminum Body</h3>
+                    <p>The NSX pioneered aluminum monocoque construction, later used in Acura and Honda models for weight reduction.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>ASIMO</h3>
+                    <p>Honda's advanced humanoid robot showcased the company's robotics and AI research, later influencing driver assistance systems.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <i class="fas fa-gas-pump"></i>
+                    <h3>Hybrid Systems</h3>
+                    <p>Honda's IMA (Integrated Motor Assist) system was an early hybrid approach, later evolving into sophisticated two-motor systems.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Honda Sensing</h3>
+                    <p>Suite of advanced safety features including collision mitigation, adaptive cruise, and lane keeping, standard on most models.</p>
+                </div>
+            </div>
+            
+            <div class="engineering-philosophy">
+                <h3>The Honda Way</h3>
+                <p>Honda's engineering philosophy is unique in the industry. The company encourages "waigaya" - informal, passionate discussion where hierarchy doesn't matter. Engineers are given unusual freedom to pursue ambitious projects, from the NSX to the HondaJet to ASIMO. This culture of challenging conventions has produced some of the most innovative vehicles in automotive history.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- F1 & Racing Section -->
+    <section id="motorsport" class="brand-section bg-light">
+        <div class="container">
+            <h2>Formula 1 <span class="highlight">& Racing</span></h2>
+            
+            <div class="motorsport-grid">
+                <div class="motorsport-content">
+                    <p>Honda's racing heritage is among the most successful in history. The company's approach to racing reflects its engineering culture: innovate, challenge conventions, and pursue victory.</p>
+                    
+                    <h4>Formula 1 Achievements:</h4>
+                    <ul class="motorsport-list">
+                        <li><i class="fas fa-trophy"></i> <strong>First win:</strong> 1965 Mexican GP (Richie Ginther)</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Constructor's Championships:</strong> 1986, 1987, 1988, 1989, 1990, 1991</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Driver's Championships:</strong> 1987 (Nelson Piquet), 1988-1991 (Ayrton Senna), 1991 (Gerhard Berger)</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Legendary engines:</strong> RA273, RA300, RA168E (turbo), RA109E (V10)</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Partnerships:</strong> Williams, McLaren, Lotus, Red Bull</li>
+                    </ul>
+                    
+                    <h4>Other Racing:</h4>
+                    <ul class="motorsport-list">
+                        <li><i class="fas fa-trophy"></i> <strong>IndyCar:</strong> Multiple wins and championships</li>
+                        <li><i class="fas fa-trophy"></i> <strong>MotoGP:</strong> Over 800 victories, most successful manufacturer</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Le Mans:</strong> Class wins with NSX</li>
+                        <li><i class="fas fa-trophy"></i> <strong>BTCC:</strong> Dominant with Accord in 1990s</li>
+                    </ul>
+                    
+                    <p>The relationship between Honda and Ayrton Senna was particularly special. Senna's feedback directly influenced the NSX's development, and he considered it his favorite road car. Honda's racing engines have won over 200 Grands Prix, making them one of the most successful manufacturers in F1 history.</p>
+                </div>
+                
+                <div class="motorsport-image">
+                    <img src="../images/motorsport/honda-f1.jpg" alt="Honda F1 McLaren MP4/4">
+                    <p class="image-caption">1988 McLaren MP4/4 Honda - won 15 of 16 races</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Motorcycles Section -->
+    <section id="motorcycles" class="brand-section">
+        <div class="container">
+            <h2>Motorcycle <span class="highlight">Legacy</span></h2>
+            
+            <div class="motorcycles-grid">
+                <div class="motorcycle-content">
+                    <p>Before Honda was an automaker, it was the world's greatest motorcycle company. Soichiro Honda's first product was a motorized bicycle, and motorcycles remain central to the company's identity.</p>
+                    
+                    <div class="motorcycle-icons">
+                        <div class="bike">
+                            <img src="../images/motorcycles/honda-cub.jpg" alt="Honda Super Cub">
+                            <h4>Super Cub</h4>
+                            <p>Over 100 million sold - the most popular vehicle in history</p>
+                        </div>
+                        <div class="bike">
+                            <img src="../images/motorcycles/honda-cb750.jpg" alt="Honda CB750">
+                            <h4>CB750</h4>
+                            <p>The first superbike, revolutionized motorcycling in 1969</p>
+                        </div>
+                        <div class="bike">
+                            <img src="../images/motorcycles/honda-goldwing.jpg" alt="Honda Goldwing">
+                            <h4>Goldwing</h4>
+                            <p>The ultimate touring motorcycle since 1975</p>
+                        </div>
+                        <div class="bike">
+                            <img src="../images/motorcycles/honda-cbr.jpg" alt="Honda CBR">
+                            <h4>CBR Series</h4>
+                            <p>Sportbike legends including the Fireblade</p>
+                        </div>
+                    </div>
+                    
+                    <p>Honda's motorcycle division has been equally innovative, introducing the first mass-produced motorcycles with disc brakes, electric starters, and advanced aerodynamics. The company dominates MotoGP and remains the world's largest motorcycle manufacturer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="brand-section bg-light">
+        <div class="container">
+            <h2>Honda <span class="highlight">Timeline</span></h2>
+            
+            <div class="brand-timeline">
+                <div class="timeline-item">
+                    <div class="year">1948</div>
+                    <div class="desc">Honda Motor Co., Ltd. founded by Soichiro Honda</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1949</div>
+                    <div class="desc">First complete motorcycle - Dream D-Type</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1958</div>
+                    <div class="desc">Super Cub launched - becomes best-selling vehicle in history</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1959</div>
+                    <div class="desc">Honda becomes world's largest motorcycle manufacturer</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1963</div>
+                    <div class="desc">First automobile - T360 truck and S500 sports car</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1964</div>
+                    <div class="desc">First Formula 1 entry</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1972</div>
+                    <div class="desc">Civic launched - establishes Honda in automotive world</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1975</div>
+                    <div class="desc">CVCC engine meets emissions without catalytic converter</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1976</div>
+                    <div class="desc">Accord launched - becomes iconic midsize sedan</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1986</div>
+                    <div class="desc">Acura luxury brand launched in US</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1989</div>
+                    <div class="desc">VTEC technology introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1990</div>
+                    <div class="desc">NSX supercar launched - rewrites supercar rules</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1997</div>
+                    <div class="desc">First hybrid - Insight (1999 in US)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2015</div>
+                    <div class="desc">HondaJet enters production</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2016</div>
+                    <div class="desc">Second-generation NSX launched as hybrid supercar</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2024</div>
+                    <div class="desc">Commitment to EV-only by 2040 announced</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Brands -->
+    <div class="text-center section-padding">
+        <a href="../brands.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to All Brands</a>
+    </div>
+
+    <!-- Footer (same structure) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../brands.html">Brands</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Japanese Brands</h4>
+                    <ul>
+                        <li><a href="toyota.html">Toyota</a></li>
+                        <li><a href="honda.html">Honda</a></li>
+                        <li><a href="nissan.html">Nissan</a></li>
+                        <li><a href="mazda.html">Mazda</a></li>
+                        <li><a href="acura.html">Acura</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

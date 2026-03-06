@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bugatti History | Complete Brand Profile & Iconic Models</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore Bugatti's complete history from 1909 to present. Discover iconic models like Type 35, Type 57 Atlantic, Veyron, Chiron, and how Bugatti defines automotive art.">
+    <meta name="keywords" content="Bugatti history, Bugatti Veyron, Bugatti Chiron, Bugatti Type 35, French cars, hypercars, Ettore Bugatti">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Bugatti History | Complete Brand Profile">
+    <meta property="og:description" content="Art, Forme, Technique - The Ultimate Hypercar">
+    <meta property="og:image" content="../images/brands/french/bugatti-logo.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/brands.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../1886-1920.html">1886-1920: Birth</a></li>
+                            <li><a href="../1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="../1950-1980.html">1950-1980: Muscle</a></li>
+                            <li><a href="../1980-2010.html">1980-2010: Technology</a></li>
+                            <li><a href="../2010-present.html">2010-Present: Electric</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../brands.html">Brands</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Brand Hero -->
+    <header class="brand-hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../images/brands/french/bugatti-hero.jpg');">
+        <div class="container">
+            <div class="brand-hero-content">
+                <img src="../images/brands/french/bugatti-logo.png" alt="Bugatti Logo" class="brand-hero-logo">
+                <h1>Bugatti</h1>
+                <p class="brand-tagline">Art, Forme, Technique</p>
+                
+                <div class="brand-quick-facts">
+                    <span><i class="fas fa-calendar"></i> Founded: 1909</span>
+                    <span><i class="fas fa-globe"></i> Country: France</span>
+                    <span><i class="fas fa-trophy"></i> Icon: Veyron, Type 35</span>
+                    <span><i class="fas fa-cog"></i> 300+ mph</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Navigation -->
+    <div class="brand-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#history" class="active">History</a></li>
+                <li><a href="#models">Iconic Models</a></li>
+                <li><a href="#type35">Type 35</a></li>
+                <li><a href="#atlantic">Type 57 Atlantic</a></li>
+                <li><a href="#veyron">Veyron & Chiron</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- History Section -->
+    <section id="history" class="brand-section">
+        <div class="container">
+            <h2>Bugatti: <span class="highlight">Automotive Art</span></h2>
+            
+            <div class="history-grid">
+                <div class="history-text">
+                    <p>Bugatti is the ultimate expression of automotive art. Founded in 1909 by Italian-born Ettore Bugatti in Molsheim, Alsace (then Germany, now France), the company combined exquisite engineering with breathtaking beauty.</p>
+                    
+                    <p>Ettore was both an engineer and an artist. His cars were mechanically advanced and visually stunning. The Bugatti family motto was "Nothing is too beautiful, nothing is too expensive."</p>
+                    
+                    <p>The first great Bugatti was the Type 13 (1910), which won its class at the French Grand Prix. The 1920s brought the Type 35 – the most successful race car of all time, with over 2,000 victories.</p>
+                    
+                    <p>The 1930s saw Bugatti's masterpieces: the Type 57 and its variants. The Type 57 Atlantic is one of the most beautiful and valuable cars ever, with only four built. The Type 41 Royale was the ultimate luxury car – only six made, each with a 12.7L engine.</p>
+                    
+                    <p>Ettore's son Jean was a brilliant designer, but he died in 1939 while testing a race car. The family never recovered. WWII disrupted production, and Ettore died in 1947. The company struggled and eventually closed in the 1950s.</p>
+                    
+                    <p>In the 1980s, Italian entrepreneur Romano Artioli revived Bugatti, building the EB110 in Campogalliano, Italy. It was a 212 mph supercar with a quad-turbo V12. But financial troubles killed it.</p>
+                    
+                    <p>Volkswagen acquired Bugatti in 1998 and set an impossible goal: build a 1,000 hp, 250 mph car that was also comfortable and reliable. The Veyron (2005) achieved that and more – it became the fastest production car ever, redefining what was possible.</p>
+                    
+                    <p>The Chiron (2016) raised the bar further – 1,500 hp, 260+ mph. The Mistral roadster and Bolide track car push even further. Bugatti has merged with Rimac to create Bugatti Rimac, ensuring its future with hybrid and electric technology.</p>
+                    
+                    <div class="founder-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>"Nothing is too beautiful, nothing is too expensive."</blockquote>
+                        <cite>- Ettore Bugatti</cite>
+                    </div>
+                </div>
+                
+                <div class="history-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar"></i>
+                        <span class="stat-number">1909</span>
+                        <span class="stat-label">Founded</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <span class="stat-number">2,000+</span>
+                        <span class="stat-label">Type 35 Wins</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-car"></i>
+                        <span class="stat-number">2005</span>
+                        <span class="stat-label">Veyron</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-cog"></i>
+                        <span class="stat-number">304 mph</span>
+                        <span class="stat-label">Chiron SS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iconic Models Section -->
+    <section id="models" class="brand-section bg-light">
+        <div class="container">
+            <h2>Iconic <span class="highlight">Models</span></h2>
+            
+            <div class="models-grid">
+                <!-- Bugatti Type 35 -->
+                <div class="model-card featured">
+                    <img src="../images/models/bugatti-type35.jpg" alt="Bugatti Type 35">
+                    <div class="model-info">
+                        <h3>Bugatti Type 35 (1924-1930)</h3>
+                        <p class="model-years">1924-1930</p>
+                        <p>The most successful race car in history. Over 2,000 victories, including five consecutive Targa Florio wins. Beautiful, advanced, and dominant.</p>
+                        <ul class="model-specs">
+                            <li><i class="fas fa-cog"></i> 2.0L straight-8, 90-140 hp</li>
+                            <li><i class="fas fa-trophy"></i> 2,000+ race wins</li>
+                            <li><i class="fas fa-palette"></i> Art Deco masterpiece</li>
+                            <li><i class="fas fa-crown"></i> 5 Targa Florio wins</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Bugatti Type 57 Atlantic -->
+                <div class="model-card">
+                    <img src="../images/models/bugatti-atlantic.jpg" alt="Bugatti Type 57 Atlantic">
+                    <h3>Bugatti Type 57 Atlantic</h3>
+                    <p class="model-years">1936-1938</p>
+                    <p>The most beautiful car ever? Only 4 built, one of the most valuable cars in the world ($40M+). Riveted dorsal seam, stunning proportions.</p>
+                </div>
+                
+                <!-- Bugatti Type 41 Royale -->
+                <div class="model-card">
+                    <img src="../images/models/bugatti-royale.jpg" alt="Bugatti Type 41 Royale">
+                    <h3>Bugatti Type 41 Royale</h3>
+                    <p class="model-years">1927-1933</p>
+                    <p>The ultimate luxury car. 12.7L straight-8, 21 feet long. Only 6 built. Each with custom coachwork. The car for royalty.</p>
+                </div>
+                
+                <!-- Bugatti EB110 -->
+                <div class="model-card">
+                    <img src="../images/models/bugatti-eb110.jpg" alt="Bugatti EB110">
+                    <h3>Bugatti EB110</h3>
+                    <p class="model-years">1991-1995</p>
+                    <p>The 1990s revival. Quad-turbo V12, 550 hp, 212 mph. Carbon fiber chassis, gold-plated engine bay. 139 built.</p>
+                </div>
+                
+                <!-- Bugatti Veyron -->
+                <div class="model-card">
+                    <img src="../images/models/bugatti-veyron.jpg" alt="Bugatti Veyron">
+                    <h3>Bugatti Veyron 16.4</h3>
+                    <p class="model-years">2005-2015</p>
+                    <p>The 1,000 hp car that changed everything. Quad-turbo W16, 253 mph, $1.7M. The ultimate engineering achievement.</p>
+                </div>
+                
+                <!-- Bugatti Chiron -->
+                <div class="model-card">
+                    <img src="../images/models/bugatti-chiron.jpg" alt="Bugatti Chiron">
+                    <h3>Bugatti Chiron</h3>
+                    <p class="model-years">2016-present</p>
+                    <p>The Veyron's successor. 1,500 hp, 261 mph (limited), 304 mph Super Sport version. 420 built.</p>
+                </div>
+                
+                <!-- Bugatti Divo -->
+                <div class="model-card">
+                    <img src="../images/models/bugatti-divo.jpg" alt="Bugatti Divo">
+                    <h3>Bugatti Divo</h3>
+                    <p class="model-years">2020</p>
+                    <p>Cornering-focused hypercar. Less weight, more downforce. Only 40 built, $6M each.</p>
+                </div>
+                
+                <!-- Bugatti Bolide -->
+                <div class="model-card">
+                    <img src="../images/models/bugatti-bolide.jpg" alt="Bugatti Bolide">
+                    <h3>Bugatti Bolide</h3>
+                    <p class="model-years">2021 (track only)</p>
+                    <p>1,825 hp, 1,240 kg. Theoretical top speed over 310 mph. The ultimate track Bugatti.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Type 35 Section -->
+    <section id="type35" class="brand-section">
+        <div class="container">
+            <h2>The <span class="highlight">Type 35</span> – Most Successful Race Car</h2>
+            
+            <div class="type35-grid">
+                <div class="type35-text">
+                    <p>The Type 35 is the most successful race car in history. It won over 2,000 races in its career, including five consecutive Targa Florio wins (1925-1929).</p>
+                    
+                    <h4>Innovations:</h4>
+                    <ul>
+                        <li>Lightweight alloy wheels (first use)</li>
+                        <li>Roller bearing crankshaft</li>
+                        <li>Advanced aerodynamics</li>
+                        <li>Beautiful design – the horseshoe grille</li>
+                    </ul>
+                    
+                    <h4>Variants:</h4>
+                    <ul>
+                        <li>Type 35 (1924): 2.0L, 90 hp</li>
+                        <li>Type 35T (1926): 2.3L, 100 hp</li>
+                        <li>Type 35C (1927): supercharged, 120 hp</li>
+                        <li>Type 35B (1927): 2.3L supercharged, 140 hp</li>
+                        <li>Type 39 (1924): 1.5L</li>
+                    </ul>
+                    
+                    <p>The Type 35 was so beautiful that it's in the Museum of Modern Art. It established Bugatti's reputation forever.</p>
+                </div>
+                
+                <div class="type35-image">
+                    <img src="../images/bugatti/type35-racing.jpg" alt="Bugatti Type 35 Racing">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Type 57 Atlantic Section -->
+    <section id="atlantic" class="brand-section bg-light">
+        <div class="container">
+            <h2>The <span class="highlight">Type 57 Atlantic</span> – Art on Wheels</h2>
+            
+            <div class="atlantic-grid">
+                <div class="atlantic-text">
+                    <p>The Type 57 Atlantic is one of the most beautiful and valuable cars ever made. Only four were built, and two survive. One sold for over $40 million.</p>
+                    
+                    <h4>Design:</h4>
+                    <p>Designed by Jean Bugatti, Ettore's son. The Atlantic had a distinctive dorsal seam running from front to back, inspired by the welded construction of aircraft. The proportions were perfect – long hood, fastback roofline, and elegant curves.</p>
+                    
+                    <h4>Surviving Atlantics:</h4>
+                    <ul>
+                        <li>Chassis 57374: Owned by fashion designer Ralph Lauren</li>
+                        <li>Chassis 57453: Sold at auction for $30M+</li>
+                        <li>Chassis 57473: Destroyed in crash (1950s)</li>
+                        <li>Chassis 57591: Missing – believed destroyed?</li>
+                    </ul>
+                    
+                    <p>The Atlantic is the holy grail for collectors. Its combination of beauty, rarity, and history is unmatched.</p>
+                </div>
+                
+                <div class="atlantic-image">
+                    <img src="../images/bugatti/atlantic-profile.jpg" alt="Bugatti Type 57 Atlantic">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Veyron & Chiron Section -->
+    <section id="veyron" class="brand-section">
+        <div class="container">
+            <h2><span class="highlight">Veyron & Chiron</span> – Modern Hypercars</h2>
+            
+            <div class="modern-grid">
+                <div class="modern-text">
+                    <p>When Volkswagen revived Bugatti, they set an impossible goal: a 1,000 hp, 250 mph car that was also comfortable and reliable. The Veyron exceeded it.</p>
+                    
+                    <h4>Veyron (2005-2015):</h4>
+                    <ul>
+                        <li>8.0L quad-turbo W16 – 1,001 hp</li>
+                        <li>Top speed: 253 mph (408 km/h)</li>
+                        <li>0-60: 2.5 seconds</li>
+                        <li>Price: $1.7M</li>
+                        <li>Variants: Veyron, Grand Sport, Super Sport (1,200 hp, 268 mph)</li>
+                    </ul>
+                    
+                    <h4>Chiron (2016-present):</h4>
+                    <ul>
+                        <li>8.0L quad-turbo W16 – 1,500 hp</li>
+                        <li>Top speed: 261 mph (electronically limited)</li>
+                        <li>Super Sport 300+: 304 mph (490 km/h) – first production car over 300 mph</li>
+                        <li>0-60: 2.4 seconds</li>
+                        <li>Price: $3M+</li>
+                    </ul>
+                    
+                    <h4>Special Editions:</h4>
+                    <ul>
+                        <li>Divo (2020): cornering-focused, 40 units</li>
+                        <li>Centodieci (2021): EB110 tribute, 10 units</li>
+                        <li>Voiture Noire (2021): one-off, $18.7M</li>
+                        <li>Mistral (2023): roadster</li>
+                        <li>Bolide (2024): track-only monster</li>
+                    </ul>
+                </div>
+                
+                <div class="modern-image">
+                    <img src="../images/bugatti/chiron-engine.jpg" alt="Bugatti Chiron Engine">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="brand-section bg-light">
+        <div class="container">
+            <h2>Bugatti <span class="highlight">Timeline</span></h2>
+            
+            <div class="brand-timeline">
+                <div class="timeline-item">
+                    <div class="year">1909</div>
+                    <div class="desc">Ettore Bugatti founds company in Molsheim, Alsace</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1910</div>
+                    <div class="desc">Type 13 – first production Bugatti</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1924</div>
+                    <div class="desc">Type 35 introduced – most successful race car ever</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1927</div>
+                    <div class="desc">Type 41 Royale introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1934</div>
+                    <div class="desc">Type 57 introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1936</div>
+                    <div class="desc">Type 57 Atlantic – most beautiful Bugatti</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1939</div>
+                    <div class="desc">Jean Bugatti dies at 30</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1947</div>
+                    <div class="desc">Ettore Bugatti dies</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1952</div>
+                    <div class="desc">Bugatti closes</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1987</div>
+                    <div class="desc">Romano Artioli revives Bugatti</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1991</div>
+                    <div class="desc">EB110 launched – 212 mph supercar</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1995</div>
+                    <div class="desc">Bugatti Automobili closes</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1998</div>
+                    <div class="desc">Volkswagen acquires Bugatti brand</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2005</div>
+                    <div class="desc">Veyron launched – 1,001 hp, 253 mph</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2010</div>
+                    <div class="desc">Veyron Super Sport – 268 mph</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2016</div>
+                    <div class="desc">Chiron launched – 1,500 hp</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2019</div>
+                    <div class="desc">Chiron Super Sport 300+ – 304 mph</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2021</div>
+                    <div class="desc">Bugatti and Rimac merge – Bugatti Rimac</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2024</div>
+                    <div class="desc">Bolide track car</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Brands -->
+    <div class="text-center section-padding">
+        <a href="../brands.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to All Brands</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../brands.html">Brands</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>French Brands</h4>
+                    <ul>
+                        <li><a href="peugeot.html">Peugeot</a></li>
+                        <li><a href="renault.html">Renault</a></li>
+                        <li><a href="citroen.html">Citroën</a></li>
+                        <li><a href="bugatti.html">Bugatti</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audi History | Complete Brand Profile & Iconic Models</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore Audi's complete history from 1909 to present. Discover iconic models like Quattro, R8, TT, and how Audi pioneered all-wheel drive and advanced technology.">
+    <meta name="keywords" content="Audi history, Audi Quattro, Audi R8, Audi TT, German cars, Vorsprung durch Technik, quattro AWD">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Audi History | Complete Brand Profile">
+    <meta property="og:description" content="Vorsprung durch Technik - Progress through Technology">
+    <meta property="og:image" content="../images/brands/german/audi-logo.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/brands.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../1886-1920.html">1886-1920: Birth</a></li>
+                            <li><a href="../1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="../1950-1980.html">1950-1980: Muscle</a></li>
+                            <li><a href="../1980-2010.html">1980-2010: Technology</a></li>
+                            <li><a href="../2010-present.html">2010-Present: Electric</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../brands.html">Brands</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Brand Hero -->
+    <header class="brand-hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../images/brands/german/audi-hero.jpg');">
+        <div class="container">
+            <div class="brand-hero-content">
+                <img src="../images/brands/german/audi-logo.png" alt="Audi Logo" class="brand-hero-logo">
+                <h1>Audi</h1>
+                <p class="brand-tagline">Vorsprung durch Technik</p>
+                
+                <div class="brand-quick-facts">
+                    <span><i class="fas fa-calendar"></i> Founded: 1909</span>
+                    <span><i class="fas fa-globe"></i> Country: Germany</span>
+                    <span><i class="fas fa-trophy"></i> Icon: Quattro, R8</span>
+                    <span><i class="fas fa-cog"></i> quattro AWD</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Navigation -->
+    <div class="brand-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#history" class="active">History</a></li>
+                <li><a href="#models">Iconic Models</a></li>
+                <li><a href="#quattro">quattro Legacy</a></li>
+                <li><a href="#design">Design</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#motorsport">Motorsport</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- History Section -->
+    <section id="history" class="brand-section">
+        <div class="container">
+            <h2>Audi: <span class="highlight">Vorsprung durch Technik</span></h2>
+            
+            <div class="history-grid">
+                <div class="history-text">
+                    <p>Audi's history is a story of innovation, reinvention, and the four rings that represent four distinct companies. The four rings of the Audi logo represent four former German automobile manufacturers: Audi, DKW, Horch, and Wanderer – together forming Auto Union in 1932.</p>
+                    
+                    <p>The story begins with August Horch, who founded A. Horch & Cie in 1899. After leaving his own company, Horch founded a new company in 1909 but couldn't use his own name. His son suggested "Audi" – the Latin translation of "horch" (meaning "hark" or "listen"). Thus, Audi was born.</p>
+                    
+                    <p>The 1932 merger created Auto Union, with the four rings representing each brand. Audi, Horch, DKW, and Wanderer covered every segment from motorcycles to luxury cars. The famous Auto Union Silver Arrow race cars dominated Grand Prix racing.</p>
+                    
+                    <p>After World War II, Auto Union was effectively destroyed. The company was re-established in West Germany, initially producing DKW-branded two-stroke cars. In 1964, Volkswagen acquired Auto Union, and the Audi brand was revived.</p>
+                    
+                    <p>The modern Audi began in 1968 with the Audi 100, a stylish and advanced sedan. But the real revolution came in 1980 with the Audi Quattro – a turbocharged coupe with permanent all-wheel drive. It dominated rallying and changed automotive history.</p>
+                    
+                    <p>Through the 1980s and 1990s, Audi rebuilt its reputation, focusing on advanced technology, aerodynamic design, and quality. The 1994 A8 introduced aluminum space frame construction. The 1998 TT stunned with its Bauhaus-inspired design.</p>
+                    
+                    <p>Today, Audi is BMW and Mercedes' direct competitor, known for sophisticated technology, quattro all-wheel drive, and elegant design. The brand leads in electrification with the e-tron family and continues its "Vorsprung durch Technik" (Progress through Technology) philosophy.</p>
+                    
+                    <div class="founder-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>"I am convinced that a car should be an object of the heart, not just a means of transport."</blockquote>
+                        <cite>- August Horch, founder</cite>
+                    </div>
+                </div>
+                
+                <div class="history-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar"></i>
+                        <span class="stat-number">1909</span>
+                        <span class="stat-label">Founded</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <span class="stat-number">1980</span>
+                        <span class="stat-label">Quattro</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-car"></i>
+                        <span class="stat-number">1994</span>
+                        <span class="stat-label">A8 (Aluminum)</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-cog"></i>
+                        <span class="stat-number">quattro</span>
+                        <span class="stat-label">AWD Pioneer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iconic Models Section -->
+    <section id="models" class="brand-section bg-light">
+        <div class="container">
+            <h2>Iconic <span class="highlight">Models</span></h2>
+            
+            <div class="models-grid">
+                <!-- Audi Quattro -->
+                <div class="model-card featured">
+                    <img src="../images/models/audi-quattro.jpg" alt="Audi Quattro">
+                    <div class="model-info">
+                        <h3>Audi Quattro (1980-1991)</h3>
+                        <p class="model-years">1980-1991</p>
+                        <p>The car that revolutionized rallying and brought all-wheel drive to performance cars. The Quattro dominated World Rally Championship and changed perceptions of Audi forever.</p>
+                        <ul class="model-specs">
+                            <li><i class="fas fa-cog"></i> 2.1L 5-cylinder turbo, later 2.2L</li>
+                            <li><i class="fas fa-tachometer-alt"></i> 200-220 hp, 0-60 in 6.3s (1980s)</li>
+                            <li><i class="fas fa-trophy"></i> 1982-1984 WRC Manufacturers' titles</li>
+                            <li><i class="fas fa-flag-checkered"></i> Pikes Peak record holder</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Audi R8 -->
+                <div class="model-card">
+                    <img src="../images/models/audi-r8.jpg" alt="Audi R8">
+                    <h3>Audi R8</h3>
+                    <p class="model-years">2006-present</p>
+                    <p>Audi's first supercar, born from Le Mans-winning race cars. Available with V8, V10, and now V10 performance. The R8 proved Audi could compete with the best.</p>
+                </div>
+                
+                <!-- Audi TT -->
+                <div class="model-card">
+                    <img src="../images/models/audi-tt.jpg" alt="Audi TT">
+                    <h3>Audi TT</h3>
+                    <p class="model-years">1998-present</p>
+                    <p>A design icon. The TT's Bauhaus-inspired styling was revolutionary. The first generation's "round" theme influenced a generation of car design.</p>
+                </div>
+                
+                <!-- Audi A8 -->
+                <div class="model-card">
+                    <img src="../images/models/audi-a8.jpg" alt="Audi A8">
+                    <h3>Audi A8</h3>
+                    <p class="model-years">1994-present</p>
+                    <p>The flagship luxury sedan. First with aluminum space frame (ASF) construction, significantly reducing weight while maintaining rigidity.</p>
+                </div>
+                
+                <!-- Audi 100 -->
+                <div class="model-card">
+                    <img src="../images/models/audi-100.jpg" alt="Audi 100">
+                    <h3>Audi 100 / 5000</h3>
+                    <p class="model-years">1968-1994</p>
+                    <p>The car that revived Audi. The 1968 100 (C1) was a stylish, modern sedan that established Audi's reputation. The 1982 C3 set new standards for aerodynamics.</p>
+                </div>
+                
+                <!-- Audi RS2 -->
+                <div class="model-card">
+                    <img src="../images/models/audi-rs2.jpg" alt="Audi RS2 Avant">
+                    <h3>Audi RS2 Avant</h3>
+                    <p class="model-years">1994-1995</p>
+                    <p>The first Audi RS model, developed with Porsche. A 315 hp wagon that could embarrass supercars. Launched the RS performance sub-brand.</p>
+                </div>
+                
+                <!-- Audi Sport Quattro -->
+                <div class="model-card">
+                    <img src="../images/models/audi-sport-quattro.jpg" alt="Audi Sport Quattro">
+                    <h3>Audi Sport Quattro</h3>
+                    <p class="model-years">1983-1985</p>
+                    <p>Homologation special for Group B rallying. Short wheelbase, carbon fiber, and 306 hp. One of the most desirable Audis ever.</p>
+                </div>
+                
+                <!-- Audi e-tron GT -->
+                <div class="model-card">
+                    <img src="../images/models/audi-etron-gt.jpg" alt="Audi e-tron GT">
+                    <h3>Audi e-tron GT</h3>
+                    <p class="model-years">2021-present</p>
+                    <p>Audi's electric performance flagship. Shares platform with Porsche Taycan. Stunning design and 637 hp in RS version.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- quattro Section -->
+    <section id="quattro" class="brand-section">
+        <div class="container">
+            <h2>The <span class="highlight">quattro</span> Legacy</h2>
+            
+            <div class="quattro-story">
+                <div class="quattro-text">
+                    <p>The story of quattro began in 1977 when an Audi engineer, Jörg Bensinger, noticed that the Volkswagen Iltis military vehicle could out-handle much more powerful cars in slippery conditions. He proposed putting all-wheel drive in a performance car.</p>
+                    
+                    <p>At the time, all-wheel drive was strictly for off-road vehicles. Putting it in a sports car was radical. But Audi's management approved the project, and the Quattro was born – a turbocharged coupe with permanent all-wheel drive.</p>
+                    
+                    <p>The Quattro's rally debut at the 1981 Monte Carlo Rally shocked the world. In snow and ice, the Quattro was unbeatable. It dominated the World Rally Championship, winning manufacturers' titles in 1982, 1983, and 1984.</p>
+                    
+                    <p>quattro technology evolved through generations:</p>
+                    <ul>
+                        <li><strong>1980:</strong> First-generation – permanent AWD with center and rear differential locks</li>
+                        <li><strong>1987:</strong> Torsen center differential – torque-sensing automatic distribution</li>
+                        <li><strong>1995:</strong> Electronic differential lock (EDL) – braking individual wheels</li>
+                        <li><strong>2005:</strong> Sport differential – active torque vectoring</li>
+                        <li><strong>2010:</strong> quattro with crown-gear center diff – lighter, more variable</li>
+                        <li><strong>2016:</strong> ultra quattro – disconnects rear axle for efficiency</li>
+                        <li><strong>Electric:</strong> e-tron quattro – electric motors, no mechanical connection</li>
+                    </ul>
+                    
+                    <p>Today, quattro is available across Audi's entire lineup, from A3 to R8. It's central to Audi's identity and performance reputation.</p>
+                </div>
+                
+                <div class="quattro-image">
+                    <img src="../images/audi/quattro-rally.jpg" alt="Audi Quattro Rally">
+                    <p class="image-caption">Audi Quattro dominating World Rally Championship</p>
+                </div>
+            </div>
+            
+            <div class="quattro-quote">
+                <i class="fas fa-quote-left"></i>
+                <blockquote>"quattro changed the rules of the game. Suddenly, power meant nothing without grip."</blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Section -->
+    <section id="design" class="brand-section bg-light">
+        <div class="container">
+            <h2>Audi <span class="highlight">Design</span></h2>
+            
+            <div class="design-grid">
+                <div class="design-text">
+                    <p>Audi's design philosophy has evolved from the aerodynamic focus of the 1980s to the sophisticated, technical aesthetic of today. The brand's motto is "At the intersection of progression and sophistication."</p>
+                    
+                    <h4>Key Design Elements:</h4>
+                    <ul>
+                        <li><strong>Singleframe grille:</strong> Introduced in 2003, now signature Audi face</li>
+                        <li><strong>Lighting technology:</strong> LED headlights, Matrix Laser, OLED taillights – Audi leads in lighting</li>
+                        <li><strong>Quattro fender flares:</strong> Muscular shoulders echoing quattro heritage</li>
+                        <li><strong>Clean surfaces:</strong> Minimal lines, precise execution</li>
+                        <li><strong>Virtual Cockpit:</strong> Digital instrument cluster, design meets technology</li>
+                    </ul>
+                    
+                    <h4>Design Icons:</h4>
+                    <ul>
+                        <li><strong>Audi TT (1998):</strong> Bauhaus-inspired, "form follows function"</li>
+                        <li><strong>Audi 100 C3 (1982):</strong> Record-breaking aerodynamics (Cd 0.30)</li>
+                        <li><strong>Audi Prologue concept (2014):</strong> Previewed current design language</li>
+                        <li><strong>Audi e-tron GT:</strong> Electric performance with stunning proportions</li>
+                    </ul>
+                    
+                    <p>Audi's chief designers have included Hartmut Warkuß (responsible for the aerodynamic 100), Peter Schreyer (later at Kia), and Marc Lichte (current design director).</p>
+                </div>
+                
+                <div class="design-image">
+                    <img src="../images/audi/audi-tt-design.jpg" alt="Audi TT Design">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="brand-section">
+        <div class="container">
+            <h2><span class="highlight">Technology</span> Leadership</h2>
+            
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <i class="fas fa-car"></i>
+                    <h3>ASF (Audi Space Frame)</h3>
+                    <p>Aluminum space frame construction debuted on A8 in 1994. Reduces weight by 40% compared to steel while maintaining strength.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>LED & Laser Light</h3>
+                    <p>Audi pioneered LED daytime running lights (2004), full LED headlights (2008), Matrix LED (2013), and laser high beams.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <i class="fas fa-microchip"></i>
+                    <h3>MMI (Multi Media Interface)</h3>
+                    <p>Introduced in 2002, MMI integrated infotainment controls. Evolved to MMI Touch with handwriting recognition.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <h3>Virtual Cockpit</h3>
+                    <p>Fully digital 12.3-inch instrument cluster introduced in 2014. Customizable displays with 3D graphics.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Audi AI</h3>
+                    <p>Driver assistance systems including adaptive cruise, lane keeping, and traffic jam pilot. AI:REMOTE PARK pilot can park itself.</p>
+                </div>
+                
+                <div class="tech-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>e-tron</h3>
+                    <p>Audi's electric technology. e-tron (2018) was first production EV. Now expanded to e-tron GT, Q4 e-tron, Q6 e-tron.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Motorsport Section -->
+    <section id="motorsport" class="brand-section bg-light">
+        <div class="container">
+            <h2>Audi in <span class="highlight">Motorsport</span></h2>
+            
+            <div class="motorsport-grid">
+                <div class="motorsport-content">
+                    <ul>
+                        <li><i class="fas fa-trophy"></i> <strong>World Rally Championship:</strong> 1982-1984 Manufacturers' titles with Quattro and Sport Quattro</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Pikes Peak:</strong> Multiple wins, including record-breaking runs with Quattro and electric e-tron</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Trans-Am:</strong> 1988 championship with Audi 200 Quattro</li>
+                        <li><i class="fas fa-trophy"></i> <strong>IMSA GTO:</strong> Success with 90 Quattro</li>
+                        <li><i class="fas fa-trophy"></i> <strong>24 Hours of Le Mans:</strong> 13 wins between 2000-2014 with R8, R10 TDI, R15, R18</li>
+                        <li><i class="fas fa-trophy"></i> <strong>DTM:</strong> Multiple championships with A4 and RS5</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Formula E:</strong> Factory program since 2017</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Dakar Rally:</strong> 2024 win with electric RS Q e-tron</li>
+                    </ul>
+                    
+                    <p>Audi's Le Mans dominance with diesel (R10 TDI) and hybrid (R18 e-tron) demonstrated technological leadership. The R8 race car (1999) won 5 times and spawned the R8 road car.</p>
+                </div>
+                
+                <div class="motorsport-image">
+                    <img src="../images/motorsport/audi-lemans.jpg" alt="Audi R18 Le Mans">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="brand-section">
+        <div class="container">
+            <h2>Audi <span class="highlight">Timeline</span></h2>
+            
+            <div class="brand-timeline">
+                <div class="timeline-item">
+                    <div class="year">1899</div>
+                    <div class="desc">August Horch founds A. Horch & Cie</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1909</div>
+                    <div class="desc">Audi founded by August Horch</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1932</div>
+                    <div class="desc">Four rings formed – Auto Union merger of Audi, DKW, Horch, Wanderer</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1934</div>
+                    <div class="desc">Auto Union Silver Arrow Grand Prix cars dominate</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1949</div>
+                    <div class="desc">Auto Union re-established in West Germany</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1964</div>
+                    <div class="desc">Volkswagen acquires Auto Union</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1968</div>
+                    <div class="desc">Audi 100 (C1) launched – modern Audi begins</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1972</div>
+                    <div class="desc">Audi 80 (B1) introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1980</div>
+                    <div class="desc">Audi Quattro launched – revolutionary all-wheel drive</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1982</div>
+                    <div class="desc">Audi 100 C3 sets new aerodynamic standards (Cd 0.30)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1983</div>
+                    <div class="desc">Sport Quattro homologation special</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1986</div>
+                    <div class="desc">Audi 80 introduces Torsen quattro system</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1994</div>
+                    <div class="desc">A8 with aluminum space frame (ASF) introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1994</div>
+                    <div class="desc">RS2 Avant – first RS model, developed with Porsche</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1998</div>
+                    <div class="desc">TT coupe launched – design icon</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1999</div>
+                    <div class="desc">Audi R8 race car debuts, begins Le Mans dominance</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2003</div>
+                    <div class="desc">Singleframe grille introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2006</div>
+                    <div class="desc">R8 supercar launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2006</div>
+                    <div class="desc">R10 TDI first diesel to win Le Mans</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2014</div>
+                    <div class="desc">Virtual Cockpit introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2018</div>
+                    <div class="desc">e-tron – first production electric Audi</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2021</div>
+                    <div class="desc">e-tron GT – electric performance flagship</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2024</div>
+                    <div class="desc">RS Q e-tron wins Dakar Rally</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Brands -->
+    <div class="text-center section-padding">
+        <a href="../brands.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to All Brands</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../brands.html">Brands</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>German Brands</h4>
+                    <ul>
+                        <li><a href="bmw.html">BMW</a></li>
+                        <li><a href="mercedes-benz.html">Mercedes-Benz</a></li>
+                        <li><a href="audi.html">Audi</a></li>
+                        <li><a href="volkswagen.html">Volkswagen</a></li>
+                        <li><a href="porsche.html">Porsche</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

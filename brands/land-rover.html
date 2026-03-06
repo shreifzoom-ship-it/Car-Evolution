@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Rover History | Complete Brand Profile & Iconic Models</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore Land Rover's complete history from 1948 to present. Discover iconic models like Defender, Range Rover, Discovery, and how Land Rover defined off-road luxury.">
+    <meta name="keywords" content="Land Rover history, Land Rover Defender, Range Rover, Discovery, British cars, off-road, luxury SUV">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Land Rover History | Complete Brand Profile">
+    <meta property="og:description" content="Above and Beyond - The Best 4x4 by Far">
+    <meta property="og:image" content="../images/brands/british/land-rover-logo.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/brands.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../1886-1920.html">1886-1920: Birth</a></li>
+                            <li><a href="../1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="../1950-1980.html">1950-1980: Muscle</a></li>
+                            <li><a href="../1980-2010.html">1980-2010: Technology</a></li>
+                            <li><a href="../2010-present.html">2010-Present: Electric</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../brands.html">Brands</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Brand Hero -->
+    <header class="brand-hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../images/brands/british/land-rover-hero.jpg');">
+        <div class="container">
+            <div class="brand-hero-content">
+                <img src="../images/brands/british/land-rover-logo.png" alt="Land Rover Logo" class="brand-hero-logo">
+                <h1>Land Rover</h1>
+                <p class="brand-tagline">Above and Beyond</p>
+                
+                <div class="brand-quick-facts">
+                    <span><i class="fas fa-calendar"></i> Founded: 1948</span>
+                    <span><i class="fas fa-globe"></i> Country: UK</span>
+                    <span><i class="fas fa-trophy"></i> Icon: Defender</span>
+                    <span><i class="fas fa-cog"></i> Off-Road Royalty</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Navigation -->
+    <div class="brand-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#history" class="active">History</a></li>
+                <li><a href="#models">Iconic Models</a></li>
+                <li><a href="#defender">Defender</a></li>
+                <li><a href="#range-rover">Range Rover</a></li>
+                <li><a href="#discovery">Discovery</a></li>
+                <li><a href="#technology">Off-Road Tech</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- History Section -->
+    <section id="history" class="brand-section">
+        <div class="container">
+            <h2>Land Rover: <span class="highlight">The Best 4x4 by Far</span></h2>
+            
+            <div class="history-grid">
+                <div class="history-text">
+                    <p>The Land Rover story begins in 1947 on a farm in Wales. Rover Company engineer Maurice Wilks used a surplus American Army Jeep on his farm and realized there was a market for a similar vehicle for agricultural and industrial use.</p>
+                    
+                    <p>With steel rationed after WWII, Wilks designed a body from aluminum alloy – lightweight, rust-proof, and readily available from aircraft factories. The first Land Rover, the Series I, debuted at the 1948 Amsterdam Motor Show. It was an instant success.</p>
+                    
+                    <p>The Series I was simple, rugged, and incredibly capable. It was designed as a working vehicle – farmers, forestry, military, and utility companies loved it. The Land Rover became the "go anywhere, do anything" vehicle.</p>
+                    
+                    <p>The Series II (1958) and Series III (1971) refined the design but kept the same basic formula. In 1970, Land Rover changed the world with the Range Rover – the first luxury 4x4. It combined off-road capability with on-road comfort and style, creating the luxury SUV segment.</p>
+                    
+                    <p>The 1989 Discovery expanded the lineup as a more affordable family off-roader. The 1997 Freelander brought Land Rover capability to a compact crossover.</p>
+                    
+                    <p>BMW owned Land Rover briefly (1994-2000), then Ford took over. In 2008, Tata Motors bought Jaguar Land Rover and invested heavily in new models and technology.</p>
+                    
+                    <p>The original Defender (a rebadged Series III) continued production until 2016, with minimal changes – a testament to its timeless design. A new Defender launched in 2020, modern while honoring the original.</p>
+                    
+                    <p>Today, Land Rover offers the Defender, Discovery, Discovery Sport, Range Rover, Range Rover Sport, Range Rover Velar, and Range Rover Evoque – plus electrified variants. The brand remains the benchmark for off-road luxury.</p>
+                    
+                    <div class="founder-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>"The Land Rover was designed to be a working vehicle, but it became so much more – an icon of British engineering."</blockquote>
+                        <cite>- Maurice Wilks</cite>
+                    </div>
+                </div>
+                
+                <div class="history-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar"></i>
+                        <span class="stat-number">1948</span>
+                        <span class="stat-label">Series I</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <span class="stat-number">1970</span>
+                        <span class="stat-label">Range Rover</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-car"></i>
+                        <span class="stat-number">1989</span>
+                        <span class="stat-label">Discovery</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-cog"></i>
+                        <span class="stat-number">70+</span>
+                        <span class="stat-label">Years of 4x4</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iconic Models Section -->
+    <section id="models" class="brand-section bg-light">
+        <div class="container">
+            <h2>Iconic <span class="highlight">Models</span></h2>
+            
+            <div class="models-grid">
+                <!-- Land Rover Series I -->
+                <div class="model-card featured">
+                    <img src="../images/models/land-rover-series1.jpg" alt="Land Rover Series I">
+                    <div class="model-info">
+                        <h3>Land Rover Series I / II / III (1948-1985)</h3>
+                        <p class="model-years">1948-1985</p>
+                        <p>The original. Simple, rugged, and incredibly capable. The Series vehicles were working vehicles – farms, military, forestry. They built the Land Rover legend.</p>
+                        <ul class="model-specs">
+                            <li><i class="fas fa-cog"></i> 1.6L → 2.25L petrol/diesel</li>
+                            <li><i class="fas fa-weight-hanging"></i> Aluminum body, steel chassis</li>
+                            <li><i class="fas fa-trophy"></i> 88" and 109" wheelbases</li>
+                            <li><i class="fas fa-flag"></i> Go anywhere capability</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Land Rover Defender -->
+                <div class="model-card">
+                    <img src="../images/models/land-rover-defender.jpg" alt="Land Rover Defender">
+                    <h3>Land Rover Defender</h3>
+                    <p class="model-years">1983-2016, 2020-present</p>
+                    <p>The ultimate off-roader. The original Defender (rebadged Series III) became an icon. The new Defender modernizes while retaining capability.</p>
+                </div>
+                
+                <!-- Range Rover -->
+                <div class="model-card">
+                    <img src="../images/models/range-rover.jpg" alt="Range Rover">
+                    <h3>Range Rover</h3>
+                    <p class="model-years">1970-present</p>
+                    <p>The first luxury SUV. Combined off-road capability with on-road comfort and style. Created a segment and remains the benchmark.</p>
+                </div>
+                
+                <!-- Discovery -->
+                <div class="model-card">
+                    <img src="../images/models/land-rover-discovery.jpg" alt="Land Rover Discovery">
+                    <h3>Land Rover Discovery</h3>
+                    <p class="model-years">1989-present</p>
+                    <p>The family-friendly off-roader. Practical, spacious, and capable. The "Disco" has a loyal following.</p>
+                </div>
+                
+                <!-- Range Rover Sport -->
+                <div class="model-card">
+                    <img src="../images/models/range-rover-sport.jpg" alt="Range Rover Sport">
+                    <h3>Range Rover Sport</h3>
+                    <p class="model-years">2005-present</p>
+                    <p>The performance SUV. Sharper handling, more aggressive styling, still luxurious and capable.</p>
+                </div>
+                
+                <!-- Freelander -->
+                <div class="model-card">
+                    <img src="../images/models/land-rover-freelander.jpg" alt="Land Rover Freelander">
+                    <h3>Land Rover Freelander</h3>
+                    <p class="model-years">1997-2014</p>
+                    <p>The compact crossover that brought Land Rover capability to a smaller, more affordable package.</p>
+                </div>
+                
+                <!-- Range Rover Evoque -->
+                <div class="model-card">
+                    <img src="../images/models/range-rover-evoque.jpg" alt="Range Rover Evoque">
+                    <h3>Range Rover Evoque</h3>
+                    <p class="model-years">2011-present</p>
+                    <p>The fashion-forward compact SUV. Stunning design, premium interior, and surprising capability.</p>
+                </div>
+                
+                <!-- Range Rover Velar -->
+                <div class="model-card">
+                    <img src="../images/models/range-rover-velar.jpg" alt="Range Rover Velar">
+                    <h3>Range Rover Velar</h3>
+                    <p class="model-years">2017-present</p>
+                    <p>The "avant-garde" Range Rover. Minimalist design, advanced technology, and elegant proportions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Defender Section -->
+    <section id="defender" class="brand-section">
+        <div class="container">
+            <h2>The <span class="highlight">Defender</span> – Icon of Capability</h2>
+            
+            <div class="defender-grid">
+                <div class="defender-text">
+                    <p>The Defender is the direct descendant of the original Land Rover. For over 60 years, it remained fundamentally unchanged – a testament to its brilliant design.</p>
+                    
+                    <h4>Original Defender (1983-2016):</h4>
+                    <ul>
+                        <li><strong>90, 110, 127:</strong> Wheelbase lengths in inches</li>
+                        <li><strong>Engines:</strong> 2.25L petrol/diesel, 2.5L diesel, 2.5L turbodiesel, 3.9L V8, 2.2L Ford diesel</li>
+                        <li><strong>Body styles:</strong> Pickup, hardtop, station wagon, camper, military</li>
+                        <li><strong>Capability:</strong> Solid axles, low-range transfer case, incredible articulation</li>
+                    </ul>
+                    
+                    <p>The original Defender was beloved by farmers, explorers, military, and enthusiasts worldwide. It was basic, noisy, uncomfortable, and utterly capable. Production ended in 2016 after 2 million built.</p>
+                    
+                    <h4>New Defender (2020-present):</h4>
+                    <ul>
+                        <li><strong>90 and 110:</strong> Short and long wheelbase</li>
+                        <li><strong>Modern engineering:</strong> Independent suspension, monocoque construction, advanced electronics</li>
+                        <li><strong>Capability:</strong> Air suspension, locking diffs, terrain response, wading depth 900mm</li>
+                        <li><strong>Engines:</strong> 2.0L turbo, 3.0L mild hybrid, 5.0L V8</li>
+                    </ul>
+                    
+                    <p>The new Defender honors the original while being a thoroughly modern vehicle. It's more comfortable, more capable (on paper), and more practical. Purists debated, but it's been a massive success.</p>
+                </div>
+                
+                <div class="defender-image">
+                    <img src="../images/land-rover/defender-generations.jpg" alt="Defender Generations">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Range Rover Section -->
+    <section id="range-rover" class="brand-section bg-light">
+        <div class="container">
+            <h2><span class="highlight">Range Rover</span> – The Luxury SUV</h2>
+            
+            <div class="range-rover-grid">
+                <div class="range-rover-text">
+                    <p>The Range Rover, launched in 1970, created the luxury SUV segment. It combined Land Rover's legendary off-road capability with on-road comfort and style.</p>
+                    
+                    <h4>Generations:</h4>
+                    <ul>
+                        <li><strong>Classic (1970-1996):</strong> Original design by Charles Spencer King. Simple, elegant, capable. Became the "Chelsea Tractor."</li>
+                        <li><strong>P38A (1994-2002):</strong> More luxurious, more rounded. Air suspension, more technology.</li>
+                        <li><strong>L322 (2002-2012):</strong> BMW-influenced design. Huge leap in luxury and refinement. The first truly premium Range Rover.</li>
+                        <li><strong>L405 (2012-2022):</strong> Aluminum body – lighter, more efficient. More technology, more luxury.</li>
+                        <li><strong>L460 (2022-present):</strong> Current generation. PHEV and electric options, advanced luxury, and capability.</li>
+                    </ul>
+                    
+                    <h4>Range Rover Family:</h4>
+                    <ul>
+                        <li><strong>Range Rover:</strong> The flagship</li>
+                        <li><strong>Range Rover Sport:</strong> Performance-focused</li>
+                        <li><strong>Range Rover Velar:</strong> Design-focused</li>
+                        <li><strong>Range Rover Evoque:</strong> Compact luxury</li>
+                        <li><strong>SV Autobiography:</strong> Ultimate luxury by Special Vehicle Operations</li>
+                    </ul>
+                    
+                    <p>The Range Rover has been the vehicle of choice for royalty, celebrities, and business leaders. It defines luxury SUVs.</p>
+                </div>
+                
+                <div class="range-rover-image">
+                    <img src="../images/land-rover/range-rover-generations.jpg" alt="Range Rover Generations">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discovery Section -->
+    <section id="discovery" class="brand-section">
+        <div class="container">
+            <h2><span class="highlight">Discovery</span> – Family Adventure</h2>
+            
+            <div class="discovery-grid">
+                <div class="discovery-text">
+                    <p>The Discovery was introduced in 1989 as a more affordable, family-friendly alternative to the Range Rover. It shared Range Rover underpinnings but with a more practical, less luxurious interior.</p>
+                    
+                    <h4>Generations:</h4>
+                    <ul>
+                        <li><strong>Series I (1989-1998):</strong> Distinctive stepped roof, Alpine windows. Practical, capable, quirky.</li>
+                        <li><strong>Series II (1998-2004):</strong> Refined design, more comfortable, still capable. TD5 engine.</li>
+                        <li><strong>Discovery 3/LR3 (2004-2009):</strong> Radical redesign. Integrated body-frame, Terrain Response system. Huge leap.</li>
+                        <li><strong>Discovery 4/LR4 (2009-2016):</strong> Refined, more technology, beautiful interior.</li>
+                        <li><strong>Discovery 5 (2017-present):</strong> More streamlined design (controversial), lighter, more efficient, still capable.</li>
+                    </ul>
+                    
+                    <p>The Discovery has always offered seven seats, genuine off-road capability, and family-friendly practicality. It's the vehicle for active families who need to go anywhere.</p>
+                </div>
+                
+                <div class="discovery-image">
+                    <img src="../images/land-rover/discovery.jpg" alt="Land Rover Discovery">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Off-Road Technology Section -->
+    <section id="technology" class="brand-section bg-light">
+        <div class="container">
+            <h2>Land Rover <span class="highlight">Off-Road</span> Technology</h2>
+            
+            <div class="offroad-grid">
+                <div class="offroad-card">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <h3>Terrain Response</h3>
+                    <p>Selectable modes (Grass/Gravel/Snow, Mud/Ruts, Sand, Rock Crawl) optimize throttle, transmission, diffs, and suspension for the terrain.</p>
+                </div>
+                
+                <div class="offroad-card">
+                    <i class="fas fa-arrow-up"></i>
+                    <h3>Air Suspension</h3>
+                    <p>Raises ride height for off-road, lowers for on-road efficiency and entry/exit. Up to 11.5 inches of ground clearance.</p>
+                </div>
+                
+                <div class="offroad-card">
+                    <i class="fas fa-tint"></i>
+                    <h3>Wade Sensing</h3>
+                    <p>Sonar sensors measure water depth and display on screen. Defender can wade up to 900mm (35 inches).</p>
+                </div>
+                
+                <div class="offroad-card">
+                    <i class="fas fa-video"></i>
+                    <h3>ClearSight Ground View</h3>
+                    <p>Cameras show the terrain under the front of the vehicle – effectively a "transparent hood."</p>
+                </div>
+                
+                <div class="offroad-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>Locking Differentials</h3>
+                    <p>Center and rear locking diffs ensure power goes to wheels with traction.</p>
+                </div>
+                
+                <div class="offroad-card">
+                    <i class="fas fa-mountain"></i>
+                    <h3>All-Terrain Progress Control</h3>
+                    <p>Low-speed cruise control for off-road – driver just steers, vehicle manages throttle and braking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="brand-section">
+        <div class="container">
+            <h2>Land Rover <span class="highlight">Timeline</span></h2>
+            
+            <div class="brand-timeline">
+                <div class="timeline-item">
+                    <div class="year">1947</div>
+                    <div class="desc">Maurice Wilks sketches Land Rover on Anglesey beach</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1948</div>
+                    <div class="desc">Land Rover Series I launched at Amsterdam Motor Show</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1958</div>
+                    <div class="desc">Series II introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1970</div>
+                    <div class="desc">Range Rover Classic launched – creates luxury SUV segment</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1971</div>
+                    <div class="desc">Series III introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1983</div>
+                    <div class="desc">Land Rover 90/110 (later Defender) introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1989</div>
+                    <div class="desc">Discovery launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1994</div>
+                    <div class="desc">BMW acquires Rover Group including Land Rover</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1997</div>
+                    <div class="desc">Freelander launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2000</div>
+                    <div class="desc">Ford acquires Land Rover from BMW</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2004</div>
+                    <div class="desc">Discovery 3 / LR3 with Terrain Response</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2005</div>
+                    <div class="desc">Range Rover Sport launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2008</div>
+                    <div class="desc">Tata Motors acquires Jaguar Land Rover</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2011</div>
+                    <div class="desc">Range Rover Evoque launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2012</div>
+                    <div class="desc">Range Rover L405 with aluminum body</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2016</div>
+                    <div class="desc">Original Defender production ends after 68 years</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2017</div>
+                    <div class="desc">Range Rover Velar launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2020</div>
+                    <div class="desc">New Defender launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2022</div>
+                    <div class="desc">Range Rover L460 with PHEV</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2024</div>
+                    <div class="desc">Range Rover Electric announced</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Brands -->
+    <div class="text-center section-padding">
+        <a href="../brands.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to All Brands</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../brands.html">Brands</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>British Brands</h4>
+                    <ul>
+                        <li><a href="jaguar.html">Jaguar</a></li>
+                        <li><a href="land-rover.html">Land Rover</a></li>
+                        <li><a href="aston-martin.html">Aston Martin</a></li>
+                        <li><a href="bentley.html">Bentley</a></li>
+                        <li><a href="rolls-royce.html">Rolls-Royce</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

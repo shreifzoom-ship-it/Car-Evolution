@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chevrolet History | Complete Brand Profile & Iconic Models</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore Chevrolet's complete history from 1911 to present. Discover iconic models like Corvette, Camaro, Bel Air, Silverado, and how Chevy became the heart of America.">
+    <meta name="keywords" content="Chevrolet history, Chevy Corvette, Camaro, Bel Air, Silverado, American cars, bowtie">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Chevrolet History | Complete Brand Profile">
+    <meta property="og:description" content="Find New Roads - The Heart of America">
+    <meta property="og:image" content="../images/brands/american/chevrolet-logo.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/brands.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../1886-1920.html">1886-1920: Birth</a></li>
+                            <li><a href="../1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="../1950-1980.html">1950-1980: Muscle</a></li>
+                            <li><a href="../1980-2010.html">1980-2010: Technology</a></li>
+                            <li><a href="../2010-present.html">2010-Present: Electric</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../brands.html">Brands</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Brand Hero -->
+    <header class="brand-hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../images/brands/american/chevrolet-hero.jpg');">
+        <div class="container">
+            <div class="brand-hero-content">
+                <img src="../images/brands/american/chevrolet-logo.png" alt="Chevrolet Logo" class="brand-hero-logo">
+                <h1>Chevrolet</h1>
+                <p class="brand-tagline">Find New Roads</p>
+                
+                <div class="brand-quick-facts">
+                    <span><i class="fas fa-calendar"></i> Founded: 1911</span>
+                    <span><i class="fas fa-globe"></i> Country: USA</span>
+                    <span><i class="fas fa-trophy"></i> Icon: Corvette, Camaro</span>
+                    <span><i class="fas fa-cog"></i> Heart of America</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Navigation -->
+    <div class="brand-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#history" class="active">History</a></li>
+                <li><a href="#models">Iconic Models</a></li>
+                <li><a href="#corvette">Corvette Story</a></li>
+                <li><a href="#camaro">Camaro</a></li>
+                <li><a href="#trucks">Trucks</a></li>
+                <li><a href="#racing">Racing</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- History Section -->
+    <section id="history" class="brand-section">
+        <div class="container">
+            <h2>Chevrolet: <span class="highlight">The Heartbeat of America</span></h2>
+            
+            <div class="history-grid">
+                <div class="history-text">
+                    <p>Chevrolet was founded in 1911 by Louis Chevrolet, a Swiss-born race car driver, and William C. Durant, the founder of General Motors. Durant had been ousted from GM and needed a new brand to compete with Ford.</p>
+                    
+                    <p>The first Chevrolet, the Series C Classic Six, was a luxury car – a surprising start for a brand that would become synonymous with affordable American transportation. But Durant's strategy was to build Chevrolet into a volume brand that could challenge Ford, then use its success to regain control of GM.</p>
+                    
+                    <p>The strategy worked. By 1918, Chevrolet was profitable and successful enough that Durant used it to buy back control of GM. Chevrolet became a division of GM, positioned as the affordable, mass-market brand.</p>
+                    
+                    <p>The 1920s and 1930s saw Chevrolet become America's best-selling car, a position it would hold for decades. The 1950s brought the small-block V8 – one of the most important engines in history. Introduced in 1955, it was lightweight, compact, and powerful, powering everything from sedans to Corvettes for decades.</p>
+                    
+                    <p>The 1953 Corvette was America's sports car – fiberglass body, stylish design, and V8 power. The 1967 Camaro joined the pony car war against Mustang. The 1960s and 1970s muscle cars – Chevelle SS, Nova SS, Impala SS – defined an era.</p>
+                    
+                    <p>Through the 1980s and 1990s, Chevrolet continued with trucks (Silverado), SUVs (Suburban, Tahoe), and performance (C4 Corvette, Camaro IROC-Z). The 2000s brought the return of the Camaro and the C8 Corvette with mid-engine layout – a revolutionary change.</p>
+                    
+                    <p>Today, Chevrolet is investing in electrification with the Bolt EV and upcoming Silverado EV, while maintaining its performance and truck leadership. The brand remains central to American automotive culture.</p>
+                    
+                    <div class="founder-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>"The heartbeat of America is Chevrolet."</blockquote>
+                        <cite>- Iconic advertising slogan</cite>
+                    </div>
+                </div>
+                
+                <div class="history-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar"></i>
+                        <span class="stat-number">1911</span>
+                        <span class="stat-label">Founded</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <span class="stat-number">1953</span>
+                        <span class="stat-label">Corvette</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-car"></i>
+                        <span class="stat-number">1955</span>
+                        <span class="stat-label">Small-Block V8</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-cog"></i>
+                        <span class="stat-number">#1</span>
+                        <span class="stat-label">American Brand</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iconic Models Section -->
+    <section id="models" class="brand-section bg-light">
+        <div class="container">
+            <h2>Iconic <span class="highlight">Models</span></h2>
+            
+            <div class="models-grid">
+                <!-- Chevrolet Corvette -->
+                <div class="model-card featured">
+                    <img src="../images/models/chevrolet-corvette.jpg" alt="Chevrolet Corvette">
+                    <div class="model-info">
+                        <h3>Chevrolet Corvette (1953-present)</h3>
+                        <p class="model-years">8 generations | 1953-present</p>
+                        <p>America's sports car. The Corvette has evolved from a stylish cruiser to a world-class supercar. The 2020 C8 moved the engine to the middle – a revolutionary change.</p>
+                        <ul class="model-specs">
+                            <li><i class="fas fa-cog"></i> C1 (1953-62), C2 (1963-67), C3 (1968-82), C4 (1984-96), C5 (1997-2004), C6 (2005-13), C7 (2014-19), C8 (2020-present)</li>
+                            <li><i class="fas fa-tachometer-alt"></i> 150 hp (1953) to 670 hp (Z06)</li>
+                            <li><i class="fas fa-trophy"></i> First mass-produced fiberglass body</li>
+                            <li><i class="fas fa-flag-checkered"></i> C8.R dominates IMSA racing</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Chevrolet Camaro -->
+                <div class="model-card">
+                    <img src="../images/models/chevrolet-camaro.jpg" alt="Chevrolet Camaro">
+                    <h3>Chevrolet Camaro</h3>
+                    <p class="model-years">1967-2002, 2010-present</p>
+                    <p>Chevrolet's answer to Mustang. The Camaro defined the pony car wars, with Z28, SS, and later ZL1 variants. Iconic in film and culture.</p>
+                </div>
+                
+                <!-- Chevrolet Bel Air -->
+                <div class="model-card">
+                    <img src="../images/models/chevrolet-bel-air.jpg" alt="Chevrolet Bel Air">
+                    <h3>Chevrolet Bel Air</h3>
+                    <p class="model-years">1950-1975</p>
+                    <p>The definitive 1950s American car. The 1955-1957 Bel Air, with its chrome and fins, is a cultural icon of the post-war era.</p>
+                </div>
+                
+                <!-- Chevrolet Silverado -->
+                <div class="model-card">
+                    <img src="../images/models/chevrolet-silverado.jpg" alt="Chevrolet Silverado">
+                    <h3>Chevrolet Silverado</h3>
+                    <p class="model-years">1999-present</p>
+                    <p>Chevrolet's full-size pickup. America's second best-selling vehicle (after F-150). Tough, capable, and versatile.</p>
+                </div>
+                
+                <!-- Chevrolet Chevelle SS -->
+                <div class="model-card">
+                    <img src="../images/models/chevrolet-chevelle.jpg" alt="Chevrolet Chevelle SS">
+                    <h3>Chevrolet Chevelle SS</h3>
+                    <p class="model-years">1964-1977</p>
+                    <p>The ultimate muscle car. The 1970 Chevelle SS 454 LS6 produced 450 hp – the peak of the muscle car era.</p>
+                </div>
+                
+                <!-- Chevrolet Suburban -->
+                <div class="model-card">
+                    <img src="../images/models/chevrolet-suburban.jpg" alt="Chevrolet Suburban">
+                    <h3>Chevrolet Suburban</h3>
+                    <p class="model-years">1935-present</p>
+                    <p>The longest-running nameplate in automotive history. The Suburban has been in continuous production for over 80 years – the ultimate family SUV.</p>
+                </div>
+                
+                <!-- Chevrolet Impala -->
+                <div class="model-card">
+                    <img src="../images/models/chevrolet-impala.jpg" alt="Chevrolet Impala">
+                    <h3>Chevrolet Impala</h3>
+                    <p class="model-years">1958-2020</p>
+                    <p>The iconic full-size sedan. The 1960s Impala was one of America's best-selling cars, known for its sleek design and V8 power.</p>
+                </div>
+                
+                <!-- Chevrolet Bolt EV -->
+                <div class="model-card">
+                    <img src="../images/models/chevrolet-bolt.jpg" alt="Chevrolet Bolt EV">
+                    <h3>Chevrolet Bolt EV</h3>
+                    <p class="model-years">2016-present</p>
+                    <p>The first affordable long-range electric car. 238-mile range at under $30,000 – a milestone in EV adoption.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Corvette Story Section -->
+    <section id="corvette" class="brand-section">
+        <div class="container">
+            <h2>The <span class="highlight">Corvette</span> Story</h2>
+            
+            <div class="corvette-grid">
+                <div class="corvette-text">
+                    <p>The Corvette is America's only true sports car. For over 65 years, it has represented American performance, style, and innovation.</p>
+                    
+                    <h4>Generations:</h4>
+                    <ul>
+                        <li><strong>C1 (1953-1962):</strong> First generation. 1953 had 150 hp, 6-cylinder. 1955 got V8. 1956-62 evolved styling. "Solid axle" Corvettes.</li>
+                        <li><strong>C2 (1963-1967):</strong> Sting Ray. Split rear window (1963 only). Independent rear suspension. Beautiful design by Larry Shinoda.</li>
+                        <li><strong>C3 (1968-1982):</strong> Shark-inspired styling. Longest-running generation. Mako Shark design. 1970 LT-1, 1971 ZR2.</li>
+                        <li><strong>C4 (1984-1996):</strong> First complete redesign in 15 years. Digital dash, advanced aerodynamics. ZR-1 (1990-1995) had Lotus-designed 405 hp V8.</li>
+                        <li><strong>C5 (1997-2004):</strong> Huge leap. Fixed roof coupe, hatchback. Z06 returned (2001) with 385 hp.</li>
+                        <li><strong>C6 (2005-2013):</strong> Exposed headlights return. Z06 (427), ZR1 (638 hp supercharged) – world-class supercar.</li>
+                        <li><strong>C7 (2014-2019):</strong> Sharp, aggressive design. Stingray, Z06 (650 hp), ZR1 (755 hp). Last front-engine Corvette.</li>
+                        <li><strong>C8 (2020-present):</strong> Mid-engine revolution. Z51, Z06 (670 hp flat-plane crank V8), E-Ray hybrid, ZR1 coming.</li>
+                    </ul>
+                    
+                    <p>The C8 mid-engine change was the most significant in Corvette history – a complete reimagining of the formula. It proved that America can build a world-class supercar.</p>
+                </div>
+                
+                <div class="corvette-image">
+                    <img src="../images/chevrolet/corvette-generations.jpg" alt="Corvette Generations">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Camaro Section -->
+    <section id="camaro" class="brand-section bg-light">
+        <div class="container">
+            <h2><span class="highlight">Camaro</span> – The Pony Car Warrior</h2>
+            
+            <div class="camaro-grid">
+                <div class="camaro-text">
+                    <p>When Ford launched the Mustang in 1964, it created a sensation. Chevrolet needed a response – and got it with the 1967 Camaro.</p>
+                    
+                    <h4>Generations:</h4>
+                    <ul>
+                        <li><strong>First Generation (1967-1969):</strong> The original. RS, SS, Z28. The 1969 is most desirable. "The Hugger."</li>
+                        <li><strong>Second Generation (1970-1981):</strong> Larger, more muscular. Split bumper (1970-73). Z28 continued.</li>
+                        <li><strong>Third Generation (1982-1992):</strong> Lighter, hatchback, fuel injection. IROC-Z (1985-1990) was the performance icon of the 1980s.</li>
+                        <li><strong>Fourth Generation (1993-2002):</strong> Curvier design. LT1, then LS1 V8s. SS, Z28. Production ended 2002.</li>
+                        <li><strong>Fifth Generation (2010-2015):</strong> Retro design inspired by 1969. Transformers movie made it famous. ZL1 (580 hp).</li>
+                        <li><strong>Sixth Generation (2016-2024):</strong> Lighter, more advanced. ZL1 (650 hp), Z28 (track-focused). Last Camaro generation.</li>
+                    </ul>
+                    
+                    <p>The Camaro has been in countless films – most famously "Transformers," where Bumblebee was a 1976 Camaro (later a 2010). Production ends in 2024, marking the end of an era.</p>
+                </div>
+                
+                <div class="camaro-image">
+                    <img src="../images/chevrolet/camaro-generations.jpg" alt="Camaro Generations">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trucks Section -->
+    <section id="trucks" class="brand-section">
+        <div class="container">
+            <h2><span class="highlight">Silverado</span> & Chevy Trucks</h2>
+            
+            <div class="trucks-grid">
+                <div class="trucks-text">
+                    <p>Chevrolet has been building trucks since 1918. The brand's reputation for durability and capability is built on decades of truck experience.</p>
+                    
+                    <h4>Historic Trucks:</h4>
+                    <ul>
+                        <li><strong>Series 490 (1918):</strong> First Chevy truck</li>
+                        <li><strong>Advance Design (1947-1955):</strong> Post-war design, iconic</li>
+                        <li><strong>Task Force (1955-1959):</strong> First V8 trucks, wraparound windshield</li>
+                        <li><strong>C/K Series (1960-2002):</strong> The legendary line. C/K10, K5 Blazer, square body (1973-1987)</li>
+                        <li><strong>Silverado (1999-present):</strong> Modern pickup. GMT800, GMT900, K2XX, T1XX platforms</li>
+                    </ul>
+                    
+                    <p>The Silverado is consistently America's second best-selling vehicle. The upcoming Silverado EV promises 400-mile range, 10kW power export, and 664 hp.</p>
+                </div>
+                
+                <div class="trucks-image">
+                    <img src="../images/chevrolet/silverado.jpg" alt="Chevrolet Silverado">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Racing Section -->
+    <section id="racing" class="brand-section bg-light">
+        <div class="container">
+            <h2>Chevrolet <span class="highlight">Racing</span> Heritage</h2>
+            
+            <div class="racing-grid">
+                <div class="racing-content">
+                    <ul>
+                        <li><i class="fas fa-trophy"></i> <strong>NASCAR:</strong> Over 800 wins, 39 manufacturers' championships. Small-block V8 dominated for decades.</li>
+                        <li><i class="fas fa-trophy"></i> <strong>IndyCar:</strong> 14 Indianapolis 500 wins, multiple championships. Chevrolet Indy V6 twin-turbo.</li>
+                        <li><i class="fas fa-trophy"></i> <strong>IMSA / ALMS:</strong> Corvette Racing – 9 class wins at Le Mans, countless IMSA championships. C5-R, C6.R, C7.R, C8.R.</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Trans-Am:</strong> Camaro dominated in the 1960s.</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Drag Racing:</strong> COPO Camaro factory drag cars.</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Formula 1:</strong> Engine supplier in the past (1990s).</li>
+                    </ul>
+                    
+                    <p>Corvette Racing is one of the most successful programs in sports car racing. Since 1999, Corvettes have won 9 times at Le Mans and over 100 races worldwide.</p>
+                </div>
+                
+                <div class="racing-image">
+                    <img src="../images/motorsport/corvette-racing.jpg" alt="Corvette Racing">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="brand-section">
+        <div class="container">
+            <h2>Chevrolet <span class="highlight">Timeline</span></h2>
+            
+            <div class="brand-timeline">
+                <div class="timeline-item">
+                    <div class="year">1911</div>
+                    <div class="desc">Chevrolet founded by Louis Chevrolet and William Durant</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1912</div>
+                    <div class="desc">First Chevrolet – Series C Classic Six</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1918</div>
+                    <div class="desc">Chevrolet becomes part of General Motors</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1927</div>
+                    <div class="desc">Chevrolet surpasses Ford as best-selling car</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1935</div>
+                    <div class="desc">Suburban introduced – longest-running nameplate</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1953</div>
+                    <div class="desc">Corvette introduced at Motorama</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1955</div>
+                    <div class="desc">Small-block V8 introduced (265 cubic inches)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1955</div>
+                    <div class="desc">Bel Air becomes cultural icon</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1963</div>
+                    <div class="desc">Corvette Sting Ray (C2) with split window</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1964</div>
+                    <div class="desc">Chevelle introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1967</div>
+                    <div class="desc">Camaro introduced – response to Mustang</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1970</div>
+                    <div class="desc">Chevelle SS 454 LS6 – 450 hp, muscle car peak</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1984</div>
+                    <div class="desc">C4 Corvette with digital dash</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1990</div>
+                    <div class="desc">ZR-1 Corvette with Lotus engine (375 hp)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1997</div>
+                    <div class="desc">C5 Corvette with LS1 engine</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1999</div>
+                    <div class="desc">Silverado nameplate introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2010</div>
+                    <div class="desc">Camaro returns after 8-year hiatus</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2014</div>
+                    <div class="desc">C7 Corvette with 455 hp Stingray</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2016</div>
+                    <div class="desc">Bolt EV launched – 238-mile range</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2019</div>
+                    <div class="desc">C8 mid-engine Corvette revealed</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2023</div>
+                    <div class="desc">Corvette Z06 with 670 hp flat-plane crank V8</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2024</div>
+                    <div class="desc">Camaro production ends; Silverado EV arrives</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Brands -->
+    <div class="text-center section-padding">
+        <a href="../brands.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to All Brands</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../brands.html">Brands</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>American Brands</h4>
+                    <ul>
+                        <li><a href="ford.html">Ford</a></li>
+                        <li><a href="chevrolet.html">Chevrolet</a></li>
+                        <li><a href="dodge.html">Dodge</a></li>
+                        <li><a href="cadillac.html">Cadillac</a></li>
+                        <li><a href="tesla.html">Tesla</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

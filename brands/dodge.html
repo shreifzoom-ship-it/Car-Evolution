@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodge History | Complete Brand Profile & Iconic Models</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore Dodge's complete history from 1900 to present. Discover iconic models like Challenger, Charger, Viper, and how Dodge became the epitome of American muscle.">
+    <meta name="keywords" content="Dodge history, Dodge Challenger, Dodge Charger, Dodge Viper, HEMI, American muscle cars">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Dodge History | Complete Brand Profile">
+    <meta property="og:description" content="Born Dodge - Brotherhood of Muscle">
+    <meta property="og:image" content="../images/brands/american/dodge-logo.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/brands.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../1886-1920.html">1886-1920: Birth</a></li>
+                            <li><a href="../1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="../1950-1980.html">1950-1980: Muscle</a></li>
+                            <li><a href="../1980-2010.html">1980-2010: Technology</a></li>
+                            <li><a href="../2010-present.html">2010-Present: Electric</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../brands.html">Brands</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Brand Hero -->
+    <header class="brand-hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../images/brands/american/dodge-hero.jpg');">
+        <div class="container">
+            <div class="brand-hero-content">
+                <img src="../images/brands/american/dodge-logo.png" alt="Dodge Logo" class="brand-hero-logo">
+                <h1>Dodge</h1>
+                <p class="brand-tagline">Brotherhood of Muscle</p>
+                
+                <div class="brand-quick-facts">
+                    <span><i class="fas fa-calendar"></i> Founded: 1900</span>
+                    <span><i class="fas fa-globe"></i> Country: USA</span>
+                    <span><i class="fas fa-trophy"></i> Icon: Challenger, Charger</span>
+                    <span><i class="fas fa-cog"></i> HEMI Power</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Navigation -->
+    <div class="brand-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#history" class="active">History</a></li>
+                <li><a href="#models">Iconic Models</a></li>
+                <li><a href="#challenger">Challenger</a></li>
+                <li><a href="#charger">Charger</a></li>
+                <li><a href="#viper">Viper</a></li>
+                <li><a href="#hemi">HEMI Engine</a></li>
+                <li><a href="#racing">Racing</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- History Section -->
+    <section id="history" class="brand-section">
+        <div class="container">
+            <h2>Dodge: <span class="highlight">Brotherhood of Muscle</span></h2>
+            
+            <div class="history-grid">
+                <div class="history-text">
+                    <p>The Dodge brothers, John and Horace, started in the automotive business building engines and parts for other manufacturers – most notably Ford. Their precision engineering and quality components were so respected that Henry Ford relied on them heavily.</p>
+                    
+                    <p>In 1914, the Dodge brothers launched their own car, the Dodge Model 30. It was an immediate success, praised for its all-steel body, 12-volt electrical system (most were 6-volt), and sliding-gear transmission. By 1915, Dodge was America's third best-selling brand.</p>
+                    
+                    <p>Both brothers died in 1920 (John of pneumonia, Horace of cirrhosis), and the company was sold to investment bankers. In 1928, it was purchased by Walter Chrysler, becoming part of the Chrysler Corporation.</p>
+                    
+                    <p>Under Chrysler, Dodge positioned itself as the sporty, performance-oriented brand. The 1950s brought the "Red Ram" HEMI V8 and stylish designs. But the 1960s and 1970s were Dodge's golden era – the muscle car years.</p>
+                    
+                    <p>The 1966 Charger, 1968 Charger (with its hidden headlights and Coke-bottle styling), and 1970 Challenger defined the era. The 426 HEMI became legendary – 425 hp in an era when that was extraordinary. The Charger Daytona and Plymouth Superbird were aerodynamic monsters built for NASCAR.</p>
+                    
+                    <p>The 1980s were difficult, but Dodge survived with the K-car platform and the Caravan minivan (which revolutionized family transportation). The 1992 Viper brought back performance – a brutish V10 roadster with no driver aids, pure American attitude.</p>
+                    
+                    <p>In the 2000s, Dodge revived its muscle car heritage with the Charger sedan (2006) and Challenger coupe (2008). The Hellcat era (2015-present) pushed horsepower to insane levels – 707, then 797, then 840, then over 1,000 hp with Demon.</p>
+                    
+                    <p>Today, Dodge is saying goodbye to its V8 muscle cars with "Last Call" editions, transitioning to electric performance with the Charger Daytona SRT EV concept. The Brotherhood of Muscle continues, but in a new form.</p>
+                    
+                    <div class="founder-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>"Dependability – that's the foundation of Dodge quality."</blockquote>
+                        <cite>- John Dodge</cite>
+                    </div>
+                </div>
+                
+                <div class="history-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar"></i>
+                        <span class="stat-number">1900</span>
+                        <span class="stat-label">Founded</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <span class="stat-number">1966</span>
+                        <span class="stat-label">Charger</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-car"></i>
+                        <span class="stat-number">1970</span>
+                        <span class="stat-label">Challenger</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-cog"></i>
+                        <span class="stat-number">HEMI</span>
+                        <span class="stat-label">Since 1950s</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iconic Models Section -->
+    <section id="models" class="brand-section bg-light">
+        <div class="container">
+            <h2>Iconic <span class="highlight">Models</span></h2>
+            
+            <div class="models-grid">
+                <!-- Dodge Challenger -->
+                <div class="model-card featured">
+                    <img src="../images/models/dodge-challenger.jpg" alt="Dodge Challenger">
+                    <div class="model-info">
+                        <h3>Dodge Challenger (1970-1974, 2008-2023)</h3>
+                        <p class="model-years">1970-1974, 2008-2023</p>
+                        <p>The ultimate muscle car. The original Challenger was the last to join the pony car wars, but made up for it with style and power. The modern Challenger kept retro styling and pushed horsepower to insane levels.</p>
+                        <ul class="model-specs">
+                            <li><i class="fas fa-cog"></i> 1970: 340, 383, 440, 426 HEMI</li>
+                            <li><i class="fas fa-tachometer-alt"></i> Modern: 305 hp (SE) to 807 hp (Demon 170)</li>
+                            <li><i class="fas fa-clock"></i> Demon 170: 0-60 in 1.66s (production car record)</li>
+                            <li><i class="fas fa-trophy"></i> Quickest production car ever (quarter-mile)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Dodge Charger -->
+                <div class="model-card">
+                    <img src="../images/models/dodge-charger.jpg" alt="Dodge Charger">
+                    <h3>Dodge Charger</h3>
+                    <p class="model-years">1966-1978, 2006-present</p>
+                    <p>The iconic muscle coupe became a four-door muscle sedan. The 1968-1970 Charger is legendary – "The General Lee" in Dukes of Hazzard.</p>
+                </div>
+                
+                <!-- Dodge Viper -->
+                <div class="model-card">
+                    <img src="../images/models/dodge-viper.jpg" alt="Dodge Viper">
+                    <h3>Dodge Viper</h3>
+                    <p class="model-years">1992-2017</p>
+                    <p>American supercar. V10 power, no driver aids, brute force. The Viper was raw, extreme, and unforgettable.</p>
+                </div>
+                
+                <!-- Dodge Daytona -->
+                <div class="model-card">
+                    <img src="../images/models/dodge-daytona.jpg" alt="Dodge Charger Daytona">
+                    <h3>Dodge Charger Daytona</h3>
+                    <p class="model-years">1969</p>
+                    <p>The winged warrior. Built for NASCAR, with a nose cone and massive wing. Only 503 built. One of the most valuable muscle cars.</p>
+                </div>
+                
+                <!-- Dodge Dart -->
+                <div class="model-card">
+                    <img src="../images/models/dodge-dart.jpg" alt="Dodge Dart">
+                    <h3>Dodge Dart</h3>
+                    <p class="model-years">1960-1976, 2012-2016</p>
+                    <p>The compact car that defined generations. The 1960s Dart was affordable and stylish; the modern Dart tried to revive the name.</p>
+                </div>
+                
+                <!-- Dodge Durango -->
+                <div class="model-card">
+                    <img src="../images/models/dodge-durango.jpg" alt="Dodge Durango">
+                    <h3>Dodge Durango</h3>
+                    <p class="model-years">1998-present</p>
+                    <p>The muscle SUV. With Hellcat power (710 hp), it's the most powerful SUV ever.</p>
+                </div>
+                
+                <!-- Dodge Magnum -->
+                <div class="model-card">
+                    <img src="../images/models/dodge-magnum.jpg" alt="Dodge Magnum">
+                    <h3>Dodge Magnum</h3>
+                    <p class="model-years">1978-1988, 2005-2008</p>
+                    <p>The muscle wagon. The 2000s version was a HEMI-powered station wagon – cool, practical, and fast.</p>
+                </div>
+                
+                <!-- Dodge Neon SRT-4 -->
+                <div class="model-card">
+                    <img src="../images/models/dodge-neon-srt4.jpg" alt="Dodge Neon SRT-4">
+                    <h3>Dodge Neon SRT-4</h3>
+                    <p class="model-years">2003-2005</p>
+                    <p>The turbo pocket rocket. 230 hp in a tiny economy car – a cult classic.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenger Section -->
+    <section id="challenger" class="brand-section">
+        <div class="container">
+            <h2>The <span class="highlight">Challenger</span> Legend</h2>
+            
+            <div class="challenger-grid">
+                <div class="challenger-text">
+                    <p>The Challenger was Dodge's entry in the pony car war, arriving in 1970 – later than Mustang, Camaro, and Barracuda. But it was worth the wait.</p>
+                    
+                    <h4>First Generation (1970-1974):</h4>
+                    <p>The original Challenger was larger and more luxurious than competitors. Engine options ranged from slant-6 to 440 Six Pack to the mighty 426 HEMI. The 1970 Challenger T/A (Trans-Am) homologation special is highly sought after.</p>
+                    
+                    <h4>Second Generation (2008-2023):</h4>
+                    <p>After a 34-year hiatus, the Challenger returned with retro styling that perfectly captured the original's spirit. It grew increasingly powerful:</p>
+                    <ul>
+                        <li><strong>SRT8 (2008):</strong> 425 hp 6.1L HEMI</li>
+                        <li><strong>SRT8 392 (2011):</strong> 470 hp 6.4L HEMI</li>
+                        <li><strong>SRT Hellcat (2015):</strong> 707 hp supercharged – insane</li>
+                        <li><strong>SRT Demon (2018):</strong> 840 hp, drag strip special</li>
+                        <li><strong>SRT Hellcat Redeye (2019):</strong> 797 hp</li>
+                        <li><strong>SRT Super Stock (2020):</strong> 807 hp</li>
+                        <li><strong>Demon 170 (2023):</strong> 1,025 hp on E85 – quickest production car ever</li>
+                    </ul>
+                    
+                    <p>The Challenger ended production in 2023 with "Last Call" special editions – the end of an era for V8 muscle.</p>
+                </div>
+                
+                <div class="challenger-image">
+                    <img src="../images/dodge/challenger-generations.jpg" alt="Challenger Generations">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Charger Section -->
+    <section id="charger" class="brand-section bg-light">
+        <div class="container">
+            <h2><span class="highlight">Charger</span> – From Coupe to Sedan</h2>
+            
+            <div class="charger-grid">
+                <div class="charger-text">
+                    <h4>First Generation (1966-1967):</h4>
+                    <p>The original Charger was a fastback coupe with hidden headlights and a full-width taillight. Fast and stylish.</p>
+                    
+                    <h4>Second Generation (1968-1970):</h4>
+                    <p>The iconic Charger. Coke-bottle styling, hidden headlights (1970 had exposed), and the "General Lee" fame. The 1968-1970 Charger is one of the most beautiful muscle cars ever.</p>
+                    
+                    <h4>Third Generation (1971-1974):</h4>
+                    <p>Larger, more rounded, still powerful but emissions were coming.</p>
+                    
+                    <h4>Fourth/Fifth Generations (1975-1978):</h4>
+                    <p>Personal luxury coupes, not muscle cars.</p>
+                    
+                    <h4>Sixth Generation (2006-present):</h4>
+                    <p>The Charger returned as a four-door sedan – controversial but brilliant. It offered V8 power and rear drive in a practical package. Hellcat versions made it the world's most powerful sedan.</p>
+                    
+                    <p>The Charger has been featured in countless films and TV shows, most famously "The Dukes of Hazzard" (1969 Charger as General Lee) and "Bullitt" (1968 Charger vs Mustang).</p>
+                </div>
+                
+                <div class="charger-image">
+                    <img src="../images/dodge/charger-generations.jpg" alt="Charger Generations">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Viper Section -->
+    <section id="viper" class="brand-section">
+        <div class="container">
+            <h2>The <span class="highlight">Viper</span> – American Supercar</h2>
+            
+            <div class="viper-grid">
+                <div class="viper-text">
+                    <p>The Viper was born from a simple idea: an American answer to the AC Cobra. No driver aids, massive power, and raw, visceral experience.</p>
+                    
+                    <h4>Generations:</h4>
+                    <ul>
+                        <li><strong>SR I (1992-1995):</strong> RT/10 roadster. 8.0L V10, 400 hp, no roof, no windows, no driver aids. Insane.</li>
+                        <li><strong>SR II (1996-2002):</strong> GTS coupe with blue stripes. 450 hp, more refined but still raw.</li>
+                        <li><strong>ZB I (2003-2006):</strong> SRT-10. 8.3L, 500 hp, convertible and coupe. More civilized.</li>
+                        <li><strong>ZB II (2008-2010):</strong> 8.4L, 600 hp. ACR version set lap records.</li>
+                        <li><strong>VX I (2013-2017):</strong> Final generation. 8.4L, 645 hp, ACR with insane aero. The ultimate Viper.</li>
+                    </ul>
+                    
+                    <p>The Viper ACR (American Club Racer) was a track monster, holding lap records at many tracks. It had more downforce than any production car – you could drive it upside down theoretically.</p>
+                    
+                    <p>Production ended in 2017, but the Viper's legacy as America's most extreme supercar lives on.</p>
+                </div>
+                
+                <div class="viper-image">
+                    <img src="../images/dodge/viper-acr.jpg" alt="Dodge Viper ACR">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HEMI Engine Section -->
+    <section id="hemi" class="brand-section bg-light">
+        <div class="container">
+            <h2>The <span class="highlight">HEMI</span> Engine</h2>
+            
+            <div class="hemi-grid">
+                <div class="hemi-text">
+                    <p>The HEMI engine is legendary. Its hemispherical combustion chambers allow for better airflow, more power, and that distinctive sound.</p>
+                    
+                    <h4>Generations:</h4>
+                    <ul>
+                        <li><strong>First Generation (1951-1958):</strong> FirePower V8s for Chrysler, DeSoto, Dodge. 331, 354, 392 cubic inches.</li>
+                        <li><strong>Second Generation (1964-1971):</strong> The legendary 426 HEMI. 425 hp, dominated NASCAR and drag racing. Street HEMI option in 1966-1971.</li>
+                        <li><strong>Third Generation (2003-present):</strong> Modern HEMI. 5.7L, 6.1L, 6.2L supercharged Hellcat. Variable valve timing, MDS cylinder deactivation.</li>
+                    </ul>
+                    
+                    <h4>Hellcat Family:</h4>
+                    <ul>
+                        <li><strong>Hellcat (2015):</strong> 6.2L supercharged, 707 hp</li>
+                        <li><strong>Hellcat Redeye (2019):</strong> 797 hp</li>
+                        <li><strong>Super Stock (2020):</strong> 807 hp</li>
+                        <li><strong>Demon (2018):</strong> 840 hp, race gas</li>
+                        <li><strong>Demon 170 (2023):</strong> 1,025 hp on E85</li>
+                    </ul>
+                    
+                    <p>The HEMI name is synonymous with American power. Its distinctive sound – that lumpy idle – is music to enthusiasts.</p>
+                </div>
+                
+                <div class="hemi-image">
+                    <img src="../images/dodge/hemi-engine.jpg" alt="HEMI Engine">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Racing Section -->
+    <section id="racing" class="brand-section">
+        <div class="container">
+            <h2>Dodge <span class="highlight">Racing</span> Heritage</h2>
+            
+            <div class="racing-grid">
+                <div class="racing-content">
+                    <ul>
+                        <li><i class="fas fa-trophy"></i> <strong>NASCAR:</strong> Charger Daytona and Plymouth Superbird dominated in 1970 with aerodynamic wings. Modern Charger has wins.</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Drag Racing:</strong> HEMI-powered Dodges have dominated NHRA for decades. Factory drag cars like Dart GTS, Demon.</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Trans-Am:</strong> Challenger T/A raced in 1970.</li>
+                        <li><i class="fas fa-trophy"></i> <strong>IMSA / Sports Car:</strong> Viper GTS-R won class at Le Mans (1998, 1999, 2000) and multiple championships.</li>
+                        <li><i class="fas fa-trophy"></i> <strong>SRT Engineering:</strong> Factory performance division created Viper, SRT models.</li>
+                    </ul>
+                    
+                    <p>The Viper's racing success was remarkable. It dominated GT racing for years, beating European exotics on their own turf.</p>
+                </div>
+                
+                <div class="racing-image">
+                    <img src="../images/motorsport/dodge-viper-racing.jpg" alt="Dodge Viper Racing">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="brand-section bg-light">
+        <div class="container">
+            <h2>Dodge <span class="highlight">Timeline</span></h2>
+            
+            <div class="brand-timeline">
+                <div class="timeline-item">
+                    <div class="year">1900</div>
+                    <div class="desc">Dodge brothers found machine shop in Detroit</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1914</div>
+                    <div class="desc">First Dodge car – Model 30</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1920</div>
+                    <div class="desc">John and Horace Dodge die</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1928</div>
+                    <div class="desc">Dodge bought by Chrysler Corporation</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1951</div>
+                    <div class="desc">First HEMI V8 introduced (Red Ram)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1964</div>
+                    <div class="desc">426 HEMI introduced – dominates NASCAR</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1966</div>
+                    <div class="desc">Dodge Charger introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1968</div>
+                    <div class="desc">Second-gen Charger – iconic design</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1969</div>
+                    <div class="desc">Charger Daytona with wing and nose</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1970</div>
+                    <div class="desc">Dodge Challenger introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1983</div>
+                    <div class="desc">Caravan minivan introduced – revolutionary</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1992</div>
+                    <div class="desc">Dodge Viper RT/10 launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2003</div>
+                    <div class="desc">SRT division formed</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2005</div>
+                    <div class="desc">Charger returns as sedan</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2008</div>
+                    <div class="desc">Challenger returns with retro styling</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2015</div>
+                    <div class="desc">Hellcat introduced – 707 hp</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2018</div>
+                    <div class="desc">Demon – 840 hp, drag strip special</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2023</div>
+                    <div class="desc">Last Call editions; Demon 170 – 1,025 hp</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2024</div>
+                    <div class="desc">Charger Daytona SRT EV – electric muscle</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Brands -->
+    <div class="text-center section-padding">
+        <a href="../brands.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to All Brands</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../brands.html">Brands</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>American Brands</h4>
+                    <ul>
+                        <li><a href="ford.html">Ford</a></li>
+                        <li><a href="chevrolet.html">Chevrolet</a></li>
+                        <li><a href="dodge.html">Dodge</a></li>
+                        <li><a href="cadillac.html">Cadillac</a></li>
+                        <li><a href="tesla.html">Tesla</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

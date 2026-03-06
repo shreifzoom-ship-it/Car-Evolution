@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiat History | Complete Brand Profile & Iconic Models</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore Fiat's complete history from 1899 to present. Discover iconic models like 500, Panda, Uno, and how Fiat made Italy mobile.">
+    <meta name="keywords" content="Fiat history, Fiat 500, Fiat Panda, Italian cars, city cars, La Dolce Vita">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Fiat History | Complete Brand Profile">
+    <meta property="og:description" content="Italy's Car - Since 1899">
+    <meta property="og:image" content="../images/brands/italian/fiat-logo.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/brands.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../1886-1920.html">1886-1920: Birth</a></li>
+                            <li><a href="../1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="../1950-1980.html">1950-1980: Muscle</a></li>
+                            <li><a href="../1980-2010.html">1980-2010: Technology</a></li>
+                            <li><a href="../2010-present.html">2010-Present: Electric</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../brands.html">Brands</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Brand Hero -->
+    <header class="brand-hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../images/brands/italian/fiat-hero.jpg');">
+        <div class="container">
+            <div class="brand-hero-content">
+                <img src="../images/brands/italian/fiat-logo.png" alt="Fiat Logo" class="brand-hero-logo">
+                <h1>Fiat</h1>
+                <p class="brand-tagline">Italy's Car</p>
+                
+                <div class="brand-quick-facts">
+                    <span><i class="fas fa-calendar"></i> Founded: 1899</span>
+                    <span><i class="fas fa-globe"></i> Country: Italy</span>
+                    <span><i class="fas fa-trophy"></i> Icon: 500</span>
+                    <span><i class="fas fa-cog"></i> City Car King</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Navigation -->
+    <div class="brand-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#history" class="active">History</a></li>
+                <li><a href="#models">Iconic Models</a></li>
+                <li><a href="#500">Fiat 500</a></li>
+                <li><a href="#panda">Panda</a></li>
+                <li><a href="#abarth">Abarth</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- History Section -->
+    <section id="history" class="brand-section">
+        <div class="container">
+            <h2>Fiat: <span class="highlight">Italy's Car</span></h2>
+            
+            <div class="history-grid">
+                <div class="history-text">
+                    <p>Fiat (Fabbrica Italiana Automobili Torino) was founded in 1899 by a group of investors including Giovanni Agnelli. It became the backbone of Italian industry and the car that mobilized Italy.</p>
+                    
+                    <p>The first Fiat, the 4 HP, was produced in 1899. Agnelli quickly expanded, building a massive factory in Lingotto in 1923 – the first multi-story car factory with a test track on the roof.</p>
+                    
+                    <p>Between the wars, Fiat built a range of cars from small (508 Balilla) to luxurious (518). The company also produced aircraft engines and military vehicles.</p>
+                    
+                    <p>After WWII, Fiat became Italy's answer to Ford – affordable cars for the masses. The 500 "Topolino" (1936) was already a pre-war success. The 600 (1955) and the Nuova 500 (1957) made Italy mobile.</p>
+                    
+                    <p>The 500 was tiny, cheap, and charming. It put Italy on wheels, just as the Model T did for America. Over 4 million were built by 1975.</p>
+                    
+                    <p>The 1960s and 1970s brought the 124 (which became the Lada in Russia), 128, and 127. Fiat became Europe's largest carmaker. The 1971 127 was Car of the Year.</p>
+                    
+                    <p>The 1980s introduced the Panda (1980) and Uno (1983) – both designed by Giorgetto Giugiaro, both massive hits. The Uno was Car of the Year 1984.</p>
+                    
+                    <p>Financial troubles in the 2000s led to a revival with the new 500 (2007). Designed by Frank Stephenson, it captured the original's spirit and became a global success.</p>
+                    
+                    <p>Today, Fiat is part of Stellantis. The 500 is now electric (500e), and the Panda continues. Fiat remains the heart of Italian motoring.</p>
+                    
+                    <div class="founder-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>"Fiat is Italy, and Italy is Fiat."</blockquote>
+                        <cite>- Giovanni Agnelli</cite>
+                    </div>
+                </div>
+                
+                <div class="history-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar"></i>
+                        <span class="stat-number">1899</span>
+                        <span class="stat-label">Founded</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <span class="stat-number">4M+</span>
+                        <span class="stat-label">Original 500</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-car"></i>
+                        <span class="stat-number">1957</span>
+                        <span class="stat-label">Nuova 500</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-cog"></i>
+                        <span class="stat-number">Torino</span>
+                        <span class="stat-label">Home</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iconic Models Section -->
+    <section id="models" class="brand-section bg-light">
+        <div class="container">
+            <h2>Iconic <span class="highlight">Models</span></h2>
+            
+            <div class="models-grid">
+                <!-- Fiat 500 (Original) -->
+                <div class="model-card featured">
+                    <img src="../images/models/fiat-500-original.jpg" alt="Fiat 500 Original">
+                    <div class="model-info">
+                        <h3>Fiat Nuova 500 (1957-1975)</h3>
+                        <p class="model-years">1957-1975</p>
+                        <p>The car that mobilized Italy. Tiny, affordable, and charming. Over 4 million built. The original "Cinquecento."</p>
+                        <ul class="model-specs">
+                            <li><i class="fas fa-cog"></i> 479cc twin-cylinder, 13-18 hp</li>
+                            <li><i class="fas fa-tachometer-alt"></i> 59 mph top speed</li>
+                            <li><i class="fas fa-trophy"></i> 4 million+ sold</li>
+                            <li><i class="fas fa-heart"></i> Italian icon</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Fiat 500 (Modern) -->
+                <div class="model-card">
+                    <img src="../images/models/fiat-500-modern.jpg" alt="Fiat 500 Modern">
+                    <h3>Fiat 500 (2007-present)</h3>
+                    <p class="model-years">2007-present</p>
+                    <p>The retro revival that saved Fiat. Captured the original's spirit with modern engineering. Global success.</p>
+                </div>
+                
+                <!-- Fiat Panda -->
+                <div class="model-card">
+                    <img src="../images/models/fiat-panda.jpg" alt="Fiat Panda">
+                    <h3>Fiat Panda</h3>
+                    <p class="model-years">1980-present</p>
+                    <p>The simple, practical, clever city car. Designed by Giugiaro. Over 7 million sold. Still in production.</p>
+                </div>
+                
+                <!-- Fiat Uno -->
+                <div class="model-card">
+                    <img src="../images/models/fiat-uno.jpg" alt="Fiat Uno">
+                    <h3>Fiat Uno</h3>
+                    <p class="model-years">1983-1995</p>
+                    <p>1984 Car of the Year. Stunning Giugiaro design, efficient packaging, and massive success.</p>
+                </div>
+                
+                <!-- Fiat 124 Spider -->
+                <div class="model-card">
+                    <img src="../images/models/fiat-124-spider.jpg" alt="Fiat 124 Spider">
+                    <h3>Fiat 124 Spider</h3>
+                    <p class="model-years">1966-1985, 2016-2019</p>
+                    <p>Beautiful Pininfarina roadster. The original was a classic. The modern version shared with Mazda MX-5.</p>
+                </div>
+                
+                <!-- Fiat 600 -->
+                <div class="model-card">
+                    <img src="../images/models/fiat-600.jpg" alt="Fiat 600">
+                    <h3>Fiat 600</h3>
+                    <p class="model-years">1955-1969</p>
+                    <p>Predecessor to the 500. Rear-engine, practical, and affordable.</p>
+                </div>
+                
+                <!-- Fiat 128 -->
+                <div class="model-card">
+                    <img src="../images/models/fiat-128.jpg" alt="Fiat 128">
+                    <h3>Fiat 128</h3>
+                    <p class="model-years">1969-1985</p>
+                    <p>1970 Car of the Year. Front-wheel drive, modern design, spawned many derivatives.</p>
+                </div>
+                
+                <!-- Fiat 500e -->
+                <div class="model-card">
+                    <img src="../images/models/fiat-500e.jpg" alt="Fiat 500e">
+                    <h3>Fiat 500e</h3>
+                    <p class="model-years">2020-present</p>
+                    <p>The electric 500. All-new platform, 199 mile range, retains all the charm.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fiat 500 Section -->
+    <section id="500" class="brand-section">
+        <div class="container">
+            <h2>The <span class="highlight">Fiat 500</span> – Italian Icon</h2>
+            
+            <div class="cinquecento-grid">
+                <div class="cinquecento-text">
+                    <p>The Fiat 500 is more than a car – it's a cultural icon. It represents Italian style, ingenuity, and La Dolce Vita.</p>
+                    
+                    <h4>Original (1957-1975):</h4>
+                    <p>Designed by Dante Giacosa, the Nuova 500 was a masterpiece of packaging. Its tiny 479cc twin-cylinder engine was in the rear, saving space. It was cheap to buy and run. It appeared in films, on posters, and in the hearts of millions.</p>
+                    
+                    <h4>Variants:</h4>
+                    <ul>
+                        <li><strong>500 (1957):</strong> Original, 479cc</li>
+                        <li><strong>500 D (1960):</strong> 499cc</li>
+                        <li><strong>500 F (1965):</strong> More doors, updated</li>
+                        <li><strong>500 L (1968):</strong> Lusso – more luxurious</li>
+                        <li><strong>500 R (1971):</strong> 594cc, final version</li>
+                        <li><strong>Giardiniera (1960-1977):</strong> Station wagon version</li>
+                    </ul>
+                    
+                    <h4>Modern (2007-present):</h4>
+                    <p>Designed by Frank Stephenson, the new 500 captured the original's spirit perfectly. It became a global style icon, winning Car of the Year 2008. The 500e electric version continues the legacy.</p>
+                </div>
+                
+                <div class="cinquecento-image">
+                    <img src="../images/fiat/500-generations.jpg" alt="Fiat 500 Generations">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Panda Section -->
+    <section id="panda" class="brand-section bg-light">
+        <div class="container">
+            <h2>The <span class="highlight">Panda</span> – Clever Simplicity</h2>
+            
+            <div class="panda-grid">
+                <div class="panda-text">
+                    <p>The Panda, designed by Giorgetto Giugiaro, is a masterpiece of functional design. It's simple, practical, and brilliant.</p>
+                    
+                    <h4>First Generation (1980-2003):</h4>
+                    <ul>
+                        <li>Square, boxy shape maximized interior space</li>
+                        <li>Flat, washable interior (you could hose it out)</li>
+                        <li>4x4 version (1983) was a capable little off-roader</li>
+                        <li>Produced for 23 years, over 4.5 million sold</li>
+                    </ul>
+                    
+                    <h4>Second Generation (2003-2012):</h4>
+                    <p>Rounder, more modern, still practical. 100HP version was a hot hatch favorite.</p>
+                    
+                    <h4>Third Generation (2012-present):</h4>
+                    <p>Current Panda, still boxy, still clever. Cross version adds rugged styling.</p>
+                    
+                    <p>The Panda is Italy's best-selling car for years. It's the car for everyone – families, businesses, and adventurers.</p>
+                </div>
+                
+                <div class="panda-image">
+                    <img src="../images/fiat/panda-4x4.jpg" alt="Fiat Panda 4x4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Abarth Section -->
+    <section id="abarth" class="brand-section">
+        <div class="container">
+            <h2><span class="highlight">Abarth</span> – Scorpion Performance</h2>
+            
+            <div class="abarth-grid">
+                <div class="abarth-text">
+                    <p>Abarth is Fiat's performance division, founded by Carlo Abarth in 1949. The scorpion logo represents his zodiac sign.</p>
+                    
+                    <h4>Classic Abarth:</h4>
+                    <ul>
+                        <li>Fiat 500 Abarth (1950s-60s) – tiny but quick</li>
+                        <li>Fiat Abarth 1000 TC – racing success</li>
+                        <li>Abarth 124 Rally – 1970s rally winner</li>
+                    </ul>
+                    
+                    <h4>Modern Abarth:</h4>
+                    <ul>
+                        <li><strong>Abarth 500 / 595 / 695:</strong> Hot version of 500, up to 180 hp</li>
+                        <li><strong>Abarth 124 Spider:</strong> Turbo roadster (2016-2019)</li>
+                        <li><strong>Record:</strong> 595 and 695 names honor 1965 speed records</li>
+                    </ul>
+                    
+                    <p>Abarths are known for their exhaust note (the "record monza" exhaust), aggressive styling, and go-kart handling. They're tiny terrors.</p>
+                </div>
+                
+                <div class="abarth-image">
+                    <img src="../images/fiat/abarth-595.jpg" alt="Abarth 595">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="brand-section bg-light">
+        <div class="container">
+            <h2>Fiat <span class="highlight">Timeline</span></h2>
+            
+            <div class="brand-timeline">
+                <div class="timeline-item">
+                    <div class="year">1899</div>
+                    <div class="desc">Fiat founded in Turin</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1900</div>
+                    <div class="desc">First Fiat – 4 HP</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1923</div>
+                    <div class="desc">Lingotto factory opens – roof test track</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1936</div>
+                    <div class="desc">500 "Topolino" launched – world's smallest car</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1955</div>
+                    <div class="desc">600 launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1957</div>
+                    <div class="desc">Nuova 500 launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1966</div>
+                    <div class="desc">124 Spider launched; 124 becomes Lada in Russia</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1969</div>
+                    <div class="desc">128 – Car of the Year 1970</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1971</div>
+                    <div class="desc">127 – Car of the Year</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1980</div>
+                    <div class="desc">Panda launched (Giugiaro design)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1983</div>
+                    <div class="desc">Uno launched – Car of the Year 1984</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1993</div>
+                    <div class="desc">Punto – Car of the Year 1995</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2007</div>
+                    <div class="desc">New 500 launched – Car of the Year 2008</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2014</div>
+                    <div class="desc">Fiat Chrysler Automobiles (FCA) formed</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2020</div>
+                    <div class="desc">New 500e electric launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2021</div>
+                    <div class="desc">Stellantis formed (FCA + PSA)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Brands -->
+    <div class="text-center section-padding">
+        <a href="../brands.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to All Brands</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../brands.html">Brands</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Italian Brands</h4>
+                    <ul>
+                        <li><a href="ferrari.html">Ferrari</a></li>
+                        <li><a href="lamborghini.html">Lamborghini</a></li>
+                        <li><a href="maserati.html">Maserati</a></li>
+                        <li><a href="alfa-romeo.html">Alfa Romeo</a></li>
+                        <li><a href="fiat.html">Fiat</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

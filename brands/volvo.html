@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volvo History | Complete Brand Profile & Iconic Models</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore Volvo's complete history from 1927 to present. Discover iconic models like P1800, 240, XC90, and how Volvo became the world leader in automotive safety.">
+    <meta name="keywords" content="Volvo history, Volvo P1800, Volvo 240, Volvo XC90, Swedish cars, safety, three-point seatbelt">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Volvo History | Complete Brand Profile">
+    <meta property="og:description" content="For Life - Swedish Safety and Design">
+    <meta property="og:image" content="../images/brands/swedish/volvo-logo.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/brands.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../1886-1920.html">1886-1920: Birth</a></li>
+                            <li><a href="../1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="../1950-1980.html">1950-1980: Muscle</a></li>
+                            <li><a href="../1980-2010.html">1980-2010: Technology</a></li>
+                            <li><a href="../2010-present.html">2010-Present: Electric</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../brands.html">Brands</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Brand Hero -->
+    <header class="brand-hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../images/brands/swedish/volvo-hero.jpg');">
+        <div class="container">
+            <div class="brand-hero-content">
+                <img src="../images/brands/swedish/volvo-logo.png" alt="Volvo Logo" class="brand-hero-logo">
+                <h1>Volvo</h1>
+                <p class="brand-tagline">For Life</p>
+                
+                <div class="brand-quick-facts">
+                    <span><i class="fas fa-calendar"></i> Founded: 1927</span>
+                    <span><i class="fas fa-globe"></i> Country: Sweden</span>
+                    <span><i class="fas fa-trophy"></i> Icon: P1800, 240</span>
+                    <span><i class="fas fa-cog"></i> Safety Pioneer</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Navigation -->
+    <div class="brand-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#history" class="active">History</a></li>
+                <li><a href="#models">Iconic Models</a></li>
+                <li><a href="#safety">Safety Innovations</a></li>
+                <li><a href="#p1800">P1800</a></li>
+                <li><a href="#modern">Modern Era</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- History Section -->
+    <section id="history" class="brand-section">
+        <div class="container">
+            <h2>Volvo: <span class="highlight">Safety First Since 1927</span></h2>
+            
+            <div class="history-grid">
+                <div class="history-text">
+                    <p>Volvo was founded in 1927 by Assar Gabrielsson and Gustaf Larson. The name "Volvo" means "I roll" in Latin – fitting for a car company. From the beginning, the founders prioritized safety and quality.</p>
+                    
+                    <p>The first Volvo, the ÖV4, rolled off the line on April 14, 1927 – celebrated as "Volvo Day." It was a open-top tourer with a 2.0L four-cylinder engine. Only 300 were built that first year.</p>
+                    
+                    <p>Through the 1930s and 1940s, Volvo built a reputation for rugged, reliable cars. The PV444 (1944) was Volvo's first small car and a huge success, helping Sweden mobilize after WWII.</p>
+                    
+                    <p>In 1959, Volvo engineer Nils Bohlin invented the three-point seatbelt – the most important safety device in automotive history. Volvo made the patent open, saving countless lives.</p>
+                    
+                    <p>The 1960s brought the beautiful P1800 sports coupe, made famous by Roger Moore in "The Saint." The 140 series (1966) introduced Volvo's boxy but safe sedan style.</p>
+                    
+                    <p>The 240 series (1974-1993) became Volvo's icon – boxy, indestructible, and incredibly safe. It cemented Volvo's reputation as the car for intellectuals and safety-conscious families.</p>
+                    
+                    <p>In 1999, Volvo sold its car division to Ford, then in 2010 to Geely (China). Under Geely, Volvo has thrived – new platforms, stunning design, and a focus on electrification.</p>
+                    
+                    <p>Today, Volvo produces the XC90, XC60, XC40 SUVs, and S60, V60 sedans/wagons. All are available as plug-in hybrids or fully electric. Volvo aims to be all-electric by 2030.</p>
+                    
+                    <div class="founder-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>"Cars are driven by people. The guiding principle behind everything we make at Volvo is and must remain safety."</blockquote>
+                        <cite>- Assar Gabrielsson & Gustaf Larson, 1927</cite>
+                    </div>
+                </div>
+                
+                <div class="history-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar"></i>
+                        <span class="stat-number">1927</span>
+                        <span class="stat-label">Founded</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <span class="stat-number">1959</span>
+                        <span class="stat-label">Seatbelt</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-car"></i>
+                        <span class="stat-number">2.8M</span>
+                        <span class="stat-label">240 Series</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-cog"></i>
+                        <span class="stat-number">2030</span>
+                        <span class="stat-label">All Electric</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iconic Models Section -->
+    <section id="models" class="brand-section bg-light">
+        <div class="container">
+            <h2>Iconic <span class="highlight">Models</span></h2>
+            
+            <div class="models-grid">
+                <!-- Volvo P1800 -->
+                <div class="model-card featured">
+                    <img src="../images/models/volvo-p1800.jpg" alt="Volvo P1800">
+                    <div class="model-info">
+                        <h3>Volvo P1800 (1961-1973)</h3>
+                        <p class="model-years">1961-1973</p>
+                        <p>The beautiful Volvo sports coupe. Made famous by Roger Moore in "The Saint." One owner drove his 3.2 million miles – still running.</p>
+                        <ul class="model-specs">
+                            <li><i class="fas fa-cog"></i> 1.8L to 2.0L engines, 100-130 hp</li>
+                            <li><i class="fas fa-palette"></i> Italian design by Frua</li>
+                            <li><i class="fas fa-trophy"></i> 3.2M mile owner record</li>
+                            <li><i class="fas fa-star"></i> "The Saint" TV car</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Volvo 240 -->
+                <div class="model-card">
+                    <img src="../images/models/volvo-240.jpg" alt="Volvo 240">
+                    <h3>Volvo 240 (1974-1993)</h3>
+                    <p class="model-years">1974-1993</p>
+                    <p>The boxy icon. Indestructible, safe, and beloved by intellectuals. Over 2.8 million built. The definitive Volvo.</p>
+                </div>
+                
+                <!-- Volvo XC90 -->
+                <div class="model-card">
+                    <img src="../images/models/volvo-xc90.jpg" alt="Volvo XC90">
+                    <h3>Volvo XC90</h3>
+                    <p class="model-years">2002-present</p>
+                    <p>The luxury SUV that saved Volvo. First generation (2002) was a huge success. Second generation (2015) is stunning, safe, and available as hybrid.</p>
+                </div>
+                
+                <!-- Volvo Amazon -->
+                <div class="model-card">
+                    <img src="../images/models/volvo-amazon.jpg" alt="Volvo Amazon">
+                    <h3>Volvo Amazon (1956-1970)</h3>
+                    <p class="model-years">1956-1970</p>
+                    <p>Beautiful 1950s design. The Amazon established Volvo's reputation for quality and safety.</p>
+                </div>
+                
+                <!-- Volvo PV444 -->
+                <div class="model-card">
+                    <img src="../images/models/volvo-pv444.jpg" alt="Volvo PV444">
+                    <h3>Volvo PV444 (1944-1958)</h3>
+                    <p class="model-years">1944-1958</p>
+                    <p>Volvo's first small car. Helped mobilize post-war Sweden. Over 440,000 sold.</p>
+                </div>
+                
+                <!-- Volvo 850 -->
+                <div class="model-card">
+                    <img src="../images/models/volvo-850.jpg" alt="Volvo 850">
+                    <h3>Volvo 850 (1991-1996)</h3>
+                    <p class="model-years">1991-1996</p>
+                    <p>Revolutionary front-wheel drive. 850 T-5R was a performance wagon. BTCC racing success.</p>
+                </div>
+                
+                <!-- Volvo C30 -->
+                <div class="model-card">
+                    <img src="../images/models/volvo-c30.jpg" alt="Volvo C30">
+                    <h3>Volvo C30 (2006-2013)</h3>
+                    <p class="model-years">2006-2013</p>
+                    <p>Stylish hatchback with glass tailgate. Modern design and cult following.</p>
+                </div>
+                
+                <!-- Volvo XC40 Recharge -->
+                <div class="model-card">
+                    <img src="../images/models/volvo-xc40-recharge.jpg" alt="Volvo XC40 Recharge">
+                    <h3>Volvo XC40 Recharge</h3>
+                    <p class="model-years">2020-present</p>
+                    <p>First Volvo EV. Compact SUV, 402 hp, 223 mile range. Future of Volvo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety Innovations Section -->
+    <section id="safety" class="brand-section">
+        <div class="container">
+            <h2><span class="highlight">Safety</span> Innovations</h2>
+            
+            <div class="safety-grid">
+                <div class="safety-text">
+                    <p>Volvo's commitment to safety is unparalleled. They've invented countless life-saving technologies and shared them freely.</p>
+                    
+                    <h4>Key Inventions:</h4>
+                    <ul>
+                        <li><strong>1944:</strong> Laminated windshield</li>
+                        <li><strong>1959:</strong> Three-point seatbelt (Nils Bohlin) – made patent open</li>
+                        <li><strong>1964:</strong> First rear-facing child seat</li>
+                        <li><strong>1972:</strong> Booster cushion</li>
+                        <li><strong>1991:</strong> Side-impact protection (SIPS)</li>
+                        <li><strong>1998:</strong> Whiplash protection (WHIPS)</li>
+                        <li><strong>2002:</strong> Roll stability control (RSC)</li>
+                        <li><strong>2003:</strong> Blind spot warning (BLIS)</li>
+                        <li><strong>2008:</strong> City Safety – automatic braking</li>
+                        <li><strong>2014:</strong> Run-off road protection</li>
+                        <li><strong>2018:</strong> EVA Initiative – sharing safety data</li>
+                    </ul>
+                    
+                    <p>Volvo's goal: by 2020, no one should be killed or seriously injured in a new Volvo. They're getting close.</p>
+                </div>
+                
+                <div class="safety-image">
+                    <img src="../images/volvo/safety.jpg" alt="Volvo Safety">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- P1800 Section -->
+    <section id="p1800" class="brand-section bg-light">
+        <div class="container">
+            <h2>The <span class="highlight">P1800</span> – Swedish Beauty</h2>
+            
+            <div class="p1800-grid">
+                <div class="p1800-text">
+                    <p>The P1800 is the most beautiful Volvo ever. Designed by Pietro Frua in Italy, it was a stunning sports coupe.</p>
+                    
+                    <h4>Variants:</h4>
+                    <ul>
+                        <li><strong>P1800 (1961-1963):</strong> Original, 1.8L, 100 hp</li>
+                        <li><strong>1800S (1963-1969):</strong> Swedish assembly, more power</li>
+                        <li><strong>1800E (1970-1972):</strong> Fuel injection, 130 hp</li>
+                        <li><strong>1800ES (1972-1973):</strong> Shooting brake with glass tailgate – design icon</li>
+                    </ul>
+                    
+                    <h4>The Million-Mile Volvo:</h4>
+                    <p>Irv Gordon bought a 1966 P1800 in 1966 and drove it over 3.2 million miles – a Guinness World Record. The original engine was never rebuilt.</p>
+                    
+                    <h4>In Media:</h4>
+                    <p>The P1800 was driven by Roger Moore in "The Saint" (1960s TV series), cementing its cool factor.</p>
+                </div>
+                
+                <div class="p1800-image">
+                    <img src="../images/volvo/p1800-saint.jpg" alt="Volvo P1800 The Saint">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern Era Section -->
+    <section id="modern" class="brand-section">
+        <div class="container">
+            <h2><span class="highlight">Modern</span> Volvo</h2>
+            
+            <div class="modern-grid">
+                <div class="modern-text">
+                    <p>Under Geely (2010), Volvo has been transformed. New platforms (SPA, CMA), stunning design, and electrification.</p>
+                    
+                    <h4>SPA Platform (Scalable Product Architecture):</h4>
+                    <ul>
+                        <li>90 Series: XC90, S90, V90 (2015-)</li>
+                        <li>60 Series: XC60, S60, V60 (2017-)</li>
+                        <li>Luxurious, safe, plug-in hybrid options</li>
+                    </ul>
+                    
+                    <h4>CMA Platform (Compact Modular Architecture):</h4>
+                    <ul>
+                        <li>40 Series: XC40, C40 (2017-)</li>
+                        <li>Smaller, efficient, fully electric options</li>
+                    </ul>
+                    
+                    <h4>Design:</h4>
+                    <p>"Thor's Hammer" headlights, vertical taillights, minimalist Scandinavian interiors.</p>
+                    
+                    <h4>Electrification:</h4>
+                    <ul>
+                        <li>XC40 Recharge (2020) – first EV</li>
+                        <li>C40 Recharge (2021) – coupe EV</li>
+                        <li>EX90 (2024) – flagship electric SUV</li>
+                        <li>EX30 (2024) – small electric SUV</li>
+                    </ul>
+                </div>
+                
+                <div class="modern-image">
+                    <img src="../images/volvo/modern.jpg" alt="Modern Volvo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="brand-section bg-light">
+        <div class="container">
+            <h2>Volvo <span class="highlight">Timeline</span></h2>
+            
+            <div class="brand-timeline">
+                <div class="timeline-item">
+                    <div class="year">1927</div>
+                    <div class="desc">First Volvo – ÖV4, April 14 (Volvo Day)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1944</div>
+                    <div class="desc">PV444 – first small Volvo</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1956</div>
+                    <div class="desc">Amazon launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1959</div>
+                    <div class="desc">Three-point seatbelt invented – patent opened</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1961</div>
+                    <div class="desc">P1800 launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1966</div>
+                    <div class="desc">140 series – safety focus</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1974</div>
+                    <div class="desc">240 series – the icon (until 1993)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1991</div>
+                    <div class="desc">850 – front-wheel drive revolution</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1999</div>
+                    <div class="desc">Ford acquires Volvo Cars</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2002</div>
+                    <div class="desc">XC90 launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2010</div>
+                    <div class="desc">Geely acquires Volvo</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2015</div>
+                    <div class="desc">New XC90 on SPA platform</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2020</div>
+                    <div class="desc">XC40 Recharge – first EV</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2024</div>
+                    <div class="desc">EX90 flagship EV; EX30 small EV</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2030</div>
+                    <div class="desc">Goal: all-electric brand</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Brands -->
+    <div class="text-center section-padding">
+        <a href="../brands.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to All Brands</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../brands.html">Brands</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Swedish Brands</h4>
+                    <ul>
+                        <li><a href="volvo.html">Volvo</a></li>
+                        <li><a href="koenigsegg.html">Koenigsegg</a></li>
+                        <li><a href="polestar.html">Polestar</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

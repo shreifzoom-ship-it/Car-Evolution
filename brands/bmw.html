@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW History | Complete Brand Profile & Iconic Models</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore BMW's complete history from 1916 to present. Discover iconic models like 3 Series, M3, 5 Series, 7 Series, and how BMW became the ultimate driving machine.">
+    <meta name="keywords" content="BMW history, BMW 3 Series, BMW M3, Bavarian Motor Works, German cars, Ultimate Driving Machine">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="BMW History | Complete Brand Profile">
+    <meta property="og:description" content="The Ultimate Driving Machine">
+    <meta property="og:image" content="../images/brands/german/bmw-logo.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/brands.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../1886-1920.html">1886-1920: Birth</a></li>
+                            <li><a href="../1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="../1950-1980.html">1950-1980: Muscle</a></li>
+                            <li><a href="../1980-2010.html">1980-2010: Technology</a></li>
+                            <li><a href="../2010-present.html">2010-Present: Electric</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../brands.html">Brands</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Brand Hero -->
+    <header class="brand-hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../images/brands/german/bmw-hero.jpg');">
+        <div class="container">
+            <div class="brand-hero-content">
+                <img src="../images/brands/german/bmw-logo.png" alt="BMW Logo" class="brand-hero-logo">
+                <h1>BMW</h1>
+                <p class="brand-tagline">The Ultimate Driving Machine</p>
+                
+                <div class="brand-quick-facts">
+                    <span><i class="fas fa-calendar"></i> Founded: 1916</span>
+                    <span><i class="fas fa-globe"></i> Country: Germany</span>
+                    <span><i class="fas fa-trophy"></i> Icon: 3 Series, M3</span>
+                    <span><i class="fas fa-cog"></i> Inline-6 Expert</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Navigation -->
+    <div class="brand-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#history" class="active">History</a></li>
+                <li><a href="#models">Iconic Models</a></li>
+                <li><a href="#mseries">M Series</a></li>
+                <li><a href="#engines">Engines</a></li>
+                <li><a href="#motorsport">Motorsport</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- History Section -->
+    <section id="history" class="brand-section">
+        <div class="container">
+            <h2>BMW: <span class="highlight">Bavarian Motor Works</span></h2>
+            
+            <div class="history-grid">
+                <div class="history-text">
+                    <p>BMW's story begins in 1916 as an aircraft engine manufacturer. The famous blue-and-white logo represents a spinning propeller against the blue sky - a nod to the company's origins. After World War I, the Treaty of Versailles banned German aircraft production, forcing BMW to pivot.</p>
+                    
+                    <p>The company turned to motorcycles, producing the R32 in 1923. Its boxer engine design would define BMW motorcycles for decades. In 1928, BMW acquired Automobilwerk Eisenach and began producing cars - first the Dixi, a licensed Austin 7.</p>
+                    
+                    <p>The 1930s brought BMW's first true sports cars: the 328 roadster. Lightweight, aerodynamic, and powered by a brilliant 2.0L six-cylinder, the 328 dominated racing and established BMW's performance credentials. It was years ahead of its time.</p>
+                    
+                    <p>After World War II, BMW nearly collapsed. The company survived by making motorcycles and the quirky Isetta microcar. The 1950s 507 roadster was beautiful but expensive, nearly bankrupting the company.</p>
+                    
+                    <p>The turnaround came in 1962 with the "New Class" (Neue Klasse) 1500. This modern sedan established BMW's identity: sporting luxury, rear-wheel drive, and elegant design. It saved the company and set the template for everything that followed.</p>
+                    
+                    <p>The 1970s were transformative. The 5 Series (1972) created the executive sedan segment. The 3 Series (1975) defined the sports sedan. The 6 Series (1976) and 7 Series (1977) completed the numerical lineup. BMW had become a full-line premium manufacturer.</p>
+                    
+                    <p>The 1980s brought the M division to prominence. The M1 supercar, M3, and M5 created the "ultimate driving machine" reputation. BMW's inline-six engines became legendary for their smoothness and power.</p>
+                    
+                    <p>Today, BMW has expanded far beyond cars - Mini, Rolls-Royce, motorcycles, and electric i models. Yet the core remains: rear-wheel drive, inline engines, and driving pleasure. The "Ultimate Driving Machine" isn't just a slogan; it's the company's DNA.</p>
+                    
+                    <div class="founder-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>"BMW is not just a car. It's a philosophy. The driver and the machine become one."</blockquote>
+                        <cite>- BMW design philosophy</cite>
+                    </div>
+                </div>
+                
+                <div class="history-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar"></i>
+                        <span class="stat-number">1916</span>
+                        <span class="stat-label">Founded</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <span class="stat-number">1936</span>
+                        <span class="stat-label">328 Roadster</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-car"></i>
+                        <span class="stat-number">1975</span>
+                        <span class="stat-label">First 3 Series</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-cog"></i>
+                        <span class="stat-number">M Power</span>
+                        <span class="stat-label">Since 1978</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iconic Models Section -->
+    <section id="models" class="brand-section bg-light">
+        <div class="container">
+            <h2>Iconic <span class="highlight">Models</span></h2>
+            
+            <div class="models-grid">
+                <!-- BMW 3 Series -->
+                <div class="model-card featured">
+                    <img src="../images/models/bmw-3series.jpg" alt="BMW 3 Series">
+                    <div class="model-info">
+                        <h3>BMW 3 Series (1975-present)</h3>
+                        <p class="model-years">7 generations | 1975-present</p>
+                        <p>The benchmark sports sedan. The 3 Series has defined the compact executive segment for nearly 50 years. Each generation sets new standards for handling, performance, and balance.</p>
+                        <ul class="model-specs">
+                            <li><i class="fas fa-cog"></i> E21 (1975), E30 (1982), E36 (1990), E46 (1998), E90 (2005), F30 (2012), G20 (2019)</li>
+                            <li><i class="fas fa-trophy"></i> Multiple Car of the Year awards</li>
+                            <li><i class="fas fa-tachometer-alt"></i> From 1.6L 4-cyl to 3.0L twin-turbo M3</li>
+                            <li><i class="fas fa-heart"></i> The definitive sports sedan</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- BMW 5 Series -->
+                <div class="model-card">
+                    <img src="../images/models/bmw-5series.jpg" alt="BMW 5 Series">
+                    <h3>BMW 5 Series</h3>
+                    <p class="model-years">1972-present</p>
+                    <p>The executive sedan that created the segment. The 5 Series balances luxury and driving dynamics perfectly.</p>
+                </div>
+                
+                <!-- BMW 7 Series -->
+                <div class="model-card">
+                    <img src="../images/models/bmw-7series.jpg" alt="BMW 7 Series">
+                    <h3>BMW 7 Series</h3>
+                    <p class="model-years">1977-present</p>
+                    <p>The flagship luxury sedan. Technology leader for BMW, introducing iDrive, V12 engines, and advanced chassis systems.</p>
+                </div>
+                
+                <!-- BMW M3 -->
+                <div class="model-card">
+                    <img src="../images/models/bmw-m3.jpg" alt="BMW M3">
+                    <h3>BMW M3</h3>
+                    <p class="model-years">1986-present</p>
+                    <p>The ultimate compact performance car. Born from touring car racing, the M3 has defined the high-performance sports sedan segment.</p>
+                </div>
+                
+                <!-- BMW M5 -->
+                <div class="model-card">
+                    <img src="../images/models/bmw-m5.jpg" alt="BMW M5">
+                    <h3>BMW M5</h3>
+                    <p class="model-years">1984-present</p>
+                    <p>The original "wolf in sheep's clothing." Supercar performance in a luxury sedan package.</p>
+                </div>
+                
+                <!-- BMW 2002 -->
+                <div class="model-card">
+                    <img src="../images/models/bmw-2002.jpg" alt="BMW 2002">
+                    <h3>BMW 2002</h3>
+                    <p class="model-years">1968-1976</p>
+                    <p>The car that established BMW's sporting identity. Compact, light, and with a 2.0L engine, it was the precursor to the 3 Series.</p>
+                </div>
+                
+                <!-- BMW 328 -->
+                <div class="model-card">
+                    <img src="../images/models/bmw-328.jpg" alt="BMW 328">
+                    <h3>BMW 328</h3>
+                    <p class="model-years">1936-1940</p>
+                    <p>A pre-war masterpiece. Lightweight, aerodynamic, and dominant in racing. The 328 established BMW's engineering reputation.</p>
+                </div>
+                
+                <!-- BMW i8 -->
+                <div class="model-card">
+                    <img src="../images/models/bmw-i8.jpg" alt="BMW i8">
+                    <h3>BMW i8</h3>
+                    <p class="model-years">2014-2020</p>
+                    <p>A futuristic plug-in hybrid sports car with stunning design and impressive efficiency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- M Series Section -->
+    <section id="mseries" class="brand-section">
+        <div class="container">
+            <h2>BMW <span class="highlight">M</span> Division</h2>
+            
+            <div class="m-story">
+                <div class="m-text">
+                    <p>BMW Motorsport GmbH (now BMW M GmbH) was founded in 1972 to oversee the company's racing activities. It quickly became the source of BMW's highest-performance road cars.</p>
+                    
+                    <h3>The M Cars:</h3>
+                    
+                    <div class="m-car">
+                        <h4>M1 (1978-1981)</h4>
+                        <p>The first M car and only mid-engine supercar. Designed by Giugiaro, powered by a 3.5L six, only 453 built.</p>
+                    </div>
+                    
+                    <div class="m-car">
+                        <h4>M3 (1986-present)</h4>
+                        <p>Homologation special for touring car racing. Each generation pushes performance further while maintaining daily usability.</p>
+                    </div>
+                    
+                    <div class="m-car">
+                        <h4>M5 (1984-present)</h4>
+                        <p>The original super sedan. The first M5 was hand-built by individual craftsmen.</p>
+                    </div>
+                    
+                    <div class="m-car">
+                        <h4>M2 (2015-present)</h4>
+                        <p>The modern interpretation of the E30 M3 - compact, powerful, and pure.</p>
+                    </div>
+                    
+                    <div class="m-car">
+                        <h4>M8 / M850i</h4>
+                        <p>The grand tourer, reviving the 8 Series name with V8 and V12 power.</p>
+                    </div>
+                    
+                    <div class="m-car">
+                        <h4>X5 M / X6 M</h4>
+                        <p>High-performance SUVs that defy physics, combining practicality with supercar acceleration.</p>
+                    </div>
+                    
+                    <p>M cars are characterized by more powerful engines, enhanced suspension, aggressive styling, and meticulous attention to driving dynamics. They've earned a cult following worldwide.</p>
+                </div>
+                
+                <div class="m-image">
+                    <img src="../images/bmw/m1.jpg" alt="BMW M1">
+                    <p class="image-caption">BMW M1 - The first M car</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engines Section -->
+    <section id="engines" class="brand-section bg-light">
+        <div class="container">
+            <h2><span class="highlight">Engines</span> - The Heart of BMW</h2>
+            
+            <div class="engines-grid">
+                <div class="engine-card">
+                    <h4>M10 (1961-1988)</h4>
+                    <p>The legendary four-cylinder that powered the 2002 and early 3 Series. Over 3.5 million produced.</p>
+                </div>
+                
+                <div class="engine-card">
+                    <h4>M30 (1968-1994)</h4>
+                    <p>The "big six" that powered everything from 2500 to 7 Series and M5. Renowned for durability and torque.</p>
+                </div>
+                
+                <div class="engine-card">
+                    <h4>S14 (1986-1991)</h4>
+                    <p>The E30 M3's 2.3L four-valve screamer, derived from the M1's engine. 238 hp from 2.5L in evolution form.</p>
+                </div>
+                
+                <div class="engine-card">
+                    <h4>S38 / M88 (1978-1996)</h4>
+                    <p>The six-cylinder masterpiece from M1 and early M5. Four-valve, individual throttles, glorious sound.</p>
+                </div>
+                
+                <div class="engine-card">
+                    <h4>S50/S52 (1992-1999)</h4>
+                    <p>E36 M3's engine. European version had individual throttles and 321 hp. US version detuned.</p>
+                </div>
+                
+                <div class="engine-card">
+                    <h4>S54 (2000-2006)</h4>
+                    <p>The last naturally-aspirated M3 six. 3.2L, 333 hp, 8,000 rpm redline. A masterpiece.</p>
+                </div>
+                
+                <div class="engine-card">
+                    <h4>S62 (1998-2003)</h4>
+                    <p>First M V8. 4.9L, 400 hp in E39 M5. Individual throttles, forged internals.</p>
+                </div>
+                
+                <div class="engine-card">
+                    <h4>S65 (2007-2013)</h4>
+                    <p>The V8 from E90 M3. 4.0L, 414 hp, 8,400 rpm redline. Direct from racing.</p>
+                </div>
+                
+                <div class="engine-card">
+                    <h4>S55 (2014-2020)</h4>
+                    <p>First turbo M3 engine. 3.0L twin-turbo six, 425-444 hp. Massive torque.</p>
+                </div>
+                
+                <div class="engine-card">
+                    <h4>S58 (2019-present)</h4>
+                    <p>Current M engine. 3.0L twin-turbo six, up to 503 hp in Competition models.</p>
+                </div>
+                
+                <div class="engine-card">
+                    <h4>V12 (1987-present)</h4>
+                    <p>7 Series flagship engine. 5.0L to 6.0L, smooth and powerful.</p>
+                </div>
+                
+                <div class="engine-card">
+                    <h4>N/A vs Turbo</h4>
+                    <p>BMW's transition from naturally-aspirated to turbocharged engines marked a new era, with more power and efficiency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Motorsport Section -->
+    <section id="motorsport" class="brand-section">
+        <div class="container">
+            <h2>BMW <span class="highlight">Motorsport</span></h2>
+            
+            <div class="motorsport-grid">
+                <div class="motorsport-content">
+                    <ul>
+                        <li><i class="fas fa-trophy"></i> <strong>Formula 1:</strong> 20 wins as engine supplier (Brabham, Williams) and as constructor</li>
+                        <li><i class="fas fa-trophy"></i> <strong>BTCC:</strong> Dominant with 3 Series in 1990s</li>
+                        <li><i class="fas fa-trophy"></i> <strong>DTM:</strong> Multiple championships with M3 and M4</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Le Mans:</strong> Overall win with V12 LMR in 1999</li>
+                        <li><i class="fas fa-trophy"></i> <strong>24 Hours Nürburgring:</strong> 20+ overall wins</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Formula E:</strong> Current factory program</li>
+                        <li><i class="fas fa-trophy"></i> <strong>IMSA:</strong> Success with GTP program</li>
+                    </ul>
+                    
+                    <p>The E30 M3's racing success is legendary - it won over 1,500 races in its career, including multiple touring car championships worldwide. The "M" badge carries real racing heritage.</p>
+                </div>
+                
+                <div class="motorsport-image">
+                    <img src="../images/motorsport/bmw-m3-race.jpg" alt="BMW M3 Race Car">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="brand-section bg-light">
+        <div class="container">
+            <h2>BMW <span class="highlight">Timeline</span></h2>
+            
+            <div class="brand-timeline">
+                <div class="timeline-item">
+                    <div class="year">1916</div>
+                    <div class="desc">Bayerische Flugzeugwerke founded (becomes BMW)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1917</div>
+                    <div class="desc">BMW logo registered</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1923</div>
+                    <div class="desc">First BMW motorcycle - R32</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1928</div>
+                    <div class="desc">First BMW car - Dixi (Austin 7 license)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1936</div>
+                    <div class="desc">BMW 328 roadster introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1959</div>
+                    <div class="desc">Company nearly sold to Mercedes; saved by Herbert Quandt</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1962</div>
+                    <div class="desc">Neue Klasse 1500 saves company, establishes identity</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1968</div>
+                    <div class="desc">BMW 2002 introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1972</div>
+                    <div class="desc">BMW Motorsport GmbH founded; First 5 Series</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1975</div>
+                    <div class="desc">First 3 Series (E21)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1977</div>
+                    <div class="desc">First 7 Series (E23)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1978</div>
+                    <div class="desc">BMW M1 supercar launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1983</div>
+                    <div class="desc">First turbocharged Formula 1 victory</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1986</div>
+                    <div class="desc">First M3 (E30) introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1994</div>
+                    <div class="desc">BMW acquires Rover Group (later sells)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1998</div>
+                    <div class="desc">BMW acquires Rolls-Royce brand</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1999</div>
+                    <div class="desc">BMW wins Le Mans with V12 LMR</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2001</div>
+                    <div class="desc">E65 7 Series introduces iDrive</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2013</div>
+                    <div class="desc">i3 and i8 electric/hybrid models launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2023</div>
+                    <div class="desc">Vision Neue Klasse previews electric future</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Brands -->
+    <div class="text-center section-padding">
+        <a href="../brands.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to All Brands</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../brands.html">Brands</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>German Brands</h4>
+                    <ul>
+                        <li><a href="bmw.html">BMW</a></li>
+                        <li><a href="mercedes-benz.html">Mercedes-Benz</a></li>
+                        <li><a href="audi.html">Audi</a></li>
+                        <li><a href="volkswagen.html">Volkswagen</a></li>
+                        <li><a href="porsche.html">Porsche</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

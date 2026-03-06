@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aston Martin History | Complete Brand Profile & Iconic Models</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore Aston Martin's complete history from 1913 to present. Discover iconic models like DB5, DB9, Vantage, and how Aston Martin became James Bond's car of choice.">
+    <meta name="keywords" content="Aston Martin history, Aston Martin DB5, James Bond car, British luxury cars, Vantage, DB9">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Aston Martin History | Complete Brand Profile">
+    <meta property="og:description" content="Power, Beauty, Soul - The British Icon">
+    <meta property="og:image" content="../images/brands/british/aston-martin-logo.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/brands.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../1886-1920.html">1886-1920: Birth</a></li>
+                            <li><a href="../1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="../1950-1980.html">1950-1980: Muscle</a></li>
+                            <li><a href="../1980-2010.html">1980-2010: Technology</a></li>
+                            <li><a href="../2010-present.html">2010-Present: Electric</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../brands.html">Brands</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Brand Hero -->
+    <header class="brand-hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../images/brands/british/aston-martin-hero.jpg');">
+        <div class="container">
+            <div class="brand-hero-content">
+                <img src="../images/brands/british/aston-martin-logo.png" alt="Aston Martin Logo" class="brand-hero-logo">
+                <h1>Aston Martin</h1>
+                <p class="brand-tagline">Power, Beauty, Soul</p>
+                
+                <div class="brand-quick-facts">
+                    <span><i class="fas fa-calendar"></i> Founded: 1913</span>
+                    <span><i class="fas fa-globe"></i> Country: UK</span>
+                    <span><i class="fas fa-trophy"></i> Icon: DB5</span>
+                    <span><i class="fas fa-cog"></i> James Bond's Car</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Navigation -->
+    <div class="brand-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#history" class="active">History</a></li>
+                <li><a href="#models">Iconic Models</a></li>
+                <li><a href="#bond">James Bond</a></li>
+                <li><a href="#db">DB Series</a></li>
+                <li><a href="#motorsport">Motorsport</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- History Section -->
+    <section id="history" class="brand-section">
+        <div class="container">
+            <h2>Aston Martin: <span class="highlight">Power, Beauty, Soul</span></h2>
+            
+            <div class="history-grid">
+                <div class="history-text">
+                    <p>Aston Martin's story is one of passion, near-bankruptcy, and ultimate triumph. Founded in 1913 by Lionel Martin and Robert Bamford, the name comes from Lionel's success at the Aston Clinton hill climb.</p>
+                    
+                    <p>The early years were typical of British sports car makers – small production runs, racing success, and financial struggles. The 1920s and 1930s saw Aston Martins competing at Le Mans and establishing a reputation for performance.</p>
+                    
+                    <p>After WWII, industrialist David Brown bought the company in 1947, beginning the golden era. The "DB" cars (David Brown) began with the DB2 in 1950. The DB4 (1958) and DB4 GT were stunning, but the 1963 DB5 became legendary as James Bond's car in Goldfinger.</p>
+                    
+                    <p>The DB5 is perhaps the most famous car in cinema history. With its silver birch paint, wire wheels, and Q-branch gadgets, it defined the image of the British secret agent. Aston Martin has been associated with Bond ever since.</p>
+                    
+                    <p>The 1960s brought more success with the DB6 and DBS. But the 1970s were difficult – financial troubles, ownership changes, and outdated products. The company went into receivership multiple times.</p>
+                    
+                    <p>The 1987 revival came with the V8 Vantage Zagato and then the 1993 DB7, designed by Ian Callum. The DB7 saved Aston Martin, selling over 7,000 units – more than all previous Aston Martins combined.</p>
+                    
+                    <p>The 2003 DB9 and 2005 V8 Vantage (modern) re-established Aston Martin as a world-class GT maker. Under Ford ownership (1987-2007), quality and volume improved. Since then, private ownership has brought new models like the One-77, Vulcan, Valkyrie, and DBX SUV.</p>
+                    
+                    <p>Today, Aston Martin is a public company with a full lineup of GTs, sports cars, and the DBX SUV. The Valkyrie hypercar, developed with Red Bull Racing, shows the brand's engineering capability. And James Bond still drives an Aston.</p>
+                    
+                    <div class="founder-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>"You only ever buy an Aston Martin with your heart."</blockquote>
+                        <cite>- Marek Reichman, Chief Design Officer</cite>
+                    </div>
+                </div>
+                
+                <div class="history-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar"></i>
+                        <span class="stat-number">1913</span>
+                        <span class="stat-label">Founded</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <span class="stat-number">1963</span>
+                        <span class="stat-label">DB5</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-car"></i>
+                        <span class="stat-number">1993</span>
+                        <span class="stat-label">DB7</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-cog"></i>
+                        <span class="stat-number">Bond</span>
+                        <span class="stat-label">Since 1964</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iconic Models Section -->
+    <section id="models" class="brand-section bg-light">
+        <div class="container">
+            <h2>Iconic <span class="highlight">Models</span></h2>
+            
+            <div class="models-grid">
+                <!-- Aston Martin DB5 -->
+                <div class="model-card featured">
+                    <img src="../images/models/aston-db5.jpg" alt="Aston Martin DB5">
+                    <div class="model-info">
+                        <h3>Aston Martin DB5 (1963-1965)</h3>
+                        <p class="model-years">1963-1965</p>
+                        <p>The most famous car in the world. James Bond's car in Goldfinger, Thunderball, GoldenEye, Casino Royale, Skyfall, Spectre, and No Time to Die. Silver birch, wire wheels, and Q-branch gadgets.</p>
+                        <ul class="model-specs">
+                            <li><i class="fas fa-cog"></i> 4.0L straight-6, 282 hp</li>
+                            <li><i class="fas fa-tachometer-alt"></i> 0-60 in 8 seconds, 145 mph</li>
+                            <li><i class="fas fa-trophy"></i> Only 1,021 built</li>
+                            <li><i class="fas fa-gem"></i> Now worth millions</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Aston Martin DB4 -->
+                <div class="model-card">
+                    <img src="../images/models/aston-db4.jpg" alt="Aston Martin DB4">
+                    <h3>Aston Martin DB4</h3>
+                    <p class="model-years">1958-1963</p>
+                    <p>The first of the modern Astons. Superleggera body by Touring of Milan. The DB4 GT is one of the most valuable Astons ever.</p>
+                </div>
+                
+                <!-- Aston Martin DB9 -->
+                <div class="model-card">
+                    <img src="../images/models/aston-db9.jpg" alt="Aston Martin DB9">
+                    <h3>Aston Martin DB9</h3>
+                    <p class="model-years">2003-2016</p>
+                    <p>The car that re-established Aston Martin. Stunning design by Ian Callum, V12 power, and genuine grand touring capability.</p>
+                </div>
+                
+                <!-- Aston Martin V8 Vantage -->
+                <div class="model-card">
+                    <img src="../images/models/aston-v8-vantage.jpg" alt="Aston Martin V8 Vantage">
+                    <h3>Aston Martin V8 Vantage</h3>
+                    <p class="model-years">1977-1989, 2005-2017</p>
+                    <p>The 1970s supercharged "Oscar India" V8 was a muscle car in a tuxedo. The modern Vantage is the driver's Aston.</p>
+                </div>
+                
+                <!-- Aston Martin DB7 -->
+                <div class="model-card">
+                    <img src="../images/models/aston-db7.jpg" alt="Aston Martin DB7">
+                    <h3>Aston Martin DB7</h3>
+                    <p class="model-years">1993-2004</p>
+                    <p>The savior of Aston Martin. Designed by Ian Callum, based on Jaguar XJS platform. Over 7,000 sold – more than all previous Astons combined.</p>
+                </div>
+                
+                <!-- Aston Martin DBS -->
+                <div class="model-card">
+                    <img src="../images/models/aston-dbs.jpg" alt="Aston Martin DBS">
+                    <h3>Aston Martin DBS</h3>
+                    <p class="model-years">1967-1972, 2007-2012</p>
+                    <p>The ultimate 1960s Aston, featured in On Her Majesty's Secret Service. The modern DBS was a 510 hp V12 flagship.</p>
+                </div>
+                
+                <!-- Aston Martin One-77 -->
+                <div class="model-card">
+                    <img src="../images/models/aston-one77.jpg" alt="Aston Martin One-77">
+                    <h3>Aston Martin One-77</h3>
+                    <p class="model-years">2009-2012</p>
+                    <p>Limited to 77 units. 7.3L V12, 750 hp, carbon fiber body. One of the most exclusive modern Astons.</p>
+                </div>
+                
+                <!-- Aston Martin Valkyrie -->
+                <div class="model-card">
+                    <img src="../images/models/aston-valkyrie.jpg" alt="Aston Martin Valkyrie">
+                    <h3>Aston Martin Valkyrie</h3>
+                    <p class="model-years">2021-present</p>
+                    <p>Hypercar developed with Red Bull Racing. 1,160 hp hybrid V12, F1 technology, road-legal race car.</p>
+                </div>
+                
+                <!-- Aston Martin DBX -->
+                <div class="model-card">
+                    <img src="../images/models/aston-dbx.jpg" alt="Aston Martin DBX">
+                    <h3>Aston Martin DBX</h3>
+                    <p class="model-years">2020-present</p>
+                    <p>The Aston SUV. Controversial but necessary for survival. V8 and straight-six, plus DBX707 with 707 hp – the most powerful luxury SUV.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- James Bond Section -->
+    <section id="bond" class="brand-section">
+        <div class="container">
+            <h2>Aston Martin & <span class="highlight">James Bond</span></h2>
+            
+            <div class="bond-grid">
+                <div class="bond-text">
+                    <p>The relationship between Aston Martin and James Bond is the most famous brand-vehicle association in cinema history. It began in 1964 with Goldfinger.</p>
+                    
+                    <h4>Bond Films featuring Aston Martin:</h4>
+                    <ul>
+                        <li><strong>Goldfinger (1964):</strong> DB5 – the first and most famous</li>
+                        <li><strong>Thunderball (1965):</strong> DB5</li>
+                        <li><strong>On Her Majesty's Secret Service (1969):</strong> DBS</li>
+                        <li><strong>The Living Daylights (1987):</strong> V8 Vantage Volante</li>
+                        <li><strong>GoldenEye (1995):</strong> DB5</li>
+                        <li><strong>Tomorrow Never Dies (1997):</strong> DB5</li>
+                        <li><strong>Casino Royale (2006):</strong> DBS V12</li>
+                        <li><strong>Quantum of Solace (2008):</strong> DBS</li>
+                        <li><strong>Skyfall (2012):</strong> DB5</li>
+                        <li><strong>Spectre (2015):</strong> DB10 (custom for film)</li>
+                        <li><strong>No Time to Die (2021):</strong> DB5, V8 Vantage, DBS Superleggera</li>
+                    </ul>
+                    
+                    <p>The DB5 is the definitive Bond car. In Goldfinger, Q fitted it with machine guns, oil slick, smoke screen, bulletproof shield, revolving license plates, and passenger ejector seat. It has appeared in more Bond films than any other car.</p>
+                    
+                    <p>For Spectre, Aston built 10 custom DB10s exclusively for the film – never sold to the public. In No Time to Die, Bond's DB5 is fitted with working machine guns behind the headlights (a first for a film car).</p>
+                </div>
+                
+                <div class="bond-image">
+                    <img src="../images/aston/bond-db5.jpg" alt="James Bond DB5">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DB Series Section -->
+    <section id="db" class="brand-section bg-light">
+        <div class="container">
+            <h2>The <span class="highlight">DB</span> Series</h2>
+            
+            <div class="db-grid">
+                <div class="db-text">
+                    <p>The DB cars (named for David Brown) are the heart of Aston Martin. They define the brand's identity – grand touring, beautiful, powerful, and exclusive.</p>
+                    
+                    <h4>DB Lineage:</h4>
+                    <ul>
+                        <li><strong>DB1 (1948):</strong> 2-Litre Sports, only 15 built</li>
+                        <li><strong>DB2 (1950-1953):</strong> First true DB, Lagonda straight-6, Le Mans success</li>
+                        <li><strong>DB2/4 (1953-1957):</strong> 2+2 seating, more practical</li>
+                        <li><strong>DB Mark III (1957-1959):</strong> Evolved DB2/4</li>
+                        <li><strong>DB4 (1958-1963):</strong> Revolutionary – Superleggera body, new engine, the modern Aston begins</li>
+                        <li><strong>DB5 (1963-1965):</strong> The icon. Bond car. 4.0L engine, wire wheels</li>
+                        <li><strong>DB6 (1965-1970):</strong> Longer wheelbase, Kamm tail, more practical</li>
+                        <li><strong>DB7 (1993-2004):</strong> The savior. Ian Callum design, supercharged straight-6 then V12</li>
+                        <li><strong>DB9 (2003-2016):</strong> The modern GT. V12, aluminum construction, beautiful</li>
+                        <li><strong>DB11 (2016-2023):</strong> V12 and V8, advanced aerodynamics, new era</li>
+                        <li><strong>DB12 (2023-present):</strong> Current generation. V8 twin-turbo, super GT</li>
+                    </ul>
+                </div>
+                
+                <div class="db-image">
+                    <img src="../images/aston/db-generations.jpg" alt="DB Generations">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Motorsport Section -->
+    <section id="motorsport" class="brand-section">
+        <div class="container">
+            <h2>Aston Martin <span class="highlight">Racing</span></h2>
+            
+            <div class="motorsport-grid">
+                <div class="motorsport-content">
+                    <ul>
+                        <li><i class="fas fa-trophy"></i> <strong>Le Mans 1959:</strong> DBR1 wins overall – Aston's only overall victory</li>
+                        <li><i class="fas fa-trophy"></i> <strong>World Sportscar Championship:</strong> 1959 title</li>
+                        <li><i class="fas fa-trophy"></i> <strong>GT Racing:</strong> DBR9, Vantage GT3, Vantage GTE multiple class wins at Le Mans</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Formula 1:</strong> 1959-1960, 2016 (as title sponsor), 2021-2025 factory team</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Valkyrie:</strong> Track version for Le Mans Hypercar</li>
+                    </ul>
+                    
+                    <p>The DBR1's 1959 Le Mans win remains one of Aston's proudest moments. In 2017-2020, the Vantage GTE dominated the GTE Pro class. The Valkyrie is being developed for Le Mans Hypercar competition.</p>
+                    
+                    <p>Aston Martin returned to Formula 1 as a works team in 2021, with Fernando Alonso and Lance Stroll. The team aims for race wins and championships.</p>
+                </div>
+                
+                <div class="motorsport-image">
+                    <img src="../images/motorsport/aston-dbr1.jpg" alt="Aston Martin DBR1">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="brand-section bg-light">
+        <div class="container">
+            <h2>Aston Martin <span class="highlight">Timeline</span></h2>
+            
+            <div class="brand-timeline">
+                <div class="timeline-item">
+                    <div class="year">1913</div>
+                    <div class="desc">Lionel Martin and Robert Bamford found company</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1914</div>
+                    <div class="desc">First car – Coal Scuttle</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1922</div>
+                    <div class="desc">Le Mans debut</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1947</div>
+                    <div class="desc">David Brown buys Aston Martin – DB era begins</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1948</div>
+                    <div class="desc">DB1 (2-Litre Sports)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1950</div>
+                    <div class="desc">DB2 introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1959</div>
+                    <div class="desc">DBR1 wins Le Mans</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1963</div>
+                    <div class="desc">DB5 launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1964</div>
+                    <div class="desc">Goldfinger – DB5 becomes Bond car</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1967</div>
+                    <div class="desc">DBS introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1972</div>
+                    <div class="desc">David Brown sells company – decline begins</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1987</div>
+                    <div class="desc">Ford buys Aston Martin</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1993</div>
+                    <div class="desc">DB7 launched – saves company</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2003</div>
+                    <div class="desc">DB9 launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2005</div>
+                    <div class="desc">Modern V8 Vantage launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2007</div>
+                    <div class="desc">Ford sells to private investors</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2009</div>
+                    <div class="desc">One-77 announced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2016</div>
+                    <div class="desc">DB11 launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2020</div>
+                    <div class="desc">DBX SUV launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2021</div>
+                    <div class="desc">Valkyrie hypercar delivered; F1 team returns</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2023</div>
+                    <div class="desc">DB12 – "Super Tourer"</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2025</div>
+                    <div class="desc">Electric future announced</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Brands -->
+    <div class="text-center section-padding">
+        <a href="../brands.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to All Brands</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../brands.html">Brands</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>British Brands</h4>
+                    <ul>
+                        <li><a href="jaguar.html">Jaguar</a></li>
+                        <li><a href="land-rover.html">Land Rover</a></li>
+                        <li><a href="aston-martin.html">Aston Martin</a></li>
+                        <li><a href="bentley.html">Bentley</a></li>
+                        <li><a href="rolls-royce.html">Rolls-Royce</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

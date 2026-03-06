@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini History | Complete Brand Profile & Iconic Models</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore Mini's complete history from 1959 to present. Discover iconic models like Mini Cooper, Countryman, and how Mini revolutionized small car design.">
+    <meta name="keywords" content="Mini history, Mini Cooper, Mini Countryman, British cars, Alec Issigonis, small cars">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mini History | Complete Brand Profile">
+    <meta property="og:description" content="The Original Icon - Small Car, Big Soul">
+    <meta property="og:image" content="../images/brands/british/mini-logo.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/brands.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../1886-1920.html">1886-1920: Birth</a></li>
+                            <li><a href="../1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="../1950-1980.html">1950-1980: Muscle</a></li>
+                            <li><a href="../1980-2010.html">1980-2010: Technology</a></li>
+                            <li><a href="../2010-present.html">2010-Present: Electric</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../brands.html">Brands</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Brand Hero -->
+    <header class="brand-hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../images/brands/british/mini-hero.jpg');">
+        <div class="container">
+            <div class="brand-hero-content">
+                <img src="../images/brands/british/mini-logo.png" alt="Mini Logo" class="brand-hero-logo">
+                <h1>Mini</h1>
+                <p class="brand-tagline">The Original Icon</p>
+                
+                <div class="brand-quick-facts">
+                    <span><i class="fas fa-calendar"></i> Founded: 1959</span>
+                    <span><i class="fas fa-globe"></i> Country: UK</span>
+                    <span><i class="fas fa-trophy"></i> Icon: Mini Cooper</span>
+                    <span><i class="fas fa-cog"></i> Small Car Legend</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Navigation -->
+    <div class="brand-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#history" class="active">History</a></li>
+                <li><a href="#classic">Classic Mini</a></li>
+                <li><a href="#modern">Modern Mini</a></li>
+                <li><a href="#cooper">Cooper & Racing</a></li>
+                <li><a href="#models">Models</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- History Section -->
+    <section id="history" class="brand-section">
+        <div class="container">
+            <h2>Mini: <span class="highlight">The Original Icon</span></h2>
+            
+            <div class="history-grid">
+                <div class="history-text">
+                    <p>The Mini is one of the most influential cars ever designed. Created in response to the 1956 Suez Crisis fuel shortages, it proved that small could be stylish, fun, and practical.</p>
+                    
+                    <p>Designed by Sir Alec Issigonis for the British Motor Corporation (BMC), the Mini was revolutionary. Issigonis placed the engine transversely and drove the front wheels, with the gearbox in the sump to save space. This "packaging" allowed 80% of the car's length to be used for passengers and luggage – unheard of in 1959.</p>
+                    
+                    <p>The Mini launched in 1959 as the Austin Seven and Morris Mini-Minor. It was cheap, economical, and incredibly space-efficient. But it was also fun – the wheels-at-the-corners stance and go-kart handling made it a blast to drive.</p>
+                    
+                    <p>In 1961, racing legend John Cooper saw the potential. The Mini Cooper, with a more powerful engine and disc brakes, was born. The Mini Cooper S (1963) became a motorsport legend, winning the Monte Carlo Rally three times (1964, 1965, 1967).</p>
+                    
+                    <p>The Mini became a cultural icon of the 1960s. It was driven by The Beatles, Peter Sellers, and royalty. It starred in "The Italian Job" (1969) with its famous chase scene through Turin. It was the car of choice for the swinging sixties.</p>
+                    
+                    <p>Production continued for 41 years with remarkably few changes. Over 5.3 million classic Minis were built. The last classic Mini rolled off the line in October 2000.</p>
+                    
+                    <p>In 2001, BMW (which had bought the Rover Group in 1994) launched an all-new Mini – larger, more modern, but retaining the spirit of the original. The new Mini was an instant success, selling over 1.5 million in its first generation.</p>
+                    
+                    <p>Today, Mini is a global brand with a full lineup including the Hardtop, Convertible, Clubman, Countryman, and electric Cooper SE. The classic design cues – circular headlights, central speedometer, roof rails – remain, while the driving fun continues.</p>
+                    
+                    <div class="founder-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>"The Mini is not just a car, it's a way of life."</blockquote>
+                        <cite>- Sir Alec Issigonis</cite>
+                    </div>
+                </div>
+                
+                <div class="history-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar"></i>
+                        <span class="stat-number">1959</span>
+                        <span class="stat-label">Launched</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <span class="stat-number">5.3M</span>
+                        <span class="stat-label">Classic Minis</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-car"></i>
+                        <span class="stat-number">1964</span>
+                        <span class="stat-label">Monte Carlo Win</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-cog"></i>
+                        <span class="stat-number">41</span>
+                        <span class="stat-label">Years Production</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classic Mini Section -->
+    <section id="classic" class="brand-section bg-light">
+        <div class="container">
+            <h2>The <span class="highlight">Classic</span> Mini (1959-2000)</h2>
+            
+            <div class="classic-grid">
+                <div class="classic-text">
+                    <p>The classic Mini was a masterpiece of packaging. Only 10 feet long, it could seat four adults and their luggage. The wheels were pushed to the corners for maximum interior space and go-kart handling.</p>
+                    
+                    <h4>Key Versions:</h4>
+                    <ul>
+                        <li><strong>Morris Mini-Minor / Austin Seven (1959):</strong> The original. 848cc engine, 34 hp.</li>
+                        <li><strong>Mini Cooper (1961):</strong> 997cc, 55 hp. Developed with John Cooper.</li>
+                        <li><strong>Mini Cooper S (1963):</strong> 1071cc, 70 hp. Monte Carlo winner.</li>
+                        <li><strong>Mini Mk III (1969):</strong> Revised body, larger doors, wind-up windows.</li>
+                        <li><strong>Mini 1275 GT (1969):</strong> Sporty model with 1275cc engine.</li>
+                        <li><strong>Mini 1000 / 1300 (1980s):</strong> Continued with minimal changes.</li>
+                        <li><strong>Mini Cooper 35 (1994):</strong> 35th anniversary, 63 hp injection.</li>
+                        <li><strong>Mini Cooper Sport (1998):</strong> Final versions.</li>
+                    </ul>
+                    
+                    <h4>Innovations:</h4>
+                    <ul>
+                        <li>Transverse engine with gearbox in sump</li>
+                        <li>Front-wheel drive</li>
+                        <li>Wheels-at-corners packaging</li>
+                        <li>Rubber cone suspension</li>
+                        <li>10-inch wheels (tiny!)</li>
+                    </ul>
+                    
+                    <p>The classic Mini was basic – sliding windows, minimal instruments, and a heater that was optional. But it was pure fun. It won rallies, starred in films, and captured hearts worldwide.</p>
+                </div>
+                
+                <div class="classic-image">
+                    <img src="../images/mini/classic-mini.jpg" alt="Classic Mini">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern Mini Section -->
+    <section id="modern" class="brand-section">
+        <div class="container">
+            <h2>The <span class="highlight">Modern</span> Mini (2001-present)</h2>
+            
+            <div class="modern-grid">
+                <div class="modern-text">
+                    <p>When BMW launched the new Mini in 2001, purists were skeptical. It was larger, heavier, and more expensive. But it captured the spirit of the original perfectly.</p>
+                    
+                    <h4>First Generation (R50/R53 – 2001-2006):</h4>
+                    <ul>
+                        <li>Design by Frank Stephenson – perfectly retro-modern</li>
+                        <li>Cooper S with supercharged 1.6L, 163 hp</li>
+                        <li>Go-kart handling, premium interior</li>
+                        <li>Huge success – over 1.5 million sold</li>
+                    </ul>
+                    
+                    <h4>Second Generation (R56 – 2007-2013):</h4>
+                    <ul>
+                        <li>Evolved design, larger</li>
+                        <li>Cooper S with turbocharged 1.6L (Prince engine)</li>
+                        <li>John Cooper Works (JCW) with 211 hp</li>
+                        <li>Clubman and Convertible added</li>
+                    </ul>
+                    
+                    <h4>Third Generation (F56 – 2014-present):</h4>
+                    <ul>
+                        <li>BMW UKL platform, shared with BMW X1</li>
+                        <li>Turbo 3-cylinder and 4-cylinder engines</li>
+                        <li>JCW with 231 hp, 0-60 in 6.1s</li>
+                        <li>Countryman, Clubman, Convertible, Electric</li>
+                        <li>Latest update (2024) with more technology</li>
+                    </ul>
+                    
+                    <p>The modern Mini has expanded into a full range – from the classic 3-door to the Countryman SUV, the electric Cooper SE, and the upcoming Aceman crossover. All retain the go-kart handling and iconic design.</p>
+                </div>
+                
+                <div class="modern-image">
+                    <img src="../images/mini/modern-mini.jpg" alt="Modern Mini">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cooper & Racing Section -->
+    <section id="cooper" class="brand-section bg-light">
+        <div class="container">
+            <h2>Mini <span class="highlight">Cooper</span> & Racing</h2>
+            
+            <div class="cooper-grid">
+                <div class="cooper-text">
+                    <p>The Mini's racing heritage is central to its legend. John Cooper, founder of Cooper Car Company and builder of Formula 1 cars, saw the Mini's potential in 1960.</p>
+                    
+                    <h4>Monte Carlo Rally Victories:</h4>
+                    <ul>
+                        <li><strong>1964:</strong> Paddy Hopkirk in a Mini Cooper S – first win</li>
+                        <li><strong>1965:</strong> Timo Mäkinen wins</li>
+                        <li><strong>1967:</strong> Rauno Aaltonen wins</li>
+                        <li><strong>1966:</strong> Controversial – Minis finished 1-2-3 but disqualified on technicality</li>
+                    </ul>
+                    
+                    <p>The Mini's small size, front-wheel drive, and go-kart handling made it perfect for tight, twisty rally stages. It defeated much larger, more powerful cars through agility and driver skill.</p>
+                    
+                    <h4>Modern Racing:</h4>
+                    <ul>
+                        <li>Mini Challenge – one-make series worldwide</li>
+                        <li>Mini WRC – World Rally Championship program 2011-2013</li>
+                        <li>Mini JCW in touring car and endurance racing</li>
+                    </ul>
+                    
+                    <p>The John Cooper Works (JCW) models are the modern successors – up to 231 hp, track-focused, and hugely fun.</p>
+                </div>
+                
+                <div class="cooper-image">
+                    <img src="../images/mini/mini-rally.jpg" alt="Mini Monte Carlo Rally">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Models Section -->
+    <section id="models" class="brand-section">
+        <div class="container">
+            <h2>Current <span class="highlight">Mini</span> Family</h2>
+            
+            <div class="models-grid-small">
+                <div class="model-card">
+                    <img src="../images/mini/mini-3door.jpg" alt="Mini 3-Door">
+                    <h4>Mini 3-Door</h4>
+                    <p>The original. Classic proportions, go-kart handling.</p>
+                </div>
+                
+                <div class="model-card">
+                    <img src="../images/mini/mini-5door.jpg" alt="Mini 5-Door">
+                    <h4>Mini 5-Door</h4>
+                    <p>More practical, same fun.</p>
+                </div>
+                
+                <div class="model-card">
+                    <img src="../images/mini/mini-convertible.jpg" alt="Mini Convertible">
+                    <h4>Mini Convertible</h4>
+                    <p>Open-air fun.</p>
+                </div>
+                
+                <div class="model-card">
+                    <img src="../images/mini/mini-clubman.jpg" alt="Mini Clubman">
+                    <h4>Mini Clubman</h4>
+                    <p>Split rear doors, more space.</p>
+                </div>
+                
+                <div class="model-card">
+                    <img src="../images/mini/mini-countryman.jpg" alt="Mini Countryman">
+                    <h4>Mini Countryman</h4>
+                    <p>The SUV Mini. Most practical.</p>
+                </div>
+                
+                <div class="model-card">
+                    <img src="../images/mini/mini-electric.jpg" alt="Mini Electric">
+                    <h4>Mini Electric (Cooper SE)</h4>
+                    <p>Instant torque, zero emissions.</p>
+                </div>
+                
+                <div class="model-card">
+                    <img src="../images/mini/mini-jcw.jpg" alt="Mini JCW">
+                    <h4>John Cooper Works</h4>
+                    <p>The performance versions.</p>
+                </div>
+                
+                <div class="model-card">
+                    <img src="../images/mini/mini-aceman.jpg" alt="Mini Aceman">
+                    <h4>Mini Aceman</h4>
+                    <p>New electric crossover.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="brand-section bg-light">
+        <div class="container">
+            <h2>Mini <span class="highlight">Timeline</span></h2>
+            
+            <div class="brand-timeline">
+                <div class="timeline-item">
+                    <div class="year">1956</div>
+                    <div class="desc">Suez Crisis – Issigonis begins design work</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1959</div>
+                    <div class="desc">Mini launched as Austin Seven and Morris Mini-Minor</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1961</div>
+                    <div class="desc">Mini Cooper introduced (997cc, 55 hp)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1963</div>
+                    <div class="desc">Mini Cooper S (1071cc, 70 hp)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1964</div>
+                    <div class="desc">Paddy Hopkirk wins Monte Carlo Rally</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1965</div>
+                    <div class="desc">Timo Mäkinen wins Monte Carlo</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1966</div>
+                    <div class="desc">Minis 1-2-3 at Monte Carlo – disqualified</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1967</div>
+                    <div class="desc">Rauno Aaltonen wins Monte Carlo</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1969</div>
+                    <div class="desc">The Italian Job released</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1969</div>
+                    <div class="desc">Mini Mk III with wind-up windows</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1994</div>
+                    <div class="desc">BMW acquires Rover Group (including Mini)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2000</div>
+                    <div class="desc">Last classic Mini built – over 5.3 million produced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2001</div>
+                    <div class="desc">New Mini launched (R50)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2006</div>
+                    <div class="desc">Mini Convertible introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2007</div>
+                    <div class="desc">Second-generation Mini (R56)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2010</div>
+                    <div class="desc">Mini Countryman launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2014</div>
+                    <div class="desc">Third-generation Mini (F56)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2020</div>
+                    <div class="desc">Mini Electric (Cooper SE) launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2024</div>
+                    <div class="desc">Next-generation Mini with electric focus</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Brands -->
+    <div class="text-center section-padding">
+        <a href="../brands.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to All Brands</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../brands.html">Brands</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>British Brands</h4>
+                    <ul>
+                        <li><a href="jaguar.html">Jaguar</a></li>
+                        <li><a href="land-rover.html">Land Rover</a></li>
+                        <li><a href="aston-martin.html">Aston Martin</a></li>
+                        <li><a href="bentley.html">Bentley</a></li>
+                        <li><a href="mini.html">Mini</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

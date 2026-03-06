@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nissan History | Complete Brand Profile & Iconic Models</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore Nissan's complete history from 1933 to present. Discover iconic models like GT-R, Fairlady Z, Skyline, Patrol, and how Nissan shaped Japanese automotive industry.">
+    <meta name="keywords" content="Nissan history, Nissan GT-R, Nissan Skyline, Nissan Fairlady Z, Nissan Patrol, Japanese cars, Datsun">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Nissan History | Complete Brand Profile">
+    <meta property="og:description" content="Innovation that excites - from Datsun to GT-R">
+    <meta property="og:image" content="../images/brands/japanese/nissan-logo.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/brands.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation (same structure) -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../1886-1920.html">1886-1920: Birth</a></li>
+                            <li><a href="../1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="../1950-1980.html">1950-1980: Muscle</a></li>
+                            <li><a href="../1980-2010.html">1980-2010: Technology</a></li>
+                            <li><a href="../2010-present.html">2010-Present: Electric</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../brands.html">Brands</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Brand Hero -->
+    <header class="brand-hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../images/brands/japanese/nissan-hero.jpg');">
+        <div class="container">
+            <div class="brand-hero-content">
+                <img src="../images/brands/japanese/nissan-logo.png" alt="Nissan Logo" class="brand-hero-logo">
+                <h1>Nissan</h1>
+                <p class="brand-tagline">Innovation that Excites</p>
+                
+                <div class="brand-quick-facts">
+                    <span><i class="fas fa-calendar"></i> Founded: 1933</span>
+                    <span><i class="fas fa-globe"></i> Country: Japan</span>
+                    <span><i class="fas fa-trophy"></i> Icon: GT-R</span>
+                    <span><i class="fas fa-bolt"></i> EV Pioneer (Leaf)</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Navigation -->
+    <div class="brand-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#history" class="active">History</a></li>
+                <li><a href="#models">Iconic Models</a></li>
+                <li><a href="#gtr">GT-R Legacy</a></li>
+                <li><a href="#z">Fairlady Z</a></li>
+                <li><a href="#patrol">Patrol</a></li>
+                <li><a href="#motorsport">Motorsport</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- History Section -->
+    <section id="history" class="brand-section">
+        <div class="container">
+            <h2>Nissan: <span class="highlight">Innovation that Excites</span></h2>
+            
+            <div class="history-grid">
+                <div class="history-text">
+                    <p>Nissan's story begins in 1911 with the Kwaishinsha Motor Car Works, founded by Masujiro Hashimoto. In 1914, the company produced its first car, the DAT, named after the initials of the company's three investors. A later model was called the "Datson" (son of DAT), which evolved into "Datsun."</p>
+                    
+                    <p>The modern Nissan Motor Co., Ltd. was established in 1933 as a merger of Tobata Casting and DAT Motors. The name "Nissan" was an abbreviation of "Nippon Sangyo" (Japan Industries), the holding company that controlled the new entity.</p>
+                    
+                    <p>Before World War II, Nissan produced cars and trucks, largely based on American designs. After the war, the company focused on small, affordable cars for Japan's recovering economy. The Datsun brand became well-known for these economical vehicles.</p>
+                    
+                    <p>The 1960s were transformative. Nissan merged with Prince Motor Company, gaining the Skyline and Gloria models. The first-generation Fairlady (known as Datsun Sports in export) appeared, beginning a sports car legacy. The company began exporting aggressively to the United States, where Datsun became a household name.</p>
+                    
+                    <p>The 1969 introduction of the Skyline GT-R (KPGC10) created a legend. With its 2.0L DOHC engine and advanced engineering, it dominated Japanese touring car racing, earning the nickname "Hakosuka" and establishing Nissan's performance credibility.</p>
+                    
+                    <p>Through the 1970s and 1980s, Nissan grew into a global powerhouse. The 240Z (Fairlady Z) became a sensation in America, offering European sports car styling and performance at Japanese reliability prices. The company built factories worldwide and introduced luxury brand Infiniti in 1989 to challenge Lexus and Acura.</p>
+                    
+                    <p>The 1990s brought financial difficulties, leading to an alliance with Renault in 1999. Carlos Ghosn's dramatic turnaround - closing factories, cutting costs, and revitalizing the product line - became a business school case study. The 2007 GT-R (R35) relaunched the brand as a performance leader.</p>
+                    
+                    <p>Nissan has also been an electric vehicle pioneer. The 2010 Leaf became the world's first mass-market electric vehicle, with over 500,000 sold. Today, Nissan continues to innovate with electric technology, ProPILOT driver assistance, and a renewed commitment to performance.</p>
+                    
+                    <div class="founder-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>"If you think, you can. If you believe, you achieve."</blockquote>
+                        <cite>- Nissan corporate philosophy</cite>
+                    </div>
+                </div>
+                
+                <div class="history-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar"></i>
+                        <span class="stat-number">1933</span>
+                        <span class="stat-label">Founded</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-car"></i>
+                        <span class="stat-number">1969</span>
+                        <span class="stat-label">First GT-R</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-bolt"></i>
+                        <span class="stat-number">2010</span>
+                        <span class="stat-label">Leaf EV</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <span class="stat-number">R35</span>
+                        <span class="stat-label">Godzilla</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iconic Models Section -->
+    <section id="models" class="brand-section bg-light">
+        <div class="container">
+            <h2>Iconic <span class="highlight">Models</span></h2>
+            
+            <div class="models-grid">
+                <!-- Nissan GT-R -->
+                <div class="model-card featured">
+                    <img src="../images/models/nissan-gtr.jpg" alt="Nissan GT-R">
+                    <div class="model-info">
+                        <h3>Nissan GT-R (1969-present)</h3>
+                        <p class="model-years">R35: 2007-present</p>
+                        <p>Known as "Godzilla," the GT-R is Nissan's ultimate performance statement. The R35 GT-R shocked the world in 2007 with its 480 hp, advanced ATTESA E-TS all-wheel drive, and supercar-slaying performance at a fraction of the price.</p>
+                        <ul class="model-specs">
+                            <li><i class="fas fa-cog"></i> 3.8L Twin-Turbo V6 (VR38DETT)</li>
+                            <li><i class="fas fa-tachometer-alt"></i> 565 hp (current model)</li>
+                            <li><i class="fas fa-clock"></i> 0-60: 2.9 seconds</li>
+                            <li><i class="fas fa-trophy"></i> Nürburgring lap: 7:08</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Nissan Fairlady Z -->
+                <div class="model-card">
+                    <img src="../images/models/nissan-240z.jpg" alt="Nissan Fairlady Z">
+                    <h3>Nissan Fairlady Z / Datsun 240Z</h3>
+                    <p class="model-years">1969-1978</p>
+                    <p>The car that put Nissan on the map in America. Beautiful design, reliable mechanics, and genuine sports car performance at an affordable price. A landmark in automotive history.</p>
+                </div>
+                
+                <!-- Nissan Skyline -->
+                <div class="model-card">
+                    <img src="../images/models/nissan-skyline.jpg" alt="Nissan Skyline">
+                    <h3>Nissan Skyline</h3>
+                    <p class="model-years">1957-present</p>
+                    <p>A legendary nameplate, especially the R32, R33, and R34 GT-R models. The R34, with its 2.6L twin-turbo RB26DETT and advanced electronics, became a global icon through video games and movies.</p>
+                </div>
+                
+                <!-- Nissan Patrol -->
+                <div class="model-card">
+                    <img src="../images/models/nissan-patrol.jpg" alt="Nissan Patrol">
+                    <h3>Nissan Patrol</h3>
+                    <p class="model-years">1951-present</p>
+                    <p>Toyota Land Cruiser's eternal rival. A rugged, capable off-roader that dominates in the Middle East, Australia, and other tough environments. The current Y62 model adds luxury to capability.</p>
+                </div>
+                
+                <!-- Nissan Leaf -->
+                <div class="model-card">
+                    <img src="../images/models/nissan-leaf.jpg" alt="Nissan Leaf">
+                    <h3>Nissan Leaf</h3>
+                    <p class="model-years">2010-present</p>
+                    <p>The world's first mass-market electric vehicle. Over 500,000 sold globally, proving that EVs could be practical and popular.</p>
+                </div>
+                
+                <!-- Nissan 300ZX -->
+                <div class="model-card">
+                    <img src="../images/models/nissan-300zx.jpg" alt="Nissan 300ZX">
+                    <h3>Nissan 300ZX (Z32)</h3>
+                    <p class="model-years">1989-2000</p>
+                    <p>A technological tour-de-force with twin-turbo V6, four-wheel steering, and stunning 1990s design. A future classic.</p>
+                </div>
+                
+                <!-- Nissan Silvia -->
+                <div class="model-card">
+                    <img src="../images/models/nissan-silvia.jpg" alt="Nissan Silvia">
+                    <h3>Nissan Silvia / 240SX</h3>
+                    <p class="model-years">1965-2002</p>
+                    <p>The drift king. Lightweight, rear-wheel drive, and perfect balance made the Silvia a tuner favorite and drift legend.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GT-R Legacy Section -->
+    <section id="gtr" class="brand-section">
+        <div class="container">
+            <h2>The <span class="highlight">GT-R</span> Legacy</h2>
+            
+            <div class="gtr-story">
+                <div class="gtr-text">
+                    <p>The GT-R nameplate carries immense weight in automotive culture. It represents Nissan's relentless pursuit of performance and technological innovation.</p>
+                    
+                    <div class="gtr-generation">
+                        <h4>KPGC10 (1969-1972)</h4>
+                        <p>The first GT-R, based on the Skyline sedan. Its 2.0L DOHC engine and advanced suspension dominated Japanese touring car racing, winning 33 races in 2 years.</p>
+                    </div>
+                    
+                    <div class="gtr-generation">
+                        <h4>KPGC110 (1973)</h4>
+                        <p>The second generation, with larger 2.6L engine. Oil crisis cut its life short - only 197 produced, making it extremely rare.</p>
+                    </div>
+                    
+                    <div class="gtr-generation">
+                        <h4>R32 (1989-1994)</h4>
+                        <p>The rebirth. ATTESA E-TS all-wheel drive, Super-HICAS steering, and RB26DETT engine created a monster. Won 29 consecutive races in Japanese touring cars.</p>
+                    </div>
+                    
+                    <div class="gtr-generation">
+                        <h4>R33 (1995-1998)</h4>
+                        <p>Larger, heavier, but more refined. Set a Nürburgring lap record in 1996.</p>
+                    </div>
+                    
+                    <div class="gtr-generation">
+                        <h4>R34 (1999-2002)</h4>
+                        <p>The icon. Advanced multi-function display, aggressive styling, and tuning potential made it legendary through "2 Fast 2 Furious" and Gran Turismo.</p>
+                    </div>
+                    
+                    <div class="gtr-generation">
+                        <h4>R35 (2007-present)</h4>
+                        <p>Godzilla returns. No longer Skyline-based, it's a standalone supercar that embarrassed far more expensive exotics. Continuously improved for 15+ years.</p>
+                    </div>
+                </div>
+                
+                <div class="gtr-image">
+                    <img src="../images/nissan/gtr-generations.jpg" alt="GT-R Generations">
+                </div>
+            </div>
+            
+            <div class="gtr-quote">
+                <i class="fas fa-quote-left"></i>
+                <blockquote>"The GT-R is a car that treats you like a driver, not a passenger."</blockquote>
+                <cite>- Kazunori Yamauchi, Gran Turismo creator</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fairlady Z Section -->
+    <section id="z" class="brand-section bg-light">
+        <div class="container">
+            <h2>The <span class="highlight">Fairlady Z</span> Story</h2>
+            
+            <div class="z-grid">
+                <div class="z-content">
+                    <p>The Z car has been Nissan's heart and soul - an affordable, beautiful, and engaging sports car that has spanned generations.</p>
+                    
+                    <div class="z-generations">
+                        <div class="z-gen">
+                            <strong>S30 (1969-1978):</strong> The original 240Z. Inspired by the Jaguar E-Type, designed by Yoshihiko Matsuo. A masterpiece.
+                        </div>
+                        <div class="z-gen">
+                            <strong>Z31 (1983-1989):</strong> The 300ZX. Sharper, more angular 80s styling. Available with turbo.
+                        </div>
+                        <div class="z-gen">
+                            <strong>Z32 (1989-2000):</strong> The technological peak. Twin-turbo, four-wheel steering, and timeless design.
+                        </div>
+                        <div class="z-gen">
+                            <strong>Z33 (2002-2008):</strong> The 350Z. Return to the original's formula - V6 power, rear drive, affordable fun.
+                        </div>
+                        <div class="z-gen">
+                            <strong>Z34 (2008-2020):</strong> The 370Z. Refined evolution with improved performance.
+                        </div>
+                        <div class="z-gen">
+                            <strong>RZ34 (2022-present):</strong> The new Z. Modern tribute with twin-turbo V6 and retro styling.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="z-image">
+                    <img src="../images/nissan/z-generations.jpg" alt="Z Car Generations">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patrol Section -->
+    <section id="patrol" class="brand-section">
+        <div class="container">
+            <h2><span class="highlight">Patrol</span> - The Legend</h2>
+            
+            <div class="patrol-grid">
+                <div class="patrol-text">
+                    <p>The Nissan Patrol has been conquering the world's toughest terrain since 1951. From the Australian outback to Middle Eastern deserts, the Patrol is synonymous with durability and capability.</p>
+                    
+                    <h4>Generations:</h4>
+                    <ul>
+                        <li><strong>4W60 (1951-1960):</strong> First Patrol, based on Willys Jeep design</li>
+                        <li><strong>60 Series (1960-1980):</strong> The iconic G60, beloved by off-roaders</li>
+                        <li><strong>160 Series (1980-1987):</strong> MQ, first coil-sprung Patrol</li>
+                        <li><strong>Y60 (1987-1997):</strong> GQ, legendary off-road capability</li>
+                        <li><strong>Y61 (1997-2010):</strong> GU, still in production in some markets</li>
+                        <li><strong>Y62 (2010-present):</strong> Current generation, adds luxury to capability</li>
+                    </ul>
+                    
+                    <p>The Patrol is especially revered in the Middle East, where it's the vehicle of choice for desert driving and a cultural icon. The Y61, with its solid axles and legendary durability, remains in production for markets where toughness matters more than refinement.</p>
+                </div>
+                
+                <div class="patrol-image">
+                    <img src="../images/nissan/patrol-desert.jpg" alt="Nissan Patrol in desert">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Motorsport Section -->
+    <section id="motorsport" class="brand-section bg-light">
+        <div class="container">
+            <h2>Nissan in <span class="highlight">Motorsport</span></h2>
+            
+            <div class="motorsport-grid">
+                <div class="motorsport-content">
+                    <ul>
+                        <li><i class="fas fa-trophy"></i> <strong>Group C / Le Mans:</strong> The Nissan R90CK and R91CP were competitive prototypes in the early 90s</li>
+                        <li><i class="fas fa-trophy"></i> <strong>IMSA GTP:</strong> Dominant with the GTP ZX-Turbo in the late 80s</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Super GT / JGTC:</strong> Multiple championships with Skyline GT-R and Z</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Bathurst 1000:</strong> Nissan won Australia's greatest race multiple times with the GT-R</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Dakar Rally:</strong> Patrols have competed in the world's toughest rally</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Formula E:</strong> Current factory program advancing EV technology</li>
+                    </ul>
+                    
+                    <p>The GT-R's racing dominance in the early 1990s - particularly its 29 consecutive wins in Japanese touring cars - led to rule changes specifically designed to stop it. That's the ultimate racing compliment.</p>
+                </div>
+                
+                <div class="motorsport-image">
+                    <img src="../images/motorsport/nissan-racing.jpg" alt="Nissan Race Car">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="brand-section">
+        <div class="container">
+            <h2>Nissan <span class="highlight">Timeline</span></h2>
+            
+            <div class="brand-timeline">
+                <div class="timeline-item">
+                    <div class="year">1911</div>
+                    <div class="desc">Kwaishinsha Motor Car Works founded (predecessor)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1914</div>
+                    <div class="desc">DAT car produced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1933</div>
+                    <div class="desc">Nissan Motor Co., Ltd. established</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1951</div>
+                    <div class="desc">First Patrol (4W60) introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1957</div>
+                    <div class="desc">First Skyline launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1969</div>
+                    <div class="desc">Fairlady Z (240Z) introduced; First Skyline GT-R (KPGC10)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1989</div>
+                    <div class="desc">Infiniti luxury brand launched; R32 GT-R introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1999</div>
+                    <div class="desc">Renault-Nissan Alliance formed</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2007</div>
+                    <div class="desc">R35 GT-R launched - "Godzilla" arrives</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2010</div>
+                    <div class="desc">Nissan Leaf - world's first mass-market EV</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2016</div>
+                    <div class="desc">Mitsubishi joins Renault-Nissan Alliance</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2022</div>
+                    <div class="desc">New Z (RZ34) launched</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Brands -->
+    <div class="text-center section-padding">
+        <a href="../brands.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to All Brands</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../brands.html">Brands</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Japanese Brands</h4>
+                    <ul>
+                        <li><a href="toyota.html">Toyota</a></li>
+                        <li><a href="honda.html">Honda</a></li>
+                        <li><a href="nissan.html">Nissan</a></li>
+                        <li><a href="mazda.html">Mazda</a></li>
+                        <li><a href="acura.html">Acura</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

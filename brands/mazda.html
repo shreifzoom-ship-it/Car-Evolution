@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mazda History | Complete Brand Profile & Iconic Models</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore Mazda's complete history from 1920 to present. Discover iconic models like MX-5 Miata, RX-7, Rotary engines, and Mazda's unique approach to driving pleasure.">
+    <meta name="keywords" content="Mazda history, Mazda MX-5 Miata, Mazda RX-7, Rotary engine, Mazda3, Zoom-Zoom, Japanese cars">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mazda History | Complete Brand Profile">
+    <meta property="og:description" content="Zoom-Zoom - The soul of a sports car">
+    <meta property="og:image" content="../images/brands/japanese/mazda-logo.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/brands.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../1886-1920.html">1886-1920: Birth</a></li>
+                            <li><a href="../1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="../1950-1980.html">1950-1980: Muscle</a></li>
+                            <li><a href="../1980-2010.html">1980-2010: Technology</a></li>
+                            <li><a href="../2010-present.html">2010-Present: Electric</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../brands.html">Brands</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Brand Hero -->
+    <header class="brand-hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../images/brands/japanese/mazda-hero.jpg');">
+        <div class="container">
+            <div class="brand-hero-content">
+                <img src="../images/brands/japanese/mazda-logo.png" alt="Mazda Logo" class="brand-hero-logo">
+                <h1>Mazda</h1>
+                <p class="brand-tagline">Zoom-Zoom</p>
+                
+                <div class="brand-quick-facts">
+                    <span><i class="fas fa-calendar"></i> Founded: 1920</span>
+                    <span><i class="fas fa-globe"></i> Country: Japan</span>
+                    <span><i class="fas fa-trophy"></i> Icon: MX-5 Miata</span>
+                    <span><i class="fas fa-cog"></i> Rotary Pioneer</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Navigation -->
+    <div class="brand-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#history" class="active">History</a></li>
+                <li><a href="#models">Iconic Models</a></li>
+                <li><a href="#rotary">Rotary Engine</a></li>
+                <li><a href="#miata">MX-5 Miata Story</a></li>
+                <li><a href="#kodo">Kodo Design</a></li>
+                <li><a href="#skyactiv">SkyActiv</a></li>
+                <li><a href="#motorsport">Motorsport</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- History Section -->
+    <section id="history" class="brand-section">
+        <div class="container">
+            <h2>Mazda: <span class="highlight">The Soul of a Sports Car</span></h2>
+            
+            <div class="history-grid">
+                <div class="history-text">
+                    <p>Mazda's story is one of passion, innovation, and the courage to be different. Founded in 1920 as Toyo Cork Kogyo, the company began as a manufacturer of machine tools and cork products. It wasn't until 1931 that the company entered vehicle production with the Mazda-Go, a three-wheeled "truck."</p>
+                    
+                    <p>The Mazda name comes from Ahura Mazda, the god of wisdom in Zoroastrianism, and also pays homage to founder Jujiro Matsuda. The company formally adopted the Mazda name in 1984.</p>
+                    
+                    <p>After World War II, Mazda began producing four-wheeled vehicles. The 1960 R360 Coupe, a tiny two-door, was Mazda's first passenger car. But it was the 1961 agreement with German company NSU that would define Mazda's unique path: a license to develop the Wankel rotary engine.</p>
+                    
+                    <p>While other companies abandoned the rotary as impractical, Mazda poured resources into perfecting it. A team of engineers, later called the "Rotary 47" (because 47 of them worked on the project), solved the engine's reliability issues. The 1967 Cosmo Sport 110S was the world's first production car with a two-rotor engine.</p>
+                    
+                    <p>The rotary engine became Mazda's signature. The 1970s RX-2, RX-3, and RX-4 built the brand's performance reputation. The 1978 RX-7 became a legend - a beautiful, lightweight sports car with a smooth-revving rotary that captured enthusiasts' hearts worldwide.</p>
+                    
+                    <p>But Mazda's most profound impact came in 1989 with the MX-5 Miata. Inspired by classic British roadsters but with Japanese reliability, the Miata redefined the affordable sports car. It became the best-selling two-seat convertible in history and proved that driving pleasure doesn't require massive power.</p>
+                    
+                    <p>Through the 1990s and 2000s, Mazda refined its "Zoom-Zoom" philosophy - building cars that were fun to drive, even in mundane segments. The Mazda3 and Mazda6 stood out for their engaging dynamics. The RX-8 (2003) attempted a rotary revival with unique rear-hinged doors.</p>
+                    
+                    <p>Today, Mazda is charting its own course toward premium status. The Kodo design language produces some of the most beautiful cars in any segment. SkyActiv technology optimizes every aspect of the car. And while the rotary is currently dormant, Mazda has promised its return as a range-extender for future electric vehicles.</p>
+                    
+                    <div class="founder-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>"The rotary engine was a challenge, but we believed in it. That belief became part of our identity."</blockquote>
+                        <cite>- Kenichi Yamamoto, father of the rotary engine</cite>
+                    </div>
+                </div>
+                
+                <div class="history-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar"></i>
+                        <span class="stat-number">1920</span>
+                        <span class="stat-label">Founded</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-cog"></i>
+                        <span class="stat-number">1967</span>
+                        <span class="stat-label">First Rotary</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <span class="stat-number">1989</span>
+                        <span class="stat-label">MX-5 Launched</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-car"></i>
+                        <span class="stat-number">1M+</span>
+                        <span class="stat-label">Miatas Sold</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iconic Models Section -->
+    <section id="models" class="brand-section bg-light">
+        <div class="container">
+            <h2>Iconic <span class="highlight">Models</span></h2>
+            
+            <div class="models-grid">
+                <!-- Mazda MX-5 Miata -->
+                <div class="model-card featured">
+                    <img src="../images/models/mazda-mx5.jpg" alt="Mazda MX-5 Miata">
+                    <div class="model-info">
+                        <h3>Mazda MX-5 Miata (1989-present)</h3>
+                        <p class="model-years">4 generations | 1989-present</p>
+                        <p>The best-selling two-seat sports car in history. Inspired by classic Lotus Elan, the Miata proved that "light is right" - simple, lightweight, rear-wheel drive, and pure driving joy.</p>
+                        <ul class="model-specs">
+                            <li><i class="fas fa-cog"></i> 1.6L → 2.0L, 116 hp → 181 hp</li>
+                            <li><i class="fas fa-weight-hanging"></i> ~2,200 lbs (under 1,000 kg)</li>
+                            <li><i class="fas fa-trophy"></i> Guinness World Record: Best-selling sports car</li>
+                            <li><i class="fas fa-heart"></i> "Jinba Ittai" - horse and rider as one</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Mazda RX-7 -->
+                <div class="model-card">
+                    <img src="../images/models/mazda-rx7.jpg" alt="Mazda RX-7">
+                    <h3>Mazda RX-7</h3>
+                    <p class="model-years">1978-2002</p>
+                    <p>A rotary-powered legend. The FB (1978), FC (1985), and FD (1992) each defined their era. The FD is widely considered one of the most beautiful cars ever designed.</p>
+                </div>
+                
+                <!-- Mazda Cosmo -->
+                <div class="model-card">
+                    <img src="../images/models/mazda-cosmo.jpg" alt="Mazda Cosmo">
+                    <h3>Mazda Cosmo Sport 110S</h3>
+                    <p class="model-years">1967-1972</p>
+                    <p>The first production rotary car. Beautiful, advanced, and rare - only 1,176 built. The car that proved the rotary engine could work.</p>
+                </div>
+                
+                <!-- Mazda RX-8 -->
+                <div class="model-card">
+                    <img src="../images/models/mazda-rx8.jpg" alt="Mazda RX-8">
+                    <h3>Mazda RX-8</h3>
+                    <p class="model-years">2003-2012</p>
+                    <p>A unique 4-door rotary sports car with rear "freestyle" doors. The RENESIS engine was the last production rotary.</p>
+                </div>
+                
+                <!-- Mazda3 -->
+                <div class="model-card">
+                    <img src="../images/models/mazda3.jpg" alt="Mazda3">
+                    <h3>Mazda3</h3>
+                    <p class="model-years">2003-present</p>
+                    <p>The compact that drives like nothing else in its class. Multiple "Car of the Year" awards and the car that proved economy cars can be fun.</p>
+                </div>
+                
+                <!-- Mazda6 -->
+                <div class="model-card">
+                    <img src="../images/models/mazda6.jpg" alt="Mazda6">
+                    <h3>Mazda6 / Atenza</h3>
+                    <p class="model-years">2002-present</p>
+                    <p>The stylish midsize sedan that brought Kodo design to the mainstream. A genuine alternative to German offerings.</p>
+                </div>
+                
+                <!-- Mazda CX-5 -->
+                <div class="model-card">
+                    <img src="../images/models/mazda-cx5.jpg" alt="Mazda CX-5">
+                    <h3>Mazda CX-5</h3>
+                    <p class="model-years">2012-present</p>
+                    <p>The SUV that doesn't drive like one. Mazda's best-seller and proof that SUVs can be engaging.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rotary Engine Section -->
+    <section id="rotary" class="brand-section">
+        <div class="container">
+            <h2>The <span class="highlight">Rotary</span> Engine</h2>
+            
+            <div class="rotary-story">
+                <div class="rotary-text">
+                    <p>The Wankel rotary engine is fundamentally different from piston engines. Instead of pistons moving up and down, a triangular rotor spins inside an epitrochoid housing, completing the four cycles of combustion in each rotation.</p>
+                    
+                    <h3>Advantages:</h3>
+                    <ul>
+                        <li>Extremely smooth - no reciprocating parts</li>
+                        <li>High power-to-weight ratio</li>
+                        <li>Compact size allows low hood lines</li>
+                        <li>High-revving character (9,000+ rpm)</li>
+                    </ul>
+                    
+                    <h3>Challenges:</h3>
+                    <ul>
+                        <li>Apex seal wear (Mazda solved this)</li>
+                        <li>Higher fuel consumption</li>
+                        <li>Emissions (oil consumption by design)</li>
+                    </ul>
+                    
+                    <h3>Mazda Rotary Models:</h3>
+                    <ul>
+                        <li><strong>10A (1967):</strong> Cosmo Sport, first production</li>
+                        <li><strong>12A (1970):</strong> RX-2, RX-3, RX-4, first-gen RX-7</li>
+                        <li><strong>13B (1973):</strong> Most famous rotary, used in RX-7 FC/FD and RX-8</li>
+                        <li><strong>20B (1990):</strong> Three-rotor, used in Cosmo and Eunos</li>
+                        <li><strong>RENESIS (2003):</strong> RX-8, last production rotary</li>
+                    </ul>
+                    
+                    <p>Mazda has announced the rotary will return as a range-extender for electric vehicles, keeping the dream alive.</p>
+                </div>
+                
+                <div class="rotary-image">
+                    <img src="../images/mazda/rotary-engine.jpg" alt="Rotary Engine">
+                </div>
+            </div>
+            
+            <div class="rotary-quote">
+                <i class="fas fa-quote-left"></i>
+                <blockquote>"The rotary engine sings a different song. It's smooth, it revs freely, and it makes you feel connected to something special."</blockquote>
+                <cite>- Mazda engineer</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- MX-5 Miata Story -->
+    <section id="miata" class="brand-section bg-light">
+        <div class="container">
+            <h2>The <span class="highlight">MX-5 Miata</span> Story</h2>
+            
+            <div class="miata-grid">
+                <div class="miata-content">
+                    <p>In the 1980s, the affordable sports car was dying. The British roadsters that had defined the segment - MG, Triumph, Lotus - were gone or greatly diminished. Mazda journalist Bob Hall suggested Mazda could fill the void.</p>
+                    
+                    <p>The concept was simple: a lightweight, rear-wheel drive, two-seat convertible with modern reliability and classic spirit. The design team studied the Lotus Elan extensively, aiming to capture its essence while improving everything.</p>
+                    
+                    <p>The first-generation NA (1989) was an immediate sensation. Pop-up headlights, perfect 50:50 balance, 2,100 lbs weight, and a 1.6L engine with just 116 hp - but it was never about power. It was about connection: "Jinba Ittai" (horse and rider as one).</p>
+                    
+                    <p>Each generation has refined the formula:</p>
+                    <ul>
+                        <li><strong>NA (1989-1997):</strong> The original, with pop-up headlights</li>
+                        <li><strong>NB (1998-2005):</strong> Evolved design, more power</li>
+                        <li><strong>NC (2005-2015):</strong> Larger, but still true to the concept</li>
+                        <li><strong>ND (2015-present):</strong> Return to lightness, SkyActiv technology, RF fastback option</li>
+                    </ul>
+                    
+                    <p>Over 1 million Miatas have been sold, earning a Guinness World Record. It's the most raced car in SCCA history, with its own spec racing series. The Miata proves that driving pleasure doesn't require speed - just the right connection between car and driver.</p>
+                </div>
+                
+                <div class="miata-image">
+                    <img src="../images/mazda/miata-generations.jpg" alt="Miata Generations">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kodo Design Section -->
+    <section id="kodo" class="brand-section">
+        <div class="container">
+            <h2><span class="highlight">Kodo</span> Design</h2>
+            
+            <div class="kodo-grid">
+                <div class="kodo-text">
+                    <p>"Kodo - Soul of Motion" is Mazda's design philosophy, introduced in 2010. It aims to capture the energy and tension of a living creature in motion - even when the car is standing still.</p>
+                    
+                    <p>Key elements include:</p>
+                    <ul>
+                        <li>Powerful, muscular fenders</li>
+                        <li>Flowing surfaces that catch light dramatically</li>
+                        <li>A "face" that expresses emotion</li>
+                        <li>Minimal, clean interiors</li>
+                    </ul>
+                    
+                    <p>The Shinari concept (2010) introduced Kodo. The first production application was the CX-5 (2012), followed by the Mazda6, Mazda3, and every Mazda since. The design language has evolved to become more sophisticated, with the Vision Coupe concept hinting at future directions.</p>
+                    
+                    <p>Kodo has elevated Mazda's brand perception, allowing them to compete with premium brands on design if not price. Many consider Mazda's current lineup the most beautiful in their respective segments.</p>
+                </div>
+                
+                <div class="kodo-image">
+                    <img src="../images/mazda/kodo-design.jpg" alt="Kodo Design">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SkyActiv Section -->
+    <section id="skyactiv" class="brand-section bg-light">
+        <div class="container">
+            <h2><span class="highlight">SkyActiv</span> Technology</h2>
+            
+            <div class="skyactiv-grid">
+                <div class="skyactiv-text">
+                    <p>SkyActiv isn't a single technology - it's a comprehensive approach to improving every aspect of the vehicle. Rather than add complexity, Mazda went back to basics, optimizing each component.</p>
+                    
+                    <h4>SkyActiv-G (Gasoline)</h4>
+                    <p>High compression ratio (13:1 in some markets) for efficiency without hybrid complexity.</p>
+                    
+                    <h4>SkyActiv-D (Diesel)</h4>
+                    <p>Low compression diesel that's clean enough for most markets.</p>
+                    
+                    <h4>SkyActiv-Drive (Transmission)</h4>
+                    <p>Six-speed automatic with lock-up torque converter for direct feel.</p>
+                    
+                    <h4>SkyActiv-MT (Manual)</h4>
+                    <p>Precise, short-throw manual transmission.</p>
+                    
+                    <h4>SkyActiv-Chassis</h4>
+                    <p>Lightweight, rigid platform.</p>
+                    
+                    <h4>SkyActiv-Body</h4>
+                    <p>High-strength steel construction for safety and rigidity.</p>
+                    
+                    <p>SkyActiv vehicles achieve class-leading fuel economy while maintaining (or improving) driving dynamics - the perfect expression of Mazda's philosophy.</p>
+                </div>
+                
+                <div class="skyactiv-image">
+                    <img src="../images/mazda/skyactiv.jpg" alt="SkyActiv Technology">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Motorsport Section -->
+    <section id="motorsport" class="brand-section">
+        <div class="container">
+            <h2>Mazda in <span class="highlight">Motorsport</span></h2>
+            
+            <div class="motorsport-grid">
+                <div class="motorsport-content">
+                    <ul>
+                        <li><i class="fas fa-trophy"></i> <strong>Le Mans 1991:</strong> Mazda 787B becomes the first (and only) Japanese manufacturer to win the 24 Hours of Le Mans. The only victory ever for a rotary engine.</li>
+                        <li><i class="fas fa-trophy"></i> <strong>IMSA GTP:</strong> Multiple championships with the RX-7 in the 1980s</li>
+                        <li><i class="fas fa-trophy"></i> <strong>SCCA:</strong> RX-7 and Miata dominate club racing</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Global MX-5 Cup:</strong> Spec Miata racing series worldwide</li>
+                        <li><i class="fas fa-trophy"></i> <strong>World Rally Championship:</strong> 323 and 6 with varying success</li>
+                    </ul>
+                    
+                    <p>The 787B's victory at Le Mans remains one of motorsport's greatest upsets. The screaming rotary engine, distinctive orange and green livery, and against-all-odds triumph are legendary.</p>
+                </div>
+                
+                <div class="motorsport-image">
+                    <img src="../images/motorsport/mazda-787b.jpg" alt="Mazda 787B Le Mans">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="brand-section bg-light">
+        <div class="container">
+            <h2>Mazda <span class="highlight">Timeline</span></h2>
+            
+            <div class="brand-timeline">
+                <div class="timeline-item">
+                    <div class="year">1920</div>
+                    <div class="desc">Toyo Cork Kogyo founded in Hiroshima</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1931</div>
+                    <div class="desc">Mazda-Go three-wheeled truck introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1960</div>
+                    <div class="desc">R360 Coupe - first passenger car</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1961</div>
+                    <div class="desc">Rotary engine license agreement with NSU</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1967</div>
+                    <div class="desc">Cosmo Sport 110S - first production rotary car</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1970</div>
+                    <div class="desc">RX-2 introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1978</div>
+                    <div class="desc">First-generation RX-7 (SA/FB) launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1985</div>
+                    <div class="desc">Second-generation RX-7 (FC) with turbo option</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1989</div>
+                    <div class="desc">MX-5 Miata (NA) launched - revolutionizes sports cars</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1991</div>
+                    <div class="desc">Mazda 787B wins 24 Hours of Le Mans</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1992</div>
+                    <div class="desc">Third-generation RX-7 (FD) launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2002</div>
+                    <div class="desc">Mazda6 / Atenza launched - first of new generation</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2003</div>
+                    <div class="desc">RX-8 with RENESIS rotary launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2010</div>
+                    <div class="desc">"Zoom-Zoom" sustainability plan and SkyActiv announced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2012</div>
+                    <div class="desc">CX-5 first with full SkyActiv technology</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2015</div>
+                    <div class="desc">Fourth-gen MX-5 (ND) launched - lighter, more powerful</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2023</div>
+                    <div class="desc">Rotary returns as range-extender for MX-30 EV</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Brands -->
+    <div class="text-center section-padding">
+        <a href="../brands.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to All Brands</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../brands.html">Brands</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Japanese Brands</h4>
+                    <ul>
+                        <li><a href="toyota.html">Toyota</a></li>
+                        <li><a href="honda.html">Honda</a></li>
+                        <li><a href="nissan.html">Nissan</a></li>
+                        <li><a href="mazda.html">Mazda</a></li>
+                        <li><a href="subaru.html">Subaru</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

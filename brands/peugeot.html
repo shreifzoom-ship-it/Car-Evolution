@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peugeot History | Complete Brand Profile & Iconic Models</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore Peugeot's complete history from 1810 to present. Discover iconic models like 205 GTI, 504, 406, and how Peugeot became France's oldest automaker.">
+    <meta name="keywords" content="Peugeot history, Peugeot 205 GTI, Peugeot 504, French cars, lion badge, PSA">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Peugeot History | Complete Brand Profile">
+    <meta property="og:description" content="Lions Since 1810 - France's Oldest Automaker">
+    <meta property="og:image" content="../images/brands/french/peugeot-logo.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/brands.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../1886-1920.html">1886-1920: Birth</a></li>
+                            <li><a href="../1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="../1950-1980.html">1950-1980: Muscle</a></li>
+                            <li><a href="../1980-2010.html">1980-2010: Technology</a></li>
+                            <li><a href="../2010-present.html">2010-Present: Electric</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../brands.html">Brands</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Brand Hero -->
+    <header class="brand-hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../images/brands/french/peugeot-hero.jpg');">
+        <div class="container">
+            <div class="brand-hero-content">
+                <img src="../images/brands/french/peugeot-logo.png" alt="Peugeot Logo" class="brand-hero-logo">
+                <h1>Peugeot</h1>
+                <p class="brand-tagline">Lions Since 1810</p>
+                
+                <div class="brand-quick-facts">
+                    <span><i class="fas fa-calendar"></i> Founded: 1810</span>
+                    <span><i class="fas fa-globe"></i> Country: France</span>
+                    <span><i class="fas fa-trophy"></i> Icon: 205 GTI</span>
+                    <span><i class="fas fa-cog"></i> Oldest Automaker</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Navigation -->
+    <div class="brand-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#history" class="active">History</a></li>
+                <li><a href="#models">Iconic Models</a></li>
+                <li><a href="#205gti">205 GTI</a></li>
+                <li><a href="#504">504</a></li>
+                <li><a href="#racing">Racing</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- History Section -->
+    <section id="history" class="brand-section">
+        <div class="container">
+            <h2>Peugeot: <span class="highlight">Lions Since 1810</span></h2>
+            
+            <div class="history-grid">
+                <div class="history-text">
+                    <p>Peugeot is the world's oldest automaker still in production. The company began in 1810 manufacturing coffee mills and bicycles. The lion logo, introduced in 1847, represents strength and speed.</p>
+                    
+                    <p>The first Peugeot automobile, a three-wheeled steam car, appeared in 1889. The 1891 Type 3 was the first gasoline-powered Peugeot. By 1900, Peugeot was France's largest automaker.</p>
+                    
+                    <p>Between the wars, Peugeot produced a range of cars, including the 201 (1929), the first car with independent front suspension. The 402 (1935) had a futuristic design with hidden headlights.</p>
+                    
+                    <p>After WWII, Peugeot became a symbol of French practicality and style. The 203 (1948) was the first new post-war model. The 403 (1955), designed by Pininfarina, was a success.</p>
+                    
+                    <p>The 1960s brought the 404 (1960), another Pininfarina masterpiece. It was rugged, elegant, and successful in Africa and rallying. The 504 (1968) became an icon of durability – still seen in Africa today.</p>
+                    
+                    <p>Peugeot merged with Citroën in 1976 to form PSA Peugeot Citroën. The 1970s and 1980s brought the 104 (small car) and 305.</p>
+                    
+                    <p>The 205 (1983) saved Peugeot. It was a modern supermini, and the 205 GTI (1984) created the hot hatch genre. It was the car everyone wanted.</p>
+                    
+                    <p>Through the 1990s and 2000s, Peugeot produced the 106, 306, 406 (with its famous sedan shape), and the 206 (1998), which sold over 8 million units.</p>
+                    
+                    <p>Today, Peugeot is part of Stellantis. The brand has moved upmarket with the 508, 3008, and 5008 SUVs. The 208 is a European best-seller. Peugeot is also returning to motorsport with the 9X8 Le Mans Hypercar.</p>
+                    
+                    <div class="founder-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>"The lion is the symbol of our brand – strong, powerful, and always moving forward."</blockquote>
+                        <cite>- Armand Peugeot</cite>
+                    </div>
+                </div>
+                
+                <div class="history-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar"></i>
+                        <span class="stat-number">1810</span>
+                        <span class="stat-label">Founded</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <span class="stat-number">1891</span>
+                        <span class="stat-label">First Car</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-car"></i>
+                        <span class="stat-number">1984</span>
+                        <span class="stat-label">205 GTI</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-cog"></i>
+                        <span class="stat-number">Oldest</span>
+                        <span class="stat-label">Automaker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iconic Models Section -->
+    <section id="models" class="brand-section bg-light">
+        <div class="container">
+            <h2>Iconic <span class="highlight">Models</span></h2>
+            
+            <div class="models-grid">
+                <!-- Peugeot 205 GTI -->
+                <div class="model-card featured">
+                    <img src="../images/models/peugeot-205gti.jpg" alt="Peugeot 205 GTI">
+                    <div class="model-info">
+                        <h3>Peugeot 205 GTI (1984-1994)</h3>
+                        <p class="model-years">1984-1994</p>
+                        <p>The original hot hatch. The 205 GTI set the template – light, nimble, and with a revvy engine. The 1.9L version is a legend.</p>
+                        <ul class="model-specs">
+                            <li><i class="fas fa-cog"></i> 1.6L (105 hp) or 1.9L (130 hp)</li>
+                            <li><i class="fas fa-tachometer-alt"></i> 0-60 in 7.8s (1.9L)</li>
+                            <li><i class="fas fa-trophy"></i> Defined hot hatch segment</li>
+                            <li><i class="fas fa-heart"></i> Cult classic</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Peugeot 504 -->
+                <div class="model-card">
+                    <img src="../images/models/peugeot-504.jpg" alt="Peugeot 504">
+                    <h3>Peugeot 504</h3>
+                    <p class="model-years">1968-1983</p>
+                    <p>The African taxi. Rugged, durable, and elegant. Still seen everywhere in Africa. 1969 European Car of the Year.</p>
+                </div>
+                
+                <!-- Peugeot 404 -->
+                <div class="model-card">
+                    <img src="../images/models/peugeot-404.jpg" alt="Peugeot 404">
+                    <h3>Peugeot 404</h3>
+                    <p class="model-years">1960-1975</p>
+                    <p>Pininfarina-designed beauty. Elegant sedan and cabriolet. Successful in rallying and durable.</p>
+                </div>
+                
+                <!-- Peugeot 406 -->
+                <div class="model-card">
+                    <img src="../images/models/peugeot-406.jpg" alt="Peugeot 406">
+                    <h3>Peugeot 406</h3>
+                    <p class="model-years">1995-2004</p>
+                    <p>The elegant sedan. Famous in the Taxi films. Coupe version is a modern classic.</p>
+                </div>
+                
+                <!-- Peugeot 206 -->
+                <div class="model-card">
+                    <img src="../images/models/peugeot-206.jpg" alt="Peugeot 206">
+                    <h3>Peugeot 206</h3>
+                    <p class="model-years">1998-2012</p>
+                    <p>Best-selling Peugeot ever. Over 8 million sold. 206 WRC dominated rallying.</p>
+                </div>
+                
+                <!-- Peugeot 205 -->
+                <div class="model-card">
+                    <img src="../images/models/peugeot-205.jpg" alt="Peugeot 205">
+                    <h3>Peugeot 205</h3>
+                    <p class="model-years">1983-1998</p>
+                    <p>The car that saved Peugeot. Perfectly styled supermini, with GTI, Rallye, and Cabrio versions.</p>
+                </div>
+                
+                <!-- Peugeot 201 -->
+                <div class="model-card">
+                    <img src="../images/models/peugeot-201.jpg" alt="Peugeot 201">
+                    <h3>Peugeot 201</h3>
+                    <p class="model-years">1929-1937</p>
+                    <p>First car with independent front suspension. Established Peugeot's naming system (three numbers with zero).</p>
+                </div>
+                
+                <!-- Peugeot 208 -->
+                <div class="model-card">
+                    <img src="../images/models/peugeot-208.jpg" alt="Peugeot 208">
+                    <h3>Peugeot 208</h3>
+                    <p class="model-years">2012-present</p>
+                    <p>Current best-seller. 2020 model won Car of the Year. Electric e-208 version.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 205 GTI Section -->
+    <section id="205gti" class="brand-section">
+        <div class="container">
+            <h2>The <span class="highlight">205 GTI</span> – Hot Hatch Legend</h2>
+            
+            <div class="gti-grid">
+                <div class="gti-text">
+                    <p>The 205 GTI defined the hot hatch. It wasn't the first – that was the Golf GTI – but it perfected the formula.</p>
+                    
+                    <h4>History:</h4>
+                    <p>Launched in 1984, the 205 GTI had a 1.6L engine with 105 hp. In 1986, the 1.9L arrived with 130 hp. It weighed only 850 kg, so performance was electric.</p>
+                    
+                    <h4>Driving Experience:</h4>
+                    <p>The 205 GTI was light, nimble, and communicative. It had go-kart handling and a revvy engine. It was the driver's choice.</p>
+                    
+                    <h4>Legacy:</h4>
+                    <p>The 205 GTI remains a cult classic. It's the benchmark for front-wheel drive hot hatches. Collectors pay premium prices for good examples.</p>
+                </div>
+                
+                <div class="gti-image">
+                    <img src="../images/peugeot/205gti.jpg" alt="Peugeot 205 GTI">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 504 Section -->
+    <section id="504" class="brand-section bg-light">
+        <div class="container">
+            <h2>The <span class="highlight">504</span> – African Legend</h2>
+            
+            <div class="quatrecentquatre-grid">
+                <div class="quatrecentquatre-text">
+                    <p>The Peugeot 504 is one of the toughest cars ever built. It's legendary for its durability, especially in Africa.</p>
+                    
+                    <h4>Design:</h4>
+                    <p>Designed by Pininfarina, the 504 was elegant and modern. It won European Car of the Year in 1969.</p>
+                    
+                    <h4>Durability:</h4>
+                    <p>The 504 was built to last. Its rugged suspension, simple mechanics, and rust-resistant body made it perfect for rough roads. In Africa, it became the taxi of choice – you still see them running today.</p>
+                    
+                    <h4>Variants:</h4>
+                    <ul>
+                        <li>Sedan (1968)</li>
+                        <li>Coupé and Cabriolet (1969) – beautiful Pininfarina designs</li>
+                        <li>Break (station wagon)</li>
+                        <li>Pickup – produced until 2005 in Nigeria</li>
+                        <li>4x4 versions for off-road</li>
+                    </ul>
+                    
+                    <p>The 504 was produced for over 30 years in various countries. It's a testament to brilliant engineering.</p>
+                </div>
+                
+                <div class="quatrecentquatre-image">
+                    <img src="../images/peugeot/504-africa.jpg" alt="Peugeot 504 in Africa">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Racing Section -->
+    <section id="racing" class="brand-section">
+        <div class="container">
+            <h2>Peugeot <span class="highlight">Racing</span></h2>
+            
+            <div class="racing-grid">
+                <div class="racing-content">
+                    <h4>Rallying:</h4>
+                    <ul>
+                        <li>1985-1986: 205 T16 wins World Rally Championship (Group B)</li>
+                        <li>2000-2003: 206 WRC dominates – 3 manufacturers' titles</li>
+                        <li>Peugeot has 5 WRC manufacturers' titles</li>
+                    </ul>
+                    
+                    <h4>Le Mans:</h4>
+                    <ul>
+                        <li>1992: 905 wins Le Mans</li>
+                        <li>2009: 908 HDi FAP wins Le Mans (diesel)</li>
+                        <li>2022-present: 9X8 Le Mans Hypercar with hybrid</li>
+                    </ul>
+                    
+                    <h4>Dakar Rally:</h4>
+                    <ul>
+                        <li>1987-1990: 205 T16 and 405 T16 win</li>
+                        <li>2016-2018: 2008 DKR wins three consecutive</li>
+                    </ul>
+                    
+                    <p>The 205 T16 is one of the most iconic rally cars – mid-engine, 4WD, and 500 hp in a tiny body. Group B insanity.</p>
+                </div>
+                
+                <div class="racing-image">
+                    <img src="../images/motorsport/peugeot-205-t16.jpg" alt="Peugeot 205 T16 Rally">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="brand-section bg-light">
+        <div class="container">
+            <h2>Peugeot <span class="highlight">Timeline</span></h2>
+            
+            <div class="brand-timeline">
+                <div class="timeline-item">
+                    <div class="year">1810</div>
+                    <div class="desc">Peugeot family starts manufacturing steel products</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1847</div>
+                    <div class="desc">Lion logo introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1889</div>
+                    <div class="desc">First Peugeot automobile (steam)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1891</div>
+                    <div class="desc">First gasoline Peugeot – Type 3</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1929</div>
+                    <div class="desc">201 – first with independent suspension</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1948</div>
+                    <div class="desc">203 – first post-war model</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1955</div>
+                    <div class="desc">403 – first Pininfarina design</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1960</div>
+                    <div class="desc">404 launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1968</div>
+                    <div class="desc">504 – Car of the Year 1969</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1976</div>
+                    <div class="desc">Peugeot and Citroën merge to form PSA</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1983</div>
+                    <div class="desc">205 launched – saves company</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1984</div>
+                    <div class="desc">205 GTI launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1992</div>
+                    <div class="desc">905 wins Le Mans</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1998</div>
+                    <div class="desc">206 launched – 8M+ sales</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2009</div>
+                    <div class="desc">908 wins Le Mans</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2021</div>
+                    <div class="desc">Stellantis formed (PSA + FCA)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2022</div>
+                    <div class="desc">9X8 Le Mans Hypercar</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Brands -->
+    <div class="text-center section-padding">
+        <a href="../brands.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to All Brands</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../brands.html">Brands</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>French Brands</h4>
+                    <ul>
+                        <li><a href="peugeot.html">Peugeot</a></li>
+                        <li><a href="renault.html">Renault</a></li>
+                        <li><a href="citroen.html">Citroën</a></li>
+                        <li><a href="bugatti.html">Bugatti</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renault History | Complete Brand Profile & Iconic Models</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore Renault's complete history from 1899 to present. Discover iconic models like 4CV, R5, Clio, Mégane, Espace, and how Renault shaped French motoring.">
+    <meta name="keywords" content="Renault history, Renault Clio, Renault 5, Renault Espace, French cars, Louis Renault">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Renault History | Complete Brand Profile">
+    <meta property="og:description" content="Passion for Life - French Innovation Since 1899">
+    <meta property="og:image" content="../images/brands/french/renault-logo.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/brands.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../1886-1920.html">1886-1920: Birth</a></li>
+                            <li><a href="../1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="../1950-1980.html">1950-1980: Muscle</a></li>
+                            <li><a href="../1980-2010.html">1980-2010: Technology</a></li>
+                            <li><a href="../2010-present.html">2010-Present: Electric</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../brands.html">Brands</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Brand Hero -->
+    <header class="brand-hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../images/brands/french/renault-hero.jpg');">
+        <div class="container">
+            <div class="brand-hero-content">
+                <img src="../images/brands/french/renault-logo.png" alt="Renault Logo" class="brand-hero-logo">
+                <h1>Renault</h1>
+                <p class="brand-tagline">Passion for Life</p>
+                
+                <div class="brand-quick-facts">
+                    <span><i class="fas fa-calendar"></i> Founded: 1899</span>
+                    <span><i class="fas fa-globe"></i> Country: France</span>
+                    <span><i class="fas fa-trophy"></i> Icon: Clio, R5</span>
+                    <span><i class="fas fa-cog"></i> French Innovation</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Navigation -->
+    <div class="brand-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#history" class="active">History</a></li>
+                <li><a href="#models">Iconic Models</a></li>
+                <li><a href="#clio">Clio</a></li>
+                <li><a href="#espace">Espace</a></li>
+                <li><a href="#alpine">Alpine</a></li>
+                <li><a href="#racing">Racing</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- History Section -->
+    <section id="history" class="brand-section">
+        <div class="container">
+            <h2>Renault: <span class="highlight">French Innovation Since 1899</span></h2>
+            
+            <div class="history-grid">
+                <div class="history-text">
+                    <p>Renault was founded in 1899 by Louis Renault and his brothers Marcel and Fernand. Louis was a brilliant engineer who invented the first direct-drive gearbox (a revolutionary improvement).</p>
+                    
+                    <p>The first Renault, the Type A, was a small car with a De Dion engine. By 1903, Renault was building its own engines. The company grew rapidly, selling taxis and commercial vehicles.</p>
+                    
+                    <p>During WWI, Renault built the FT-17 tank, one of the most influential tank designs in history. After the war, Renault became France's largest automaker.</p>
+                    
+                    <p>Between the wars, Renault produced a range of cars from small (the Celtaquatre) to luxurious (the Reinastella). Louis Renault was a brilliant but difficult man.</p>
+                    
+                    <p>After WWII, Louis Renault was accused of collaboration and died in prison under controversial circumstances. The company was nationalized and became Régie Nationale des Usines Renault.</p>
+                    
+                    <p>The 4CV (1946) was the first French car to sell over a million units. The Dauphine (1956) was a global success, selling in the US and beyond.</p>
+                    
+                    <p>The 1960s brought the Renault 4 (1961) – a practical, quirky, and hugely successful small car. The Renault 8 and 16 (1965) introduced the hatchback concept (Car of the Year 1966).</p>
+                    
+                    <p>The 1970s and 1980s were Renault's golden age of innovation. The Renault 5 (1972) was a stylish supermini. The Renault 5 Turbo was a mid-engine rally monster. The Espace (1984) created the MPV segment. The Renault 9 (1981) won Car of the Year.</p>
+                    
+                    <p>Renault partnered with Volvo in the 1990s, then acquired a controlling stake in Nissan in 1999, forming the Renault-Nissan Alliance (now Renault-Nissan-Mitsubishi).</p>
+                    
+                    <p>Today, Renault produces a full range of cars from the Twingo to the Mégane, Scénic, and Captur. The brand is a leader in electric vehicles with the Zoe and the new Mégane E-Tech. Alpine has been revived as a sports car brand with the A110.</p>
+                    
+                    <div class="founder-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>"A car should be designed to meet the needs of its time."</blockquote>
+                        <cite>- Louis Renault</cite>
+                    </div>
+                </div>
+                
+                <div class="history-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar"></i>
+                        <span class="stat-number">1899</span>
+                        <span class="stat-label">Founded</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <span class="stat-number">8M+</span>
+                        <span class="stat-label">Clio Sales</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-car"></i>
+                        <span class="stat-number">1984</span>
+                        <span class="stat-label">Espace</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-cog"></i>
+                        <span class="stat-number">EV Leader</span>
+                        <span class="stat-label">Zoe</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iconic Models Section -->
+    <section id="models" class="brand-section bg-light">
+        <div class="container">
+            <h2>Iconic <span class="highlight">Models</span></h2>
+            
+            <div class="models-grid">
+                <!-- Renault 5 / 5 Turbo -->
+                <div class="model-card featured">
+                    <img src="../images/models/renault-5.jpg" alt="Renault 5">
+                    <div class="model-info">
+                        <h3>Renault 5 (1972-1996) & 5 Turbo</h3>
+                        <p class="model-years">1972-1996</p>
+                        <p>The stylish supermini that defined an era. The 5 Turbo was a mid-engine, turbocharged rally monster with 160 hp in a tiny body.</p>
+                        <ul class="model-specs">
+                            <li><i class="fas fa-cog"></i> 0.8L to 1.4L engines (standard)</li>
+                            <li><i class="fas fa-tachometer-alt"></i> 5 Turbo: 160 hp, 0-60 in 6.5s</li>
+                            <li><i class="fas fa-trophy"></i> 5.5 million sold</li>
+                            <li><i class="fas fa-palette"></i> Michel Boué design</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Renault Clio -->
+                <div class="model-card">
+                    <img src="../images/models/renault-clio.jpg" alt="Renault Clio">
+                    <h3>Renault Clio</h3>
+                    <p class="model-years">1990-present</p>
+                    <p>Best-selling French car ever. Clio I (1990), II (1998), III (2005), IV (2012), V (2019). Clio Williams and Clio RS are hot hatch legends.</p>
+                </div>
+                
+                <!-- Renault Espace -->
+                <div class="model-card">
+                    <img src="../images/models/renault-espace.jpg" alt="Renault Espace">
+                    <h3>Renault Espace</h3>
+                    <p class="model-years">1984-present</p>
+                    <p>The first MPV. Created a new category – the people carrier. Five generations, still in production.</p>
+                </div>
+                
+                <!-- Renault 4 -->
+                <div class="model-card">
+                    <img src="../images/models/renault-4.jpg" alt="Renault 4">
+                    <h3>Renault 4</h3>
+                    <p class="model-years">1961-1992</p>
+                    <p>The French Beetle. Quirky, practical, and hugely successful. Over 8 million sold in 31 years.</p>
+                </div>
+                
+                <!-- Renault 16 -->
+                <div class="model-card">
+                    <img src="../images/models/renault-16.jpg" alt="Renault 16">
+                    <h3>Renault 16</h3>
+                    <p class="model-years">1965-1980</p>
+                    <p>1966 Car of the Year. First hatchback. Innovative and spacious.</p>
+                </div>
+                
+                <!-- Renault 4CV -->
+                <div class="model-card">
+                    <img src="../images/models/renault-4cv.jpg" alt="Renault 4CV">
+                    <h3>Renault 4CV</h3>
+                    <p class="model-years">1946-1961</p>
+                    <p>First French car to sell 1M+. Rear-engine, small, and economical.</p>
+                </div>
+                
+                <!-- Renault Mégane -->
+                <div class="model-card">
+                    <img src="../images/models/renault-megane.jpg" alt="Renault Mégane">
+                    <h3>Renault Mégane</h3>
+                    <p class="model-years">1995-present</p>
+                    <p>Family hatchback. Mégane RS is a hot hatch icon with front-wheel drive lap records.</p>
+                </div>
+                
+                <!-- Renault Zoe -->
+                <div class="model-card">
+                    <img src="../images/models/renault-zoe.jpg" alt="Renault Zoe">
+                    <h3>Renault Zoe</h3>
+                    <p class="model-years">2012-present</p>
+                    <p>Europe's best-selling electric car. Practical, efficient, and affordable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clio Section -->
+    <section id="clio" class="brand-section">
+        <div class="container">
+            <h2>The <span class="highlight">Clio</span> – French Best-Seller</h2>
+            
+            <div class="clio-grid">
+                <div class="clio-text">
+                    <p>The Clio is Renault's most successful model. Over 15 million sold since 1990.</p>
+                    
+                    <h4>Generations:</h4>
+                    <ul>
+                        <li><strong>Clio I (1990-1998):</strong> Giugiaro design, Car of the Year 1991</li>
+                        <li><strong>Clio II (1998-2005):</strong> Rounded design, huge success</li>
+                        <li><strong>Clio III (2005-2012):</strong> Larger, Car of the Year 2006</li>
+                        <li><strong>Clio IV (2012-2019):</strong> Sporty design, turbo engines</li>
+                        <li><strong>Clio V (2019-present):</strong> Modern tech, hybrid option</li>
+                    </ul>
+                    
+                    <h4>Hot Clios:</h4>
+                    <ul>
+                        <li><strong>Clio Williams (1993):</strong> Limited edition, 2.0L, gold wheels</li>
+                        <li><strong>Clio RS (1998-2018):</strong> 2.0L naturally aspirated then 1.6L turbo</li>
+                        <li><strong>Clio V6 (2000-2005):</strong> Mid-engine, 230 hp, insane</li>
+                    </ul>
+                    
+                    <p>The Clio is the heart of Renault – stylish, practical, and with genuine driving fun in RS versions.</p>
+                </div>
+                
+                <div class="clio-image">
+                    <img src="../images/renault/clio-generations.jpg" alt="Clio Generations">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Espace Section -->
+    <section id="espace" class="brand-section bg-light">
+        <div class="container">
+            <h2><span class="highlight">Espace</span> – Inventor of the MPV</h2>
+            
+            <div class="espace-grid">
+                <div class="espace-text">
+                    <p>The Espace created the MPV (Multi-Purpose Vehicle) segment. It was a radical idea – a spacious, flexible people carrier based on a van platform.</p>
+                    
+                    <h4>Generations:</h4>
+                    <ul>
+                        <li><strong>Espace I (1984-1991):</strong> Matra-built, innovative, Car of the Year</li>
+                        <li><strong>Espace II (1991-1997):</strong> More rounded, still Matra</li>
+                        <li><strong>Espace III (1997-2002):</strong> Renault-designed, more refined</li>
+                        <li><strong>Espace IV (2002-2014):</strong> Avant-garde design, huge interior</li>
+                        <li><strong>Espace V (2015-present):</strong> SUV-styled, less van-like, still spacious</li>
+                    </ul>
+                    
+                    <p>The Espace was ahead of its time. It offered seven seats, modular interior, and car-like driving. Every minivan today owes it a debt.</p>
+                </div>
+                
+                <div class="espace-image">
+                    <img src="../images/renault/espace.jpg" alt="Renault Espace">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alpine Section -->
+    <section id="alpine" class="brand-section">
+        <div class="container">
+            <h2><span class="highlight">Alpine</span> – The Revival</h2>
+            
+            <div class="alpine-grid">
+                <div class="alpine-text">
+                    <p>Alpine was a French sports car manufacturer, closely linked to Renault. Founded by Jean Rédélé in 1955, Alpine used Renault components in lightweight, sporty bodies.</p>
+                    
+                    <h4>Classic Alpine (1955-1995):</h4>
+                    <ul>
+                        <li><strong>A106 (1955):</strong> First Alpine</li>
+                        <li><strong>A110 (1962-1977):</strong> The legend. Won the 1973 World Rally Championship. Beautiful, lightweight, and successful.</li>
+                        <li><strong>A310 (1971-1984):</strong> V6-powered, more GT</li>
+                        <li><strong>GTA (1984-1991):</strong> Turbo, stylish</li>
+                        <li><strong>A610 (1991-1995):</strong> V6 turbo, final classic</li>
+                    </ul>
+                    
+                    <h4>Modern Alpine (2017-present):</h4>
+                    <ul>
+                        <li><strong>A110 (2017):</strong> Revival of the legend. Mid-engine, 1.8L turbo, 252 hp, 1,100 kg. Pure driving pleasure.</li>
+                        <li><strong>A110 S / GT / R:</strong> Performance variants</li>
+                    </ul>
+                    
+                    <p>The new A110 is a masterpiece – light, agile, and beautiful. It proves that lightness still matters.</p>
+                </div>
+                
+                <div class="alpine-image">
+                    <img src="../images/renault/alpine-a110.jpg" alt="Alpine A110">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Racing Section -->
+    <section id="racing" class="brand-section bg-light">
+        <div class="container">
+            <h2>Renault <span class="highlight">Racing</span></h2>
+            
+            <div class="racing-grid">
+                <div class="racing-content">
+                    <h4>Formula 1:</h4>
+                    <ul>
+                        <li>1977-1985: First turbocharged F1 engine</li>
+                        <li>1992-1997: Engine supplier for Williams (championships)</li>
+                        <li>2002-2011: Renault works team – 2005-2006 championships with Fernando Alonso</li>
+                        <li>2016-present: Engine supplier for Red Bull (2010-2013 championships) and Alpine team</li>
+                    </ul>
+                    
+                    <h4>Rallying:</h4>
+                    <ul>
+                        <li>1973: Alpine A110 wins first WRC championship</li>
+                        <li>1970s-80s: Renault 5 Turbo and Maxi Turbo</li>
+                        <li>1990s: Clio Williams in kit car form</li>
+                    </ul>
+                    
+                    <h4>Le Mans:</h4>
+                    <ul>
+                        <li>1978: Alpine A442B wins Le Mans</li>
+                        <li>2013-2016: Signatech Alpine wins LMP2 class</li>
+                    </ul>
+                </div>
+                
+                <div class="racing-image">
+                    <img src="../images/motorsport/renault-f1.jpg" alt="Renault F1">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="brand-section">
+        <div class="container">
+            <h2>Renault <span class="highlight">Timeline</span></h2>
+            
+            <div class="brand-timeline">
+                <div class="timeline-item">
+                    <div class="year">1899</div>
+                    <div class="desc">Renault founded by Louis Renault</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1900</div>
+                    <div class="desc">First Renault car – Type A</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1917</div>
+                    <div class="desc">FT-17 tank produced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1946</div>
+                    <div class="desc">4CV launched – first million-seller</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1956</div>
+                    <div class="desc">Dauphine launched – global success</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1961</div>
+                    <div class="desc">Renault 4 launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1965</div>
+                    <div class="desc">Renault 16 – Car of the Year 1966, first hatchback</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1972</div>
+                    <div class="desc">Renault 5 launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1973</div>
+                    <div class="desc">Alpine A110 wins World Rally Championship</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1980</div>
+                    <div class="desc">Renault 5 Turbo launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1984</div>
+                    <div class="desc">Espace launched – MPV invented</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1990</div>
+                    <div class="desc">Clio I – Car of the Year 1991</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1999</div>
+                    <div class="desc">Renault-Nissan Alliance formed</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2005-06</div>
+                    <div class="desc">Fernando Alonso wins F1 championships with Renault</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2012</div>
+                    <div class="desc">Zoe electric launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2017</div>
+                    <div class="desc">New Alpine A110 launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2021</div>
+                    <div class="desc">Mégane E-Tech electric</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Brands -->
+    <div class="text-center section-padding">
+        <a href="../brands.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to All Brands</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../brands.html">Brands</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>French Brands</h4>
+                    <ul>
+                        <li><a href="peugeot.html">Peugeot</a></li>
+                        <li><a href="renault.html">Renault</a></li>
+                        <li><a href="citroen.html">Citroën</a></li>
+                        <li><a href="bugatti.html">Bugatti</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

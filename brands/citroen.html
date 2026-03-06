@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citroën History | Complete Brand Profile & Iconic Models</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore Citroën's complete history from 1919 to present. Discover iconic models like DS, 2CV, Traction Avant, and how Citroën pioneered front-wheel drive and hydropneumatic suspension.">
+    <meta name="keywords" content="Citroën history, Citroën DS, Citroën 2CV, Citroën Traction Avant, French cars, hydropneumatic suspension">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Citroën History | Complete Brand Profile">
+    <meta property="og:description" content="Inspired By You - French Innovation Since 1919">
+    <meta property="og:image" content="../images/brands/french/citroen-logo.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/brands.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../1886-1920.html">1886-1920: Birth</a></li>
+                            <li><a href="../1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="../1950-1980.html">1950-1980: Muscle</a></li>
+                            <li><a href="../1980-2010.html">1980-2010: Technology</a></li>
+                            <li><a href="../2010-present.html">2010-Present: Electric</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../brands.html">Brands</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Brand Hero -->
+    <header class="brand-hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../images/brands/french/citroen-hero.jpg');">
+        <div class="container">
+            <div class="brand-hero-content">
+                <img src="../images/brands/french/citroen-logo.png" alt="Citroën Logo" class="brand-hero-logo">
+                <h1>Citroën</h1>
+                <p class="brand-tagline">Inspired By You</p>
+                
+                <div class="brand-quick-facts">
+                    <span><i class="fas fa-calendar"></i> Founded: 1919</span>
+                    <span><i class="fas fa-globe"></i> Country: France</span>
+                    <span><i class="fas fa-trophy"></i> Icon: DS, 2CV</span>
+                    <span><i class="fas fa-cog"></i> Hydropneumatic</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Navigation -->
+    <div class="brand-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#history" class="active">History</a></li>
+                <li><a href="#models">Iconic Models</a></li>
+                <li><a href="#ds">DS – Goddess</a></li>
+                <li><a href="#2cv">2CV – Ugly Duckling</a></li>
+                <li><a href="#traction">Traction Avant</a></li>
+                <li><a href="#suspension">Hydropneumatic</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- History Section -->
+    <section id="history" class="brand-section">
+        <div class="container">
+            <h2>Citroën: <span class="highlight">French Innovation Since 1919</span></h2>
+            
+            <div class="history-grid">
+                <div class="history-text">
+                    <p>Citroën was founded by André Citroën in 1919. He was an industrialist, not an engineer – he understood mass production and marketing. His goal was to build affordable cars for the masses.</p>
+                    
+                    <p>The first Citroën, the Type A, was Europe's first mass-produced car. By 1920, Citroën was producing 100 cars per day. André Citroën was a marketing genius – he put the Citroën name on the Eiffel Tower (lit with 250,000 light bulbs) and organized cross-continent expeditions.</p>
+                    
+                    <p>The 1934 Traction Avant was revolutionary – it was the world's first mass-produced front-wheel drive car with monocoque construction. It was years ahead of its time and established Citroën as a technological leader.</p>
+                    
+                    <p>After WWII, Citroën launched two icons: the 2CV (1948) and the DS (1955). The 2CV was designed as a cheap, practical car for farmers. It became a cult classic. The DS stunned the world with its spaceship styling and advanced technology – hydropneumatic suspension, power steering, disc brakes.</p>
+                    
+                    <p>The DS was so advanced that it remained in production for 20 years with minimal changes. It was the car of French presidents and the choice of intellectuals and artists.</p>
+                    
+                    <p>Financial troubles led to Michelin taking control in the 1960s, then Peugeot (PSA) in 1976. The CX (1974) and BX (1982) continued the hydropneumatic tradition. The XM (1989) was Car of the Year 1990.</p>
+                    
+                    <p>In the 2000s, Citroën moved towards more mainstream design with the C3, C4, and C5. The C4 Cactus introduced "Airbump" technology. The brand also created the高端 DS line, which became a separate brand in 2014.</p>
+                    
+                    <p>Today, Citroën focuses on comfort with "Citroën Advanced Comfort" suspension and seats. The Ami electric quadricycle is a quirky urban mobility solution. The brand remains true to its innovative, unconventional spirit.</p>
+                    
+                    <div class="founder-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>"The car must be comfortable, safe, and accessible to all."</blockquote>
+                        <cite>- André Citroën</cite>
+                    </div>
+                </div>
+                
+                <div class="history-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar"></i>
+                        <span class="stat-number">1919</span>
+                        <span class="stat-label">Founded</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <span class="stat-number">1934</span>
+                        <span class="stat-label">Traction Avant</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-car"></i>
+                        <span class="stat-number">1955</span>
+                        <span class="stat-label">DS Launch</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-cog"></i>
+                        <span class="stat-number">5M+</span>
+                        <span class="stat-label">2CV Sold</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iconic Models Section -->
+    <section id="models" class="brand-section bg-light">
+        <div class="container">
+            <h2>Iconic <span class="highlight">Models</span></h2>
+            
+            <div class="models-grid">
+                <!-- Citroën DS -->
+                <div class="model-card featured">
+                    <img src="../images/models/citroen-ds.jpg" alt="Citroën DS">
+                    <div class="model-info">
+                        <h3>Citroën DS (1955-1975)</h3>
+                        <p class="model-years">1955-1975</p>
+                        <p>The Goddess. One of the most innovative and beautiful cars ever. Hydropneumatic suspension, power steering, disc brakes, and spaceship styling.</p>
+                        <ul class="model-specs">
+                            <li><i class="fas fa-cog"></i> 1.9L to 2.3L engines</li>
+                            <li><i class="fas fa-trophy"></i> 1.5 million sold</li>
+                            <li><i class="fas fa-palette"></i> Flaminio Bertoni design</li>
+                            <li><i class="fas fa-gem"></i> "Most beautiful car" – many critics</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Citroën 2CV -->
+                <div class="model-card">
+                    <img src="../images/models/citroen-2cv.jpg" alt="Citroën 2CV">
+                    <h3>Citroën 2CV (1948-1990)</h3>
+                    <p class="model-years">1948-1990</p>
+                    <p>The Ugly Duckling. Designed for farmers, became a cult classic. Simple, cheap, and characterful. Over 5 million sold.</p>
+                </div>
+                
+                <!-- Citroën Traction Avant -->
+                <div class="model-card">
+                    <img src="../images/models/citroen-traction.jpg" alt="Citroën Traction Avant">
+                    <h3>Citroën Traction Avant</h3>
+                    <p class="model-years">1934-1957</p>
+                    <p>World's first mass-produced front-wheel drive car. Monocoque construction, advanced for its time. Gangster's car.</p>
+                </div>
+                
+                <!-- Citroën CX -->
+                <div class="model-card">
+                    <img src="../images/models/citroen-cx.jpg" alt="Citroën CX">
+                    <h3>Citroën CX</h3>
+                    <p class="model-years">1974-1991</p>
+                    <p>1975 Car of the Year. Spaceship design, hydropneumatic suspension, record-breaking aerodynamics.</p>
+                </div>
+                
+                <!-- Citroën SM -->
+                <div class="model-card">
+                    <img src="../images/models/citroen-sm.jpg" alt="Citroën SM">
+                    <h3>Citroën SM</h3>
+                    <p class="model-years">1970-1975</p>
+                    <p>Maserati-powered Grand Tourer. Citroën bought Maserati to create this. V6, hydropneumatic, and stunning design.</p>
+                </div>
+                
+                <!-- Citroën BX -->
+                <div class="model-card">
+                    <img src="../images/models/citroen-bx.jpg" alt="Citroën BX">
+                    <h3>Citroën BX</h3>
+                    <p class="model-years">1982-1994</p>
+                    <p>1980s design icon. Self-leveling suspension, digital dashboard, and hydropneumatic.</p>
+                </div>
+                
+                <!-- Citroën C4 Cactus -->
+                <div class="model-card">
+                    <img src="../images/models/citroen-c4-cactus.jpg" alt="Citroën C4 Cactus">
+                    <h3>Citroën C4 Cactus</h3>
+                    <p class="model-years">2014-2020</p>
+                    <p>Quirky crossover with "Airbump" panels. Comfort-focused, innovative, and distinctive.</p>
+                </div>
+                
+                <!-- Citroën Ami -->
+                <div class="model-card">
+                    <img src="../images/models/citroen-ami.jpg" alt="Citroën Ami">
+                    <h3>Citroën Ami</h3>
+                    <p class="model-years">2020-present</p>
+                    <p>Electric quadricycle. No license required in many countries. Quirky urban mobility.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DS Section -->
+    <section id="ds" class="brand-section">
+        <div class="container">
+            <h2>The <span class="highlight">DS</span> – Goddess</h2>
+            
+            <div class="ds-grid">
+                <div class="ds-text">
+                    <p>The DS (pronounced "Déesse" – Goddess in French) is one of the most important cars in history. It debuted at the 1955 Paris Motor Show and caused a sensation.</p>
+                    
+                    <h4>Innovations:</h4>
+                    <ul>
+                        <li>Hydropneumatic suspension – magic carpet ride</li>
+                        <li>Power steering – advanced for its time</li>
+                        <li>Disc brakes – first mass-production car with them</li>
+                        <li>Semi-automatic transmission</li>
+                        <li>Fiberglass roof</li>
+                        <li>Headlights that turn with steering (later models)</li>
+                    </ul>
+                    
+                    <h4>Design:</h4>
+                    <p>Flaminio Bertoni's design was futuristic. The DS looked like nothing else on earth – spaceship-like, streamlined, and elegant.</p>
+                    
+                    <h4>Cultural Impact:</h4>
+                    <p>The DS was the car of French presidents, intellectuals, and style icons. Roland Barthes called it "the equivalent of the great Gothic cathedrals." It's in the permanent collection of the Museum of Modern Art.</p>
+                </div>
+                
+                <div class="ds-image">
+                    <img src="../images/citroen/ds-interior.jpg" alt="Citroën DS Interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2CV Section -->
+    <section id="2cv" class="brand-section bg-light">
+        <div class="container">
+            <h2>The <span class="highlight">2CV</span> – Ugly Duckling</h2>
+            
+            <div class="deuxchevaux-grid">
+                <div class="deuxchevaux-text">
+                    <p>The 2CV (Deux Chevaux) was designed in the 1930s for French farmers. It needed to carry four people, 50kg of potatoes, and be drivable across plowed fields without breaking eggs.</p>
+                    
+                    <h4>Simplicity:</h4>
+                    <ul>
+                        <li>375cc air-cooled twin-cylinder engine (9 hp initially)</li>
+                        <li>Canvas roof for maximum headroom</li>
+                        <li>Interconnected suspension for soft ride</li>
+                        <li>Removable seats (for picnics)</li>
+                        <li>Top speed: 40 mph (later 70 mph)</li>
+                    </ul>
+                    
+                    <h4>Production:</h4>
+                    <p>Launched in 1948, produced until 1990. Over 5 million sold. It became a cult classic – the car for hippies, students, and anyone who loved its character.</p>
+                    
+                    <h4>Variants:</h4>
+                    <ul>
+                        <li>2CV AZ (1954) – more power</li>
+                        <li>2CV Sahara (1958) – 4x4 with two engines</li>
+                        <li>2CV Charleston (1980) – two-tone retro</li>
+                        <li>Dyane, Méhari, Ami – derivatives</li>
+                    </ul>
+                </div>
+                
+                <div class="deuxchevaux-image">
+                    <img src="../images/citroen/2cv-variants.jpg" alt="Citroën 2CV">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Traction Avant Section -->
+    <section id="traction" class="brand-section">
+        <div class="container">
+            <h2><span class="highlight">Traction Avant</span> – Front-Wheel Drive Pioneer</h2>
+            
+            <div class="traction-grid">
+                <div class="traction-text">
+                    <p>The Traction Avant (French for "front-wheel drive") was revolutionary. It introduced front-wheel drive and monocoque construction to mass production.</p>
+                    
+                    <h4>Innovations:</h4>
+                    <ul>
+                        <li>Front-wheel drive – better traction, more space</li>
+                        <li>Monocoque body – no separate frame, lighter, stronger</li>
+                        <li>Independent suspension all round</li>
+                        <li>Hydraulic brakes (later models)</li>
+                    </ul>
+                    
+                    <h4>Models:</h4>
+                    <ul>
+                        <li>7A (1934): 1.3L, 32 hp</li>
+                        <li>7B, 7C (1934-1941): 1.6L, 36 hp</li>
+                        <li>11 (1934-1957): 1.9L and 2.2L</li>
+                        <li>15 (1938-1956): 2.9L straight-6, 77 hp – "Big Six"</li>
+                    </ul>
+                    
+                    <p>The Traction Avant was produced for 23 years. It was the car of French gangsters, detectives, and the Resistance. Its low-slung look and front-wheel drive made it iconic.</p>
+                </div>
+                
+                <div class="traction-image">
+                    <img src="../images/citroen/traction-avant.jpg" alt="Citroën Traction Avant">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hydropneumatic Suspension Section -->
+    <section id="suspension" class="brand-section bg-light">
+        <div class="container">
+            <h2><span class="highlight">Hydropneumatic</span> Suspension</h2>
+            
+            <div class="suspension-grid">
+                <div class="suspension-text">
+                    <p>Citroën's hydropneumatic suspension was one of the most innovative systems ever. It used high-pressure fluid and nitrogen spheres to provide a magic carpet ride.</p>
+                    
+                    <h4>How it works:</h4>
+                    <p>Each wheel has a sphere containing nitrogen gas and hydraulic fluid. The fluid compresses the gas, providing springing. The system self-levels and maintains constant ride height.</p>
+                    
+                    <h4>Advantages:</h4>
+                    <ul>
+                        <li>Unbeatable ride comfort</li>
+                        <li>Self-leveling regardless of load</li>
+                        <li>Adjustable ride height (for rough roads)</li>
+                        <li>Durable (many still working)</li>
+                    </ul>
+                    
+                    <h4>Models with hydropneumatic:</h4>
+                    <ul>
+                        <li>DS (1955-1975)</li>
+                        <li>SM (1970-1975)</li>
+                        <li>GS/GSA (1970-1986)</li>
+                        <li>CX (1974-1991)</li>
+                        <li>BX (1982-1994)</li>
+                        <li>XM (1989-2000)</li>
+                        <li>C5 (2001-2017)</li>
+                        <li>C6 (2005-2012)</li>
+                    </ul>
+                    
+                    <p>The system was so good that Rolls-Royce, Mercedes, and others licensed it. It defined Citroën for 60 years.</p>
+                </div>
+                
+                <div class="suspension-image">
+                    <img src="../images/citroen/hydropneumatic.jpg" alt="Hydropneumatic Suspension">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="brand-section">
+        <div class="container">
+            <h2>Citroën <span class="highlight">Timeline</span></h2>
+            
+            <div class="brand-timeline">
+                <div class="timeline-item">
+                    <div class="year">1919</div>
+                    <div class="desc">Citroën founded; Type A – first European mass-produced car</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1922</div>
+                    <div class="desc">Citroën name on Eiffel Tower</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1934</div>
+                    <div class="desc">Traction Avant launched – front-wheel drive</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1948</div>
+                    <div class="desc">2CV launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1955</div>
+                    <div class="desc">DS launched at Paris Motor Show – 749 orders in 45 minutes</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1965</div>
+                    <div class="desc">Ami 6 launched – quirky</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1970</div>
+                    <div class="desc">SM with Maserati engine; GS – Car of the Year 1971</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1974</div>
+                    <div class="desc">CX – Car of the Year 1975</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1976</div>
+                    <div class="desc">Peugeot and Citroën merge (PSA)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1982</div>
+                    <div class="desc">BX launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1989</div>
+                    <div class="desc">XM – Car of the Year 1990</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1990</div>
+                    <div class="desc">2CV production ends after 42 years</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2001</div>
+                    <div class="desc">C5 launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2014</div>
+                    <div class="desc">C4 Cactus with Airbump; DS becomes separate brand</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2020</div>
+                    <div class="desc">Ami electric launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2022</div>
+                    <div class="desc">C5 X – new flagship</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Brands -->
+    <div class="text-center section-padding">
+        <a href="../brands.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to All Brands</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../brands.html">Brands</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>French Brands</h4>
+                    <ul>
+                        <li><a href="peugeot.html">Peugeot</a></li>
+                        <li><a href="renault.html">Renault</a></li>
+                        <li><a href="citroen.html">Citroën</a></li>
+                        <li><a href="bugatti.html">Bugatti</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ford History | Complete Brand Profile & Iconic Models</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore Ford's complete history from 1903 to present. Discover iconic models like Model T, Mustang, F-150, GT40, and how Ford revolutionized the automotive industry.">
+    <meta name="keywords" content="Ford history, Ford Mustang, Ford Model T, Ford F-150, Ford GT40, American cars, Henry Ford">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ford History | Complete Brand Profile">
+    <meta property="og:description" content="Built Ford Tough - The Company that Put America on Wheels">
+    <meta property="og:image" content="../images/brands/american/ford-logo.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/brands.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../1886-1920.html">1886-1920: Birth</a></li>
+                            <li><a href="../1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="../1950-1980.html">1950-1980: Muscle</a></li>
+                            <li><a href="../1980-2010.html">1980-2010: Technology</a></li>
+                            <li><a href="../2010-present.html">2010-Present: Electric</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../brands.html">Brands</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Brand Hero -->
+    <header class="brand-hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../images/brands/american/ford-hero.jpg');">
+        <div class="container">
+            <div class="brand-hero-content">
+                <img src="../images/brands/american/ford-logo.png" alt="Ford Logo" class="brand-hero-logo">
+                <h1>Ford</h1>
+                <p class="brand-tagline">Built Ford Tough</p>
+                
+                <div class="brand-quick-facts">
+                    <span><i class="fas fa-calendar"></i> Founded: 1903</span>
+                    <span><i class="fas fa-globe"></i> Country: USA</span>
+                    <span><i class="fas fa-trophy"></i> Icon: Model T, Mustang</span>
+                    <span><i class="fas fa-cog"></i> Assembly Line</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Navigation -->
+    <div class="brand-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#history" class="active">History</a></li>
+                <li><a href="#models">Iconic Models</a></li>
+                <li><a href="#mustang">Mustang</a></li>
+                <li><a href="#trucks">Trucks</a></li>
+                <li><a href="#racing">Racing</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- History Section -->
+    <section id="history" class="brand-section">
+        <div class="container">
+            <h2>Ford: <span class="highlight">The Company that Put America on Wheels</span></h2>
+            
+            <div class="history-grid">
+                <div class="history-text">
+                    <p>Henry Ford didn't invent the automobile, but he invented the system that made it accessible to everyone. His vision changed not just transportation, but manufacturing, labor, and American society itself.</p>
+                    
+                    <p>After working at Edison Illuminating Company and building experimental vehicles, Ford founded the Ford Motor Company in 1903 with $28,000 capital. The first car was the Model A, followed by several models until the 1908 Model T.</p>
+                    
+                    <p>The Model T was revolutionary – simple, rugged, and affordable. But the real innovation came in 1913 with the moving assembly line at Highland Park. This reduced chassis assembly time from 12 hours to 93 minutes, dramatically cutting costs. The price of a Model T dropped from $850 in 1908 to $300 by the 1920s.</p>
+                    
+                    <p>Ford also shocked the world in 1914 by paying workers $5 per day – double the prevailing wage. This reduced turnover, increased productivity, and enabled workers to buy the cars they built. It was brilliant business and social progress.</p>
+                    
+                    <p>The Model T dominated until 1927, when it was replaced by the Model A. Through the Depression and war, Ford survived and innovated. The 1948 F-Series pickup began a dynasty that continues today as America's best-selling vehicle.</p>
+                    
+                    <p>The 1964 Mustang created the "pony car" segment and became a cultural phenomenon. The GT40's 1966 Le Mans victory fulfilled Henry Ford II's mission to beat Ferrari. The 1980s Taurus saved the company with its aerodynamic design.</p>
+                    
+                    <p>Today, Ford is investing heavily in electrification with the Mustang Mach-E and F-150 Lightning, while maintaining its truck leadership. The company remains family-controlled and American-owned.</p>
+                    
+                    <div class="founder-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>"Any customer can have a car painted any color that he wants so long as it is black."</blockquote>
+                        <cite>- Henry Ford (on Model T production efficiency)</cite>
+                    </div>
+                </div>
+                
+                <div class="history-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar"></i>
+                        <span class="stat-number">1903</span>
+                        <span class="stat-label">Founded</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <span class="stat-number">15M</span>
+                        <span class="stat-label">Model T Sold</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-car"></i>
+                        <span class="stat-number">1964</span>
+                        <span class="stat-label">Mustang</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-cog"></i>
+                        <span class="stat-number">#1</span>
+                        <span class="stat-label">Truck Sales</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iconic Models Section -->
+    <section id="models" class="brand-section bg-light">
+        <div class="container">
+            <h2>Iconic <span class="highlight">Models</span></h2>
+            
+            <div class="models-grid">
+                <!-- Ford Model T -->
+                <div class="model-card featured">
+                    <img src="../images/models/ford-model-t.jpg" alt="Ford Model T">
+                    <div class="model-info">
+                        <h3>Ford Model T (1908-1927)</h3>
+                        <p class="model-years">1908-1927</p>
+                        <p>The car that put America on wheels. The Model T was simple, durable, and affordable. With over 15 million sold, it was the first car for millions of families.</p>
+                        <ul class="model-specs">
+                            <li><i class="fas fa-cog"></i> 2.9L 4-cylinder, 20 hp</li>
+                            <li><i class="fas fa-tachometer-alt"></i> 40-45 mph top speed</li>
+                            <li><i class="fas fa-dollar-sign"></i> $850 (1908) to $300 (1920s)</li>
+                            <li><i class="fas fa-trophy"></i> First mass-produced car</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Ford Mustang -->
+                <div class="model-card">
+                    <img src="../images/models/ford-mustang.jpg" alt="Ford Mustang">
+                    <h3>Ford Mustang</h3>
+                    <p class="model-years">1964-present</p>
+                    <p>The original pony car. The Mustang created a segment and became an American icon. Over 10 million sold.</p>
+                </div>
+                
+                <!-- Ford F-150 -->
+                <div class="model-card">
+                    <img src="../images/models/ford-f150.jpg" alt="Ford F-150">
+                    <h3>Ford F-Series</h3>
+                    <p class="model-years">1948-present</p>
+                    <p>America's best-selling vehicle for over 40 years. The F-150 defines the pickup truck segment – tough, capable, and versatile.</p>
+                </div>
+                
+                <!-- Ford GT40 -->
+                <div class="model-card">
+                    <img src="../images/models/ford-gt40.jpg" alt="Ford GT40">
+                    <h3>Ford GT40</h3>
+                    <p class="model-years">1964-1969</p>
+                    <p>The Ferrari killer. Built to beat Ferrari at Le Mans, the GT40 won four consecutive times (1966-1969), including the legendary 1-2-3 finish in 1966.</p>
+                </div>
+                
+                <!-- Ford Thunderbird -->
+                <div class="model-card">
+                    <img src="../images/models/ford-thunderbird.jpg" alt="Ford Thunderbird">
+                    <h3>Ford Thunderbird</h3>
+                    <p class="model-years">1955-2005</p>
+                    <p>The personal luxury car icon. The T-Bird evolved from two-seat convertible to four-seat luxury coupe.</p>
+                </div>
+                
+                <!-- Ford Taurus -->
+                <div class="model-card">
+                    <img src="../images/models/ford-taurus.jpg" alt="Ford Taurus">
+                    <h3>Ford Taurus</h3>
+                    <p class="model-years">1985-2019</p>
+                    <p>The aerodynamic sedan that saved Ford in the 1980s. America's best-selling car for much of the 1990s.</p>
+                </div>
+                
+                <!-- Ford Explorer -->
+                <div class="model-card">
+                    <img src="../images/models/ford-explorer.jpg" alt="Ford Explorer">
+                    <h3>Ford Explorer</h3>
+                    <p class="model-years">1990-present</p>
+                    <p>The SUV that defined the 1990s boom. Family-friendly, capable, and enormously popular.</p>
+                </div>
+                
+                <!-- Ford Mustang Mach-E -->
+                <div class="model-card">
+                    <img src="../images/models/ford-mach-e.jpg" alt="Ford Mustang Mach-E">
+                    <h3>Ford Mustang Mach-E</h3>
+                    <p class="model-years">2020-present</p>
+                    <p>Ford's electric future, wearing Mustang heritage. Controversial but successful – a true performance EV.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mustang Section -->
+    <section id="mustang" class="brand-section">
+        <div class="container">
+            <h2>The <span class="highlight">Mustang</span> Legend</h2>
+            
+            <div class="mustang-grid">
+                <div class="mustang-text">
+                    <p>The Mustang wasn't just a car – it was a phenomenon. When it debuted at the 1964 New York World's Fair, it created a new category: the "pony car."</p>
+                    
+                    <h4>Generations:</h4>
+                    <ul>
+                        <li><strong>First Generation (1964-1973):</strong> The original. 1964½ launched with 22,000 orders on first day. Fastback, GT, Shelby versions.</li>
+                        <li><strong>Second Generation (1974-1978):</strong> Mustang II – smaller, more efficient due to oil crisis. Controversial but successful.</li>
+                        <li><strong>Third Generation (1979-1993):</strong> Fox body. The 5.0 GT revived performance in the 1980s.</li>
+                        <li><strong>Fourth Generation (1994-2004):</strong> SN-95. Modern retro styling, New Edge later.</li>
+                        <li><strong>Fifth Generation (2005-2014):</strong> Retro design inspired by 1960s. Shelby GT500 returns.</li>
+                        <li><strong>Sixth Generation (2015-2023):</strong> Independent rear suspension, global platform, EcoBoost 4-cylinder.</li>
+                        <li><strong>Seventh Generation (2024-present):</strong> Latest evolution, S650 platform, Dark Horse performance model.</li>
+                    </ul>
+                    
+                    <h4>Mustang in Culture:</h4>
+                    <p>The Mustang has appeared in hundreds of films, most famously "Bullitt" (1968) with Steve McQueen's Highland Green GT390. It's been a cultural icon for 60 years.</p>
+                </div>
+                
+                <div class="mustang-image">
+                    <img src="../images/ford/mustang-generations.jpg" alt="Mustang Generations">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trucks Section -->
+    <section id="trucks" class="brand-section bg-light">
+        <div class="container">
+            <h2><span class="highlight">F-Series</span> – America's Best-Seller</h2>
+            
+            <div class="trucks-grid">
+                <div class="trucks-text">
+                    <p>The Ford F-Series has been America's best-selling vehicle for over 40 years and the best-selling truck for over 40 years. It's not just a vehicle – it's an American institution.</p>
+                    
+                    <h4>Generations:</h4>
+                    <ul>
+                        <li><strong>First Generation (1948-1952):</strong> F-1 (half-ton) introduced. "Bonus Built" trucks.</li>
+                        <li><strong>Second Generation (1953-1956):</strong> F-100 name appears.</li>
+                        <li><strong>Third Generation (1957-1960):</strong> Styleside bed, four-headlight design.</li>
+                        <li><strong>Fourth Generation (1961-1966):</strong> Unibody option.</li>
+                        <li><strong>Fifth Generation (1967-1972):</strong> Twin I-Beam suspension.</li>
+                        <li><strong>Sixth Generation (1973-1979):</strong> "Dentside" styling.</li>
+                        <li><strong>Seventh Generation (1980-1986):</strong> "Bullnose" front end.</li>
+                        <li><strong>Eighth Generation (1987-1991):</strong> "Bricknose" update.</li>
+                        <li><strong>Ninth Generation (1992-1997):</strong> Aero styling.</li>
+                        <li><strong>Tenth Generation (1997-2003):</strong> New edge design.</li>
+                        <li><strong>Eleventh Generation (2004-2008):</strong> Bold design.</li>
+                        <li><strong>Twelfth Generation (2009-2014):</strong> EcoBoost V6 introduced.</li>
+                        <li><strong>Thirteenth Generation (2015-2020):</strong> Aluminum body – revolutionary weight savings.</li>
+                        <li><strong>Fourteenth Generation (2021-present):</strong> Hybrid PowerBoost, Pro Power Onboard.</li>
+                    </ul>
+                    
+                    <p>The F-150 Lightning (2022) is the electric version – 580 hp, 775 lb-ft, and a front trunk. It proves that even America's most traditional vehicle can go electric.</p>
+                </div>
+                
+                <div class="trucks-image">
+                    <img src="../images/ford/f150-generations.jpg" alt="F-150 Generations">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Racing Section -->
+    <section id="racing" class="brand-section">
+        <div class="container">
+            <h2>Ford <span class="highlight">Racing</span> Heritage</h2>
+            
+            <div class="racing-grid">
+                <div class="racing-content">
+                    <ul>
+                        <li><i class="fas fa-trophy"></i> <strong>Le Mans 1966:</strong> Ford GT40 1-2-3 finish – the Ferrari war</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Le Mans 1967-1969:</strong> Three more wins (Dan Gurney, AJ Foyt, etc.)</li>
+                        <li><i class="fas fa-trophy"></i> <strong>NASCAR:</strong> Over 700 wins, multiple championships</li>
+                        <li><i class="fas fa-trophy"></i> <strong>World Rally Championship:</strong> Focus RS WRC successful</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Bathurst 1000:</strong> Multiple wins with Falcon</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Formula 1:</strong> Cosworth DFV engine (most successful F1 engine ever), 155 wins</li>
+                        <li><i class="fas fa-trophy"></i> <strong>GT racing:</strong> Mustang GT4, GT3 success worldwide</li>
+                    </ul>
+                    
+                    <p>The Ford vs. Ferrari story is legendary. Henry Ford II tried to buy Ferrari in 1963; Enzo refused. Ford spent millions to build a car that would beat Ferrari at Le Mans. The GT40 did it in 1966, and Ford's victory was immortalized in the film "Ford v Ferrari" (2019).</p>
+                </div>
+                
+                <div class="racing-image">
+                    <img src="../images/motorsport/ford-gt40-lemans.jpg" alt="Ford GT40 Le Mans">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="brand-section bg-light">
+        <div class="container">
+            <h2>Ford <span class="highlight">Timeline</span></h2>
+            
+            <div class="brand-timeline">
+                <div class="timeline-item">
+                    <div class="year">1903</div>
+                    <div class="desc">Ford Motor Company founded with $28,000</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1908</div>
+                    <div class="desc">Model T introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1913</div>
+                    <div class="desc">Moving assembly line introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1914</div>
+                    <div class="desc">$5 per day wage – revolutionary</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1922</div>
+                    <div class="desc">Ford acquires Lincoln</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1927</div>
+                    <div class="desc">Model T production ends (15 million built); Model A introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1932</div>
+                    <div class="desc">Flathead V8 introduced – first affordable V8</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1948</div>
+                    <div class="desc">F-Series truck introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1955</div>
+                    <div class="desc">Thunderbird introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1964</div>
+                    <div class="desc">Mustang introduced – 22,000 orders first day</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1966</div>
+                    <div class="desc">GT40 wins Le Mans 1-2-3</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1985</div>
+                    <div class="desc">Taurus introduced – aerodynamic revolution</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1990</div>
+                    <div class="desc">Explorer introduced – SUV boom begins</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2004</div>
+                    <div class="desc">Ford GT (retro) introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2009</div>
+                    <div class="desc">Ford survives recession without government bailout</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2015</div>
+                    <div class="desc">Aluminum F-150 introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2016</div>
+                    <div class="desc">Ford GT (second gen) wins Le Mans – 50th anniversary</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2020</div>
+                    <div class="desc">Mustang Mach-E electric SUV launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2022</div>
+                    <div class="desc">F-150 Lightning electric truck launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2024</div>
+                    <div class="desc">Seventh-generation Mustang</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Brands -->
+    <div class="text-center section-padding">
+        <a href="../brands.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to All Brands</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../brands.html">Brands</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>American Brands</h4>
+                    <ul>
+                        <li><a href="ford.html">Ford</a></li>
+                        <li><a href="chevrolet.html">Chevrolet</a></li>
+                        <li><a href="dodge.html">Dodge</a></li>
+                        <li><a href="cadillac.html">Cadillac</a></li>
+                        <li><a href="tesla.html">Tesla</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

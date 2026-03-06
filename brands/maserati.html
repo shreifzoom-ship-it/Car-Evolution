@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maserati History | Complete Brand Profile & Iconic Models</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore Maserati's complete history from 1914 to present. Discover iconic models like Ghibli, Quattroporte, MC20, and how Maserati defines Italian luxury and performance.">
+    <meta name="keywords" content="Maserati history, Maserati Ghibli, Maserati Quattroporte, Maserati MC20, Italian cars, luxury cars">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Maserati History | Complete Brand Profile">
+    <meta property="og:description" content="The Trident - Italian Luxury Since 1914">
+    <meta property="og:image" content="../images/brands/italian/maserati-logo.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/brands.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../1886-1920.html">1886-1920: Birth</a></li>
+                            <li><a href="../1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="../1950-1980.html">1950-1980: Muscle</a></li>
+                            <li><a href="../1980-2010.html">1980-2010: Technology</a></li>
+                            <li><a href="../2010-present.html">2010-Present: Electric</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../brands.html">Brands</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Brand Hero -->
+    <header class="brand-hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../images/brands/italian/maserati-hero.jpg');">
+        <div class="container">
+            <div class="brand-hero-content">
+                <img src="../images/brands/italian/maserati-logo.png" alt="Maserati Logo" class="brand-hero-logo">
+                <h1>Maserati</h1>
+                <p class="brand-tagline">The Trident</p>
+                
+                <div class="brand-quick-facts">
+                    <span><i class="fas fa-calendar"></i> Founded: 1914</span>
+                    <span><i class="fas fa-globe"></i> Country: Italy</span>
+                    <span><i class="fas fa-trophy"></i> Icon: Ghibli, Quattroporte</span>
+                    <span><i class="fas fa-cog"></i> Italian Luxury</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Navigation -->
+    <div class="brand-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#history" class="active">History</a></li>
+                <li><a href="#models">Iconic Models</a></li>
+                <li><a href="#quattroporte">Quattroporte</a></li>
+                <li><a href="#racing">Racing Heritage</a></li>
+                <li><a href="#modern">Modern Era</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- History Section -->
+    <section id="history" class="brand-section">
+        <div class="container">
+            <h2>Maserati: <span class="highlight">The Trident</span></h2>
+            
+            <div class="history-grid">
+                <div class="history-text">
+                    <p>Maserati is one of the oldest and most storied Italian automotive brands. Founded in Bologna in 1914 by the five Maserati brothers – Alfieri, Bindo, Carlo, Ettore, and Ernesto – the company initially focused on racing.</p>
+                    
+                    <p>The brothers were all involved in motorsport. Alfieri was a talented driver and engineer. Their first car, the Tipo 26, debuted in 1926 with Alfieri driving. It won its class at the Targa Florio – an auspicious start.</p>
+                    
+                    <p>The trident logo comes from the Fountain of Neptune in Bologna's Piazza Maggiore. It symbolizes strength and vigor – perfect for a racing car.</p>
+                    
+                    <p>In the 1930s, Maserati racing cars were competitive in Grand Prix racing, winning races with drivers like Tazio Nuvolari. Financial pressures led the brothers to sell to Adolfo Orsi in 1937, though they remained involved.</p>
+                    
+                    <p>After WWII, Maserati moved to Modena and continued racing success. The 250F, driven by Juan Manuel Fangio, won the 1957 Formula 1 World Championship. That same year, a tragic accident at the Mille Miglia led Maserati to withdraw from factory racing.</p>
+                    
+                    <p>The 1950s and 1960s saw Maserati focus on road cars. The 3500 GT (1957) was their first successful grand tourer. The 1963 Quattroporte created the luxury performance sedan segment. The 1967 Ghibli, designed by Giorgetto Giugiaro, was a stunning V8 coupe.</p>
+                    
+                    <p>Citroën bought Maserati in 1968, leading to the Bora (mid-engine) and Merak. But the 1973 oil crisis hurt sales, and Citroën put Maserati into liquidation. Alejandro de Tomaso rescued the company in 1975.</p>
+                    
+                    <p>Under De Tomaso, Maserati produced the Biturbo – a V6 twin-turbo sedan that sold well but had quality issues. The 1990s brought the Ghibli II and Quattroporte IV.</p>
+                    
+                    <p>Ferrari acquired Maserati in 1997 and invested heavily. The 2001 Spyder and 2002 Coupe relaunched the brand. The 2004 Quattroporte V was a masterpiece. Under Ferrari, quality and performance soared.</p>
+                    
+                    <p>Today, Maserati is part of Stellantis, with a full lineup including the Ghibli, Quattroporte, Levante SUV, and the new MC20 supercar. The brand is transitioning to electrification with the Folgore line.</p>
+                    
+                    <div class="founder-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>"We build cars that are works of art."</blockquote>
+                        <cite>- Alfieri Maserati</cite>
+                    </div>
+                </div>
+                
+                <div class="history-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar"></i>
+                        <span class="stat-number">1914</span>
+                        <span class="stat-label">Founded</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <span class="stat-number">1957</span>
+                        <span class="stat-label">F1 Championship</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-car"></i>
+                        <span class="stat-number">1963</span>
+                        <span class="stat-label">Quattroporte</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-cog"></i>
+                        <span class="stat-number">Modena</span>
+                        <span class="stat-label">Home</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iconic Models Section -->
+    <section id="models" class="brand-section bg-light">
+        <div class="container">
+            <h2>Iconic <span class="highlight">Models</span></h2>
+            
+            <div class="models-grid">
+                <!-- Maserati 250F -->
+                <div class="model-card featured">
+                    <img src="../images/models/maserati-250f.jpg" alt="Maserati 250F">
+                    <div class="model-info">
+                        <h3>Maserati 250F (1954-1960)</h3>
+                        <p class="model-years">1954-1960</p>
+                        <p>One of the most beautiful Formula 1 cars ever. The 250F won the 1957 World Championship with Juan Manuel Fangio, including his legendary win at the Nürburgring.</p>
+                        <ul class="model-specs">
+                            <li><i class="fas fa-cog"></i> 2.5L straight-6, 270 hp</li>
+                            <li><i class="fas fa-trophy"></i> 1957 F1 Championship</li>
+                            <li><i class="fas fa-tachometer-alt"></i> 180 mph</li>
+                            <li><i class="fas fa-palette"></i> Timeless beauty</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Maserati 3500 GT -->
+                <div class="model-card">
+                    <img src="../images/models/maserati-3500gt.jpg" alt="Maserati 3500 GT">
+                    <h3>Maserati 3500 GT</h3>
+                    <p class="model-years">1957-1964</p>
+                    <p>Maserati's first successful grand tourer. Elegant, fast, and luxurious. Established Maserati as a road car manufacturer.</p>
+                </div>
+                
+                <!-- Maserati Ghibli -->
+                <div class="model-card">
+                    <img src="../images/models/maserati-ghibli-classic.jpg" alt="Maserati Ghibli">
+                    <h3>Maserati Ghibli (1967-1973)</h3>
+                    <p class="model-years">1967-1973</p>
+                    <p>Giugiaro masterpiece. V8 power, stunning low-slung design, and 170 mph top speed. One of the most beautiful cars of the 1960s.</p>
+                </div>
+                
+                <!-- Maserati Quattroporte -->
+                <div class="model-card">
+                    <img src="../images/models/maserati-quattroporte.jpg" alt="Maserati Quattroporte">
+                    <h3>Maserati Quattroporte</h3>
+                    <p class="model-years">1963-present</p>
+                    <p>The original luxury sports sedan. Combines four doors with Ferrari-derived performance and Italian style.</p>
+                </div>
+                
+                <!-- Maserati Bora -->
+                <div class="model-card">
+                    <img src="../images/models/maserati-bora.jpg" alt="Maserati Bora">
+                    <h3>Maserati Bora</h3>
+                    <p class="model-years">1971-1978</p>
+                    <p>Maserati's first mid-engine supercar. V8 power, Giugiaro design, and 170 mph capability.</p>
+                </div>
+                
+                <!-- Maserati MC12 -->
+                <div class="model-card">
+                    <img src="../images/models/maserati-mc12.jpg" alt="Maserati MC12">
+                    <h3>Maserati MC12</h3>
+                    <p class="model-years">2004-2005</p>
+                    <p>Ferrari Enzo-based supercar. Built for GT racing, 50 road cars. V12, 630 hp, and stunning performance.</p>
+                </div>
+                
+                <!-- Maserati GranTurismo -->
+                <div class="model-card">
+                    <img src="../images/models/maserati-granturismo.jpg" alt="Maserati GranTurismo">
+                    <h3>Maserati GranTurismo</h3>
+                    <p class="model-years">2007-2019</p>
+                    <p>The modern grand tourer. Ferrari V8, beautiful Pininfarina design, and 2+2 seating.</p>
+                </div>
+                
+                <!-- Maserati MC20 -->
+                <div class="model-card">
+                    <img src="../images/models/maserati-mc20.jpg" alt="Maserati MC20">
+                    <h3>Maserati MC20</h3>
+                    <p class="model-years">2020-present</p>
+                    <p>The new supercar. Twin-turbo V6 "Nettuno" with F1-derived pre-chamber combustion. 621 hp, 202 mph.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quattroporte Section -->
+    <section id="quattroporte" class="brand-section">
+        <div class="container">
+            <h2>The <span class="highlight">Quattroporte</span> – Luxury Sedan Icon</h2>
+            
+            <div class="quattroporte-grid">
+                <div class="quattroporte-text">
+                    <p>The Quattroporte (Italian for "four-door") created the luxury performance sedan segment. It combined a luxurious interior with genuine sports car performance.</p>
+                    
+                    <h4>Generations:</h4>
+                    <ul>
+                        <li><strong>Quattroporte I (1963-1969):</strong> V8, elegant design, created the segment</li>
+                        <li><strong>Quattroporte II (1974-1978):</strong> Citroën-era, smaller V6, less successful</li>
+                        <li><strong>Quattroporte III (1979-1990):</strong> De Tomaso-era, square design, V8</li>
+                        <li><strong>Quattroporte IV (1994-2001):</strong> Biturbo-based, more modern</li>
+                        <li><strong>Quattroporte V (2003-2012):</strong> Ferrari-era masterpiece, stunning design by Pininfarina</li>
+                        <li><strong>Quattroporte VI (2013-present):</strong> Current generation, larger, more powerful, GTS and Trofeo versions</li>
+                    </ul>
+                    
+                    <p>The Quattroporte has always been the choice for those who want luxury and performance in a practical package. It's the ultimate Italian luxury sedan.</p>
+                </div>
+                
+                <div class="quattroporte-image">
+                    <img src="../images/maserati/quattroporte-generations.jpg" alt="Quattroporte Generations">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Racing Heritage Section -->
+    <section id="racing" class="brand-section bg-light">
+        <div class="container">
+            <h2>Maserati <span class="highlight">Racing</span> Heritage</h2>
+            
+            <div class="racing-grid">
+                <div class="racing-content">
+                    <h4>Grand Prix / Formula 1:</h4>
+                    <ul>
+                        <li>1926: First race – Tipo 26 wins Targa Florio class</li>
+                        <li>1930s: 8CTF, 4CLT competitive</li>
+                        <li>1954-1957: 250F – Fangio wins 1957 Championship</li>
+                        <li>Fangio's 1957 Nürburgring win in 250F considered one of greatest drives</li>
+                    </ul>
+                    
+                    <h4>Other Racing:</h4>
+                    <ul>
+                        <li>1957: 450S wins Sebring</li>
+                        <li>2004-2010: MC12 GT1 – multiple championships</li>
+                        <li>MC20 GT2 (2023): Return to GT racing</li>
+                        <li>Formula E: Maserati joins 2023</li>
+                    </ul>
+                    
+                    <p>Maserati's racing history is among the richest in motorsport. The 250F is one of the most beautiful and successful F1 cars ever.</p>
+                </div>
+                
+                <div class="racing-image">
+                    <img src="../images/motorsport/maserati-250f.jpg" alt="Maserati 250F">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern Era Section -->
+    <section id="modern" class="brand-section">
+        <div class="container">
+            <h2><span class="highlight">Modern</span> Maserati</h2>
+            
+            <div class="modern-grid">
+                <div class="modern-text">
+                    <p>Under Ferrari (1997-2005) and then Fiat/Stellantis, Maserati has been revitalized.</p>
+                    
+                    <h4>Current Lineup:</h4>
+                    <ul>
+                        <li><strong>Ghibli (2013-present):</strong> Executive sedan, V6 twin-turbo</li>
+                        <li><strong>Quattroporte (2013-present):</strong> Flagship sedan, V6 and V8</li>
+                        <li><strong>Levante (2016-present):</strong> First SUV, V6 and V8, Trofeo with 590 hp</li>
+                        <li><strong>MC20 (2020-present):</strong> Supercar, V6 Nettuno, 621 hp</li>
+                        <li><strong>Grecale (2022-present):</strong> Compact SUV, petrol and electric</li>
+                        <li><strong>GranTurismo (2023):</strong> New GT, V6 and Folgore electric</li>
+                    </ul>
+                    
+                    <h4>Folgore Electric:</h4>
+                    <p>Maserati's electric future. GranTurismo Folgore has 760 hp, 0-60 in 2.6 seconds. Grecale Folgore and Quattroporte Folgore coming.</p>
+                </div>
+                
+                <div class="modern-image">
+                    <img src="../images/maserati/mc20.jpg" alt="Maserati MC20">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="brand-section bg-light">
+        <div class="container">
+            <h2>Maserati <span class="highlight">Timeline</span></h2>
+            
+            <div class="brand-timeline">
+                <div class="timeline-item">
+                    <div class="year">1914</div>
+                    <div class="desc">Maserati founded in Bologna by Maserati brothers</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1926</div>
+                    <div class="desc">Tipo 26 – first Maserati car, wins Targa Florio</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1937</div>
+                    <div class="desc">Maserati sold to Orsi family, moves to Modena</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1939</div>
+                    <div class="desc">8CTF wins Indianapolis 500</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1954</div>
+                    <div class="desc">250F introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1957</div>
+                    <div class="desc">Fangio wins F1 Championship with 250F; Maserati withdraws from racing</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1957</div>
+                    <div class="desc">3500 GT launched – first successful road car</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1963</div>
+                    <div class="desc">Quattroporte I launched – first luxury sports sedan</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1967</div>
+                    <div class="desc">Ghibli launched (Giugiaro design)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1968</div>
+                    <div class="desc">Citroën acquires Maserati</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1971</div>
+                    <div class="desc">Bora mid-engine supercar</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1975</div>
+                    <div class="desc">Alejandro de Tomaso rescues Maserati</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1981</div>
+                    <div class="desc">Biturbo launched – V6 twin-turbo</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1997</div>
+                    <div class="desc">Ferrari acquires Maserati</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2004</div>
+                    <div class="desc">MC12 supercar; Quattroporte V launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2007</div>
+                    <div class="desc">GranTurismo launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2013</div>
+                    <div class="desc">Ghibli and Quattroporte VI launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2016</div>
+                    <div class="desc">Levante SUV launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2020</div>
+                    <div class="desc">MC20 supercar with Nettuno V6</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2023</div>
+                    <div class="desc">GranTurismo Folgore electric; Formula E entry</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Brands -->
+    <div class="text-center section-padding">
+        <a href="../brands.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to All Brands</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../brands.html">Brands</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Italian Brands</h4>
+                    <ul>
+                        <li><a href="ferrari.html">Ferrari</a></li>
+                        <li><a href="lamborghini.html">Lamborghini</a></li>
+                        <li><a href="maserati.html">Maserati</a></li>
+                        <li><a href="alfa-romeo.html">Alfa Romeo</a></li>
+                        <li><a href="fiat.html">Fiat</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

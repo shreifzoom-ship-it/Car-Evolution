@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saab History | Complete Brand Profile & Iconic Models</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore Saab's complete history from 1937 to 2011. Discover iconic models like 900, 99 Turbo, 9000, and how Saab brought aircraft engineering to the roads.">
+    <meta name="keywords" content="Saab history, Saab 900, Saab 99 Turbo, Saab 9000, Swedish cars, Born From Jets, turbo pioneer">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Saab History | Complete Brand Profile">
+    <meta property="og:description" content="Born From Jets - The Swedish Aircraft Legend">
+    <meta property="og:image" content="../images/brands/swedish/saab-logo.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/brands.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../1886-1920.html">1886-1920: Birth</a></li>
+                            <li><a href="../1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="../1950-1980.html">1950-1980: Muscle</a></li>
+                            <li><a href="../1980-2010.html">1980-2010: Technology</a></li>
+                            <li><a href="../2010-present.html">2010-Present: Electric</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../brands.html">Brands</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Brand Hero -->
+    <header class="brand-hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../images/brands/swedish/saab-hero.jpg');">
+        <div class="container">
+            <div class="brand-hero-content">
+                <img src="../images/brands/swedish/saab-logo.png" alt="Saab Logo" class="brand-hero-logo">
+                <h1>Saab</h1>
+                <p class="brand-tagline">Born From Jets</p>
+                
+                <div class="brand-quick-facts">
+                    <span><i class="fas fa-calendar"></i> Founded: 1937</span>
+                    <span><i class="fas fa-globe"></i> Country: Sweden</span>
+                    <span><i class="fas fa-trophy"></i> Icon: 900 Turbo</span>
+                    <span><i class="fas fa-cog"></i> Turbo Pioneer</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Navigation -->
+    <div class="brand-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#history" class="active">History</a></li>
+                <li><a href="#models">Iconic Models</a></li>
+                <li><a href="#turbo">Turbo Legacy</a></li>
+                <li><a href="#design">Aircraft Design</a></li>
+                <li><a href="#safety">Safety Innovations</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- History Section -->
+    <section id="history" class="brand-section">
+        <div class="container">
+            <h2>Saab: <span class="highlight">Born From Jets</span></h2>
+            
+            <div class="history-grid">
+                <div class="history-text">
+                    <p>Saab (Svenska Aeroplan Aktiebolaget) was founded in 1937 with a singular purpose: to build aircraft for the Swedish Air Force to protect Sweden's neutrality in World War II. This aerospace heritage would forever define the brand's approach to car manufacturing [citation:1][citation:6].</p>
+                    
+                    <p>When WWII ended, military aircraft demand plummeted. Saab needed to diversify. Led by a team of aircraft engineers, they applied their aerospace expertise to an entirely new challenge: building cars. The result was the Saab 92, unveiled in 1947 and entering production in 1949. Its aerodynamic shape, born from wind tunnel testing, was unlike anything else on the road [citation:1][citation:3][citation:6].</p>
+                    
+                    <p>The 1950s and 60s saw Saab establish its reputation through rallying. The Saab 96, driven by the legendary Erik "På Taket" Carlsson, won the Monte Carlo Rally in 1962 and 1963. Carlsson's nickname "På Taket" (on the roof) came from his habit of celebrating victories by standing on his car's roof – a testament to Saab's robust construction [citation:4][citation:8].</p>
+                    
+                    <p>1969 brought a major change as Saab merged with commercial vehicle manufacturer Scania-Vabis, forming Saab-Scania. This created a powerful industrial group combining aviation, automotive, and heavy vehicle expertise [citation:6][citation:7].</p>
+                    
+                    <p>The 1970s marked Saab's most important technological breakthrough: turbocharging. In 1977, the Saab 99 Turbo debuted, bringing turbocharged performance to the masses. It was revolutionary – offering Porsche-like acceleration with Volvo-like practicality. Saab had created a new category [citation:1][citation:4][citation:9].</p>
+                    
+                    <p>The 1980s brought the iconic Saab 900, arguably the most beloved Saab ever. Produced from 1978 to 1993, the classic 900 had a loyal following thanks to its quirky design, fantastic seats, and turbocharged character. The 900 Convertible, launched in 1986, became a cult classic [citation:2][citation:4].</p>
+                    
+                    <p>The Saab 9000 (1984) was Saab's first entry in the executive class, developed jointly with Lancia. It offered massive interior space (rated as a "large car" by the EPA) and continued Saab's safety and turbo traditions [citation:2][citation:5].</p>
+                    
+                    <p>General Motors purchased 50% of Saab in 1990 and full ownership in 2000. The GM years brought investment but also platform sharing, diluting Saab's uniqueness. The 9-3 (1998) and 9-5 (1997) were competent but lost some of the brand's quirky charm. The 9-2X ("Saabaru") and 9-7X (Chevy TrailBlazer rebadge) were low points, betraying the brand's identity [citation:1][citation:4][citation:10].</p>
+                    
+                    <p>After GM's bankruptcy, Saab was sold to Spyker Cars in 2010. Despite valiant efforts, including the striking Phoenix concept, the company couldn't secure funding. Saab filed for bankruptcy in December 2011. The final cars, a handful of 9-3s built by NEVS in 2013-2014, marked the end [citation:1][citation:3][citation:7].</p>
+                    
+                    <p>Saab's legacy lives on in the hearts of enthusiasts, in the aircraft-inspired design elements that influenced the industry, and in the turbochargers now found on virtually every car. It was a brand for nonconformists – engineers, architects, and those who refused to follow the crowd [citation:4].</p>
+                    
+                    <div class="founder-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>"The Saab 99 Turbo was the first mainstream car to use turbocharging – it changed the industry forever."</blockquote>
+                        <cite>- Saab engineering legacy</cite>
+                    </div>
+                </div>
+                
+                <div class="history-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar"></i>
+                        <span class="stat-number">1937</span>
+                        <span class="stat-label">Founded</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <span class="stat-number">1977</span>
+                        <span class="stat-label">First Turbo</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-car"></i>
+                        <span class="stat-number">900,000+</span>
+                        <span class="stat-label">Classic 900</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-cog"></i>
+                        <span class="stat-number">2011</span>
+                        <span class="stat-label">Bankruptcy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iconic Models Section -->
+    <section id="models" class="brand-section bg-light">
+        <div class="container">
+            <h2>Iconic <span class="highlight">Models</span></h2>
+            
+            <div class="models-grid">
+                <!-- Saab 900 (Classic) -->
+                <div class="model-card featured">
+                    <img src="../images/models/saab-900-classic.jpg" alt="Saab 900 Classic">
+                    <div class="model-info">
+                        <h3>Saab 900 (1978-1993)</h3>
+                        <p class="model-years">1978-1993</p>
+                        <p>The definitive Saab. Quirky, robust, and beloved. Its wrap-around windshield, aircraft-style interior, and turbocharged character made it an icon. The convertible (1986) is a classic.</p>
+                        <ul class="model-specs">
+                            <li><i class="fas fa-cog"></i> 2.0L turbo, 175 hp (Turbo 16)</li>
+                            <li><i class="fas fa-palette"></i> Aircraft-inspired design</li>
+                            <li><i class="fas fa-trophy"></i> 900,000+ produced</li>
+                            <li><i class="fas fa-heart"></i> Cult following</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Saab 99 Turbo -->
+                <div class="model-card">
+                    <img src="../images/models/saab-99-turbo.jpg" alt="Saab 99 Turbo">
+                    <h3>Saab 99 Turbo</h3>
+                    <p class="model-years">1977-1980</p>
+                    <p>The car that started the turbo revolution. 145 hp, black paint with gold trim, and rally-bred performance. A game-changer [citation:1][citation:4].</p>
+                </div>
+                
+                <!-- Saab 96 -->
+                <div class="model-card">
+                    <img src="../images/models/saab-96.jpg" alt="Saab 96">
+                    <h3>Saab 96</h3>
+                    <p class="model-years">1960-1980</p>
+                    <p>Monte Carlo rally winner (1962-63). Erik Carlsson's legendary car. Two-stroke engine, front-wheel drive, and indestructible [citation:8].</p>
+                </div>
+                
+                <!-- Saab 9000 -->
+                <div class="model-card">
+                    <img src="../images/models/saab-9000.jpg" alt="Saab 9000">
+                    <h3>Saab 9000</h3>
+                    <p class="model-years">1984-1998</p>
+                    <p>Executive express. Huge interior (EPA "large car"), turbo power, and comfortable cruising. 9000 Aero was the ultimate [citation:2][citation:5][citation:10].</p>
+                </div>
+                
+                <!-- Saab 9-3 Viggen -->
+                <div class="model-card">
+                    <img src="../images/models/saab-9-3-viggen.jpg" alt="Saab 9-3 Viggen">
+                    <h3>Saab 9-3 Viggen</h3>
+                    <p class="model-years">1999-2002</p>
+                    <p>Named after the Viggen fighter jet. 2.3L turbo, 230 hp, and massive torque steer. A proper Saab hot rod [citation:2][citation:10].</p>
+                </div>
+                
+                <!-- Saab 92 -->
+                <div class="model-card">
+                    <img src="../images/models/saab-92.jpg" alt="Saab 92">
+                    <h3>Saab 92</h3>
+                    <p class="model-years">1949-1956</p>
+                    <p>The first Saab. Aerodynamic body, two-stroke engine, and aircraft engineering. Started it all [citation:3][citation:6].</p>
+                </div>
+                
+                <!-- Saab Sonett -->
+                <div class="model-card">
+                    <img src="../images/models/saab-sonett.jpg" alt="Saab Sonett">
+                    <h3>Saab Sonett</h3>
+                    <p class="model-years">1955-1974</p>
+                    <p>Saab's only dedicated sports car. Fiberglass body, tiny two-stroke, and later V4 power. Quirky and rare [citation:2][citation:4].</p>
+                </div>
+                
+                <!-- Saab 9-5 (First Gen) -->
+                <div class="model-card">
+                    <img src="../images/models/saab-9-5.jpg" alt="Saab 9-5">
+                    <h3>Saab 9-5 (1997-2010)</h3>
+                    <p class="model-years">1997-2010</p>
+                    <p>The last true Saab flagship. Ventilated seats, turbo power, and classic Saab character. Aero with 2.3L turbo was the pick [citation:5][citation:10].</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Turbo Legacy Section -->
+    <section id="turbo" class="brand-section">
+        <div class="container">
+            <h2>The <span class="highlight">Turbo</span> Legacy</h2>
+            
+            <div class="turbo-grid">
+                <div class="turbo-text">
+                    <p>Saab didn't invent the turbocharger, but they made it famous. In 1977, the Saab 99 Turbo brought turbocharging to the masses, proving that forced induction could deliver both performance and drivability [citation:1][citation:9].</p>
+                    
+                    <h4>Saab Turbo Milestones:</h4>
+                    <ul>
+                        <li><strong>1977:</strong> Saab 99 Turbo – 145 hp, black with gold trim</li>
+                        <li><strong>1984:</strong> Saab 900 Turbo 16 – 175 hp, 16-valve intercooled</li>
+                        <li><strong>1991:</strong> Saab 9000 Turbo – 200+ hp, Ecopower engines</li>
+                        <li><strong>1999:</strong> Saab 9-3 Viggen – 230 hp, named after fighter jet</li>
+                        <li><strong>2002:</strong> Saab 9-5 Aero – 250 hp, 2.3L turbo</li>
+                        <li><strong>2008:</strong> Saab Turbo X – 280 hp, final turbo celebration</li>
+                    </ul>
+                    
+                    <p>Saab's turbo philosophy was unique: emphasis on low-end torque (full boost by 1,500 rpm) rather than peak power. This made Saabs effortlessly quick in everyday driving, not just on paper [citation:4].</p>
+                    
+                    <p>The "Ecopower" engines of the 1990s combined performance with efficiency – true turbo engineering.</p>
+                </div>
+                
+                <div class="turbo-image">
+                    <img src="../images/saab/turbo-engine.jpg" alt="Saab Turbo Engine">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aircraft Design Section -->
+    <section id="design" class="brand-section bg-light">
+        <div class="container">
+            <h2><span class="highlight">Aircraft</span> Design</h2>
+            
+            <div class="design-grid">
+                <div class="design-text">
+                    <p>Saab's aircraft heritage permeated every car they built. From aerodynamics to cockpit design, the fighter jet influence was unmistakable [citation:3][citation:7].</p>
+                    
+                    <h4>Aircraft-Inspired Features:</h4>
+                    <ul>
+                        <li><strong>Wrap-around windshield:</strong> Curved glass for better visibility, like a fighter canopy</li>
+                        <li><strong>"Night Panel" (1980s):</strong> Switch off all dashboard lights except speedometer for night driving – direct from aircraft dark cockpit philosophy [citation:1]</li>
+                        <li><strong>Curved side windows:</strong> Better aerodynamics, less wind noise</li>
+                        <li><strong>Ignition between seats:</strong> Not aircraft-inspired, but Saab's signature – prevented knee injury in crashes</li>
+                        <li><strong>Deep-set gauges:</strong> Hooded instruments like aircraft</li>
+                        <li><strong>Aerodynamics:</strong> Wind tunnel-tested bodies with remarkably low drag coefficients (Saab 92 had Cd 0.35 in 1949!)</li>
+                    </ul>
+                    
+                    <p>The Saab 92's teardrop shape was pure aircraft thinking – form following function, with aerodynamics prioritized [citation:6].</p>
+                </div>
+                
+                <div class="design-image">
+                    <img src="../images/saab/night-panel.jpg" alt="Saab Night Panel">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety Innovations Section -->
+    <section id="safety" class="brand-section">
+        <div class="container">
+            <h2><span class="highlight">Safety</span> Innovations</h2>
+            
+            <div class="safety-grid">
+                <div class="safety-text">
+                    <p>Saab was a safety pioneer, often ahead of Volvo in certain areas. Their aircraft engineering mindset prioritized passenger protection [citation:7][citation:9].</p>
+                    
+                    <h4>Saab Safety Firsts:</h4>
+                    <ul>
+                        <li><strong>1949:</strong> Crumple zones in Saab 92 – among the first</li>
+                        <li><strong>1962:</strong> Diagonal split braking system – safer than front-rear split [citation:8]</li>
+                        <li><strong>1971:</strong> Heated driver seat – standard in Sweden</li>
+                        <li><strong>1978:</strong> Self-repairing bumpers – Saab's "reversing bumper" could absorb minor impacts</li>
+                        <li><strong>1980:</strong> Automatic performance control – anti-knock system for turbos</li>
+                        <li><strong>1990:</strong> Saab 9000 – Sweden's safest car (Folksam ratings) [citation:2]</li>
+                        <li><strong>1997:</strong> Active head restraints (SAHR) – first in industry, prevented whiplash [citation:1][citation:7]</li>
+                        <li><strong>2003:</strong> All 9-3 models – Euro NCAP 5-star [citation:9]</li>
+                    </ul>
+                    
+                    <p>Saab was also first with ventilated seats (1997 9-5) – comfort meets safety [citation:10].</p>
+                </div>
+                
+                <div class="safety-image">
+                    <img src="../images/saab/saab-safety.jpg" alt="Saab Safety">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Erik Carlsson Section -->
+    <section id="erik" class="brand-section bg-light">
+        <div class="container">
+            <h2><span class="highlight">Erik "På Taket"</span> Carlsson</h2>
+            
+            <div class="erik-grid">
+                <div class="erik-text">
+                    <p>No Saab story is complete without Erik Carlsson – the man who made Saab a rally legend. Born in 1929, this Swedish farmer's son became the face of Saab's motorsport success [citation:4][citation:8].</p>
+                    
+                    <h4>Rally Victories:</h4>
+                    <ul>
+                        <li><strong>1960:</strong> RAC Rally winner</li>
+                        <li><strong>1961:</strong> RAC Rally winner again</li>
+                        <li><strong>1962:</strong> Monte Carlo Rally winner – driving Saab 96</li>
+                        <li><strong>1963:</strong> Monte Carlo Rally winner – consecutive victory</li>
+                        <li><strong>1964:</strong> Acropolis Rally winner</li>
+                    </ul>
+                    
+                    <p>Carlsson's nickname "På Taket" (on the roof) came from his celebratory habit of standing on his car's roof after victories. It became his trademark [citation:4][citation:8].</p>
+                    
+                    <p>He famously said: "To win rallies, you need three things: a good car, good tyres, and a good driver – and not necessarily in that order."</p>
+                    
+                    <p>Carlsson remained a Saab ambassador until his passing in 2015. He visited Taiwan in 1983 and 2001, performing driving demonstrations that thrilled thousands [citation:8].</p>
+                </div>
+                
+                <div class="erik-image">
+                    <img src="../images/saab/erik-carlsson.jpg" alt="Erik Carlsson">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The End Section -->
+    <section id="end" class="brand-section">
+        <div class="container">
+            <h2>The <span class="highlight">End</span> and Legacy</h2>
+            
+            <div class="end-grid">
+                <div class="end-text">
+                    <p>Saab's final years were tragic. After GM's bankruptcy, Saab was sold to Spyker Cars in 2010. Despite efforts, including the striking PhoeniX concept, funding ran out [citation:1][citation:3].</p>
+                    
+                    <h4>Timeline of Decline:</h4>
+                    <ul>
+                        <li><strong>1990:</strong> GM buys 50% of Saab</li>
+                        <li><strong>2000:</strong> GM acquires full ownership</li>
+                        <li><strong>2008:</strong> Financial crisis hits GM</li>
+                        <li><strong>2010:</strong> GM sells Saab to Spyker</li>
+                        <li><strong>2011:</strong> December 19 – Saab files for bankruptcy</li>
+                        <li><strong>2012:</strong> NEVS buys Saab assets</li>
+                        <li><strong>2013:</strong> Last few 9-3s built in Trollhättan</li>
+                    </ul>
+                    
+                    <h4>Legacy:</h4>
+                    <ul>
+                        <li><strong>Turbocharging:</strong> Saab proved it could be reliable and fun</li>
+                        <li><strong>Safety innovations:</strong> Active head restraints, crumple zones</li>
+                        <li><strong>Design language:</strong> Aircraft-inspired interiors, wrap-around windshields</li>
+                        <li><strong>Brand loyalty:</strong> Saab enthusiasts remain fiercely loyal</li>
+                        <li><strong>Beijing Automotive (BAIC):</strong> Bought rights to 9-3 and 9-5 platforms, creating "Senova" brand [citation:7][citation:9]</li>
+                    </ul>
+                    
+                    <p>The Saab Car Museum in Trollhättan preserves the history. And on roads worldwide, thousands of Saabs still run – a testament to their engineering [citation:3].</p>
+                </div>
+                
+                <div class="end-image">
+                    <img src="../images/saab/saab-last-car.jpg" alt="Last Saab">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="brand-section bg-light">
+        <div class="container">
+            <h2>Saab <span class="highlight">Timeline</span></h2>
+            
+            <div class="brand-timeline">
+                <div class="timeline-item">
+                    <div class="year">1937</div>
+                    <div class="desc">Svenska Aeroplan Aktiebolaget (Saab) founded to build aircraft</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1947</div>
+                    <div class="desc">Saab 92 prototype revealed – first car</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1949</div>
+                    <div class="desc">Saab 92 production begins in Trollhättan</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1955</div>
+                    <div class="desc">Saab 93 with three-cylinder two-stroke</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1956</div>
+                    <div class="desc">Sonett Super Sport – first Saab sports car</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1960</div>
+                    <div class="desc">Saab 96 introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1962</div>
+                    <div class="desc">Erik Carlsson wins Monte Carlo Rally in Saab 96</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1963</div>
+                    <div class="desc">Carlsson wins Monte Carlo again – consecutive victory</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1967</div>
+                    <div class="desc">Saab 99 launched – first all-new model since 92</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1969</div>
+                    <div class="desc">Saab merges with Scania-Vabis (Saab-Scania)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1977</div>
+                    <div class="desc">Saab 99 Turbo – world's first turbocharged mass-production car</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1978</div>
+                    <div class="desc">Saab 900 launched (classic)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1984</div>
+                    <div class="desc">Saab 9000 introduced; 900 Turbo 16 with 175 hp</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1986</div>
+                    <div class="desc">Saab 900 Convertible launched for US market</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1990</div>
+                    <div class="desc">GM purchases 50% of Saab Automobile</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1993</div>
+                    <div class="desc">New generation Saab 900 (GM platform) – controversial</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1997</div>
+                    <div class="desc">Saab 9-5 launched; 9-3 introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1999</div>
+                    <div class="desc">9-3 Viggen – 230 hp, named after fighter jet</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2000</div>
+                    <div class="desc">GM acquires full ownership of Saab</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2008</div>
+                    <div class="desc">Turbo X – final turbo celebration, 280 hp</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2010</div>
+                    <div class="desc">GM sells Saab to Spyker Cars</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2011</div>
+                    <div class="desc">March: Saab production stops; December 19: bankruptcy filed</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2012</div>
+                    <div class="desc">NEVS buys Saab assets</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2013</div>
+                    <div class="desc">Last few 9-3s built in Trollhättan</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2015</div>
+                    <div class="desc">Erik "På Taket" Carlsson passes away</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Brands -->
+    <div class="text-center section-padding">
+        <a href="../brands.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to All Brands</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../brands.html">Brands</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Swedish Brands</h4>
+                    <ul>
+                        <li><a href="volvo.html">Volvo</a></li>
+                        <li><a href="koenigsegg.html">Koenigsegg</a></li>
+                        <li><a href="saab.html">Saab</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

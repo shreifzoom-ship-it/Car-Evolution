@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes-Benz History | Complete Brand Profile & Iconic Models</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore Mercedes-Benz complete history from 1886 to present. Discover iconic models like 300SL Gullwing, S-Class, G-Wagen, and how Mercedes invented the automobile.">
+    <meta name="keywords" content="Mercedes-Benz history, 300SL, S-Class, G-Wagen, German cars, inventor of automobile, Karl Benz">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mercedes-Benz History | Complete Brand Profile">
+    <meta property="og:description" content="The Best or Nothing - Inventors of the Automobile">
+    <meta property="og:image" content="../images/brands/german/mercedes-logo.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/brands.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation (same structure) -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../1886-1920.html">1886-1920: Birth</a></li>
+                            <li><a href="../1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="../1950-1980.html">1950-1980: Muscle</a></li>
+                            <li><a href="../1980-2010.html">1980-2010: Technology</a></li>
+                            <li><a href="../2010-present.html">2010-Present: Electric</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../brands.html">Brands</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Brand Hero -->
+    <header class="brand-hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../images/brands/german/mercedes-hero.jpg');">
+        <div class="container">
+            <div class="brand-hero-content">
+                <img src="../images/brands/german/mercedes-logo.png" alt="Mercedes-Benz Logo" class="brand-hero-logo">
+                <h1>Mercedes-Benz</h1>
+                <p class="brand-tagline">The Best or Nothing</p>
+                
+                <div class="brand-quick-facts">
+                    <span><i class="fas fa-calendar"></i> Founded: 1926</span>
+                    <span><i class="fas fa-globe"></i> Country: Germany</span>
+                    <span><i class="fas fa-trophy"></i> Icon: 300SL, S-Class</span>
+                    <span><i class="fas fa-cog"></i> Inventor of Auto</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Navigation -->
+    <div class="brand-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#history" class="active">History</a></li>
+                <li><a href="#models">Iconic Models</a></li>
+                <li><a href="#sclass">S-Class</a></li>
+                <li><a href="#gwagen">G-Wagen</a></li>
+                <li><a href="#amg">AMG</a></li>
+                <li><a href="#motorsport">Motorsport</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- History Section -->
+    <section id="history" class="brand-section">
+        <div class="container">
+            <h2>Mercedes-Benz: <span class="highlight">Inventors of the Automobile</span></h2>
+            
+            <div class="history-grid">
+                <div class="history-text">
+                    <p>Mercedes-Benz is not just the world's oldest automobile manufacturer – it literally invented the car. The story begins with two men: Karl Benz and Gottlieb Daimler, working independently in 1880s Germany.</p>
+                    
+                    <p>In 1886, Karl Benz patented the Benz Patent-Motorwagen, widely recognized as the world's first automobile powered by an internal combustion engine. This three-wheeled vehicle had a 0.75 horsepower engine and could reach 16 km/h. Meanwhile, Gottlieb Daimler and Wilhelm Maybach built the first four-wheeled automobile, the "Daimler Motorized Carriage," in the same year.</p>
+                    
+                    <p>Daimler-Motoren-Gesellschaft (DMG) and Benz & Cie operated separately for decades. In 1901, DMG created a car named "Mercedes" after Mercedes Jellinek, the daughter of an important dealer. The Mercedes 35 HP is considered the first modern automobile – with a low center of gravity, honeycomb radiator, and lightweight engine.</p>
+                    
+                    <p>The 1920s brought economic challenges that led to the merger of DMG and Benz & Cie in 1926, forming Daimler-Benz AG with the Mercedes-Benz brand. The new company's three-pointed star logo represented domination of land, sea, and air.</p>
+                    
+                    <p>The 1930s brought the "Supercharged" era – massive luxury cars with compressors that forced air into the engine for extra power. The 540K is a masterpiece of the era. These cars also gained an unfortunate association with Nazi leadership.</p>
+                    
+                    <p>After World War II, Mercedes-Benz rebuilt and re-established itself as a symbol of engineering excellence. The 1953 "Ponton" models introduced modern unitary construction. But the 1954 300SL "Gullwing" became the icon – a beautiful, fast, and technologically advanced sports car with distinctive upward-opening doors.</p>
+                    
+                    <p>The 1960s and 1970s saw Mercedes define the modern luxury car. The "Fintail" models, the 600 "Grosser" limousine, and the 1972 S-Class (W116) established Mercedes as the benchmark. The 1979 G-Wagen (G-Class) launched and would eventually become a cultural icon.</p>
+                    
+                    <p>Today, Mercedes-Benz continues to lead in technology, luxury, and innovation. The company pioneered safety features like anti-lock brakes, airbags, and electronic stability control. It leads in electrification with the EQ brand and remains the aspiration standard for automakers worldwide.</p>
+                    
+                    <div class="founder-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>"The best or nothing."</blockquote>
+                        <cite>- Company motto, attributed to Gottlieb Daimler</cite>
+                    </div>
+                </div>
+                
+                <div class="history-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar"></i>
+                        <span class="stat-number">1886</span>
+                        <span class="stat-label">First Car</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <span class="stat-number">1954</span>
+                        <span class="stat-label">300SL Gullwing</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-car"></i>
+                        <span class="stat-number">1972</span>
+                        <span class="stat-label">First S-Class</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <span class="stat-number">Safety</span>
+                        <span class="stat-label">Pioneer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iconic Models Section -->
+    <section id="models" class="brand-section bg-light">
+        <div class="container">
+            <h2>Iconic <span class="highlight">Models</span></h2>
+            
+            <div class="models-grid">
+                <!-- Mercedes-Benz 300SL -->
+                <div class="model-card featured">
+                    <img src="../images/models/mercedes-300sl.jpg" alt="Mercedes-Benz 300SL Gullwing">
+                    <div class="model-info">
+                        <h3>Mercedes-Benz 300SL (W198)</h3>
+                        <p class="model-years">1954-1963</p>
+                        <p>The "Gullwing" is one of the most beautiful and iconic cars ever built. Its distinctive upward-opening doors were necessitated by the car's tubular space frame, which made conventional doors impossible.</p>
+                        <ul class="model-specs">
+                            <li><i class="fas fa-cog"></i> 3.0L Inline-6 with direct fuel injection (first production car)</li>
+                            <li><i class="fas fa-tachometer-alt"></i> 215 hp, 160 mph top speed - fastest production car of its era</li>
+                            <li><i class="fas fa-trophy"></i> 1952 Le Mans winner, Carrera Panamericana winner</li>
+                            <li><i class="fas fa-gem"></i> Now worth millions – among most valuable collector cars</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Mercedes-Benz S-Class -->
+                <div class="model-card">
+                    <img src="../images/models/mercedes-sclass.jpg" alt="Mercedes-Benz S-Class">
+                    <h3>Mercedes-Benz S-Class</h3>
+                    <p class="model-years">1972-present</p>
+                    <p>The benchmark luxury sedan. Each generation introduces technology that eventually spreads throughout the industry.</p>
+                </div>
+                
+                <!-- Mercedes-Benz G-Class -->
+                <div class="model-card">
+                    <img src="../images/models/mercedes-gclass.jpg" alt="Mercedes-Benz G-Class">
+                    <h3>Mercedes-Benz G-Class (G-Wagen)</h3>
+                    <p class="model-years">1979-present</p>
+                    <p>The iconic off-roader. Originally military vehicle, now luxury status symbol. Unchanged design for 40+ years.</p>
+                </div>
+                
+                <!-- Mercedes-Benz 600 -->
+                <div class="model-card">
+                    <img src="../images/models/mercedes-600.jpg" alt="Mercedes-Benz 600">
+                    <h3>Mercedes-Benz 600 "Grosser"</h3>
+                    <p class="model-years">1963-1981</p>
+                    <p>The ultimate luxury limousine. Owned by heads of state, popes, and celebrities. Hydraulic systems controlled everything.</p>
+                </div>
+                
+                <!-- Mercedes-Benz 190E 2.3-16 -->
+                <div class="model-card">
+                    <img src="../images/models/mercedes-190e.jpg" alt="Mercedes-Benz 190E 2.3-16">
+                    <h3>Mercedes-Benz 190E 2.3-16</h3>
+                    <p class="model-years">1983-1993</p>
+                    <p>The homologation special developed with Cosworth. Created for DTM racing, it became a cult classic.</p>
+                </div>
+                
+                <!-- Mercedes-Benz CLK GTR -->
+                <div class="model-card">
+                    <img src="../images/models/mercedes-clk-gtr.jpg" alt="Mercedes-Benz CLK GTR">
+                    <h3>Mercedes-Benz CLK GTR</h3>
+                    <p class="model-years">1998-1999</p>
+                    <p>Homologation special for FIA GT racing. V12-powered, only 25 built. One of the rarest and most extreme Mercedes.</p>
+                </div>
+                
+                <!-- Mercedes-Benz SL Pagoda -->
+                <div class="model-card">
+                    <img src="../images/models/mercedes-sl-pagoda.jpg" alt="Mercedes-Benz SL Pagoda">
+                    <h3>Mercedes-Benz SL "Pagoda" (W113)</h3>
+                    <p class="model-years">1963-1971</p>
+                    <p>Beautiful roadster with distinctive concave hardtop. Graceful design and robust engineering.</p>
+                </div>
+                
+                <!-- Mercedes-Benz 300D "Adenauer" -->
+                <div class="model-card">
+                    <img src="../images/models/mercedes-300d.jpg" alt="Mercedes-Benz 300D Adenauer">
+                    <h3>Mercedes-Benz 300 "Adenauer"</h3>
+                    <p class="model-years">1951-1957</p>
+                    <p>Post-war luxury flagship, named after German chancellor Konrad Adenauer. Hand-built and exclusive.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- S-Class Section -->
+    <section id="sclass" class="brand-section">
+        <div class="container">
+            <h2>The <span class="highlight">S-Class</span> – Benchmark of Luxury</h2>
+            
+            <div class="sclass-grid">
+                <div class="sclass-text">
+                    <p>The S-Class has been Mercedes-Benz's flagship luxury sedan since 1972. Each generation introduces innovations that eventually spread across the entire automotive industry.</p>
+                    
+                    <h4>Generations:</h4>
+                    <ul>
+                        <li><strong>W116 (1972-1980):</strong> First officially called S-Class. Introduced anti-lock brakes (ABS) in 1978.</li>
+                        <li><strong>W126 (1979-1991):</strong> Aerodynamic design, airbag standard, longest-running S-Class.</li>
+                        <li><strong>W140 (1991-1998):</strong> Massive, technologically advanced – introduced double-pane windows, parking sensors.</li>
+                        <li><strong>W220 (1998-2005):</strong> Lighter, more efficient. Introduced DISTRONIC adaptive cruise, AirMATIC suspension.</li>
+                        <li><strong>W221 (2005-2013):</strong> Bold design, night vision assist, PRE-SAFE system.</li>
+                        <li><strong>W222 (2013-2020):</strong> Design masterpiece, magic body control, fragrance system.</li>
+                        <li><strong>W223 (2020-present):</strong> Electric-focused, rear-seat airbags, MBUX Hyperscreen.</li>
+                    </ul>
+                    
+                    <p>The S-Class has always been the car that defines what a luxury sedan should be. Every competitor benchmarks against it, and it remains the standard.</p>
+                </div>
+                
+                <div class="sclass-image">
+                    <img src="../images/mercedes/sclass-generations.jpg" alt="S-Class Generations">
+                </div>
+            </div>
+            
+            <div class="sclass-quote">
+                <i class="fas fa-quote-left"></i>
+                <blockquote>"The S-Class is not just a car. It's a statement."</blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- G-Wagen Section -->
+    <section id="gwagen" class="brand-section bg-light">
+        <div class="container">
+            <h2><span class="highlight">G-Wagen</span> – The Icon</h2>
+            
+            <div class="gwagen-grid">
+                <div class="gwagen-text">
+                    <p>The G-Class (Geländewagen) began in 1979 as a military vehicle developed with Steyr-Daimler-Puch in Austria. Designed for extreme off-road capability, it featured solid axles, locking differentials, and a ladder frame.</p>
+                    
+                    <p>For decades, the G-Wagen was purely functional – used by military forces, forest rangers, and serious off-roaders. But in the 1990s, Mercedes realized it had a unique vehicle that could become a luxury status symbol.</p>
+                    
+                    <p>Today's G-Class combines legendary off-road capability with handcrafted luxury. The design has barely changed in 40 years – the flat windshield, exposed door hinges, and distinctive door handles remain. Yet inside, it offers the same luxury as an S-Class.</p>
+                    
+                    <p>The G-Wagen has become a cultural phenomenon, beloved by celebrities, off-road enthusiasts, and anyone who appreciates its unique combination of capability and style. The recent electric EQG version ensures it continues into the future.</p>
+                    
+                    <h4>Key Facts:</h4>
+                    <ul>
+                        <li>Over 400,000 produced in 40+ years</li>
+                        <li>Still hand-assembled in Graz, Austria</li>
+                        <li>Can ford water up to 70cm deep</li>
+                        <li>Three locking differentials standard</li>
+                    </ul>
+                </div>
+                
+                <div class="gwagen-image">
+                    <img src="../images/mercedes/gwagen-offroad.jpg" alt="G-Wagen Off-Road">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AMG Section -->
+    <section id="amg" class="brand-section">
+        <div class="container">
+            <h2><span class="highlight">AMG</span> – Performance</h2>
+            
+            <div class="amg-grid">
+                <div class="amg-text">
+                    <p>AMG began in 1967 as an independent engineering firm tuning Mercedes cars. Founded by former Mercedes engineers Hans Werner Aufrecht and Erhard Melcher, the name comes from Aufrecht, Melcher, and Großaspach (Aufrecht's birthplace).</p>
+                    
+                    <p>The legend began in 1971 when an AMG-modified 300 SEL 6.8 won its class at the 24 Hours of Spa, finishing second overall against purpose-built race cars. This "Red Pig" established AMG's performance credentials.</p>
+                    
+                    <p>Throughout the 1980s and 1990s, AMG built increasingly extreme Mercedes – the "Hammer" (W124 with V8) became an icon. Mercedes acquired a majority stake in AMG in 1999, making it the official in-house performance division.</p>
+                    
+                    <h4>Legendary AMG Engines:</h4>
+                    <ul>
+                        <li><strong>M156 (2006-2015):</strong> First engine entirely developed by AMG. 6.2L V8, naturally aspirated, up to 518 hp.</li>
+                        <li><strong>M157 (2010-2015):</strong> 5.5L twin-turbo V8, up to 577 hp.</li>
+                        <li><strong>M177 (2015-present):</strong> 4.0L twin-turbo V8, hand-built by one person per engine (signature on engine cover).</li>
+                        <li><strong>M279 (2003-present):</strong> 6.0L V12 bi-turbo, up to 720 hp in S65.</li>
+                    </ul>
+                    
+                    <p>Today, AMG models cover everything from the A-Class to GT sports cars, with hybrid performance and Formula 1 technology.</p>
+                </div>
+                
+                <div class="amg-image">
+                    <img src="../images/mercedes/amg-engine.jpg" alt="AMG Engine">
+                    <p class="image-caption">AMG engines are hand-built by one person</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Motorsport Section -->
+    <section id="motorsport" class="brand-section bg-light">
+        <div class="container">
+            <h2>Mercedes in <span class="highlight">Motorsport</span></h2>
+            
+            <div class="motorsport-grid">
+                <div class="motorsport-content">
+                    <ul>
+                        <li><i class="fas fa-trophy"></i> <strong>Formula 1:</strong> 8 consecutive Constructors' Championships (2014-2021), 7 Drivers' titles for Lewis Hamilton</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Silver Arrows:</strong> Legendary pre-war and 1950s Grand Prix cars (W125, W196)</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Le Mans:</strong> 1952 win with 300SL, 1989 Sauber-Mercedes win, 1998-1999 CLK LM/GTR success</li>
+                        <li><i class="fas fa-trophy"></i> <strong>DTM:</strong> Dominant in 1990s with 190E and later CLK</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Formula E:</strong> Current factory program</li>
+                    </ul>
+                    
+                    <p>The 1955 Le Mans disaster – where a Mercedes 300SLR crashed into spectators, killing 84 people – led Mercedes to withdraw from racing for decades. They returned in the 1980s and never looked back.</p>
+                    
+                    <p>The modern Mercedes-AMG Petronas F1 team is the most successful in history, winning 8 consecutive constructors' titles from 2014-2021 with Lewis Hamilton and Nico Rosberg.</p>
+                </div>
+                
+                <div class="motorsport-image">
+                    <img src="../images/motorsport/mercedes-f1.jpg" alt="Mercedes F1">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="brand-section">
+        <div class="container">
+            <h2>Mercedes-Benz <span class="highlight">Timeline</span></h2>
+            
+            <div class="brand-timeline">
+                <div class="timeline-item">
+                    <div class="year">1886</div>
+                    <div class="desc">Karl Benz patents Benz Patent-Motorwagen; Daimler builds first four-wheeled car</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1901</div>
+                    <div class="desc">Mercedes 35 HP – first modern automobile</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1926</div>
+                    <div class="desc">DMG and Benz merge to form Daimler-Benz, Mercedes-Benz brand created</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1934</div>
+                    <div class="desc">W25 Silver Arrow Grand Prix car – legend begins</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1954</div>
+                    <div class="desc">300SL Gullwing introduced – world's fastest production car</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1959</div>
+                    <div class="desc">"Fintail" models introduce crumple zone safety</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1963</div>
+                    <div class="desc">600 "Grosser" limousine and SL "Pagoda" launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1972</div>
+                    <div class="desc">First S-Class (W116) introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1978</div>
+                    <div class="desc">ABS anti-lock brakes introduced on S-Class</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1979</div>
+                    <div class="desc">G-Wagen (G-Class) launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1981</div>
+                    <div class="desc">Airbag introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1983</div>
+                    <div class="desc">190E 2.3-16 with Cosworth</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1991</div>
+                    <div class="desc">W140 S-Class – technological tour-de-force</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1995</div>
+                    <div class="desc">ESP electronic stability control introduced</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1999</div>
+                    <div class="desc">Mercedes acquires AMG</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2003</div>
+                    <div class="desc">PRE-SAFE predictive safety system</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2010</div>
+                    <div class="desc">Mercedes returns to F1 with own team</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2014</div>
+                    <div class="desc">F1 dominance begins – 8 consecutive titles</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2019</div>
+                    <div class="desc">EQC – first EQ electric model</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2022</div>
+                    <div class="desc">Vision EQXX – 1,000 km range concept</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2024</div>
+                    <div class="desc">EQG electric G-Class revealed</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Brands -->
+    <div class="text-center section-padding">
+        <a href="../brands.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to All Brands</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../brands.html">Brands</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>German Brands</h4>
+                    <ul>
+                        <li><a href="bmw.html">BMW</a></li>
+                        <li><a href="mercedes-benz.html">Mercedes-Benz</a></li>
+                        <li><a href="audi.html">Audi</a></li>
+                        <li><a href="volkswagen.html">Volkswagen</a></li>
+                        <li><a href="porsche.html">Porsche</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

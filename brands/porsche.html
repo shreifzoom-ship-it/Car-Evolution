@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche History | Complete Brand Profile & Iconic Models</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore Porsche's complete history from 1931 to present. Discover iconic models like 911, Cayenne, Boxster, 356, and how Porsche became the ultimate sports car brand.">
+    <meta name="keywords" content="Porsche history, Porsche 911, Porsche Cayenne, Porsche 356, German cars, sports car, Ferdinand Porsche">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Porsche History | Complete Brand Profile">
+    <meta property="og:description" content="There is no substitute">
+    <meta property="og:image" content="../images/brands/german/porsche-logo.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/brands.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../1886-1920.html">1886-1920: Birth</a></li>
+                            <li><a href="../1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="../1950-1980.html">1950-1980: Muscle</a></li>
+                            <li><a href="../1980-2010.html">1980-2010: Technology</a></li>
+                            <li><a href="../2010-present.html">2010-Present: Electric</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../brands.html">Brands</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Brand Hero -->
+    <header class="brand-hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../images/brands/german/porsche-hero.jpg');">
+        <div class="container">
+            <div class="brand-hero-content">
+                <img src="../images/brands/german/porsche-logo.png" alt="Porsche Logo" class="brand-hero-logo">
+                <h1>Porsche</h1>
+                <p class="brand-tagline">There is no substitute</p>
+                
+                <div class="brand-quick-facts">
+                    <span><i class="fas fa-calendar"></i> Founded: 1931</span>
+                    <span><i class="fas fa-globe"></i> Country: Germany</span>
+                    <span><i class="fas fa-trophy"></i> Icon: 911</span>
+                    <span><i class="fas fa-cog"></i> Sports Car Legend</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Navigation -->
+    <div class="brand-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#history" class="active">History</a></li>
+                <li><a href="#models">Iconic Models</a></li>
+                <li><a href="#911">911 Story</a></li>
+                <li><a href="#engine">Engine Evolution</a></li>
+                <li><a href="#motorsport">Motorsport</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- History Section -->
+    <section id="history" class="brand-section">
+        <div class="container">
+            <h2>Porsche: <span class="highlight">Engineering Perfection</span></h2>
+            
+            <div class="history-grid">
+                <div class="history-text">
+                    <p>Porsche's story begins with Ferdinand Porsche, a brilliant engineer who designed the Lohner-Porsche electric car in 1900, worked for Mercedes, and created the Volkswagen Beetle. In 1931, he founded "Dr. Ing. h.c. F. Porsche GmbH" in Stuttgart – an engineering consultancy, not a car manufacturer.</p>
+                    
+                    <p>The company worked on many projects, including the Auto Union Grand Prix cars. During World War II, they designed military vehicles including the Kübelwagen and the massive Maus tank. After the war, Ferdinand was imprisoned, and the company's future was uncertain.</p>
+                    
+                    <p>Ferdinand's son Ferry Porsche took over and made a crucial decision: he would build his own car. "I couldn't find the sports car of my dreams, so I built it myself." The result was the 356, the first Porsche-badged car. Built in Gmünd, Austria, with Beetle-based mechanicals, it established the Porsche formula: lightweight, air-cooled rear engine, superb handling.</p>
+                    
+                    <p>The 356 evolved and succeeded, but the 1963 911 changed everything. Designed by Ferry's son Ferdinand Alexander "Butzi" Porsche, the 911 defined the sports car for generations. Its distinctive shape, rear-engine layout, and flat-six engine created a legend.</p>
+                    
+                    <p>Through the 1970s and 1980s, Porsche expanded with front-engine cars like the 924, 944, and 928. Purists complained, but these cars saved the company financially. The 959 (1986) was a technological masterpiece – all-wheel drive, sequential turbo, advanced electronics – that set the stage for future supercars.</p>
+                    
+                    <p>The 1990s brought crisis. Sales plummeted, quality suffered, and Porsche nearly became a takeover target. The 1997 Boxster (based on the 911 platform) and the 1999 996 (first water-cooled 911) revitalized the company. But the real savior was the 2002 Cayenne SUV – hated by purists but massively profitable.</p>
+                    
+                    <p>Today, Porsche is more successful than ever. The Cayenne, Macan, Panamera, and Taycan electric sedan have expanded the brand while the 911 remains the heart. Porsche consistently achieves the highest profit margins in the industry, proving that a pure sports car company can thrive by adapting.</p>
+                    
+                    <div class="founder-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>"I couldn't find the sports car of my dreams, so I built it myself."</blockquote>
+                        <cite>- Ferry Porsche</cite>
+                    </div>
+                </div>
+                
+                <div class="history-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar"></i>
+                        <span class="stat-number">1931</span>
+                        <span class="stat-label">Founded</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <span class="stat-number">1948</span>
+                        <span class="stat-label">356 First Car</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-car"></i>
+                        <span class="stat-number">1963</span>
+                        <span class="stat-label">911 Introduced</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <span class="stat-number">30,000+</span>
+                        <span class="stat-label">Race Wins</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iconic Models Section -->
+    <section id="models" class="brand-section bg-light">
+        <div class="container">
+            <h2>Iconic <span class="highlight">Models</span></h2>
+            
+            <div class="models-grid">
+                <!-- Porsche 911 -->
+                <div class="model-card featured">
+                    <img src="../images/models/porsche-911.jpg" alt="Porsche 911">
+                    <div class="model-info">
+                        <h3>Porsche 911 (1963-present)</h3>
+                        <p class="model-years">8 generations | 1963-present</p>
+                        <p>The definitive sports car. For over 60 years, the 911 has evolved while maintaining its core identity: rear-engine, flat-six, and unmistakable silhouette. It's the benchmark in its segment.</p>
+                        <ul class="model-specs">
+                            <li><i class="fas fa-cog"></i> 2.0L air-cooled (1963) to 3.8L twin-turbo (current)</li>
+                            <li><i class="fas fa-tachometer-alt"></i> 130 hp to 650 hp (Turbo S)</li>
+                            <li><i class="fas fa-clock"></i> 0-60: 8.5s (1963) to 2.6s (current)</li>
+                            <li><i class="fas fa-trophy"></i> Over 1 million produced</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Porsche 356 -->
+                <div class="model-card">
+                    <img src="../images/models/porsche-356.jpg" alt="Porsche 356">
+                    <h3>Porsche 356</h3>
+                    <p class="model-years">1948-1965</p>
+                    <p>The first Porsche. Based on Beetle components but completely reimagined. Lightweight, aerodynamic, and beautiful – established the Porsche formula.</p>
+                </div>
+                
+                <!-- Porsche Cayenne -->
+                <div class="model-card">
+                    <img src="../images/models/porsche-cayenne.jpg" alt="Porsche Cayenne">
+                    <h3>Porsche Cayenne</h3>
+                    <p class="model-years">2002-present</p>
+                    <p>The controversial SUV that saved Porsche. Hated by purists but massively successful, funding 911 development and expanding the brand globally.</p>
+                </div>
+                
+                <!-- Porsche Boxster -->
+                <div class="model-card">
+                    <img src="../images/models/porsche-boxster.jpg" alt="Porsche Boxster">
+                    <h3>Porsche Boxster</h3>
+                    <p class="model-years">1996-present</p>
+                    <p>The affordable mid-engine roadster. Revived Porsche's fortunes in the 1990s and brought new buyers to the brand.</p>
+                </div>
+                
+                <!-- Porsche 917 -->
+                <div class="model-card">
+                    <img src="../images/models/porsche-917.jpg" alt="Porsche 917">
+                    <h3>Porsche 917</h3>
+                    <p class="model-years">1969-1973</p>
+                    <p>The Le Mans legend. First overall win at Le Mans (1970), starred in Steve McQueen's "Le Mans." One of the most beautiful race cars ever.</p>
+                </div>
+                
+                <!-- Porsche 959 -->
+                <div class="model-card">
+                    <img src="../images/models/porsche-959.jpg" alt="Porsche 959">
+                    <h3>Porsche 959</h3>
+                    <p class="model-years">1986-1989</p>
+                    <p>The technological masterpiece of the 1980s. All-wheel drive, sequential turbos, advanced electronics. The first supercar with everyday usability.</p>
+                </div>
+                
+                <!-- Porsche Carrera GT -->
+                <div class="model-card">
+                    <img src="../images/models/porsche-carrera-gt.jpg" alt="Porsche Carrera GT">
+                    <h3>Porsche Carrera GT</h3>
+                    <p class="model-years">2003-2006</p>
+                    <p>The V10 supercar with a manual transmission. A raw, analog experience before the digital age. Sounded like Formula 1.</p>
+                </div>
+                
+                <!-- Porsche Taycan -->
+                <div class="model-card">
+                    <img src="../images/models/porsche-taycan.jpg" alt="Porsche Taycan">
+                    <h3>Porsche Taycan</h3>
+                    <p class="model-years">2019-present</p>
+                    <p>Porsche's first electric car. Proved that EVs can handle, perform, and feel like Porsches. Over 750 hp in Turbo S.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 911 Story Section -->
+    <section id="911" class="brand-section">
+        <div class="container">
+            <h2>The <span class="highlight">911</span> Story</h2>
+            
+            <div class="story-grid">
+                <div class="story-text">
+                    <p>The 911 is the heart of Porsche. For over 60 years, it has evolved while maintaining its soul. Each generation tells a story.</p>
+                    
+                    <h4>901 (1963)</h4>
+                    <p>Originally called 901, but Peugeot claimed rights to three-digit numbers with zero. Renamed 911. 2.0L flat-six, 130 hp.</p>
+                    
+                    <h4>G-Series (1973-1989)</h4>
+                    <p>Impact bumpers, larger engines, first turbos. The 930 Turbo (1975) was the "widowmaker" – brutal, challenging, legendary.</p>
+                    
+                    <h4>964 (1989-1994)</h4>
+                    <p>First major redesign. All-wheel drive Carrera 4, Tiptronic automatic. Integrated bumpers, more modern.</p>
+                    
+                    <h4>993 (1994-1998)</h4>
+                    <p>The last air-cooled 911. Beautiful design, advanced multi-link rear suspension. The most desirable modern 911 for purists.</p>
+                    
+                    <h4>996 (1998-2004)</h4>
+                    <p>First water-cooled 911. Controversial "fried egg" headlights. More refined, faster, but purists mourned air-cooled.</p>
+                    
+                    <h4>997 (2004-2012)</h4>
+                    <p>Return to round headlights. Perfected water-cooled formula. GT3, GT2, Turbo models became benchmarks.</p>
+                    
+                    <h4>991 (2011-2019)</h4>
+                    <p>Larger, lighter, more efficient. First with 7-speed manual. Widest range of variants in history.</p>
+                    
+                    <h4>992 (2019-present)</h4>
+                    <p>Wider, more technological, yet still unmistakably 911. Hybrid versions coming, turbocharged across range.</p>
+                    
+                    <p>Over 1 million 911s have been built – more than any other sports car. It's the definitive sports car, the benchmark, the icon.</p>
+                </div>
+                
+                <div class="story-image">
+                    <img src="../images/porsche/911-generations.jpg" alt="911 Generations">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engine Evolution Section -->
+    <section id="engine" class="brand-section bg-light">
+        <div class="container">
+            <h2><span class="highlight">Engine</span> Evolution</h2>
+            
+            <div class="engine-grid">
+                <div class="engine-card">
+                    <h4>Air-Cooled Flat-Six</h4>
+                    <p>The heart of Porsche for 35 years. From 2.0L (130 hp) to 3.8L (450 hp in 993 GT2). Character, sound, and soul.</p>
+                </div>
+                
+                <div class="engine-card">
+                    <h4>Water-Cooled Flat-Six</h4>
+                    <p>996 introduced water-cooling. More power, refinement, and reliability. Current 4.0L GT3 engines rev to 9,000 rpm.</p>
+                </div>
+                
+                <div class="engine-card">
+                    <h4>Turbocharged</h4>
+                    <p>930 Turbo (1975) was first. Now dominates 911 range – Carrera S, Turbo, Turbo S. Massive torque, everyday usability.</p>
+                </div>
+                
+                <div class="engine-card">
+                    <h4>V8</h4>
+                    <p>Cayenne, Panamera, 928. Porsche's V8s are powerful and refined. Current 4.0L twin-turbo used across VW Group.</p>
+                </div>
+                
+                <div class="engine-card">
+                    <h4>V10</h4>
+                    <p>Carrera GT's 5.7L V10 derived from aborted F1 program. 603 hp, 8,000 rpm, one of the greatest engine sounds.</p>
+                </div>
+                
+                <div class="engine-card">
+                    <h4>Electric</h4>
+                    <p>Taycan's permanent magnet synchronous motors. Up to 750 hp, 2.6s 0-60, 800V architecture. The future.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Motorsport Section -->
+    <section id="motorsport" class="brand-section">
+        <div class="container">
+            <h2>Porsche in <span class="highlight">Motorsport</span></h2>
+            
+            <div class="motorsport-grid">
+                <div class="motorsport-content">
+                    <ul>
+                        <li><i class="fas fa-trophy"></i> <strong>Le Mans:</strong> 19 overall wins – more than any other manufacturer. 917 (1970-71), 936, 956, 962, 919 Hybrid (2015-2017)</li>
+                        <li><i class="fas fa-trophy"></i> <strong>24 Hours of Daytona:</strong> 23 class wins, multiple overall</li>
+                        <li><i class="fas fa-trophy"></i> <strong>12 Hours of Sebring:</strong> 18 overall wins</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Targa Florio:</strong> 11 wins – legendary on the Sicilian mountain road</li>
+                        <li><i class="fas fa-trophy"></i> <strong>World Rally Championship:</strong> 959 won Paris-Dakar (1986)</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Formula 1:</strong> Engine supplier with mixed results</li>
+                        <li><i class="fas fa-trophy"></i> <strong>World Endurance Championship:</strong> Dominant with 919 Hybrid</li>
+                        <li><i class="fas fa-trophy"></i> <strong>Formula E:</strong> Current factory program</li>
+                    </ul>
+                    
+                    <p>Porsche has won over 30,000 races – more than any other manufacturer. The 917, 956, 962, and 919 Hybrid are legends. Customer racing is core to Porsche – there are more Porsche race cars than any other brand.</p>
+                </div>
+                
+                <div class="motorsport-image">
+                    <img src="../images/motorsport/porsche-917.jpg" alt="Porsche 917">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="brand-section bg-light">
+        <div class="container">
+            <h2>Porsche <span class="highlight">Timeline</span></h2>
+            
+            <div class="brand-timeline">
+                <div class="timeline-item">
+                    <div class="year">1931</div>
+                    <div class="desc">Ferdinand Porsche founds engineering office in Stuttgart</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1938</div>
+                    <div class="desc">Volkswagen Beetle designed by Ferdinand Porsche</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1948</div>
+                    <div class="desc">First Porsche 356 built in Gmünd, Austria</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1951</div>
+                    <div class="desc">First Le Mans win with 356</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1963</div>
+                    <div class="desc">Porsche 901 introduced (becomes 911)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1969</div>
+                    <div class="desc">917 introduced – becomes Le Mans legend</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1970</div>
+                    <div class="desc">First Le Mans overall win with 917</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1975</div>
+                    <div class="desc">930 Turbo introduced – "widowmaker"</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1986</div>
+                    <div class="desc">959 introduced – technological masterpiece</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1993</div>
+                    <div class="desc">Boxster concept at Detroit Auto Show</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1996</div>
+                    <div class="desc">Boxster production starts</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1997</div>
+                    <div class="desc">996 – first water-cooled 911</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2002</div>
+                    <div class="desc">Cayenne SUV launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2003</div>
+                    <div class="desc">Carrera GT launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2009</div>
+                    <div class="desc">Panamera grand tourer launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2012</div>
+                    <div class="desc">991-generation 911</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2015</div>
+                    <div class="desc">Macan compact SUV launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2015</div>
+                    <div class="desc">919 Hybrid wins Le Mans (2015-2017)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2019</div>
+                    <div class="desc">Taycan electric car launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2023</div>
+                    <div class="desc">911 Dakar – off-road 911</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2024</div>
+                    <div class="desc">Mission X hypercar concept</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Brands -->
+    <div class="text-center section-padding">
+        <a href="../brands.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to All Brands</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../brands.html">Brands</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>German Brands</h4>
+                    <ul>
+                        <li><a href="bmw.html">BMW</a></li>
+                        <li><a href="mercedes-benz.html">Mercedes-Benz</a></li>
+                        <li><a href="audi.html">Audi</a></li>
+                        <li><a href="volkswagen.html">Volkswagen</a></li>
+                        <li><a href="porsche.html">Porsche</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

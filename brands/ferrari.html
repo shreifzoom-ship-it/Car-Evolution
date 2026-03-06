@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrari History | Complete Brand Profile & Iconic Models</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore Ferrari's complete history from 1939 to present. Discover iconic models like 250 GTO, F40, LaFerrari, and how Ferrari became the most legendary sports car brand.">
+    <meta name="keywords" content="Ferrari history, Ferrari 250 GTO, Ferrari F40, Ferrari LaFerrari, Italian cars, supercars, Enzo Ferrari">
+    <meta name="author" content="Sharif Muntasir Abdelwahab">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ferrari History | Complete Brand Profile">
+    <meta property="og:description" content="The Prancing Horse - Racing Since 1929">
+    <meta property="og:image" content="../images/brands/italian/ferrari-logo.png">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/brands.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="logo">
+                    <span class="brand-name">Car<span>Evolution</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Eras <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../1886-1920.html">1886-1920: Birth</a></li>
+                            <li><a href="../1920-1950.html">1920-1950: Golden Age</a></li>
+                            <li><a href="../1950-1980.html">1950-1980: Muscle</a></li>
+                            <li><a href="../1980-2010.html">1980-2010: Technology</a></li>
+                            <li><a href="../2010-present.html">2010-Present: Electric</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../brands.html">Brands</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="mobile-menu-close" id="closeMenu"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="openMenu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" placeholder="Search cars, brands, eras..." id="searchInput">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <!-- Brand Hero -->
+    <header class="brand-hero" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('../images/brands/italian/ferrari-hero.jpg');">
+        <div class="container">
+            <div class="brand-hero-content">
+                <img src="../images/brands/italian/ferrari-logo.png" alt="Ferrari Logo" class="brand-hero-logo">
+                <h1>Ferrari</h1>
+                <p class="brand-tagline">The Prancing Horse</p>
+                
+                <div class="brand-quick-facts">
+                    <span><i class="fas fa-calendar"></i> Founded: 1939</span>
+                    <span><i class="fas fa-globe"></i> Country: Italy</span>
+                    <span><i class="fas fa-trophy"></i> Icon: 250 GTO, F40</span>
+                    <span><i class="fas fa-cog"></i> Racing Legend</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Navigation -->
+    <div class="brand-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#history" class="active">History</a></li>
+                <li><a href="#models">Iconic Models</a></li>
+                <li><a href="#f1">Formula 1</a></li>
+                <li><a href="#v12">V12 Legends</a></li>
+                <li><a href="#special">Special Series</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- History Section -->
+    <section id="history" class="brand-section">
+        <div class="container">
+            <h2>Ferrari: <span class="highlight">The Prancing Horse</span></h2>
+            
+            <div class="history-grid">
+                <div class="history-text">
+                    <p>Ferrari is more than a car company – it's a legend. Founded by Enzo Ferrari, a man obsessed with racing, the company has become the most iconic sports car brand in history.</p>
+                    
+                    <p>Enzo Ferrari began as a racing driver for Alfa Romeo in the 1920s. In 1929, he founded Scuderia Ferrari as a racing team for Alfa Romeo. The prancing horse logo came from Count Francesco Baracca, a WWI flying ace, whose mother suggested Enzo use it for good luck.</p>
+                    
+                    <p>After World War II, Enzo finally built his own cars. The first Ferrari, the 125 S, debuted in 1947 with a 1.5L V12. Ferrari's road cars funded his true passion: racing. And race they did – Ferrari won its first Grand Prix in 1951 and its first Le Mans in 1949.</p>
+                    
+                    <p>The 1950s and 1960s were Ferrari's golden age. The 250 series – especially the 250 GTO – are among the most beautiful and valuable cars ever. Ferrari dominated racing, winning Le Mans six times in the 1960s and Formula 1 championships.</p>
+                    
+                    <p>In 1969, Fiat bought 50% of Ferrari, providing capital for expansion while Enzo retained control of racing. The 1980s brought the 288 GTO and F40 – the latter was Enzo's last car before his death in 1988. The F40 became the ultimate supercar.</p>
+                    
+                    <p>The 1990s and 2000s saw Ferrari expand with the 355, 360, F430, and 458 – each refining the mid-engine V8 formula. The Enzo (2002) was a limited-edition flagship, followed by the LaFerrari (2013) hybrid hypercar.</p>
+                    
+                    <p>Today, Ferrari is independent again, floated on the stock market in 2015. The range includes the 296 GTB, SF90 Stradale, Roma, Portofino, and the Purosangue SUV. Ferrari remains the most desirable car brand in the world.</p>
+                    
+                    <div class="founder-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <blockquote>"Aerodynamics are for people who can't build engines."</blockquote>
+                        <cite>- Enzo Ferrari</cite>
+                    </div>
+                </div>
+                
+                <div class="history-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar"></i>
+                        <span class="stat-number">1947</span>
+                        <span class="stat-label">First Car</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <span class="stat-number">16x</span>
+                        <span class="stat-label">Le Mans Wins</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-car"></i>
+                        <span class="stat-number">15x</span>
+                        <span class="stat-label">F1 Constructors</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-cog"></i>
+                        <span class="stat-number">Maranello</span>
+                        <span class="stat-label">Home</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iconic Models Section -->
+    <section id="models" class="brand-section bg-light">
+        <div class="container">
+            <h2>Iconic <span class="highlight">Models</span></h2>
+            
+            <div class="models-grid">
+                <!-- Ferrari 250 GTO -->
+                <div class="model-card featured">
+                    <img src="../images/models/ferrari-250gto.jpg" alt="Ferrari 250 GTO">
+                    <div class="model-info">
+                        <h3>Ferrari 250 GTO (1962-1964)</h3>
+                        <p class="model-years">1962-1964</p>
+                        <p>The most valuable car in the world. Only 36 built, the 250 GTO is the ultimate collector car – beautiful, successful in racing, and incredibly rare.</p>
+                        <ul class="model-specs">
+                            <li><i class="fas fa-cog"></i> 3.0L V12, 300 hp</li>
+                            <li><i class="fas fa-trophy"></i> 1962-64 FIA GT Champion</li>
+                            <li><i class="fas fa-gem"></i> $70 million+ value</li>
+                            <li><i class="fas fa-palette"></i> Sculptural beauty</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Ferrari F40 -->
+                <div class="model-card">
+                    <img src="../images/models/ferrari-f40.jpg" alt="Ferrari F40">
+                    <h3>Ferrari F40</h3>
+                    <p class="model-years">1987-1992</p>
+                    <p>Enzo's last car. Raw, extreme, and beautiful. Twin-turbo V8, 471 hp, and 201 mph – the ultimate 1980s supercar.</p>
+                </div>
+                
+                <!-- Ferrari LaFerrari -->
+                <div class="model-card">
+                    <img src="../images/models/ferrari-laferrari.jpg" alt="Ferrari LaFerrari">
+                    <h3>Ferrari LaFerrari</h3>
+                    <p class="model-years">2013-2016</p>
+                    <p>The first Ferrari hybrid. 950 hp, F1-derived KERS, and stunning design. Limited to 499 units.</p>
+                </div>
+                
+                <!-- Ferrari 288 GTO -->
+                <div class="model-card">
+                    <img src="../images/models/ferrari-288gto.jpg" alt="Ferrari 288 GTO">
+                    <h3>Ferrari 288 GTO</h3>
+                    <p class="model-years">1984-1987</p>
+                    <p>The first "supercar" from Ferrari. Homologation special for Group B rallying, with 400 hp and 189 mph top speed.</p>
+                </div>
+                
+                <!-- Ferrari Testarossa -->
+                <div class="model-card">
+                    <img src="../images/models/ferrari-testarossa.jpg" alt="Ferrari Testarossa">
+                    <h3>Ferrari Testarossa</h3>
+                    <p class="model-years">1984-1991</p>
+                    <p>The 1980s icon. Wide body, side strakes, and flat-12 engine. The ultimate Miami Vice car.</p>
+                </div>
+                
+                <!-- Ferrari 458 Italia -->
+                <div class="model-card">
+                    <img src="../images/models/ferrari-458.jpg" alt="Ferrari 458 Italia">
+                    <h3>Ferrari 458 Italia</h3>
+                    <p class="model-years">2009-2015</p>
+                    <p>The benchmark mid-engine V8 Ferrari. 562 hp, 9,000 rpm, and perfect handling. One of the best Ferraris ever.</p>
+                </div>
+                
+                <!-- Ferrari 330 P4 -->
+                <div class="model-card">
+                    <img src="../images/models/ferrari-330p4.jpg" alt="Ferrari 330 P4">
+                    <h3>Ferrari 330 P4</h3>
+                    <p class="model-years">1967</p>
+                    <p>Le Mans legend. The beautiful 330 P4 finished 1-2-3 at Daytona in 1967, beating Ford's GT40.</p>
+                </div>
+                
+                <!-- Ferrari Daytona SP3 -->
+                <div class="model-card">
+                    <img src="../images/models/ferrari-daytona-sp3.jpg" alt="Ferrari Daytona SP3">
+                    <h3>Ferrari Daytona SP3</h3>
+                    <p class="model-years">2021-present</p>
+                    <p>Limited edition Icona series. V12 mid-engine, 829 hp, inspired by 1960s sports prototypes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formula 1 Section -->
+    <section id="f1" class="brand-section">
+        <div class="container">
+            <h2>Ferrari <span class="highlight">Formula 1</span></h2>
+            
+            <div class="f1-grid">
+                <div class="f1-text">
+                    <p>Ferrari is the only team to have competed in every Formula 1 World Championship since 1950. Formula 1 is Ferrari's heart and soul.</p>
+                    
+                    <h4>F1 Statistics:</h4>
+                    <ul>
+                        <li><strong>Constructors' Championships:</strong> 16 (most recent 2008)</li>
+                        <li><strong>Drivers' Championships:</strong> 15</li>
+                        <li><strong>Grand Prix wins:</strong> 243</li>
+                        <li><strong>Pole positions:</strong> 249</li>
+                        <li><strong>First win:</strong> 1951 British GP (Froilán González)</li>
+                    </ul>
+                    
+                    <h4>Legendary Drivers:</h4>
+                    <ul>
+                        <li>Alberto Ascari (1952-53 champion)</li>
+                        <li>Juan Manuel Fangio (1956 champion)</li>
+                        <li>Phil Hill (1961 champion)</li>
+                        <li>John Surtees (1964 champion)</li>
+                        <li>Niki Lauda (1975, 1977 champion)</li>
+                        <li>Jody Scheckter (1979 champion)</li>
+                        <li>Michael Schumacher (2000-2004 champion – 5 consecutive)</li>
+                        <li>Kimi Räikkönen (2007 champion)</li>
+                    </ul>
+                    
+                    <p>The Schumacher era (1996-2006) was the most dominant in Ferrari history. With technical director Ross Brawn and designer Rory Byrne, Schumacher won five consecutive championships from 2000-2004. The F2002 and F2004 are among the most dominant F1 cars ever.</p>
+                </div>
+                
+                <div class="f1-image">
+                    <img src="../images/motorsport/ferrari-f1.jpg" alt="Ferrari F1">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- V12 Legends Section -->
+    <section id="v12" class="brand-section bg-light">
+        <div class="container">
+            <h2><span class="highlight">V12</span> Legends</h2>
+            
+            <div class="v12-grid">
+                <div class="v12-text">
+                    <p>The V12 engine has always been Ferrari's signature. From the first 125 S to the current 812 Superfast, the V12 defines Ferrari's top models.</p>
+                    
+                    <h4>V12 Timeline:</h4>
+                    <ul>
+                        <li><strong>125 S (1947):</strong> 1.5L, 118 hp – first Ferrari</li>
+                        <li><strong>250 Series (1950s):</strong> 3.0L Colombo V12 – 250 GT, 250 GTO, 250 Testa Rossa</li>
+                        <li><strong>365 Series (1960s):</strong> 4.4L – Daytona, 365 GTB/4</li>
+                        <li><strong>512 Series (1970s):</strong> 5.0L – Berlinetta Boxer</li>
+                        <li><strong>Testarossa (1980s):</strong> 4.9L flat-12 – 1980s icon</li>
+                        <li><strong>F12 Berlinetta (2012):</strong> 6.3L, 730 hp – modern classic</li>
+                        <li><strong>812 Superfast (2017):</strong> 6.5L, 789 hp – current V12 flagship</li>
+                    </ul>
+                    
+                    <p>The V12 Ferraris are the purest expression of the brand – front-engine, rear-drive grand tourers with incredible power and beautiful sound.</p>
+                </div>
+                
+                <div class="v12-image">
+                    <img src="../images/ferrari/v12-engine.jpg" alt="Ferrari V12">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Series Section -->
+    <section id="special" class="brand-section">
+        <div class="container">
+            <h2><span class="highlight">Special</span> Series</h2>
+            
+            <div class="special-grid">
+                <div class="special-text">
+                    <p>Ferrari's special series cars are the ultimate expression of the brand – limited production, extreme performance, and collector status.</p>
+                    
+                    <h4>The Lineage:</h4>
+                    <ul>
+                        <li><strong>288 GTO (1984):</strong> The first – 400 hp, 272 built</li>
+                        <li><strong>F40 (1987):</strong> Enzo's last – 471 hp, 1,311 built</li>
+                        <li><strong>F50 (1995):</strong> F1 V12, 520 hp, 349 built</li>
+                        <li><strong>Enzo (2002):</strong> F1 technology, 651 hp, 399 built</li>
+                        <li><strong>LaFerrari (2013):</strong> Hybrid, 950 hp, 499 coupe + 210 Aperta</li>
+                    </ul>
+                    
+                    <h4>Icona Series:</h4>
+                    <ul>
+                        <li><strong>Monza SP1/SP2 (2018):</strong> Barchetta inspired by 1950s racers</li>
+                        <li><strong>Daytona SP3 (2021):</strong> Inspired by 1960s sports prototypes</li>
+                    </ul>
+                    
+                    <p>Each special series car pushes technology and design to the limit. They're the most desirable Ferraris for collectors.</p>
+                </div>
+                
+                <div class="special-image">
+                    <img src="../images/ferrari/special-series.jpg" alt="Ferrari Special Series">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="brand-section bg-light">
+        <div class="container">
+            <h2>Ferrari <span class="highlight">Timeline</span></h2>
+            
+            <div class="brand-timeline">
+                <div class="timeline-item">
+                    <div class="year">1929</div>
+                    <div class="desc">Scuderia Ferrari founded as Alfa Romeo racing team</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1947</div>
+                    <div class="desc">First Ferrari – 125 S with V12</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1949</div>
+                    <div class="desc">First Le Mans win (166 MM)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1951</div>
+                    <div class="desc">First F1 win (British GP)</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1962</div>
+                    <div class="desc">250 GTO launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1969</div>
+                    <div class="desc">Fiat acquires 50% of Ferrari</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1984</div>
+                    <div class="desc">288 GTO launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1987</div>
+                    <div class="desc">F40 launched – Enzo's last car</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1988</div>
+                    <div class="desc">Enzo Ferrari dies at 90</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1995</div>
+                    <div class="desc">F50 launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">1999</div>
+                    <div class="desc">360 Modena launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2002</div>
+                    <div class="desc">Enzo Ferrari launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2004</div>
+                    <div class="desc">F430 launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2009</div>
+                    <div class="desc">458 Italia launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2013</div>
+                    <div class="desc">LaFerrari launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2015</div>
+                    <div class="desc">Ferrari IPO – independent again</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2017</div>
+                    <div class="desc">812 Superfast launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2019</div>
+                    <div class="desc">SF90 Stradale hybrid launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2022</div>
+                    <div class="desc">Purosangue SUV launched</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="year">2025</div>
+                    <div class="desc">First Ferrari EV announced</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Brands -->
+    <div class="text-center section-padding">
+        <a href="../brands.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to All Brands</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="../images/icons/logo.svg" alt="Car Evolution Logo" class="footer-logo">
+                    <p>A comprehensive knowledge resource documenting the complete history of automobiles from 1886 to present day.</p>
+                    <p class="knowledge-statement">Knowledge Management Project | MGMT3501</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../brands.html">Brands</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Italian Brands</h4>
+                    <ul>
+                        <li><a href="ferrari.html">Ferrari</a></li>
+                        <li><a href="lamborghini.html">Lamborghini</a></li>
+                        <li><a href="maserati.html">Maserati</a></li>
+                        <li><a href="alfa-romeo.html">Alfa Romeo</a></li>
+                        <li><a href="fiat.html">Fiat</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-user"></i> Sharif Muntasir</p>
+                    <p><i class="fas fa-id-card"></i> ID: 242924833</p>
+                    <p><i class="fas fa-envelope"></i> s.muntasir@university.edu</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Evolution of Cars. All rights reserved. | Signature: Sharif Muntasir | Date: 25/12/2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>
