@@ -1587,3 +1587,9 @@ p {
     color: #555;
     margin-top: 5px;
 }
+.error-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
