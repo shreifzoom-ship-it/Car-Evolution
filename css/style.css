@@ -1637,6 +1637,85 @@ p {
         width: 100%;
     }
 }
+/* ===============================
+   GWM Sub-Brands Section
+================================ */
+
+.brand-section {
+    padding: 60px 0;
+}
+
+.brand-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Grid */
+.brands-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Card */
+.brand-card-small {
+    background: #fff;
+    width: 200px;
+    padding: 20px 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.brand-card-small:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Logo */
+.brand-card-small img {
+    width: 90px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Title */
+.brand-card-small h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+/* Text */
+.brand-card-small p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0;
+}
+
+/* Note text */
+.brand-section .note {
+    max-width: 800px;
+    margin: 40px auto 0;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .brand-card-small {
+        width: 45%;
+    }
+}
+
+@media (max-width: 400px) {
+    .brand-card-small {
+        width: 100%;
+    }
+}
+
 
 
 
