@@ -1,0 +1,322 @@
+{
+  "brands": {
+    "japanese": [
+      {
+        "name": "Toyota",
+        "founded": 1937,
+        "founder": "Kiichiro Toyoda",
+        "headquarters": "Toyota City, Japan",
+        "website": "toyota.com",
+        "description": "World's largest automaker, pioneer of hybrid technology with Prius. Known for reliability, innovation, and the Toyota Production System.",
+        "iconicModels": ["Corolla", "Camry", "Land Cruiser", "Supra", "Prius"],
+        "logo": "toyota-logo.png",
+        "totalSales": "200M+",
+        "fact": "The Toyota Corolla is the best-selling car of all time with over 50 million sold."
+      },
+      {
+        "name": "Honda",
+        "founded": 1948,
+        "founder": "Soichiro Honda",
+        "headquarters": "Tokyo, Japan",
+        "website": "honda.com",
+        "description": "Engineering excellence, known for VTEC technology, motorcycles, and the legendary NSX supercar. World's largest engine manufacturer.",
+        "iconicModels": ["Civic", "Accord", "NSX", "S2000", "CR-V"],
+        "logo": "honda-logo.png",
+        "totalSales": "140M+",
+        "fact": "Honda is the world's largest motorcycle manufacturer and also builds aircraft, robots, and power equipment."
+      },
+      {
+        "name": "Nissan",
+        "founded": 1933,
+        "founder": "Yoshisuke Aikawa",
+        "headquarters": "Yokohama, Japan",
+        "website": "nissan.com",
+        "description": "Makers of the iconic GT-R, pioneers of electric vehicles with Leaf. Strong motorsport heritage and innovative design.",
+        "iconicModels": ["GT-R", "Fairlady Z", "Skyline", "Patrol", "Leaf"],
+        "logo": "nissan-logo.png",
+        "totalSales": "150M+",
+        "fact": "The Nissan GT-R is nicknamed 'Godzilla' because it dominates supercars at a fraction of the price."
+      },
+      {
+        "name": "Mazda",
+        "founded": 1920,
+        "founder": "Jujiro Matsuda",
+        "headquarters": "Hiroshima, Japan",
+        "website": "mazda.com",
+        "description": "Famous for rotary engines and the MX-5 Miata, the best-selling sports car of all time. Kodo design language.",
+        "iconicModels": ["MX-5 Miata", "RX-7", "RX-8", "Mazda3", "CX-5"],
+        "logo": "mazda-logo.png",
+        "totalSales": "50M+",
+        "fact": "The Mazda MX-5 Miata is the best-selling two-seat convertible sports car in history, with over 1 million sold."
+      },
+      {
+        "name": "Subaru",
+        "founded": 1953,
+        "founder": "Kenji Kita",
+        "headquarters": "Tokyo, Japan",
+        "website": "subaru.com",
+        "description": "Symmetrical AWD and boxer engines. Rally legend with Impreza WRX and off-road capability.",
+        "iconicModels": ["Impreza WRX", "Forester", "Outback", "BRZ", "Legacy"],
+        "logo": "subaru-logo.png",
+        "totalSales": "30M+",
+        "fact": "Subaru uses boxer engines in all its cars, which have lower center of gravity for better handling."
+      },
+      {
+        "name": "Mitsubishi",
+        "founded": 1970,
+        "founder": "Yataro Iwasaki",
+        "headquarters": "Tokyo, Japan",
+        "website": "mitsubishi-motors.com",
+        "description": "Rally champions with Lancer Evolution, Pajero off-road heritage, and innovative SUVs.",
+        "iconicModels": ["Lancer Evolution", "Pajero", "3000GT", "Outlander", "Starion"],
+        "logo": "mitsubishi-logo.png",
+        "totalSales": "25M+",
+        "fact": "The Lancer Evolution was developed to compete in the World Rally Championship and became a legend."
+      },
+      {
+        "name": "Suzuki",
+        "founded": 1909,
+        "founder": "Michio Suzuki",
+        "headquarters": "Hamamatsu, Japan",
+        "website": "suzuki.com",
+        "description": "Kei car specialists, off-road legends with Jimny, and motorcycle manufacturing.",
+        "iconicModels": ["Jimny", "Swift", "Vitara", "Samurai", "Alto"],
+        "logo": "suzuki-logo.png",
+        "totalSales": "45M+",
+        "fact": "The Suzuki Jimny has remained virtually unchanged for over 50 years due to its legendary off-road capability."
+      },
+      {
+        "name": "Lexus",
+        "founded": 1989,
+        "founder": "Eiji Toyoda",
+        "headquarters": "Nagoya, Japan",
+        "website": "lexus.com",
+        "description": "Toyota's luxury division, known for refinement, hybrid technology, and the LFA supercar.",
+        "iconicModels": ["LS 400", "LFA", "RX", "LC 500", "LX"],
+        "logo": "lexus-logo.png",
+        "totalSales": "10M+",
+        "fact": "The Lexus LS 400 shocked the world in 1989 with its Mercedes-beating refinement at launch."
+      },
+      {
+        "name": "Acura",
+        "founded": 1986,
+        "founder": "Soichiro Honda",
+        "headquarters": "Tokyo, Japan",
+        "website": "acura.com",
+        "description": "Honda's luxury brand, first Japanese luxury marque. Known for NSX and SH-AWD technology.",
+        "iconicModels": ["NSX", "Integra", "Legend", "MDX", "TLX"],
+        "logo": "acura-logo.png",
+        "totalSales": "5M+",
+        "fact": "Acura was the first Japanese luxury brand, launching two years before Lexus and Infiniti."
+      },
+      {
+        "name": "Infiniti",
+        "founded": 1989,
+        "founder": "Nissan",
+        "headquarters": "Yokohama, Japan",
+        "website": "infiniti.com",
+        "description": "Nissan's luxury division, known for design, V6 performance, and Q50 sports sedan.",
+        "iconicModels": ["Q45", "G35", "FX", "Q50", "QX80"],
+        "logo": "infiniti-logo.png",
+        "totalSales": "3M+",
+        "fact": "The Infiniti Q45 was the first Japanese car with a V8 engine and active suspension."
+      }
+    ],
+    "german": [
+      {
+        "name": "BMW",
+        "founded": 1916,
+        "founder": "Franz Josef Popp",
+        "headquarters": "Munich, Germany",
+        "website": "bmw.com",
+        "description": "Bayerische Motoren Werke, ultimate driving machines, inline-6 engines, and M performance division.",
+        "iconicModels": ["3 Series", "M3", "5 Series", "7 Series", "X5"],
+        "logo": "bmw-logo.png",
+        "totalSales": "50M+",
+        "fact": "BMW started as an aircraft engine manufacturer – the blue and white logo represents a spinning propeller."
+      },
+      {
+        "name": "Mercedes-Benz",
+        "founded": 1926,
+        "founder": "Karl Benz, Gottlieb Daimler",
+        "headquarters": "Stuttgart, Germany",
+        "website": "mercedes-benz.com",
+        "description": "Inventors of the automobile, pioneers in safety, luxury, and the iconic 300SL Gullwing.",
+        "iconicModels": ["300SL", "S-Class", "G-Wagen", "SLS", "E-Class"],
+        "logo": "mercedes-logo.png",
+        "totalSales": "60M+",
+        "fact": "Mercedes-Benz invented the first automobile in 1886 and the first diesel car in 1936."
+      },
+      {
+        "name": "Audi",
+        "founded": 1909,
+        "founder": "August Horch",
+        "headquarters": "Ingolstadt, Germany",
+        "website": "audi.com",
+        "description": "Quattro AWD pioneers, advanced technology, and motorsport success with rally and Le Mans.",
+        "iconicModels": ["Quattro", "A4", "R8", "TT", "A8"],
+        "logo": "audi-logo.png",
+        "totalSales": "40M+",
+        "fact": "The four rings of the Audi logo represent four companies that merged: Audi, DKW, Horch, and Wanderer."
+      },
+      {
+        "name": "Volkswagen",
+        "founded": 1937,
+        "founder": "Ferdinand Porsche",
+        "headquarters": "Wolfsburg, Germany",
+        "website": "volkswagen.com",
+        "description": "People's car, Beetle legend, Golf pioneer, and now electric revolution with ID series.",
+        "iconicModels": ["Beetle", "Golf GTI", "Type 2 Bus", "Passat", "ID.3"],
+        "logo": "volkswagen-logo.png",
+        "totalSales": "150M+",
+        "fact": "The Volkswagen Beetle was produced for 65 years (1938-2003) with over 21 million built."
+      },
+      {
+        "name": "Porsche",
+        "founded": 1931,
+        "founder": "Ferdinand Porsche",
+        "headquarters": "Stuttgart, Germany",
+        "website": "porsche.com",
+        "description": "Iconic 911, engineering perfection, motorsport dominance, and now the Taycan electric.",
+        "iconicModels": ["911", "Cayenne", "Boxster", "918 Spyder", "Taycan"],
+        "logo": "porsche-logo.png",
+        "totalSales": "3M+",
+        "fact": "Over 70% of all Porsches ever built are still on the road today."
+      },
+      {
+        "name": "Opel",
+        "founded": 1862,
+        "founder": "Adam Opel",
+        "headquarters": "Rüsselsheim, Germany",
+        "website": "opel.com",
+        "description": "German manufacturer known for Kadett, Astra, and Manta. Now part of Stellantis.",
+        "iconicModels": ["Kadett", "Astra", "Manta", "Corsa", "Insignia"],
+        "logo": "opel-logo.png",
+        "totalSales": "70M+",
+        "fact": "Opel started as a sewing machine manufacturer before building cars, and was Germany's largest automaker in the 1920s."
+      },
+      {
+        "name": "Maybach",
+        "founded": 1909,
+        "founder": "Wilhelm Maybach",
+        "headquarters": "Stuttgart, Germany",
+        "website": "mercedes-benz.com/maybach",
+        "description": "Ultra-luxury brand, now part of Mercedes-Benz, known for chauffeur-driven excellence.",
+        "iconicModels": ["Maybach 57", "Maybach 62", "Maybach S-Class", "Maybach GLS"],
+        "logo": "maybach-logo.png",
+        "totalSales": "3,000+",
+        "fact": "The Maybach 62 was so luxurious that it had a panoramic roof and could be ordered with a champagne cooler."
+      },
+      {
+        "name": "Smart",
+        "founded": 1994,
+        "founder": "Nicolas Hayek",
+        "headquarters": "Böblingen, Germany",
+        "website": "smart.com",
+        "description": "City car specialist, known for compact size, efficiency, and urban mobility.",
+        "iconicModels": ["Fortwo", "Forfour", "Roadster", "EQ Fortwo"],
+        "logo": "smart-logo.png",
+        "totalSales": "2M+",
+        "fact": "The Smart Fortwo is so small that you can park it perpendicular to the curb in some European cities."
+      }
+    ],
+    "american": [
+      {
+        "name": "Ford",
+        "founded": 1903,
+        "founder": "Henry Ford",
+        "headquarters": "Dearborn, Michigan",
+        "website": "ford.com",
+        "description": "Assembly line revolution, Model T, Mustang, F-Series trucks, and American icon.",
+        "iconicModels": ["Model T", "Mustang", "F-150", "GT40", "Thunderbird"],
+        "logo": "ford-logo.png",
+        "totalSales": "350M+",
+        "fact": "The Ford F-150 has been America's best-selling vehicle for over 40 years."
+      },
+      {
+        "name": "Chevrolet",
+        "founded": 1911,
+        "founder": "Louis Chevrolet, William Durant",
+        "headquarters": "Detroit, Michigan",
+        "website": "chevrolet.com",
+        "description": "Heart of America, Corvette legend, Camaro muscle, and Silverado trucks.",
+        "iconicModels": ["Corvette", "Camaro", "Bel Air", "Silverado", "Impala"],
+        "logo": "chevrolet-logo.png",
+        "totalSales": "200M+",
+        "fact": "The Chevrolet small-block V8, introduced in 1955, is one of the most produced engines in history."
+      },
+      {
+        "name": "Dodge",
+        "founded": 1900,
+        "founder": "John Dodge, Horace Dodge",
+        "headquarters": "Auburn Hills, Michigan",
+        "website": "dodge.com",
+        "description": "Muscle car heritage, Challenger, Charger, Viper, and HEMI V8 power.",
+        "iconicModels": ["Challenger", "Charger", "Viper", "Durango", "Ram"],
+        "logo": "dodge-logo.png",
+        "totalSales": "50M+",
+        "fact": "The Dodge Viper was developed with no electronic aids – no ABS, no traction control, just raw power."
+      },
+      {
+        "name": "Cadillac",
+        "founded": 1902,
+        "founder": "Henry Leland",
+        "headquarters": "Detroit, Michigan",
+        "website": "cadillac.com",
+        "description": "American luxury, fins, Eldorado, and modern performance with V series.",
+        "iconicModels": ["Eldorado", "DeVille", "CTS-V", "Escalade", "Fleetwood"],
+        "logo": "cadillac-logo.png",
+        "totalSales": "15M+",
+        "fact": "Cadillac was the first car company to mass-produce V8 engines and electric starters."
+      },
+      {
+        "name": "Tesla",
+        "founded": 2003,
+        "founder": "Martin Eberhard, Marc Tarpenning, Elon Musk",
+        "headquarters": "Austin, Texas",
+        "website": "tesla.com",
+        "description": "Electric revolution, Autopilot, Model S, and sustainable energy focus.",
+        "iconicModels": ["Roadster", "Model S", "Model 3", "Model X", "Cybertruck"],
+        "logo": "tesla-logo.png",
+        "totalSales": "5M+",
+        "fact": "Tesla's Gigafactory in Nevada is the largest building in the world by footprint."
+      },
+      {
+        "name": "Jeep",
+        "founded": 1941,
+        "founder": "Willys-Overland",
+        "headquarters": "Toledo, Ohio",
+        "website": "jeep.com",
+        "description": "Military heritage, Wrangler off-road legend, and 4x4 capability.",
+        "iconicModels": ["Wrangler", "Cherokee", "Grand Cherokee", "Willys", "Gladiator"],
+        "logo": "jeep-logo.png",
+        "totalSales": "15M+",
+        "fact": "The original Jeep Willys MB was designed in just 75 days and over 600,000 were built for WWII."
+      },
+      {
+        "name": "Lincoln",
+        "founded": 1917,
+        "founder": "Henry Leland",
+        "headquarters": "Dearborn, Michigan",
+        "website": "lincoln.com",
+        "description": "Presidential luxury, Continental icon, and American elegance.",
+        "iconicModels": ["Continental", "Navigator", "Mark IV", "Zephyr", "Aviator"],
+        "logo": "lincoln-logo.png",
+        "totalSales": "8M+",
+        "fact": "Lincoln has been the official state car of US presidents since 1939."
+      },
+      {
+        "name": "Buick",
+        "founded": 1899,
+        "founder": "David Buick",
+        "headquarters": "Detroit, Michigan",
+        "website": "buick.com",
+        "description": "Premium American brand, Riviera design icon, and Chinese market leader.",
+        "iconicModels": ["Riviera", "Regal", "LeSabre", "Enclave", "Wildcat"],
+        "logo": "buick-logo.png",
+        "totalSales": "40M+",
+        "fact": "Buick is incredibly popular in China, where it's considered a luxury status symbol."
+      }
+    ]
+  }
+}
